@@ -1,0 +1,783 @@
+{
+  "date": "2026-11-09",
+  "role": "Capture-author verification; independent source and final visual review are separate records.",
+  "tools": {
+    "Konnect": "0.12.1 official installed MCP",
+    "KiCad": "10.0.8",
+    "native_mutation_route": "Konnect MCP only"
+  },
+  "files_sha256": {
+    "lighting.kicad_sch": "c69b283fcddaf4dda80db415f7d009a5bf72508bbac4eab0f21db83e3aabc796",
+    "peripherals.kicad_sch": "c3997e92e5deee52c05a2b8e3f9453e36f269b825047058acbd8ac74b381f77e",
+    "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+    "docs/design/peripherals_contract.json": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec"
+  },
+  "endpoint_check": {
+    "netlist": ".build/peripheral_cad/root.net",
+    "netlist_sha256": "2a0e3853317da3ddaa4722e9e31493e8e3f9913bdd1ff916bfad8e4f0c27d158",
+    "contract_sha256": {
+      "peripherals": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec"
+    },
+    "expected_components": 75,
+    "expected_endpoints": 219,
+    "intentional_nc_endpoints": 5,
+    "observed_endpoints_for_expected_components": 219,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "metadata_summary": {
+    "status": "PASS",
+    "netlist": ".build/peripheral_cad/root.net",
+    "sha256": "2a0e3853317da3ddaa4722e9e31493e8e3f9913bdd1ff916bfad8e4f0c27d158",
+    "components_checked": 75,
+    "passive_ratings_checked": 53,
+    "blank_footprints": [
+      "D401",
+      "D402",
+      "D403",
+      "D404",
+      "D405",
+      "D406",
+      "D407",
+      "D408",
+      "D409",
+      "SW401",
+      "SW402",
+      "U501",
+      "U502",
+      "U503",
+      "AE501",
+      "D501",
+      "U504",
+      "J501",
+      "J502"
+    ],
+    "issues": []
+  },
+  "source_hashes": [
+    {
+      "mpn": "WS2812C-2020-V6",
+      "file": "docs/datasheets/WS2812C-2020-V6.pdf",
+      "sha256": "8465b5176b9f31d77c177c279013e18cfb6f13737fbfbcd724c3562e437cbcf9",
+      "status": "PASS"
+    },
+    {
+      "mpn": "HSMF-C165",
+      "file": "docs/datasheets/HSMF-C165_AV02-0584EN.pdf",
+      "sha256": "920539983de9e38efa1043f59639fbec6dbd360e0004761ecfb4e6c552ef725a",
+      "status": "PASS"
+    },
+    {
+      "mpn": "TPS2553DBVR",
+      "file": "docs/datasheets/TPS2553.pdf",
+      "sha256": "edd76d150b073ae8d4addbf85f6845b8c722fbd0b35ef025ac3c9e704a6a3385",
+      "status": "PASS"
+    },
+    {
+      "mpn": "IR67-21C/TR8",
+      "file": "docs/datasheets/IR67-21C-TR8.pdf",
+      "sha256": "8b0cafbc6c75a60d705c078c8027fea96162e198b8125909d2658e66738f527c",
+      "status": "PASS"
+    },
+    {
+      "mpn": "AO3400A",
+      "file": "docs/datasheets/AO3400A.pdf",
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+      "status": "PASS"
+    },
+    {
+      "mpn": "IRM-H638T/TR2",
+      "file": "docs/datasheets/IRM-H638T-TR2.pdf",
+      "sha256": "6ba15dc59077b2a3357495e5cbfe9b68378a275ae1750e02e77f9d6f2663d22e",
+      "status": "PASS"
+    },
+    {
+      "mpn": "SFH11-NBPC-D03-ST-BK",
+      "file": "docs/datasheets/SFH11-NBPC-D03-ST-BK_official.pdf",
+      "sha256": "8bd076918a6a018206a1cce6969b8decce97273ce50e871fe3e8c839e1e73b40",
+      "status": "PASS"
+    },
+    {
+      "mpn": "SM04B-SRSS-TB(LF)(SN)",
+      "file": "docs/datasheets/SM04B-SRSS-TB.pdf",
+      "sha256": "1d07d13f7829795cd9b66e48f2c31a2cf68881140143480e73596305cabc5606",
+      "status": "PASS"
+    },
+    {
+      "mpn": "TCA9534PWR",
+      "file": "docs/datasheets/TCA9534.pdf",
+      "sha256": "5e1ab781d3051f1af52a9c321f62b09d28b447448d56b962b35f9c8261994c04",
+      "status": "PASS"
+    },
+    {
+      "mpn": "BH1730FVC",
+      "file": "docs/datasheets/BH1730FVC.pdf",
+      "sha256": "012d391bb2712fc3f22d6596e83ad49075e294dd797b5a40634467dc567d0572",
+      "status": "PASS"
+    },
+    {
+      "mpn": "LIS2DW12TR",
+      "file": "docs/datasheets/LIS2DW12TR.pdf",
+      "sha256": "87da41966ff6bfe17a47db2c1940173d490aa4dfb7af2cce1a5dd5c0260c8735",
+      "status": "PASS"
+    },
+    {
+      "mpn": "NT3H2111W0FHKH",
+      "file": "docs/datasheets/NT3H2111W0FHKH.pdf",
+      "sha256": "44a7cbee1220999138538341392aacde5a87aed7a284974328e8297b132a20c8",
+      "status": "PASS"
+    },
+    {
+      "mpn": "errata",
+      "file": "docs/datasheets/NT3H2111W0FHKH-errata.pdf",
+      "sha256": "37c7afb52db718fd4123580573ae62ce7e919cf6913cf0781e06f7394fc9d3df",
+      "status": "PASS"
+    },
+    {
+      "mpn": "interface evidence",
+      "file": "docs/datasheets/Qwiic-Cable.pdf",
+      "sha256": "bf5a91ad8ebdafa23f7971e2e0bf35abc1e2ea0d9eba1963ae43ea82f438daef",
+      "status": "PASS"
+    },
+    {
+      "mpn": "interface evidence",
+      "file": "docs/datasheets/Qwiic_reference_schematic.pdf",
+      "sha256": "c76164cf136ba5392b6a215e8eeaeec6eced1934c8dd3124586288c11fc645bd",
+      "status": "PASS"
+    },
+    {
+      "mpn": "AO3400A package dimensions",
+      "file": "docs/datasheets/AOS-SOT23.pdf",
+      "sha256": "b6fac64d55f133ce74dd85ddddc618c3d5408e9531cb21e660f6a8ef3d8c5408",
+      "status": "PASS"
+    },
+    {
+      "mpn": "SKSCLBE010",
+      "file": "docs/datasheets/SKSCLBE010.pdf",
+      "sha256": "06eed78e94af6bb6c3885a1baa87f00e6f522a61240e1aa8243afbaadf611521",
+      "status": "PASS"
+    },
+    {
+      "mpn": "SKSCLBE010",
+      "file": "docs/datasheets/SKSCLBE010_SKSC_catalog.pdf",
+      "sha256": "cc8baff4e324df2cf6a71b9319ab9dbfd9e56d2e589dce392456b8afc99ca5bb",
+      "status": "PASS"
+    }
+  ],
+  "custom_symbol_readback": [
+    {
+      "lib_id": "Tinkerbadge_Peripherals:WS2812C-2020-V6",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "WS2812C-2020-V6",
+      "pin_count": 4,
+      "pins": [
+        {
+          "name": "DI",
+          "number": "3",
+          "type": "input",
+          "x": -8.89,
+          "y": 0.0
+        },
+        {
+          "name": "DO",
+          "number": "1",
+          "type": "output",
+          "x": 8.89,
+          "y": 0.0
+        },
+        {
+          "name": "VDD",
+          "number": "4",
+          "type": "power_in",
+          "x": 0.0,
+          "y": 11.43
+        },
+        {
+          "name": "GND",
+          "number": "2",
+          "type": "power_in",
+          "x": 0.0,
+          "y": -11.43
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "D",
+        "Value": "WS2812C-2020-V6"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:HSMF-C165",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "HSMF-C165",
+      "pin_count": 4,
+      "pins": [
+        {
+          "name": "A_GREEN",
+          "number": "1",
+          "type": "passive",
+          "x": -16.51,
+          "y": 2.54
+        },
+        {
+          "name": "A_RED",
+          "number": "2",
+          "type": "passive",
+          "x": -16.51,
+          "y": -2.54
+        },
+        {
+          "name": "K_GREEN",
+          "number": "3",
+          "type": "passive",
+          "x": 16.51,
+          "y": 2.54
+        },
+        {
+          "name": "K_RED",
+          "number": "4",
+          "type": "passive",
+          "x": 16.51,
+          "y": -2.54
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://docs.broadcom.com/doc/AV02-0584EN",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "D",
+        "Value": "HSMF-C165"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:BH1730FVC",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "BH1730FVC",
+      "pin_count": 6,
+      "pins": [
+        {
+          "name": "SCL",
+          "number": "6",
+          "type": "input",
+          "x": -13.97,
+          "y": 2.54
+        },
+        {
+          "name": "SDA",
+          "number": "4",
+          "type": "bidirectional",
+          "x": -13.97,
+          "y": -2.54
+        },
+        {
+          "name": "INT",
+          "number": "2",
+          "type": "open_collector",
+          "x": 13.97,
+          "y": 0.0
+        },
+        {
+          "name": "VCC",
+          "number": "1",
+          "type": "power_in",
+          "x": -2.54,
+          "y": 11.43
+        },
+        {
+          "name": "DVI",
+          "number": "5",
+          "type": "power_in",
+          "x": 2.54,
+          "y": 11.43
+        },
+        {
+          "name": "GND",
+          "number": "3",
+          "type": "power_in",
+          "x": 0.0,
+          "y": -11.43
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://fscdn.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1730fvc-e.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "U",
+        "Value": "BH1730FVC"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:LIS2DW12TR",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "LIS2DW12TR",
+      "pin_count": 12,
+      "pins": [
+        {
+          "name": "SCL/SPC",
+          "number": "1",
+          "type": "input",
+          "x": -16.51,
+          "y": 7.62
+        },
+        {
+          "name": "SDA/SDI/SDO",
+          "number": "4",
+          "type": "bidirectional",
+          "x": -16.51,
+          "y": 2.54
+        },
+        {
+          "name": "CS",
+          "number": "2",
+          "type": "input",
+          "x": -16.51,
+          "y": -2.54
+        },
+        {
+          "name": "SDO/SA0",
+          "number": "3",
+          "type": "bidirectional",
+          "x": -16.51,
+          "y": -7.62
+        },
+        {
+          "name": "INT1",
+          "number": "12",
+          "type": "output",
+          "x": 16.51,
+          "y": 7.62
+        },
+        {
+          "name": "INT2",
+          "number": "11",
+          "type": "output",
+          "x": 16.51,
+          "y": 2.54
+        },
+        {
+          "name": "NC",
+          "number": "5",
+          "type": "passive",
+          "x": 16.51,
+          "y": -7.62
+        },
+        {
+          "name": "VDD",
+          "number": "9",
+          "type": "power_in",
+          "x": -3.81,
+          "y": 19.05
+        },
+        {
+          "name": "VDD_IO",
+          "number": "10",
+          "type": "power_in",
+          "x": 3.81,
+          "y": 19.05
+        },
+        {
+          "name": "GND",
+          "number": "6",
+          "type": "power_in",
+          "x": -5.08,
+          "y": -19.05
+        },
+        {
+          "name": "RES",
+          "number": "7",
+          "type": "passive",
+          "x": 0.0,
+          "y": -19.05
+        },
+        {
+          "name": "GND",
+          "number": "8",
+          "type": "power_in",
+          "x": 5.08,
+          "y": -19.05
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "U",
+        "Value": "LIS2DW12TR"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:NT3H2111W0FHKH",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "NT3H2111W0FHKH",
+      "pin_count": 8,
+      "pins": [
+        {
+          "name": "SCL",
+          "number": "3",
+          "type": "input",
+          "x": -13.97,
+          "y": 5.08
+        },
+        {
+          "name": "SDA",
+          "number": "5",
+          "type": "bidirectional",
+          "x": -13.97,
+          "y": 0.0
+        },
+        {
+          "name": "FD",
+          "number": "4",
+          "type": "open_collector",
+          "x": -13.97,
+          "y": -5.08
+        },
+        {
+          "name": "LA",
+          "number": "1",
+          "type": "passive",
+          "x": 13.97,
+          "y": 5.08
+        },
+        {
+          "name": "LB",
+          "number": "8",
+          "type": "passive",
+          "x": 13.97,
+          "y": 0.0
+        },
+        {
+          "name": "VOUT",
+          "number": "7",
+          "type": "power_out",
+          "x": 13.97,
+          "y": -5.08
+        },
+        {
+          "name": "VCC",
+          "number": "6",
+          "type": "power_in",
+          "x": 0.0,
+          "y": 13.97
+        },
+        {
+          "name": "VSS",
+          "number": "2",
+          "type": "power_in",
+          "x": 0.0,
+          "y": -13.97
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "U",
+        "Value": "NT3H2111W0FHKH"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:IR67-21C_TR8",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "IR67-21C_TR8",
+      "pin_count": 2,
+      "pins": [
+        {
+          "name": "ANODE",
+          "number": "1",
+          "type": "passive",
+          "x": -5.08,
+          "y": 0.0
+        },
+        {
+          "name": "CATHODE",
+          "number": "2",
+          "type": "passive",
+          "x": 5.08,
+          "y": 0.0
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://www.everlighteurope.com/custom/files/datasheets/DIR-0000986.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "D",
+        "Value": "IR67-21C/TR8"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:IRM-H638T_TR2",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "IRM-H638T_TR2",
+      "pin_count": 4,
+      "pins": [
+        {
+          "name": "OUT",
+          "number": "3",
+          "type": "output",
+          "x": 13.97,
+          "y": 0.0
+        },
+        {
+          "name": "VCC",
+          "number": "4",
+          "type": "power_in",
+          "x": 0.0,
+          "y": 11.43
+        },
+        {
+          "name": "GND",
+          "number": "1",
+          "type": "power_in",
+          "x": -3.81,
+          "y": -11.43
+        },
+        {
+          "name": "GND",
+          "number": "2",
+          "type": "power_in",
+          "x": 3.81,
+          "y": -11.43
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://www.everlighteurope.com/custom/files/datasheets/DMO-0000008.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "U",
+        "Value": "IRM-H638T/TR2"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:TPS2553DBVR",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "TPS2553DBVR",
+      "pin_count": 6,
+      "pins": [
+        {
+          "name": "IN",
+          "number": "1",
+          "type": "power_in",
+          "x": -13.97,
+          "y": 5.08
+        },
+        {
+          "name": "EN",
+          "number": "3",
+          "type": "input",
+          "x": -13.97,
+          "y": 0.0
+        },
+        {
+          "name": "ILIM",
+          "number": "5",
+          "type": "passive",
+          "x": -13.97,
+          "y": -5.08
+        },
+        {
+          "name": "OUT",
+          "number": "6",
+          "type": "power_out",
+          "x": 13.97,
+          "y": 5.08
+        },
+        {
+          "name": "FAULT_N",
+          "number": "4",
+          "type": "open_collector",
+          "x": 13.97,
+          "y": -5.08
+        },
+        {
+          "name": "GND",
+          "number": "2",
+          "type": "power_in",
+          "x": 0.0,
+          "y": -13.97
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "U",
+        "Value": "TPS2553DBVR"
+      }
+    },
+    {
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "library": "Tinkerbadge_Peripherals",
+      "name": "SKSCLBE010",
+      "pin_count": 4,
+      "pins": [
+        {
+          "name": "",
+          "number": "1",
+          "type": "passive",
+          "x": 5.08,
+          "y": 0.0
+        },
+        {
+          "name": "",
+          "number": "2",
+          "type": "passive",
+          "x": 5.08,
+          "y": -5.08
+        },
+        {
+          "name": "",
+          "number": "3",
+          "type": "passive",
+          "x": -5.08,
+          "y": 0.0
+        },
+        {
+          "name": "",
+          "number": "4",
+          "type": "passive",
+          "x": -5.08,
+          "y": -5.08
+        }
+      ],
+      "properties": {
+        "Datasheet": "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf",
+        "Description": "",
+        "Footprint": "",
+        "Reference": "SW",
+        "Value": "SKSCLBE010"
+      }
+    }
+  ],
+  "standard_symbols_checked": [
+    "Transistor_FET:AO3400A",
+    "Interface_Expansion:TCA9534",
+    "Device:R",
+    "Device:C",
+    "Device:Antenna_Loop",
+    "Connector_Generic:Conn_01x04",
+    "Connector_Generic:Conn_02x03_Odd_Even"
+  ],
+  "footprint_assignment_evidence": {
+    "Q501": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "pins": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "pad_centers_mm": {
+        "1": [
+          -0.9375,
+          -0.95
+        ],
+        "2": [
+          -0.9375,
+          0.95
+        ],
+        "3": [
+          0.9375,
+          0
+        ]
+      },
+      "qualification": "AOS Rev3.1 p1 labels G/S/D and gate index dot but does not print numeric pins. Rotating the installed top-view footprint to put pad1 at the index/G lead maps pad2 to adjacent S and pad3 to opposite D without reflection. Numbering remains explicitly derived. AOS PO-00001 VersionN supplies unnumbered package dimensions. Standard footprint is not a claim of manufacturing release."
+    },
+    "U505": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "pad_centers_mm": {
+        "1": [
+          -1.1375,
+          -0.95
+        ],
+        "2": [
+          -1.1375,
+          0
+        ],
+        "3": [
+          -1.1375,
+          0.95
+        ],
+        "4": [
+          1.1375,
+          0.95
+        ],
+        "5": [
+          1.1375,
+          0
+        ],
+        "6": [
+          1.1375,
+          -0.95
+        ]
+      },
+      "mapping": "TI DBV top-view pins1IN/2GND/3EN/4FAULT/5ILIM/6OUT; no EP."
+    },
+    "U506": {
+      "footprint": "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
+      "mapping": "TI PW16 top-view full pin map agrees with TCA9534 standard symbol; 16 numbered pads, no EP."
+    }
+  },
+  "erc": {
+    "errors": 0,
+    "total": 1,
+    "violations": [
+      {
+        "description": "Pins of type Bidirectional and Power output are connected: Symbol U502 Pin 3 [SDO/SA0, Bidirectional, Line]",
+        "items": [
+          {
+            "description": "Symbol U502 Pin 3 [SDO/SA0, Bidirectional, Line]",
+            "uuid": "df3a3d0b-1f71-485e-9248-4ed045449f74",
+            "x": 158.75,
+            "y": 86.36
+          },
+          {
+            "description": "Symbol U103 Pin 6 [VOUT, Power output, Line]",
+            "uuid": "b47575cf-597b-4408-9df4-2b2be2369959",
+            "x": 77.47,
+            "y": 182.88
+          }
+        ],
+        "rule": "pin_to_pin",
+        "severity": "warning",
+        "sheet": "/05  SENSORS + EXPANSION/",
+        "x": 158.75,
+        "y": 86.36
+      }
+    ],
+    "warnings": 1
+  },
+  "erc_interpretation": "The single pin_to_pin warning is the intentional LIS2DW12 SA0 high address strap in I2C mode. No global suppression or weakened library pin type was applied. CS=1 and SA0 address role are documented by archived DocID029682 Rev4 p9 Table2.",
+  "power_flag_interpretation": "IR_RX_3V3 is supplied through R507 100 ohm from the TPS2553 switched ACC_3V3 output. Its PWR_FLAG documents the passive supply path; it does not claim a separate source. At receiver idle maximum0.7mA, DC filter drop is0.07V; startup transients still need bench measurement.",
+  "visual_review": {
+    "manual": "Fresh 4096px native renders inspected after geometry, field, label and rail-note corrections. No remaining component/label collision observed. Existing near-border sheet headers explicitly accepted for this draft by parent.",
+    "tool": "check_schematic_overlaps: lighting60 and peripherals76 bounds resolved, zero unresolved geometry, zero overlaps. Tool excludes free text, so manual render review remains necessary."
+  },
+  "artifacts": {
+    "lighting_png": ".build/peripheral_cad/lighting.png",
+    "lighting_pdf": ".build/peripheral_cad/lighting.pdf",
+    "peripherals_png": ".build/peripheral_cad/peripherals.png",
+    "peripherals_pdf": ".build/peripheral_cad/peripherals.pdf",
+    "root_netlist": ".build/peripheral_cad/root.net",
+    "root_erc": ".build/peripheral_cad/root_erc.json",
+    "full_root_check": ".build/peripheral_cad/full_root_endpoint_check.json",
+    "metadata_check": ".build/peripheral_cad/metadata_check.json",
+    "symbol_disposable_render": ".build/peripheral_cad/validation.png"
+  },
+  "release_gates": [
+    "User-approved nominal3.3V LED prototype exception: below the manufacturer3.3V minimum is unqualified. Measure startup, low battery, Wi-Fi and full-white load transitions.",
+    "Nineteen listed footprints remain explicitly blank; connector mating/orientation and all custom package land patterns need physical audit.",
+    "C507/C508 are DNP in visible values and Population metadata. Ensure assembly export respects Population; no assembly package has been generated.",
+    "Final exact passive MPNs, DC-bias capacitance, power ratings, antenna tuning, package fit and prototype electrical/thermal tests remain open.",
+    "No board placement, routing, DRC, manufacture, procurement or runtime qualification performed."
+  ],
+  "alps_button_revision": {
+    "review": "docs/design/review_alps_buttons.md",
+    "operations_and_native_checks": ".build/peripheral_cad/alps_capture_results.json",
+    "symbol_disposable_render": ".build/peripheral_cad/alps_validation.png",
+    "regression_tests": "tools/test_alps_buttons.py:5 passed",
+    "application_gate": "Continuous voltage under KSC-701p5D11 and series-limited capacitive loading under A2 remain unqualified; prototype candidate only."
+  }
+}

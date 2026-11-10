@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-09",
+  "status": "PASS physical-source mapping and corrected symbol for selected prototype candidate only",
+  "reviewer": "Independent display/MCU reviewer",
+  "hashes": {
+    "docs/datasheets/SKSCLBE010.pdf": "06eed78e94af6bb6c3885a1baa87f00e6f522a61240e1aa8243afbaadf611521",
+    "docs/datasheets/SKSCLBE010_SKSC_catalog.pdf": "cc8baff4e324df2cf6a71b9319ab9dbfd9e56d2e589dce392456b8afc99ca5bb",
+    "docs/components/SKSCLBE010.pins.json": "2ad00de52a96077e19eedcd6a54da9f8452bde5983fa0421572a09cb69c69283",
+    "docs/design/peripherals_contract.json": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+    "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+    ".build/peripheral_cad/alps_validation.png": "5ecc59ec84624ca5ecf1e15db88617d409e399f838cf9d3bf461029c7847558d"
+  },
+  "original_sources_visually_inspected": [
+    {
+      "file": "docs/datasheets/SKSCLBE010_SKSC_catalog.pdf",
+      "pages": [
+        1,
+        2
+      ],
+      "revision": "Update2510",
+      "finding": "Exact SKSCLBE010 row selects Drawing2, guide bosses,2.2N. Four terminals and circuit pairs1/2,3/4."
+    },
+    {
+      "file": "docs/datasheets/SKSCLBE010.pdf",
+      "pages": [
+        1,
+        2,
+        5
+      ],
+      "revision": "KSC-701201707",
+      "finding": "D11 applies to continuous applied voltage, separate from D10 continuous pressing. A2 qualifies DC resistive load."
+    }
+  ],
+  "current_official_drawings_independently_downloaded": [
+    {
+      "url": "https://tech.alpsalpine.com/cms.media/product_detail_fig_sksc_d_31_en_b3efc7326a.gif",
+      "local": ".build/sksc-independent/outline.gif",
+      "sha256": "2d65448bb4398db1e950744d8b940cf26efec50d1177d1475ee55478757e9a26"
+    },
+    {
+      "url": "https://tech.alpsalpine.com/cms.media/product_detail_fig_sksc_d_32_en_8654cb7b67.gif",
+      "local": ".build/sksc-independent/land.gif",
+      "sha256": "ee3008b83115c2f01b27d0d9c9daf0af9fd0eb9ee21cd39c840ace5cc2402612"
+    },
+    {
+      "url": "https://tech.alpsalpine.com/cms.media/product_detail_fig_sksc_d_13_en_2bd807d836.gif",
+      "local": ".build/sksc-independent/circuit.gif",
+      "sha256": "06bf6acf1e35b252ad49c8bdf30b65861d3fb969d3c357a731759d636aac686f"
+    }
+  ],
+  "changed_components": [
+    "SW401",
+    "SW402"
+  ],
+  "other_contract_components_unchanged": true,
+  "physical_mapping": [
+    {
+      "pin": "1",
+      "position": "lower left in manufacturer component illustration, actuator downward",
+      "net_SW401": "BTN_A_SW_N",
+      "net_SW402": "BTN_B_SW_N",
+      "common_with": "2"
+    },
+    {
+      "pin": "2",
+      "position": "lower right",
+      "net_SW401": "BTN_A_SW_N",
+      "net_SW402": "BTN_B_SW_N",
+      "common_with": "1"
+    },
+    {
+      "pin": "3",
+      "position": "upper left",
+      "net_SW401": "GND",
+      "net_SW402": "GND",
+      "common_with": "4"
+    },
+    {
+      "pin": "4",
+      "position": "upper right",
+      "net_SW401": "GND",
+      "net_SW402": "GND",
+      "common_with": "3"
+    }
+  ],
+  "mechanical_review": "4.85+/-0.1mm is terminal outer span, not pad pitch. Land overall5mm, horizontal gap2.2mm, vertical overall2.2mm/gap0.4mm imply1.4x0.9mm lands. Two mechanicalØ0.8+/-0.05mm PCB holes spaced1.8+/-0.05mm receiveØ0.6+/-0.1mm bosses. This L variant has no extra ground terminal.",
+  "symbol_readback": {
+    "isError": false,
+    "result": [
+      {
+        "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+        "library": "Tinkerbadge_Peripherals",
+        "name": "SKSCLBE010",
+        "pin_count": 4,
+        "pins": [
+          {
+            "name": "",
+            "number": "1",
+            "type": "passive",
+            "x": 5.08,
+            "y": 0.0
+          },
+          {
+            "name": "",
+            "number": "2",
+            "type": "passive",
+            "x": 5.08,
+            "y": -5.08
+          },
+          {
+            "name": "",
+            "number": "3",
+            "type": "passive",
+            "x": -5.08,
+            "y": 0.0
+          },
+          {
+            "name": "",
+            "number": "4",
+            "type": "passive",
+            "x": -5.08,
+            "y": -5.08
+          }
+        ],
+        "properties": {
+          "Datasheet": "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf",
+          "Description": "",
+          "Footprint": "",
+          "Reference": "SW",
+          "Value": "SKSCLBE010"
+        }
+      }
+    ]
+  },
+  "symbol_visual": "PASS corrected disposable glyph: permanent common pairs1/2 and3/4, one normally-open mechanism joins pairs. Rejected Switch:SW_Push_Dual before real placement because it shows two ganged switches instead.",
+  "footprint_status": "BLOCKED/unassigned deliberately. No exact queried footprint, disposable board mapping or physical fit acceptance is claimed. All4terminal pads,2NPTH holes,datum/view,edge fit and actuator access must be reviewed before PCB use.",
+  "application_warning": {
+    "source": "KSC-701 p5 D11",
+    "english": "Do not use the product in a manner that it is kept being powered.",
+    "japanese": "常時電圧印加される様なご使用はお避け下さい。",
+    "meaning": "Avoid use with continuously applied voltage. Separate D10 already prohibits continuous pressing.",
+    "project_effect": "Always-on pull-ups apply DC across open contacts during normal use and storage wake. Low current does not waive the warning; no exemption is given.",
+    "disposition": "Integration owner directed proceeding with selected prototype candidate and explicit application qualification gate. No manufacturer approval or external outreach occurred.",
+    "remaining": "Manufacturer/current formal specification clarification and appropriate biased-life/reliability qualification before production; capacitive100nF transient qualification also remains."
+  },
+  "capture_status": "PASS: actual native endpoints,properties and complete-sheet visuals independently checked",
+  "metadata_amendments": [
+    {
+      "previous_contract_sha256": "ac50fb47e674460a2426977780179a853e5b7b7f6814c1314e02ae1d174a7bef",
+      "current_contract_sha256": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+      "change": "Superseded stale4.10V rail text with current shared3.3V exception; explicit switch bias/capacitive/physical gate. Component objects remain identical to accepted delta; no additional endpoint changes."
+    }
+  ],
+  "capture_review": "docs/design/peripherals_independent_capture_review.json",
+  "capture_hashes": {
+    "lighting.kicad_sch": "c69b283fcddaf4dda80db415f7d009a5bf72508bbac4eab0f21db83e3aabc796",
+    "peripherals.kicad_sch": "c3997e92e5deee52c05a2b8e3f9453e36f269b825047058acbd8ac74b381f77e",
+    "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+    "docs/design/peripherals_contract.json": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+    ".build/peripheral_cad/lighting.png": "a278bef89c5775537da1526968723cc1dfdb6af21d0cfddbca12805d37abc6dc",
+    ".build/peripheral_cad/peripherals.png": "4d2b5576ba327a073066048ea791e2c03152e30ec2a975bbfd6a35e898791979",
+    ".build/peripheral-independent-alps.net": "8d77f3347440692edbb2248819392f9513394766710d4f7de60bfdf3707a45cc",
+    ".build/peripheral_cad/root_erc.json": "96e252f469d26bafdba317aa168457b95b3d3f052a4c3b29ed7cf4c523621c30"
+  }
+}

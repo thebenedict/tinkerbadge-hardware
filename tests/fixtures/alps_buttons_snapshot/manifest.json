@@ -1,0 +1,8 @@
+{
+  "source_export_sha256": "2a0e3853317da3ddaa4722e9e31493e8e3f9913bdd1ff916bfad8e4f0c27d158",
+  "source_contract_sha256": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+  "sha256": {
+    "buttons.net": "2ee348a630d99b091656f4edf6567fcbf3b18d84505ea66ae07918d8ddc8bf38",
+    "docs/design/peripherals_contract.json": "738de66be30b1a686a73c7df6eac676e9266dd5ceefeec5799b64bd041ded6bc"
+  }
+}

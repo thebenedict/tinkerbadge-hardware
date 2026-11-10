@@ -1,0 +1,89 @@
+{
+  "mpn": "LIS2DW12TR",
+  "package": "LGA-12 2.0 x 2.0 x 0.7 mm max",
+  "source": {
+    "url": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+    "revision": "DocID029682 Rev4, September2017",
+    "filename": "LIS2DW12TR.pdf",
+    "sha256": "87da41966ff6bfe17a47db2c1940173d490aa4dfb7af2cce1a5dd5c0260c8735",
+    "retrieved": "2026-11-09",
+    "status": "archived manufacturer-authored PDF through exact LCSC C189624 mirror; newer Rev9 consulted as web text",
+    "download_url": "https://datasheet.lcsc.com/datasheet/pdf/faa0f1ff935ff2be849a090ec963fd19.pdf?productCode=C189624"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "SCL/SPC",
+      "function": "I2C clock / SPI clock",
+      "source_page": 9
+    },
+    {
+      "number": "2",
+      "name": "CS",
+      "function": "Tie VDD_IO for I2C; internally pulled up",
+      "source_page": 9
+    },
+    {
+      "number": "3",
+      "name": "SDO/SA0",
+      "function": "SPI output / I2C address LSB; internally pulled up",
+      "source_page": 9
+    },
+    {
+      "number": "4",
+      "name": "SDA/SDI/SDO",
+      "function": "I2C data / SPI data",
+      "source_page": 9
+    },
+    {
+      "number": "5",
+      "name": "NC",
+      "function": "Internally unconnected; may tie VDD, VDD_IO or GND",
+      "source_page": 9
+    },
+    {
+      "number": "6",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 9
+    },
+    {
+      "number": "7",
+      "name": "RES",
+      "function": "Must connect GND",
+      "source_page": 9
+    },
+    {
+      "number": "8",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 9
+    },
+    {
+      "number": "9",
+      "name": "VDD",
+      "function": "Core power",
+      "source_page": 9
+    },
+    {
+      "number": "10",
+      "name": "VDD_IO",
+      "function": "I/O power",
+      "source_page": 9
+    },
+    {
+      "number": "11",
+      "name": "INT2",
+      "function": "Interrupt2 / optional single-conversion clock input",
+      "source_page": 9
+    },
+    {
+      "number": "12",
+      "name": "INT1",
+      "function": "Interrupt1",
+      "source_page": 9
+    }
+  ],
+  "package_metal": "12 physical contacts; no EP shown in archived Rev4 p61 bottom-view package drawing.",
+  "pixel_review": "Inspected actual PDFKit rendered Rev4 p9 Fig2 pin diagram/Table2 and p61 Fig18 package drawing. Pins match newer Rev9 p4 web table."
+}

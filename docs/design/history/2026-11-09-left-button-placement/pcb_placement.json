@@ -1,0 +1,1508 @@
+{
+  "status": "preliminary_not_approved_for_routing",
+  "board_mm": [
+    110,
+    100
+  ],
+  "origin_mm": [
+    100,
+    100
+  ],
+  "copper_layers": 4,
+  "placements": [
+    {
+      "reference": "U201",
+      "x": 118,
+      "y": 106.75,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "J101",
+      "x": 103.675,
+      "y": 130,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "USB"
+    },
+    {
+      "reference": "SW401",
+      "x": 102.1,
+      "y": 161,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "buttons"
+    },
+    {
+      "reference": "SW402",
+      "x": 102.1,
+      "y": 171,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "buttons"
+    },
+    {
+      "reference": "C201",
+      "x": 103.5,
+      "y": 105,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "C202",
+      "x": 106.5,
+      "y": 102.8,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "C203",
+      "x": 104,
+      "y": 109,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R201",
+      "x": 106.5,
+      "y": 110,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R202",
+      "x": 130,
+      "y": 119,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R205",
+      "x": 106,
+      "y": 113.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R206",
+      "x": 106,
+      "y": 116.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R203",
+      "x": 114,
+      "y": 122,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R204",
+      "x": 117,
+      "y": 122,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R207",
+      "x": 126,
+      "y": 122,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "TP201",
+      "x": 135,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP202",
+      "x": 138,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP203",
+      "x": 141,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP204",
+      "x": 144,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP205",
+      "x": 147,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP206",
+      "x": 150,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "D401",
+      "x": 144,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C401",
+      "x": 147,
+      "y": 114,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D402",
+      "x": 159,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C402",
+      "x": 162,
+      "y": 114,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D403",
+      "x": 174,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C403",
+      "x": 177,
+      "y": 114,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D404",
+      "x": 114,
+      "y": 190,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C404",
+      "x": 117,
+      "y": 190,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D405",
+      "x": 126,
+      "y": 190,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C405",
+      "x": 129,
+      "y": 190,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D406",
+      "x": 138,
+      "y": 190,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C406",
+      "x": 141,
+      "y": 190,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D407",
+      "x": 150,
+      "y": 190,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C407",
+      "x": 153,
+      "y": 190,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D408",
+      "x": 162,
+      "y": 190,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C408",
+      "x": 165,
+      "y": 190,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "C409",
+      "x": 141,
+      "y": 118,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "LED bulk"
+    },
+    {
+      "reference": "D409",
+      "x": 104,
+      "y": 143,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "power indicator"
+    },
+    {
+      "reference": "R401",
+      "x": 114,
+      "y": 121,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R402",
+      "x": 140.5,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R403",
+      "x": 104.5,
+      "y": 146,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R404",
+      "x": 104.5,
+      "y": 149,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R405",
+      "x": 132,
+      "y": 115.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R406",
+      "x": 135,
+      "y": 115.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R411",
+      "x": 130,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "C411",
+      "x": 133.5,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R412",
+      "x": 137,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R413",
+      "x": 130,
+      "y": 112,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "C412",
+      "x": 133.5,
+      "y": 112,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R414",
+      "x": 137,
+      "y": 112,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "U101",
+      "x": 115,
+      "y": 146,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "U102",
+      "x": 123,
+      "y": 152,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "U103",
+      "x": 118,
+      "y": 169,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "Q103",
+      "x": 114,
+      "y": 155,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "Q101",
+      "x": 109,
+      "y": 132,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "Q102",
+      "x": 109,
+      "y": 183,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "D101",
+      "x": 104.5,
+      "y": 137,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "D102",
+      "x": 114.5,
+      "y": 194,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C101",
+      "x": 109,
+      "y": 138,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C102",
+      "x": 107,
+      "y": 142,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C103",
+      "x": 119.5,
+      "y": 146.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C104",
+      "x": 115,
+      "y": 150,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C105",
+      "x": 127,
+      "y": 152,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C106",
+      "x": 119,
+      "y": 155,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C107",
+      "x": 117,
+      "y": 164.5,
+      "rotation": 270,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C108",
+      "x": 116.5,
+      "y": 174,
+      "rotation": 270,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "C109",
+      "x": 110,
+      "y": 173,
+      "rotation": 270,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R101",
+      "x": 110,
+      "y": 135,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R102",
+      "x": 113,
+      "y": 135,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R103",
+      "x": 111,
+      "y": 145,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R104",
+      "x": 111,
+      "y": 148,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R105",
+      "x": 118,
+      "y": 141,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R106",
+      "x": 120.5,
+      "y": 142,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R107",
+      "x": 112,
+      "y": 140,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R108",
+      "x": 114,
+      "y": 141,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R109",
+      "x": 118,
+      "y": 150,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R110",
+      "x": 110.5,
+      "y": 154.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R111",
+      "x": 110.5,
+      "y": 157.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R112",
+      "x": 127,
+      "y": 149,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R113",
+      "x": 121,
+      "y": 148.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R114",
+      "x": 124,
+      "y": 148.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R115",
+      "x": 128,
+      "y": 156,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R116",
+      "x": 128,
+      "y": 159,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R117",
+      "x": 113,
+      "y": 167,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R118",
+      "x": 110,
+      "y": 168.5,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R120",
+      "x": 119,
+      "y": 151.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R121",
+      "x": 109,
+      "y": 127,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R122",
+      "x": 112,
+      "y": 127,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R123",
+      "x": 112,
+      "y": 130,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R124",
+      "x": 107,
+      "y": 179,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R125",
+      "x": 111,
+      "y": 179,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "R126",
+      "x": 112,
+      "y": 181,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "power"
+    },
+    {
+      "reference": "U107",
+      "x": 134,
+      "y": 123,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "R127",
+      "x": 131,
+      "y": 129,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "R128",
+      "x": 134,
+      "y": 129,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "R129",
+      "x": 137,
+      "y": 118,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "R130",
+      "x": 134,
+      "y": 118,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "C115",
+      "x": 129,
+      "y": 124,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "C116",
+      "x": 137,
+      "y": 129,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "battery ADC"
+    },
+    {
+      "reference": "U104",
+      "x": 181,
+      "y": 128,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C112",
+      "x": 178.5,
+      "y": 123.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C113",
+      "x": 179,
+      "y": 131.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C114",
+      "x": 184,
+      "y": 123.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R119",
+      "x": 183,
+      "y": 131.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "U301",
+      "x": 183,
+      "y": 137,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R302",
+      "x": 189,
+      "y": 134,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R303",
+      "x": 189,
+      "y": 137,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R304",
+      "x": 189,
+      "y": 140,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R305",
+      "x": 185,
+      "y": 142.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R306",
+      "x": 181,
+      "y": 142.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R307",
+      "x": 177,
+      "y": 142.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R308",
+      "x": 177,
+      "y": 145.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "Q301",
+      "x": 185,
+      "y": 155,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "R301",
+      "x": 185,
+      "y": 158.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "D301",
+      "x": 191,
+      "y": 149,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "D302",
+      "x": 191,
+      "y": 154,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "D303",
+      "x": 191,
+      "y": 159,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C301",
+      "x": 179,
+      "y": 149,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C302",
+      "x": 179,
+      "y": 155,
+      "rotation": 90,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C303",
+      "x": 178,
+      "y": 136,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C304",
+      "x": 174.5,
+      "y": 139,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C305",
+      "x": 176,
+      "y": 160,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C306",
+      "x": 180,
+      "y": 162,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C307",
+      "x": 184,
+      "y": 162,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C308",
+      "x": 188,
+      "y": 163,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C309",
+      "x": 176,
+      "y": 165,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C310",
+      "x": 180,
+      "y": 167,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C311",
+      "x": 184,
+      "y": 167,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "C312",
+      "x": 176,
+      "y": 133,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "display support"
+    },
+    {
+      "reference": "U501",
+      "x": 205,
+      "y": 112,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C501",
+      "x": 205,
+      "y": 115.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "U504",
+      "x": 185,
+      "y": 110,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "D501",
+      "x": 195,
+      "y": 110,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R507",
+      "x": 182,
+      "y": 115,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C509",
+      "x": 185,
+      "y": 115,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C510",
+      "x": 188,
+      "y": 115,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "Q501",
+      "x": 195,
+      "y": 115,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R504",
+      "x": 195,
+      "y": 120,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R505",
+      "x": 190.5,
+      "y": 114,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R506",
+      "x": 190.5,
+      "y": 117,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "U502",
+      "x": 162,
+      "y": 121,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "C502",
+      "x": 159,
+      "y": 121,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "C503",
+      "x": 159,
+      "y": 124,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "R501",
+      "x": 140,
+      "y": 117,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "R502",
+      "x": 143,
+      "y": 117,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "U503",
+      "x": 174.5,
+      "y": 178,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "R503",
+      "x": 174.5,
+      "y": 174.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C504",
+      "x": 177.5,
+      "y": 176.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C505",
+      "x": 181,
+      "y": 176.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C506",
+      "x": 174.5,
+      "y": 170,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C507",
+      "x": 174.4,
+      "y": 182,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C508",
+      "x": 174.4,
+      "y": 185,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "U505",
+      "x": 195,
+      "y": 169,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "J501",
+      "x": 206.5,
+      "y": 165,
+      "rotation": 270,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C511",
+      "x": 192,
+      "y": 165,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C512",
+      "x": 192,
+      "y": 162,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C513",
+      "x": 200,
+      "y": 168,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R508",
+      "x": 195,
+      "y": 173,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R509",
+      "x": 195,
+      "y": 176,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R510",
+      "x": 198.5,
+      "y": 176,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R511",
+      "x": 202,
+      "y": 176,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R512",
+      "x": 203.5,
+      "y": 171,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R513",
+      "x": 201,
+      "y": 173,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "U506",
+      "x": 146,
+      "y": 124,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "C514",
+      "x": 151.5,
+      "y": 122,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "C515",
+      "x": 151.5,
+      "y": 125.5,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R514",
+      "x": 143,
+      "y": 130,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R515",
+      "x": 146,
+      "y": 130,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R516",
+      "x": 149,
+      "y": 130,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R517",
+      "x": 152,
+      "y": 130,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "I/O expander"
+    }
+  ],
+  "blocked_electrical_references": {
+    "U105": "DQA0010A/B package acceptance",
+    "J102": "pack connector/polarity/current",
+    "J103": "dock contact and guide mechanics",
+    "J104": "optional DNP thermistor interface",
+    "L101": "exact .47uH inductor",
+    "J301": "FPC mating/contact side/fold",
+    "L301": "exact68uH inductor",
+    "AE501": "antenna/tuning design",
+    "J502": "housing key-to-contact verification"
+  },
+  "non_electrical_envelopes": [
+    {
+      "reference": "MECH_PANEL",
+      "footprint": "Tinkerbadge:Review_Panel_93.3x54.9",
+      "x": 156,
+      "y": 150.5,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "MECH_BATTERY",
+      "footprint": "Tinkerbadge:Review_Battery_Allowance",
+      "x": 154,
+      "y": 163.5,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "MECH_NFC",
+      "footprint": "Tinkerbadge:Review_NFC_Area",
+      "x": 191,
+      "y": 189.5,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "RES_J301",
+      "footprint": "Tinkerbadge:Review_Flex_Mating",
+      "x": 202,
+      "y": 149,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_U105",
+      "footprint": "Tinkerbadge:Review_ESD_Package",
+      "x": 111,
+      "y": 124,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_L101",
+      "footprint": "Tinkerbadge:Review_Inductor_6x6",
+      "x": 124,
+      "y": 169,
+      "rotation": 90,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_L301",
+      "footprint": "Tinkerbadge:Review_Inductor_5x5",
+      "x": 185,
+      "y": 149,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_J502",
+      "footprint": "Tinkerbadge:Review_SAO_12.7x7",
+      "x": 151.5,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_J102",
+      "footprint": "Tinkerbadge:Review_Battery_Connector",
+      "x": 130,
+      "y": 138,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_J103",
+      "footprint": "Tinkerbadge:Review_Dock_Contacts",
+      "x": 124,
+      "y": 193,
+      "rotation": 0,
+      "side": "B.Cu"
+    }
+  ],
+  "mounting_holes_mm": [
+    [
+      104,
+      121,
+      2.2
+    ],
+    [
+      206,
+      121,
+      2.2
+    ],
+    [
+      104,
+      195,
+      2.2
+    ],
+    [
+      206,
+      177.5,
+      2.2
+    ]
+  ],
+  "lanyard_holes_mm": [
+    [
+      145,
+      105,
+      3.2
+    ],
+    [
+      176,
+      104.5,
+      3.2
+    ]
+  ],
+  "notes": [
+    "Mechanical envelopes are clearance proposals, not approved mating definitions.",
+    "No detailed routing before human placement approval.",
+    "Panel glass93.3x54.9 rotated180 to reserve flex on right; exact fold/mating remains blocked.",
+    "No coil copper, RF tune or battery/connector assumptions are released.",
+    "User requested adjacent up/down-style buttons on the left edge viewed from the front; centers at y161 and171mm."
+  ]
+}

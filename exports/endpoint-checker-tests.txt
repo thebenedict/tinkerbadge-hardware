@@ -1,0 +1,17 @@
+test_baseline (__main__.ContractCheckerTests.test_baseline) ... ok
+test_duplicate_contract_pin_normalized_to_string (__main__.ContractCheckerTests.test_duplicate_contract_pin_normalized_to_string) ... ok
+test_duplicate_exported_endpoint (__main__.ContractCheckerTests.test_duplicate_exported_endpoint) ... ok
+test_duplicate_list_form_contract_pin (__main__.ContractCheckerTests.test_duplicate_list_form_contract_pin) ... ok
+test_merged_logical_nets (__main__.ContractCheckerTests.test_merged_logical_nets) ... ok
+test_missing_component_record (__main__.ContractCheckerTests.test_missing_component_record) ... ok
+test_missing_nc_marker (__main__.ContractCheckerTests.test_missing_nc_marker) ... ok
+test_missing_physical_lead (__main__.ContractCheckerTests.test_missing_physical_lead) ... ok
+test_same_basename_split (__main__.ContractCheckerTests.test_same_basename_split) ... ok
+test_unexpected_physical_lead (__main__.ContractCheckerTests.test_unexpected_physical_lead) ... ok
+test_value_is_explicitly_outside_endpoint_scope (__main__.ContractCheckerTests.test_value_is_explicitly_outside_endpoint_scope) ... ok
+test_wrong_net_name (__main__.ContractCheckerTests.test_wrong_net_name) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.118s
+
+OK

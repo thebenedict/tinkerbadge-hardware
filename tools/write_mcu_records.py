@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""Maintain source facts and the proposed MCU assignment, not native CAD."""
+from pathlib import Path
+import json,hashlib
+root=Path(__file__).resolve().parents[1]
+pins=[('1','GND'),('2','3V3'),('3','EN'),('4','IO4'),('5','IO5'),('6','IO6'),('7','IO7'),('8','IO15'),('9','IO16'),('10','IO17'),('11','IO18'),('12','IO8'),('13','IO19'),('14','IO20'),('15','IO3'),('16','IO46'),('17','IO9'),('18','IO10'),('19','IO11'),('20','IO12'),('21','IO13'),('22','IO14'),('23','IO21'),('24','IO47'),('25','IO48'),('26','IO45'),('27','IO0'),('28','IO35'),('29','IO36'),('30','IO37'),('31','IO38'),('32','IO39'),('33','IO40'),('34','IO41'),('35','IO42'),('36','RXD0'),('37','TXD0'),('38','IO2'),('39','IO1'),('40','GND'),('41','EPAD')]
+gpio={1:'BAT_ADC',2:'BTN_A_N',4:'BTN_B_N',5:'USB_PRESENT_N',6:'DOCK_PRESENT_N',7:'MOTION_INT1',8:'I2C_SDA',9:'I2C_SCL',10:'EPD_CS_N',11:'EPD_MOSI',12:'EPD_SCK',13:'EPD_DC',14:'EPD_RST_N',15:'EPD_BUSY',16:'EXT_SDA',17:'IR_TX',18:'IR_RX_N',19:'MCU_USB_DM',20:'MCU_USB_DP',21:'RGB_DATA',38:'PWR_LED_G',39:'PWR_LED_R',40:'EPD_EN',41:'EXT_SCL',42:'SAO_GPIO1',43:'UART_TX',44:'UART_RX',47:'SAO_GPIO2',48:'NFC_FD_N',0:'BOOT_N',45:'STRAP45',46:'STRAP46'}
+facts={'mpn':'ESP32-S3-WROOM-1-N16R8','package':'ESP32-S3-WROOM-1; PCB antenna; 18 x 25.5 mm','source':'../datasheets/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf','revision':'v1.8','pin_table_pages':[11,12],'diagram_page':10,'diagram_view':'top view; pin1 upper left beneath antenna; perimeter numbered counterclockwise; exposed pad41 GND','pins':[]}
+assign={}
+for no,name in pins:
+ g=int(name[2:]) if name.startswith('IO') else (44 if name=='RXD0' else 43 if name=='TXD0' else None)
+ restrictions=[]
+ if g in (35,36,37):restrictions.append('N16R8 octal PSRAM; no user connection')
+ if g in (0,3,45,46):restrictions.append('boot strap; excluded from accessory I/O')
+ facts['pins'].append({'number':no,'name':name,'gpio':g,'rtc_gpio':g is not None and g<=21,'restrictions':restrictions,'source_pages':[11 if int(no)<=31 else 12]})
+ assign[no]='GND' if name in ('GND','EPAD') else '+3V3' if name=='3V3' else 'MCU_EN' if name=='EN' else gpio.get(g)
+(root/'docs/components/ESP32-S3-WROOM-1-N16R8.json').write_text(json.dumps(facts,indent=2)+'\n')
+comps=[{'ref':'U201','mpn':facts['mpn'],'bom_id':'MCU-01','lib_id':'RF_Module:ESP32-S3-WROOM-1','footprint':'RF_Module:ESP32-S3-WROOM-1','value':facts['mpn'],'pins':assign,'pin_fact_file':'docs/components/ESP32-S3-WROOM-1-N16R8.json'}]
+def add(ref,lib,val,ns,foot=''):
+ comps.append({'ref':ref,'lib_id':lib,'value':val,'pins':{str(i+1):n for i,n in enumerate(ns)},'footprint':foot})
+R='Resistor_SMD:R_0402_1005Metric';C='Capacitor_SMD:C_0402_1005Metric'
+add('R201','Device:R','10k 1%',['+3V3','MCU_EN'],R)
+add('R202','Device:R','10k 1%',['+3V3','BOOT_N'],R)
+add('R203','Device:R','10k 1%',['STRAP45','GND'],R)
+add('R204','Device:R','10k 1%',['STRAP46','GND'],R)
+add('R205','Device:R','22R 1%',['USB_DM','MCU_USB_DM'],R)
+add('R206','Device:R','22R 1%',['USB_DP','MCU_USB_DP'],R)
+add('C201','Device:C','22uF 10V X5R',['+3V3','GND'],'Capacitor_SMD:C_0805_2012Metric')
+add('C202','Device:C','100nF 16V X7R',['+3V3','GND'],C)
+add('C203','Device:C','1uF 10V X7R',['MCU_EN','GND'],C)
+for n,net in enumerate(['MCU_EN','BOOT_N','+3V3','GND','UART_TX','UART_RX'],201):add(f'TP{n}','Connector:TestPoint',net,[net],'TestPoint:TestPoint_Pad_D1.0mm')
+contract={'status':'pending_independent_source_review','sheet':'mcu.kicad_sch','source_facts':'docs/components/ESP32-S3-WROOM-1-N16R8.json','components':comps,'gpio':{str(k):v for k,v in gpio.items()},'unused_pins':{'U201':['15','28','29','30']},'notes':['No external32kHz crystal. Native USB GPIO19/20; UART recovery retained.','Two user buttons owned bylighting contract; GPIO2 is required active-low deep-sleep wake input.','GPIO40 EPD_EN may be driven high by USB-OTG download ROM; powering display in recovery is benign. Avoid assigning GPIO40 to switched accessory data.','Straps GPIO45/46 have10k pulldowns; GPIO0 BOOT10k pullup. GPIO3 unconnected.','External I2C and SAO are separate from onboard bus; prohibit self-powered accessories until isolation is qualified.']}
+(root/'docs/design/mcu_contract.json').write_text(json.dumps(contract,indent=2)+'\n')
+urls={'esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf':'https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf','esp32-s3_datasheet_en.pdf':'https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf','esp32s3-hardware-design-guidelines.pdf':'https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/esp-hardware-design-guidelines-en-master-esp32s3.pdf','esp32-s3_errata_en.pdf':'https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32s3/esp-chip-errata-en-master-esp32s3.pdf'}
+sources=[]
+for f,url in urls.items():
+ p=root/'docs/datasheets'/f
+ if p.exists() and p.read_bytes().startswith(b'%PDF'):sources.append({'file':f,'url':url,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'retrieved_utc':'2026-11-09'})
+(root/'docs/datasheets/mcu_inventory.json').write_text(json.dumps(sources,indent=2)+'\n')
+lines=['# ESP32-S3-WROOM-1-N16R8','', 'Working implementation candidate. Source: module datasheet v1.8 pp10–16,27–28,41–45; chip datasheet v2.2 §2.3.2; current Espressif hardware guidelines §1.3.13. PDFs and hashes: [inventory](../datasheets/mcu_inventory.json).','', '## Physical pins','', 'Generated from ESP32-S3-WROOM-1-N16R8.json. Package pin numbers are not GPIO numbers. Top-view diagram inspected; pad41 is the exposed ground island and includes several same-number copper lands in the standard footprint.','', '| Pad | Manufacturer function | GPIO | RTC/wake domain | Restriction |','|---|---|---|---|---|']
+for p in facts['pins']:lines.append(f"| {p['number']} | {p['name']} | {p['gpio'] if p['gpio'] is not None else ''} | {'RTC_GPIO' if p['rtc_gpio'] else ''} | {'; '.join(p['restrictions'])} |")
+lines += ['', '## Electrical and support contract','', '- Module supply recommended3.0–3.6V; design+3V3. Source must deliver at least500mA for module according to table6-2. Typical RF peaks are355mA Wi-Fi /344mA BLE at specified conditions, not guaranteed maxima.','- Pin2 gets22µF bulk plus100nF local; ground pins1/40/41 connected. EN gets10k to3V3 and1µF toground, matching module p41 recommended reset delay. Scope EN timing and brownout behavior.','- GPIO0 BOOT10k pullup; GPIO45/46 each10k pulldown. Boot/download pads andEN are independent from the two user buttons. No eFuse changes are authorized or required.','- NativeUSB19/20 each22Ω series, with connectorESD on power sheet. UART43/44 remain accessible. USB attach/detach uses independently sensedVBUS; device firmware must disable pullup withoutVBUS.','- Guaranteed digital thresholds in table6-3 are VIH≥0.75VDD, VOH≥0.8VDD (high-impedance load), VIL≤0.25VDD andVOL≤0.1VDD. Current/temperature qualifications must not be extrapolated from typical values.','- GPIO2 button is RTC_GPIO2, suitable for external RTC wake. Configure EXT0 low wake, wait for release/debounce before sleeping, and do not enable source-present low-level wake when it is already asserted. GPIO4 button andGPIO5/6 presence are alsoRTC-domain candidates. No insertion wake is promised until firmware-tested.','- GPIO7 motion is RTC-capable but motion wake is disabled in storage. NFC field detect usesGPIO48 and is polled/interrupt during awake operation; no storage wake guarantee.','- ROMUSB-OTG download may driveGPIO38/39 low andGPIO40 high (hardwareguidelines table12). StatusLEDs on38/39 staydark;40 is thereforeEPD powerenable, where high is benign. GPIO41/42 are inputs in that ROM path.','- GPIO35–37 must remainNC for N16R8PSRAM. GPIO47/48 are3.3V forN16R8; do not substituteN16R16V whose47/48 domain is1.8V.','- Preserve antenna keepout from module drawing and placement guide, including display/battery/enclosure metal. Footprint checked through Konnect; PCB placement and prototypeRF tests remain pending.','', '## Review state','', 'Physical pin map, candidate assignment and support values await independent source review before placing U201. Bench gates: power/EN transients, nativeUSB recovery, button wake/release, statusdark reset/sleep, RF coexistence and4h workload.']
+(root/'docs/components/ESP32-S3-WROOM-1-N16R8.md').write_text('\n'.join(lines)+'\n')
+(root/'docs/design/mcu.md').write_text('# MCU circuit decisions\n\nSee [component facts](../components/ESP32-S3-WROOM-1-N16R8.md) and `mcu_contract.json`. Use the JSON as the maintained assignment source. 33 exposed usable GPIOs include boot straps and UART; 29 non-strapping GPIOs are fully allocated with UART retained. A TCA9534PWR on the onboard I2C bus handles charger status and accessory enable/fault. There is no spare general-purpose GPIO commitment.\n\nDock identity uses authenticated radio/USB firmware and a separately sensed dock contact, not power delivery alone. Physical dock communications remain a subsequent design decision; no automatic erasure is implied by presence.\n')
+print('Wrote MCU facts, contract and inventory')

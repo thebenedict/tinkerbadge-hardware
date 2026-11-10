@@ -1,0 +1,41 @@
+{
+  "mpn": "HSMF-C165",
+  "package": "Four-terminal0603 imperial,1.6\u00d70.8\u00d70.5mm",
+  "source": {
+    "url": "https://docs.broadcom.com/doc/AV02-0584EN",
+    "revision": "AV02-0584EN, 13 May2022",
+    "filename": "HSMF-C165_AV02-0584EN.pdf",
+    "sha256": "920539983de9e38efa1043f59639fbec6dbd360e0004761ecfb4e6c552ef725a",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "A_GREEN",
+      "function": "Yellow-green die anode",
+      "source_page": 2
+    },
+    {
+      "number": "2",
+      "name": "A_RED",
+      "function": "Red die anode",
+      "source_page": 2
+    },
+    {
+      "number": "3",
+      "name": "K_GREEN",
+      "function": "Yellow-green die cathode",
+      "source_page": 2
+    },
+    {
+      "number": "4",
+      "name": "K_RED",
+      "function": "Red die cathode",
+      "source_page": 2
+    }
+  ],
+  "package_metal": "Two independent LED dies. No internally common pin and no EP.",
+  "pixel_review": "Inspected p2 actual package/polarity/internal-circuit pixels, peripheral_views/HSMF-page2.png. Cathodes are on marked side.",
+  "review_status": "pending_independent_review"
+}

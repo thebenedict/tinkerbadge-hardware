@@ -1,0 +1,368 @@
+{
+  "tool": "KiCad 10.0.8",
+  "baseline_sha256": "08b5de1ac1b194544ebf15598fd0b40e66a4e0c05123c6da75603a769d91554e",
+  "candidate_sha256": "8fa1ac386d237944d634cd7b5be0ca3ad3188f87965fbee94499eb1a51859399",
+  "footprints": 186,
+  "moved_references": [
+    "C501",
+    "C502",
+    "C509",
+    "C510",
+    "D501",
+    "Q501",
+    "R504",
+    "R505",
+    "R506",
+    "R507",
+    "U501",
+    "U504"
+  ],
+  "move_set_matches": true,
+  "placement_errors": [],
+  "complete_inverse_footprint_differences": [],
+  "inverse_comparison_method": "Full native Format, parsed semantic equality, only attribute/item order normalized; ordered vertices preserved; no excluded fields or numeric tolerances.",
+  "board_content_outside_footprints_unchanged": true,
+  "native_groups_unchanged": true,
+  "native_groups": {
+    "Ambient-light sensor": [
+      "C501",
+      "C502",
+      "U501"
+    ],
+    "Top role LEDs": [
+      "C401",
+      "C402",
+      "C403",
+      "D401",
+      "D402",
+      "D403"
+    ],
+    "Infrared optical group": [
+      "C509",
+      "C510",
+      "D501",
+      "Q501",
+      "R504",
+      "R505",
+      "R506",
+      "R507",
+      "U504"
+    ],
+    "Accelerometer": [
+      "C503",
+      "C504",
+      "C505",
+      "U502"
+    ],
+    "Main 3V3 converter": [
+      "C107",
+      "C108",
+      "C109",
+      "R117",
+      "R118",
+      "RES_L101",
+      "U103"
+    ],
+    "I/O expander": [
+      "C514",
+      "C515",
+      "R514",
+      "R515",
+      "R516",
+      "R517",
+      "U506"
+    ],
+    "Display load switch": [
+      "C112",
+      "C113",
+      "C114",
+      "R119",
+      "U104"
+    ],
+    "Quiet battery ADC": [
+      "C115",
+      "C116",
+      "R127",
+      "R128",
+      "R129",
+      "R130",
+      "U107"
+    ]
+  },
+  "groups_sanity": "",
+  "pad_primitives": 568,
+  "numbered_pad_primitives": 539,
+  "electrical_footprints": 170,
+  "front_electrical": 164,
+  "tracks_vias": 0,
+  "copper_layers": 4,
+  "outline_valid": true,
+  "outline_count": 1,
+  "outline_holes": 0,
+  "outline_bounds_mm": [
+    100.0,
+    100.0,
+    210.0,
+    180.0
+  ],
+  "courtyard_counts": {
+    "F.Cu": 177,
+    "B.Cu": 9
+  },
+  "courtyard_collisions": [],
+  "moved_copper_outside": [],
+  "moved_copper_keepout_intersections": [],
+  "moved_min_copper_edge_mm": {
+    "U501": 0.875,
+    "C501": 1.0250000000000057,
+    "C502": 1.0250000000000057,
+    "U504": 4.680000000000007,
+    "C510": 7.436182202556973,
+    "C509": 9.485741614566567,
+    "R507": 10.525000000000006,
+    "D501": 6.200000000000003,
+    "Q501": 10.75,
+    "R504": 15.299999999999997,
+    "R505": 11.525000000000006,
+    "R506": 15.025000000000006
+  },
+  "moved_min_copper_drill_mm": {
+    "U501": {
+      "mm": 14.683122978586079,
+      "reference": "U201"
+    },
+    "C501": {
+      "mm": 11.901540061859436,
+      "reference": "U201"
+    },
+    "C502": {
+      "mm": 18.674230967598156,
+      "reference": "U201"
+    },
+    "U504": {
+      "mm": 32.838092113295005,
+      "reference": "U201"
+    },
+    "C510": {
+      "mm": 31.66596101852601,
+      "reference": "U201"
+    },
+    "C509": {
+      "mm": 33.906673858678296,
+      "reference": "U201"
+    },
+    "R507": {
+      "mm": 35.47003391648705,
+      "reference": "U201"
+    },
+    "D501": {
+      "mm": 26.33389518130259,
+      "reference": "H6"
+    },
+    "Q501": {
+      "mm": 26.404841678633183,
+      "reference": "J101"
+    },
+    "R504": {
+      "mm": 25.464122550518166,
+      "reference": "J101"
+    },
+    "R505": {
+      "mm": 30.575398577464814,
+      "reference": "J101"
+    },
+    "R506": {
+      "mm": 29.715973854272,
+      "reference": "J101"
+    }
+  },
+  "moved_courtyard_bounds_mm": {
+    "U501": [
+      143.055,
+      107.055,
+      146.945,
+      109.445
+    ],
+    "C501": [
+      139.725,
+      107.475,
+      142.775,
+      109.025
+    ],
+    "C502": [
+      147.225,
+      107.475,
+      150.275,
+      109.025
+    ],
+    "U504": [
+      161.805,
+      103.705,
+      170.195,
+      109.295
+    ],
+    "C510": [
+      161.225,
+      109.475,
+      162.775,
+      112.525
+    ],
+    "C509": [
+      163.475,
+      109.475,
+      165.025,
+      112.525
+    ],
+    "R507": [
+      164.975,
+      110.225,
+      168.025,
+      111.775
+    ],
+    "D501": [
+      173.455,
+      105.755,
+      178.545,
+      109.245
+    ],
+    "Q501": [
+      174.025,
+      110.255,
+      177.975,
+      113.745
+    ],
+    "R504": [
+      174.275,
+      115.005,
+      177.725,
+      116.995
+    ],
+    "R505": [
+      170.475,
+      111.225,
+      173.525,
+      112.775
+    ],
+    "R506": [
+      170.475,
+      114.725,
+      173.525,
+      116.275
+    ]
+  },
+  "optical_courtyard_to_glass_mm": {
+    "U501": 0.5550000000000068,
+    "U504": 0.7049999999999983,
+    "D501": 0.7549999999999955
+  },
+  "local_pad_center_distances_mm": {
+    "C501.1_to_U501.1": 1.6763054614240211,
+    "C502.1_to_U501.5": 1.6,
+    "C509.1_to_U504.4": 2.826132516355169,
+    "C510.1_to_U504.4": 2.5979847959524323,
+    "R507.2_to_U504.4": 4.291098344247076,
+    "C401.1_to_D401.4": 1.6008903772588552,
+    "C402.1_to_D402.4": 1.6008903772588552,
+    "C403.1_to_D403.4": 1.6008903772588552
+  },
+  "keepouts": [
+    {
+      "owner": "U201",
+      "area_mm2": 1008.0,
+      "board_intersection_mm2": 0.0,
+      "layers": [
+        "F.Cu",
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "prohibitions": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "owner": "MECH_NFC",
+      "area_mm2": 234.0,
+      "board_intersection_mm2": 234.0,
+      "layers": [
+        "F.Cu",
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "prohibitions": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "dependency_file_count": 54,
+  "dependency_differences": [],
+  "model_assignments": 167,
+  "distinct_model_files": 33,
+  "missing_model_files": [],
+  "drc": {
+    "date": "2026-11-09T16:05:07",
+    "violations": {
+      "hole_clearance": 4,
+      "silk_edge_clearance": 1
+    },
+    "unconnected_items": 390,
+    "schematic_parity": 9,
+    "same_violation_UUIDs_and_types": true,
+    "same_parity_UUIDs_and_types": true,
+    "ignored_checks_unchanged": true,
+    "reviewer_reran_engine": false
+  },
+  "native_render_visual_review": {
+    "front-components.png": {
+      "sha256": "7383dc3ce97be06e3fdeda8149d7f2bb21e07c09aba06e912d91f3bf14249f43",
+      "actual_pixels_inspected": true
+    },
+    "front-with-display.png": {
+      "sha256": "021b4bb5efddd1d89ba070522caf96e39a865601cbc70ba03e37d7fd8418bef7",
+      "actual_pixels_inspected": true
+    },
+    "rear-with-battery.png": {
+      "sha256": "01eb536d914da11b0c11772c3be39a9c291fe141a8a8952615a4742ec270afc5",
+      "actual_pixels_inspected": true
+    },
+    "raised-display-perspective.png": {
+      "sha256": "db2a24e2989ea3ea110efba85e5262f8508eacb24cc3e06056d1b3da85123b2c",
+      "actual_pixels_inspected": true
+    }
+  },
+  "status": "PASS_NATIVE_PLACEMENT_DELTA_WITH_OPTICAL_QUALIFICATION_GATES",
+  "optical_analysis": {
+    "glass_y_min_mm": 110,
+    "glass_z_bottom_mm": 4.5,
+    "glass_z_top_mm": 5.42,
+    "receiver_model": "Top-facing lens; datasheet nominal apex4.0+/-0.3 mm, approximate lens center offset0.88 mm; native F.Fab simplifies to1 mm.",
+    "receiver_180_apex_y_for_conservative_nominal_check_mm": 107.5,
+    "receiver_180_45deg_margin_at_glass_top_nominal_mm": 1.08,
+    "receiver_180_45deg_margin_at_glass_top_min_height_mm": 0.78,
+    "receiver_180_nominal_glass_occlusion_onset_deg_from_normal": 60.40342496246962,
+    "receiver_0_nominal_glass_occlusion_onset_deg_from_normal": 72.48661962428795,
+    "ambient_center_max_height_example_occlusion_onset_deg": 20.542598662798397,
+    "emitter_center_nominal_height_example_occlusion_onset_deg": 35.38340842995006,
+    "limitation": "Point-at-optical-face geometry only, not full-lens ray trace, optical-window simulation, or toleranced assembly acceptance. Glass clips oblique ambient/emitter light toward panel; qualify with final enclosure.",
+    "recommendation": "Retain receiver180 degrees for development and short bypass approach. Keep every optical aperture outside glass. Qualify final angular response, LED bleed and IR self-interference."
+  },
+  "source_hashes": {
+    "IRM-H638T-TR2.pdf": "6ba15dc59077b2a3357495e5cbfe9b68378a275ae1750e02e77f9d6f2663d22e",
+    "IR67-21C-TR8.pdf": "8b0cafbc6c75a60d705c078c8027fea96162e198b8125909d2658e66738f527c",
+    "BH1730FVC.pdf": "012d391bb2712fc3f22d6596e83ad49075e294dd797b5a40634467dc567d0572"
+  },
+  "copper_edge_rule_mm": 0.5,
+  "board_outline_polygon_error_mm": 0.005,
+  "pad_polygon_error_mm": 0.001,
+  "safe_to_apply_as_experimental_development_placement": true,
+  "nfc_state": "B.Cu coil is the selected future plan, not routed. Existing all-layer reservation unchanged."
+}

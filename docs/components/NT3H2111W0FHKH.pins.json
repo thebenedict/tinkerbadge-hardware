@@ -1,0 +1,64 @@
+{
+  "mpn": "NT3H2111W0FHKH",
+  "package": "XQFN8 SOT902-3 1.6 x 1.6 x 0.5 mm",
+  "source": {
+    "url": "https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf",
+    "revision": "Rev.3.6, 21 July 2023",
+    "filename": "NT3H2111W0FHKH.pdf",
+    "sha256": "44a7cbee1220999138538341392aacde5a87aed7a284974328e8297b132a20c8",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "LA",
+      "function": "RF antenna terminal A",
+      "source_page": 9
+    },
+    {
+      "number": "2",
+      "name": "VSS",
+      "function": "Ground",
+      "source_page": 9
+    },
+    {
+      "number": "3",
+      "name": "SCL",
+      "function": "I2C clock",
+      "source_page": 9
+    },
+    {
+      "number": "4",
+      "name": "FD",
+      "function": "RF-powered open-drain field detection",
+      "source_page": 9
+    },
+    {
+      "number": "5",
+      "name": "SDA",
+      "function": "I2C data",
+      "source_page": 9
+    },
+    {
+      "number": "6",
+      "name": "VCC",
+      "function": "External supply input",
+      "source_page": 9
+    },
+    {
+      "number": "7",
+      "name": "VOUT",
+      "function": "RF energy harvesting output",
+      "source_page": 9
+    },
+    {
+      "number": "8",
+      "name": "LB",
+      "function": "RF antenna terminal B",
+      "source_page": 9
+    }
+  ],
+  "package_metal": "Unnumbered center metal area: NOT FOR SOLDERING (p8 Fig3 and p70 Fig31). Do not add EP ground pad.",
+  "pixel_review": "Inspected p8 transparent top pin view and p70 SOT902-3 physical package drawing using PDFKit pixels."
+}

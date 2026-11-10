@@ -1,0 +1,221 @@
+{
+  "source_board_sha256": "a7ac2778f423c3847b9a3a6200f00446d6a960bbee242b6ef8da7aff5ed24b84",
+  "status": "proposal_checked_in_memory_no_CAD_saved",
+  "placements": [
+    {
+      "reference": "U501",
+      "x": 143.5,
+      "y": 170.5,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 145.0,
+      "original_y": 108.25,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C501",
+      "x": 143.5,
+      "y": 174.75,
+      "rotation": 270,
+      "side": "F.Cu",
+      "original_x": 141.25,
+      "original_y": 108.25,
+      "original_rotation": 180.0
+    },
+    {
+      "reference": "C502",
+      "x": 143.5,
+      "y": 166.25,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 148.75,
+      "original_y": 108.25,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R504",
+      "x": 150.75,
+      "y": 172,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 147.5,
+      "original_y": 171.75,
+      "original_rotation": 0.0
+    }
+  ],
+  "positive_area_courtyard_collisions": [],
+  "moved_pad_copper_outside_board": [],
+  "moved_pad_keepout_collisions": [],
+  "moved_reference_min_copper_edge_clearance_mm": {
+    "U501": 7.849999999999994,
+    "C501": 4.025000000000006,
+    "C502": 12.525000000000006,
+    "R504": 7.300000000000011
+  },
+  "native_courtyards_mm": {
+    "U501": [
+      142.305,
+      168.555,
+      144.695,
+      172.445
+    ],
+    "C501": [
+      142.725,
+      173.225,
+      144.275,
+      176.275
+    ],
+    "C502": [
+      142.725,
+      164.725,
+      144.275,
+      167.775
+    ],
+    "R504": [
+      149.025,
+      171.005,
+      152.475,
+      172.995
+    ],
+    "U504": [
+      133.555,
+      165.705,
+      141.945,
+      171.295
+    ],
+    "D501": [
+      147.455,
+      166.755,
+      152.545,
+      170.245
+    ],
+    "D405": [
+      129.935,
+      172.705,
+      133.065,
+      175.295
+    ],
+    "D406": [
+      153.435,
+      172.705,
+      156.565,
+      175.295
+    ]
+  },
+  "closest_courtyard_gaps_mm": [
+    [
+      "U501",
+      "U504",
+      0.45999999999997954
+    ],
+    [
+      "R504",
+      "D501",
+      0.8600000000000136
+    ],
+    [
+      "U501",
+      "C501",
+      0.8799999999999955
+    ],
+    [
+      "U501",
+      "C502",
+      0.8799999999999955
+    ],
+    [
+      "C501",
+      "U501",
+      0.8799999999999955
+    ],
+    [
+      "C502",
+      "U501",
+      0.8799999999999955
+    ],
+    [
+      "C502",
+      "U504",
+      0.8799999999999955
+    ],
+    [
+      "R504",
+      "D406",
+      1.0600000000000023
+    ],
+    [
+      "R504",
+      "Q501",
+      1.88732615093416
+    ],
+    [
+      "C501",
+      "U504",
+      2.2125324856372157
+    ],
+    [
+      "U501",
+      "D501",
+      2.859999999999985
+    ],
+    [
+      "C502",
+      "D501",
+      3.280000000000001
+    ],
+    [
+      "R504",
+      "C406",
+      4.349999999999994
+    ],
+    [
+      "U501",
+      "R504",
+      4.429999999999978
+    ],
+    [
+      "R504",
+      "U501",
+      4.429999999999978
+    ],
+    [
+      "C501",
+      "D501",
+      4.499422185125562
+    ],
+    [
+      "C501",
+      "R504",
+      4.861213840184358
+    ],
+    [
+      "R504",
+      "C501",
+      4.861213840184358
+    ]
+  ],
+  "pad_center_distances_mm": {
+    "C501.1_to_U501.1": 2.1587033144922905,
+    "C502.1_to_U501.5": 2.1,
+    "R504.2_to_D501.1": 3.7468528460562736,
+    "D501.2_to_Q501.3": 2.5625
+  },
+  "ALS_glass_courtyard_gap_mm": 3.655000000000001,
+  "ALS_nearest_affinity_centers_mm": {
+    "D405": 12.5,
+    "D406": 12.020815280171307
+  },
+  "TX_wall_corridor_mm": [
+    146.6,
+    165.25,
+    147.1,
+    175.75
+  ],
+  "TX_wall_front_courtyard_hits": [],
+  "notes": [
+    "Grouping is for a joint passive ALS/IR-RX optical window, with a separate IR-TX window and isolation from the RGB diffuser. No divider is needed between passive detectors solely for crosstalk.",
+    "No enclosure or optical barrier is implemented in CAD. The corridor is only an evaluated mechanical opportunity.",
+    "Clear or appropriately characterized neutral cover must pass visible and 940 nm light; no IR-only dark filter for ALS.",
+    "Optical qualification and human placement approval remain open."
+  ]
+}

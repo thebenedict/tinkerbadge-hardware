@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-09",
+  "scope": "Independent original-source and contract delta review; no native power edits",
+  "result": "PASS for user-authorized first-prototype schematic capture only",
+  "contract_sha256": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+  "prior_contract_sha256": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb",
+  "source_sha256": {
+    "docs/datasheets/TPS63802DLAR.pdf": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+    "docs/datasheets/WS2812C-2020-V6.pdf": "8465b5176b9f31d77c177c279013e18cfb6f13737fbfbcd724c3562e437cbcf9",
+    "docs/datasheets/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435"
+  },
+  "facts_sha256": "60cd3e7b22cb18f844649a24327dc85662061cbeac6bc8fc483e4022ccc5f55c",
+  "power_decisions_sha256": "3db8a2bcfdb9800d27fa7e64a7c607329b41123c300222c911c71acafd0e3e19",
+  "original_pages_visually_reopened": {
+    "TPS63802DLAR.pdf": [
+      4,
+      6,
+      19
+    ],
+    "WS2812C-2020-V6.pdf": [
+      2,
+      3
+    ],
+    "esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf": [
+      27
+    ]
+  },
+  "counts": {
+    "components": 60,
+    "endpoints": 195,
+    "intentional_nc": 14
+  },
+  "removed_refs": [
+    "U106",
+    "C110",
+    "C111"
+  ],
+  "changed_refs": [
+    "U103",
+    "R117",
+    "C108",
+    "C109"
+  ],
+  "mapping": "U103 pin 6, R117 pin 1, C108 pin 1 and C109 pin 1 change from VLED_3V9 to +3V3. R117 becomes 56.0 k\u03a9, 0.1%. All other retained endpoint assignments are unchanged.",
+  "calculation": {
+    "nominal_v": 3.3,
+    "pwm_static_low_v": 3.255855938461538,
+    "pwm_static_high_v": 3.3442672616616615,
+    "method": "0.5V reference +/-1%, resistors +/-0.1%, conservative +/-100nA times maximum upper resistor. Not a PFM, ripple or transient bound.",
+    "battery_at_750ma_3v2_a": 0.9221325170022964,
+    "battery_at_750ma_2v75_a": 1.0730269288753995,
+    "battery_assumption": "85% assumed efficiency; excludes charger-path/interconnect loss; not a guaranteed input-current limit."
+  },
+  "source_corrections": [
+    {
+      "finding": "VIN;LOAD 2.3V was described as typical; source p6 puts it in MAX column.",
+      "resolution": "Author corrected power.md and power_facts.json before capture. It applies to minimum input for2A output, once started, VOUT3.3V, TJ25C."
+    },
+    {
+      "finding": "LED threshold table uses5V/25C; MCU DC table3.3V/25C. Ratio extrapolation is engineering evidence, not a complete3.3V/temperature guarantee.",
+      "resolution": "Author added the exact 5 V / 25\u00b0C LED and 3.3 V / 25\u00b0C MCU conditions to power.md. Direct drive remains prototype engineering judgment, not a general guarantee."
+    }
+  ],
+  "remaining_gates": [
+    "Exact V6 lower supply limit3.3V is not guaranteed by nominal3.3V rail. Accepted prototype exception only, including data/color/brightness/startup behavior.",
+    "Shared-rail LED/radio/display load steps directly affect MCU; scope supply at converter/MCU/farthestLED during startup, PFM, lowbattery and fullwhite transitions. No brownout immunity is established.",
+    "750mA rail target is provisional, not guaranteed load demand. At2.75V input illustrative current exceeds1A; source/pack/connector and measured efficiency govern allowable simultaneous load.",
+    "Select exact magnetic/capacitors and verify effective capacitance/inductance, saturation, layout and thermal behavior.",
+    "Charging remains hard-disabled by R120. Battery physical polarity, rating and thermal-safety gates remain unchanged.",
+    "Fresh native export, endpoint/field checks, root ERC and independent visual review remain required after this amendment."
+  ]
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810"><rect width="1200" height="810" fill="#f5f7fb"/><g font-family="Helvetica,Arial,sans-serif">
+<text x="46" y="44" text-anchor="start" font-size="28" font-weight="bold" fill="#172439">TINKERBADGE / PLACEMENT REVIEW</text>
+<text x="46" y="74" text-anchor="start" font-size="16" font-weight="normal" fill="#172439">Unrouted proposal · 110 × 100 mm · four copper layers · human approval pending</text>
+<text x="70" y="120" text-anchor="start" font-size="19" font-weight="bold" fill="#172439">FRONT</text>
+<rect x="70" y="160" width="484.00000000000006" height="440.00000000000006" rx="17" fill="#dbe8e2" stroke="#446456" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="109.6" y="134.70000000000002" width="79.2" height="112.2" rx="3" fill="#94a3b8" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="149.2" y="194.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">RADIO</text>
+<rect x="111.14000000000001" y="261.4200000000001" width="410.52000000000004" height="241.56" rx="3" fill="#fafafa" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="316.40000000000003" y="386.20000000000005" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">DISPLAY GLASS</text>
+<text x="316.40000000000003" y="402.0" text-anchor="middle" font-size="13" font-weight="normal" fill="#475569">93.3 × 54.9 mm envelope</text>
+<rect x="70.00000000000001" y="273.08" width="32.56" height="37.84" rx="3" fill="#94a3b8" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="86.28000000000002" y="296.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">USB</text>
+<rect x="257.0" y="215.00000000000003" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="382.4" y="215.00000000000003" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="507.80000000000007" y="215.00000000000003" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="98.60000000000001" y="549.4" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="169.00000000000003" y="549.4" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="239.4" y="549.4" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="309.8" y="549.4" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="380.2" y="549.4" width="13.200000000000001" height="13.200000000000001" rx="3" fill="#e7b959" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="446.2" y="184.2" width="101.2" height="22.0" rx="3" fill="#a7d8e0" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="496.8" y="199.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">IR / LIGHT</text>
+<rect x="69.99999999999997" y="420.70000000000005" width="18.480000000000004" height="15.400000000000002" rx="3" fill="#ed9fb2" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="61" y="432.40000000000003" text-anchor="end" font-size="11" font-weight="normal" fill="#8b2448">SW401</text>
+<rect x="69.99999999999997" y="464.70000000000005" width="18.480000000000004" height="15.400000000000002" rx="3" fill="#ed9fb2" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="61" y="476.40000000000003" text-anchor="end" font-size="11" font-weight="normal" fill="#8b2448">SW402</text>
+<text x="246.0" y="529.6" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b2448">Left-edge button pair</text>
+<rect x="404.40000000000003" y="516.4" width="132.0" height="74.80000000000001" rx="3" fill="#ddd2ef" stroke="#334155" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="470.40000000000003" y="557.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">NFC RESERVE</text>
+<circle cx="87.6" cy="252.4" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="536.4000000000001" cy="252.4" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="87.6" cy="578.0" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="536.4000000000001" cy="501.0" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="268.0" cy="182.0" r="7.040000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="404.40000000000003" cy="179.8" r="7.040000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<text x="312.0" y="632" text-anchor="middle" font-size="14" font-weight="normal" fill="#475569">110 mm</text>
+<text x="660" y="120" text-anchor="start" font-size="19" font-weight="bold" fill="#172439">REAR (viewed from back)</text>
+<rect x="660" y="160" width="484.00000000000006" height="440.00000000000006" rx="17" fill="#dbe8e2" stroke="#446456" stroke-width="1.4" stroke-dasharray=""/>
+<rect x="829.4000000000001" y="318.40000000000003" width="154.0" height="242.00000000000003" rx="3" fill="#f3d894" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="906.4000000000001" y="443.40000000000003" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">BATTERY ALLOWANCE</text>
+<text x="906.4000000000001" y="463.6" text-anchor="middle" font-size="12" font-weight="normal" fill="#6b4c14">35 × 55 × 7 mm</text>
+<rect x="1007.6" y="298.6" width="123.20000000000002" height="215.60000000000002" rx="3" fill="#b9d3f0" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="1069.2" y="410.40000000000003" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">POWER</text>
+<rect x="730.4" y="270.0" width="88.0" height="193.60000000000002" rx="3" fill="#b7dbd0" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="774.4" y="362.4" text-anchor="middle" font-size="11" font-weight="bold" fill="#172439">DISPLAY</text>
+<text x="774.4" y="380.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#172439">SUPPORT</text>
+<rect x="891.0" y="248.0" width="110.00000000000001" height="44.0" rx="3" fill="#cbd5e1" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="946.0" y="274.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">I/O / TEST</text>
+<rect x="889.46" y="215.0" width="55.88" height="30.800000000000004" rx="3" fill="#d1bee8" stroke="#334155" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="917.4000000000001" y="234.4" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">SAO?</text>
+<rect x="664.4000000000001" y="336.0" width="61.60000000000001" height="79.2" rx="3" fill="#d1bee8" stroke="#334155" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="695.2" y="379.6" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">FPC?</text>
+<rect x="664.4" y="432.8" width="22.0" height="26.400000000000002" rx="3" fill="#94a3b8" stroke="#334155" stroke-width="1.4" stroke-dasharray=""/>
+<text x="712.8" y="450.40000000000003" text-anchor="start" font-size="11" font-weight="normal" fill="#172439">QWIIC</text>
+<rect x="1012.0000000000001" y="553.8000000000001" width="52.800000000000004" height="30.800000000000004" rx="3" fill="#d1bee8" stroke="#334155" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="1038.4" y="573.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">DOCK?</text>
+<rect x="677.6" y="516.4" width="132.0" height="74.80000000000001" rx="3" fill="#ddd2ef" stroke="#334155" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="743.6" y="557.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#172439">NFC RESERVE</text>
+<circle cx="1126.4" cy="252.4" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="677.6" cy="252.4" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="1126.4" cy="578.0" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="677.6" cy="501.0" r="4.840000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="946.0" cy="182.0" r="7.040000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<circle cx="809.6" cy="179.8" r="7.040000000000001" fill="#f5f7fb" stroke="#6b7e8a"/>
+<text x="902.0" y="632" text-anchor="middle" font-size="14" font-weight="normal" fill="#475569">110 mm</text>
+<text x="46" y="676" text-anchor="start" font-size="17" font-weight="bold" fill="#172439">Placement intent</text>
+<text x="46" y="702" text-anchor="start" font-size="14" font-weight="normal" fill="#172439">Front: display, radio, role/affinity lights, optical sensors, left-edge button pair.</text>
+<text x="46" y="726" text-anchor="start" font-size="14" font-weight="normal" fill="#172439">Rear: protected battery allowance, power circuitry, display support and outward-facing Qwiic.</text>
+<text x="46" y="766" text-anchor="start" font-size="14" font-weight="bold" fill="#9a3412">Review envelopes are not approved parts or mating definitions. No fabrication or routing release.</text>
+</g></svg>

@@ -1,0 +1,772 @@
+[
+  {
+    "mpn": "TPS2121RUXR",
+    "package": "RUX0012A VQFN-HR 12, 2.0x2.5mm",
+    "source": "docs/datasheets/TPS2121RUXR.pdf",
+    "critical_pages": [
+      4,
+      5,
+      6,
+      8,
+      13,
+      19,
+      21,
+      39,
+      40
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT",
+        "function": "Power output"
+      },
+      {
+        "number": "2",
+        "name": "IN2",
+        "function": "Source 2 power input"
+      },
+      {
+        "number": "3",
+        "name": "CP2",
+        "function": "Comparator-mode reference input"
+      },
+      {
+        "number": "4",
+        "name": "OV2",
+        "function": "Source 2 overvoltage supervisor"
+      },
+      {
+        "number": "5",
+        "name": "OV1",
+        "function": "Source 1 overvoltage supervisor"
+      },
+      {
+        "number": "6",
+        "name": "PR1",
+        "function": "Source 1 priority supervisor"
+      },
+      {
+        "number": "7",
+        "name": "IN1",
+        "function": "Source 1 power input"
+      },
+      {
+        "number": "8",
+        "name": "OUT",
+        "function": "Power output"
+      },
+      {
+        "number": "9",
+        "name": "ST",
+        "function": "Open-drain source status: high/Hi-Z IN1; low IN2"
+      },
+      {
+        "number": "10",
+        "name": "ILM",
+        "function": "Current-limit programming resistor"
+      },
+      {
+        "number": "11",
+        "name": "SS",
+        "function": "Soft-start/settling capacitor"
+      },
+      {
+        "number": "12",
+        "name": "GND",
+        "function": "Ground"
+      }
+    ],
+    "notes": [
+      "Page 4 Figure 6-2 is a BOTTOM view. The large power pads are numbered 1, 2, 7 and 8. There is no additional exposed ground pad or pin 13.",
+      "Pages 5–8: operating inputs are 2.8–22 V, absolute maximum 24 V. Control pins operate at 0–5.5 V, absolute maximum 6 V. RILM is 18–100 kΩ. The ST pull-up is 6–20 kΩ.",
+      "Pages 13–21: both channels block reverse current, with finite detection current and response time. Measure hot-plug and backfeed behavior. VREF rising threshold is 1.01–1.10 V and control leakage is ±0.1 µA."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "BQ24074RGTR",
+    "package": "RGT0016C VQFN-16 + exposed pad, 3 × 3 mm",
+    "source": "docs/datasheets/BQ24074RGTR.pdf",
+    "critical_pages": [
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29,
+      30,
+      33,
+      34,
+      52
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "TS",
+        "function": "Battery thermistor input"
+      },
+      {
+        "number": "2",
+        "name": "BAT",
+        "function": "Protected battery positive"
+      },
+      {
+        "number": "3",
+        "name": "BAT",
+        "function": "Protected battery positive"
+      },
+      {
+        "number": "4",
+        "name": "CE_N",
+        "function": "Active-low charge enable"
+      },
+      {
+        "number": "5",
+        "name": "EN2",
+        "function": "Input-current mode bit 2"
+      },
+      {
+        "number": "6",
+        "name": "EN1",
+        "function": "Input-current mode bit 1"
+      },
+      {
+        "number": "7",
+        "name": "PGOOD_N",
+        "function": "Open-drain valid-input indication"
+      },
+      {
+        "number": "8",
+        "name": "VSS",
+        "function": "Ground"
+      },
+      {
+        "number": "9",
+        "name": "CHG_N",
+        "function": "Open-drain charging/fault indication"
+      },
+      {
+        "number": "10",
+        "name": "OUT",
+        "function": "System power output"
+      },
+      {
+        "number": "11",
+        "name": "OUT",
+        "function": "System power output"
+      },
+      {
+        "number": "12",
+        "name": "ILIM",
+        "function": "Adapter-current resistor"
+      },
+      {
+        "number": "13",
+        "name": "IN",
+        "function": "External supply input"
+      },
+      {
+        "number": "14",
+        "name": "TMR",
+        "function": "Safety timer resistor"
+      },
+      {
+        "number": "15",
+        "name": "ITERM",
+        "function": "Termination-current programming"
+      },
+      {
+        "number": "16",
+        "name": "ISET",
+        "function": "Charge-current programming"
+      },
+      {
+        "number": "17",
+        "name": "EP",
+        "function": "Exposed thermal pad, must share VSS potential"
+      }
+    ],
+    "notes": [
+      "Use the lower BQ24074 diagram on page 7, not the BQ24075 SYSOFF variant. The thermal pad uses project symbol/footprint number 17; the source names it Thermal Pad. Connect VSS pin 8 as well. The saved PDF package appendix on page 52 is RGT0016C.",
+      "Pages 10–14: recommended input is 4.35–10.2 V, system output 4.3–4.5 V and battery regulation 4.16–4.23 V. BAT and OUT each require 4.7–47 µF bypass. IN requires 1–10 µF.",
+      "EN2/EN1 modes: 00 gives 100 mA maximum, 01 gives 500 mA maximum, 10 selects ILIM, and 11 suspends input. CE high disables charging while preserving the power path and battery supplement.",
+      "Page 13: TS bias is 72–78 µA, cold threshold 2.0–2.2 V and hot threshold 270–330 mV. Page 30 says the passive Rs/Rp network can widen but cannot narrow the temperature window. Direct B3435 sensing does not guarantee the present pack’s 0–45°C charging window.",
+      "Pages 28–30: CHG can remain low during a temperature fault, so it is not a safe-to-charge signal. Timers slow proportionally during DPPM, input-DPM and thermal charge reduction."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "TPS63802DLAR",
+    "package": "DLA0010A VSON-HR10, 3x2mm",
+    "source": "docs/datasheets/TPS63802DLAR.pdf",
+    "critical_pages": [
+      4,
+      5,
+      6,
+      11,
+      12,
+      18,
+      19,
+      20,
+      35,
+      36
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "EN",
+        "function": "Active-high converter enable"
+      },
+      {
+        "number": "2",
+        "name": "MODE",
+        "function": "Low = power-save mode; high = forced PWM"
+      },
+      {
+        "number": "3",
+        "name": "AGND",
+        "function": "Analog ground"
+      },
+      {
+        "number": "4",
+        "name": "FB",
+        "function": "Feedback sense"
+      },
+      {
+        "number": "5",
+        "name": "PG",
+        "function": "Open-drain power good"
+      },
+      {
+        "number": "6",
+        "name": "VOUT",
+        "function": "Regulated output"
+      },
+      {
+        "number": "7",
+        "name": "L2",
+        "function": "Inductor output-side switching node"
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "function": "Power ground"
+      },
+      {
+        "number": "9",
+        "name": "L1",
+        "function": "Inductor input-side switching node"
+      },
+      {
+        "number": "10",
+        "name": "VIN",
+        "function": "System input"
+      }
+    ],
+    "notes": [
+      "Pages 4 and 35 show all ten physical pads. The larger functional pads are 6–10. There is no additional exposed pad or ground pin 11.",
+      "Pages 5–6: VIN operates at 1.3–5.5 V, with startup above 1.8 V and 6 V absolute maximum. Output range is 1.8–5.2 V. Converter UVLO is not a safe lithium-ion discharge endpoint.",
+      "Pages 6 and 18: feedback voltage is 0.500 V ±1% in PWM; bias-current magnitude is at most 100 nA. The lower feedback resistor must be at most 100 kΩ. MODE and EN must not float.",
+      "Pages 18–20: nominal inductance is 0.47 µH with effective range 0.37–0.57 µH. Above 3.6 V output use two nominal 22 µF capacitors. Minimum effective output capacitance is 7 µF; the project target is at least 8.2 µF. Minimum effective input capacitance is 4 µF; the project target is at least 5 µF. Boost peak current limit can reach 5.75 A; verify inductor saturation."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "TPS22918DBVR",
+    "package": "DBV SOT23-6",
+    "source": "docs/datasheets/TPS22918DBVR.pdf",
+    "critical_pages": [
+      3,
+      4,
+      5,
+      14,
+      16,
+      17,
+      20
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VIN",
+        "function": "Supply input"
+      },
+      {
+        "number": "2",
+        "name": "GND",
+        "function": "Ground"
+      },
+      {
+        "number": "3",
+        "name": "ON",
+        "function": "Active-high enable, never floating"
+      },
+      {
+        "number": "4",
+        "name": "CT",
+        "function": "Slew-time capacitor"
+      },
+      {
+        "number": "5",
+        "name": "QOD",
+        "function": "Quick-output-discharge connection"
+      },
+      {
+        "number": "6",
+        "name": "VOUT",
+        "function": "Switched output"
+      }
+    ],
+    "notes": [
+      "Pages 3–5: VIN operates at 1–5.5 V. ON accepts 3.3 V logic and must not float. The 2 A maximum switch current is not a current limiter. There is no exposed pad.",
+      "Pages 14–17: QOD can connect directly to VOUT, through a resistor, or remain floating to disable discharge. QOD is not GND.",
+      "Isolate panel signal paths separately when the output is off. A series resistor alone does not provide that isolation."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "TPD4E05U06DQAR",
+    "package": "DQA USON10, 2.5x1mm",
+    "source": "docs/datasheets/TPD4E05U06DQAR.pdf",
+    "critical_pages": [
+      4,
+      6,
+      7,
+      13,
+      16,
+      23
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "D1+",
+        "function": "ESD channel 1"
+      },
+      {
+        "number": "2",
+        "name": "D1-",
+        "function": "ESD channel 2"
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "function": "Ground"
+      },
+      {
+        "number": "4",
+        "name": "D2+",
+        "function": "ESD channel 3"
+      },
+      {
+        "number": "5",
+        "name": "D2-",
+        "function": "ESD channel 4"
+      },
+      {
+        "number": "6",
+        "name": "NC",
+        "function": "No internal connection"
+      },
+      {
+        "number": "7",
+        "name": "NC",
+        "function": "No internal connection"
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "function": "Ground"
+      },
+      {
+        "number": "9",
+        "name": "NC",
+        "function": "No internal connection"
+      },
+      {
+        "number": "10",
+        "name": "NC",
+        "function": "No internal connection"
+      }
+    ],
+    "notes": [
+      "Page 4 DQA top view was inspected. There is no exposed pad. NC pins 6, 7, 9 and 10 can float or connect to ground; the project leaves them floating.",
+      "Pages 6–7: four independent channels discharge to ground, without a VCC clamp rail. Use them for USB D+, D−, CC1 and CC2, not VBUS. Operating signal maximum is 5.5 V, capacitance 0.5 pF typical and DC breakdown at least 6.5 V. This does not protect sustained CC-to-VBUS shorts."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "USB4105-GF-A",
+    "package": "16-contact USB-C USB2 receptacle, four shell anchors",
+    "source": "docs/datasheets/USB4105-GF-A.pdf",
+    "critical_pages": [
+      1,
+      2
+    ],
+    "pins": [
+      {
+        "number": "A1",
+        "name": "GND",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A4",
+        "name": "VBUS",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A5",
+        "name": "CC1",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A6",
+        "name": "Dp1",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A7",
+        "name": "Dn1",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A8",
+        "name": "SBU1",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A9",
+        "name": "VBUS",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "A12",
+        "name": "GND",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B1",
+        "name": "GND",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B4",
+        "name": "VBUS",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B5",
+        "name": "CC2",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B6",
+        "name": "Dp2",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B7",
+        "name": "Dn2",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B8",
+        "name": "SBU2",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B9",
+        "name": "VBUS",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "B12",
+        "name": "GND",
+        "function": "USB-C contact"
+      },
+      {
+        "number": "S1",
+        "name": "SHELL",
+        "function": "Unnumbered shell anchor; S1–S4 are project identifiers, not printed manufacturer pin numbers"
+      },
+      {
+        "number": "S2",
+        "name": "SHELL",
+        "function": "Unnumbered shell anchor; S1–S4 are project identifiers, not printed manufacturer pin numbers"
+      },
+      {
+        "number": "S3",
+        "name": "SHELL",
+        "function": "Unnumbered shell anchor; S1–S4 are project identifiers, not printed manufacturer pin numbers"
+      },
+      {
+        "number": "S4",
+        "name": "SHELL",
+        "function": "Unnumbered shell anchor; S1–S4 are project identifiers, not printed manufacturer pin numbers"
+      }
+    ],
+    "notes": [
+      "The saved manufacturer drawing A1 comes from a SnapEDA mirror. The current GCT URL returned HTTP 403. Reconcile the latest drawing before footprint release.",
+      "Page 1 component-side pad order, left to right: A1, B12, A4, B9, B8, A5, B7, A6, A7, B6, A8, B5, B4, A9, B1, A12. In the front mating view A1 is top left, A12 top right, B12 bottom left and B1 bottom right.",
+      "All four shell anchors connect to GND. S1–S4 are project identifiers for unnumbered anchors. A library may repeat pad S1 for the four anchors only after physical verification. The drawing rates collective VBUS at 5 A and 20 V DC; these are connector ratings, not authorization to draw USB current."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "TLV75733PDRVR",
+    "package": "DRV0006A WSON6 + EP, 2x2mm",
+    "source": "docs/datasheets/TLV75733PDRVR.pdf",
+    "critical_pages": [
+      3,
+      4,
+      5,
+      6,
+      18,
+      20,
+      21,
+      38,
+      39,
+      40
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT",
+        "function": "3.3V regulated output"
+      },
+      {
+        "number": "2",
+        "name": "NC",
+        "function": "No internal connection"
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "function": "Ground"
+      },
+      {
+        "number": "4",
+        "name": "EN",
+        "function": "Active-high enable"
+      },
+      {
+        "number": "5",
+        "name": "NC",
+        "function": "No internal connection"
+      },
+      {
+        "number": "6",
+        "name": "IN",
+        "function": "Supply input"
+      },
+      {
+        "number": "7",
+        "name": "EP",
+        "function": "Exposed thermal pad, internally connected to GND"
+      }
+    ],
+    "notes": [
+      "Page 3 Figure 4-3 is the selected DRV pinout, which differs from DBV. Original pixels were inspected. Package pages 38–40 explicitly number the exposed pad 7.",
+      "Pages 4–6: input range is 1.45–5.5 V and output is nominally 3.3 V. DRV dropout at 1 A is at most 425 mV through 85°C and 475 mV through 125°C. Output accuracy is ±1% through 85°C and ±1.5% over the full temperature range; observe the table’s test conditions.",
+      "Pages 18–21: effective input and output capacitors must exceed 0.47 µF; use 10 µF nominal each. The device does not block reverse current. Do not externally drive +3V3 while its input is off.",
+      "DRV JEDEC thermal resistance is 100.2°C/W. Solder the thermal pad to the ground plane. At a 0.65 V drop and 0.6 A, 0.39 W would produce about a 39°C rise on that reference board. Validate the actual enclosure and copper layout."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "TMUX1511PWR",
+    "package": "PW TSSOP14",
+    "source": "docs/datasheets/TMUX1511PWR.pdf",
+    "critical_pages": [
+      3,
+      4,
+      6,
+      7,
+      21,
+      22
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "SEL1",
+        "function": "Channel 1 enable high"
+      },
+      {
+        "number": "2",
+        "name": "S1",
+        "function": "Channel 1 source"
+      },
+      {
+        "number": "3",
+        "name": "D1",
+        "function": "Channel 1 drain"
+      },
+      {
+        "number": "4",
+        "name": "SEL2",
+        "function": "Channel 2 enable high"
+      },
+      {
+        "number": "5",
+        "name": "S2",
+        "function": "Channel 2 source"
+      },
+      {
+        "number": "6",
+        "name": "D2",
+        "function": "Channel 2 drain"
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "function": "Ground"
+      },
+      {
+        "number": "8",
+        "name": "D3",
+        "function": "Channel 3 drain"
+      },
+      {
+        "number": "9",
+        "name": "S3",
+        "function": "Channel 3 source"
+      },
+      {
+        "number": "10",
+        "name": "SEL3",
+        "function": "Channel 3 enable high"
+      },
+      {
+        "number": "11",
+        "name": "D4",
+        "function": "Channel 4 drain"
+      },
+      {
+        "number": "12",
+        "name": "S4",
+        "function": "Channel 4 source"
+      },
+      {
+        "number": "13",
+        "name": "SEL4",
+        "function": "Channel 4 enable high"
+      },
+      {
+        "number": "14",
+        "name": "VDD",
+        "function": "Supply"
+      }
+    ],
+    "notes": [
+      "Page 3 shows the selected 14-pin PW package, with no exposed pad. Active-high SEL inputs have internal 6 MΩ pulldowns.",
+      "Pages 4, 6 and 7: VDD operates at 1.5–5.5 V. Source/drain voltage may reach 3.6 V with VDD below 1.5 V. Powered-off leakage is ±2 µA over the full temperature range; the 10 nA figure applies at 25°C.",
+      "On resistance is at most 4.5 Ω and on leakage is ±50 nA. Operating supply current is 37 µA typical, 70 µA maximum. SEL1 tied to +3V3 connects the ADC automatically without a GPIO.",
+      "Maximum power-off transition time is 4 µs under the specified 1 µs supply-fall test. This is not an unconditional MCU injection-current guarantee for arbitrary ramps. Measure brownout and decay waveforms. The static off-state ADC bound is 0.2 V with its 100 kΩ pulldown."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "SMF6.0A",
+    "package": "SOD-123FL, two-lead unidirectional TVS",
+    "source": "docs/datasheets/SMF6.0A.pdf",
+    "critical_pages": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "K",
+        "function": "Cathode stripe; project pad1 convention"
+      },
+      {
+        "number": "2",
+        "name": "A",
+        "function": "Anode; project pad2 convention"
+      }
+    ],
+    "notes": [
+      "Page 5 marks physical polarity rather than numbered leads. Project convention is pin 1 = cathode, pin 2 = anode. Verify the footprint stripe against the drawing.",
+      "Page 2: standoff is 6.0 V, breakdown 6.67–7.37 V at 10 mA, and maximum clamp 10.3 V at 19.4 A for a 10/1000 µs pulse at 25°C. Nonrepetitive pulse rating is 200 W. Reverse leakage is at most 400 µA at 6 V. Apply temperature derating.",
+      "This is an input hot-plug/ESD TVS. Its rated clamp is below the mux’s 24 V and charger’s 28 V absolute maxima. It is not a 5.5 V rail clamp or sustained-overvoltage protection. Source current limiting and surge/thermal qualification are required."
+    ],
+    "review_status": "extracted; independent review pending"
+  },
+  {
+    "mpn": "LP603450",
+    "package": "LiPol FD_3450_70 protected 1S pack, Molex 51021-0300(B)",
+    "source": "docs/datasheets/LP603450.pdf",
+    "critical_pages": [
+      1
+    ],
+    "pins": [
+      {
+        "number": "UNKNOWN_NEG",
+        "name": "PACK-",
+        "function": "Protected negative terminal; physical contact number unverified"
+      },
+      {
+        "number": "UNKNOWN_NTC",
+        "name": "NTC",
+        "function": "10 kΩ ±1% at 25°C, B3435; physical contact number unverified"
+      },
+      {
+        "number": "UNKNOWN_POS",
+        "name": "PACK+",
+        "function": "Protected positive terminal; physical contact number unverified"
+      }
+    ],
+    "notes": [
+      "Page 1 drawing pixels show black, yellow and red wires, with the middle wire serving the NTC. Numbered mating-contact polarity is absent. Do not infer physical pin numbers from wire colors.",
+      "Capacity is 1100 mAh minimum, 1130 mAh typical. Operating range is 2.75–4.20 V; charging voltage 4.2 V ±50 mV. Maximum charge current is 550 mA and continuous discharge 1100 mA. Charging is allowed at 0–45°C; discharge at −20 to 60°C.",
+      "The PCM overcurrent trip of 2–4.5 A does not protect a 1 A connector. The listed overdischarge resume voltage of 2.50 V is below its 2.75 V detection voltage and needs vendor clarification.",
+      "The NTC is 10 kΩ ±1% at 25°C with B3435, but B tolerance and full resistance/temperature table are unspecified. Battery connector mapping, charging and battery mechanical release remain blocked."
+    ],
+    "review_status": "BLOCKED: actual pack contact order and NTC qualification",
+    "selection_status": "Former three-wire candidate retained as source evidence; not selected for the user-approved two-wire build."
+  },
+  {
+    "mpn": "532610371",
+    "package": "Molex PicoBlade, 3 contacts, 1.25 mm pitch, right-angle SMT",
+    "source": "docs/datasheets/532610371-product.pdf",
+    "critical_pages": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "CONTACT1",
+        "function": "Function unknown until actual pack is matched"
+      },
+      {
+        "number": "2",
+        "name": "CONTACT2",
+        "function": "Function unknown until actual pack is matched"
+      },
+      {
+        "number": "3",
+        "name": "CONTACT3",
+        "function": "Function unknown until actual pack is matched"
+      },
+      {
+        "number": "MP1",
+        "name": "MOUNT",
+        "function": "Provisional mechanical hold-down; geometry unverified"
+      },
+      {
+        "number": "MP2",
+        "name": "MOUNT",
+        "function": "Provisional mechanical hold-down; geometry unverified"
+      }
+    ],
+    "notes": [
+      "An exact-part product export is saved as 532610371-product.pdf. The manufacturer mechanical drawing could not be downloaded: official requests timed out and the distributor returned non-PDF content. The footprint is not approved.",
+      "The product record confirms three contacts, 1.25 mm pitch, right-angle SMT, mating family 51021 and 1 A/contact. Do not assign BAT, GND or NTC by convention.",
+      "All electrical assignments remain null. Omit the connector from implemented electrical CAD, or display it explicitly unconnected and blocked. MP1/MP2 are provisional hold-down identifiers whose geometry and count require the missing drawing."
+    ],
+    "review_status": "BLOCKED: manufacturer drawing and actual pack polarity",
+    "selection_status": "Former three-wire candidate retained as source evidence; not selected for the user-approved two-wire build."
+  }
+]

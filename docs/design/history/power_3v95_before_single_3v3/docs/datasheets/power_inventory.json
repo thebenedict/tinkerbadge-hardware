@@ -1,0 +1,145 @@
+[
+  {
+    "mpn": "TPS2121RUXR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps2121.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tps2121.pdf",
+    "path": "docs/datasheets/TPS2121RUXR.pdf",
+    "sha256": "b2f5950f596dc2c4ca33e4ebac27fd35e4dcc68ea63e173466123e1118e91a06",
+    "retrieved_utc": "2026-11-09T18:12:22.368888+00:00",
+    "revision": "SLVSEA3F, revised August 2020; RUX package appendix in same PDF",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tps2121.pdf"
+  },
+  {
+    "mpn": "BQ24074RGTR",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "path": "docs/datasheets/BQ24074RGTR.pdf",
+    "sha256": "4fe4e4f9855501f83b400c6932e3098439e51c50539e40dc45b44a8d509e8db1",
+    "retrieved_utc": "2026-11-09T18:12:24.502119+00:00",
+    "revision": "SLUS810N, revised October 2021; package appendix RGT0016C, 4222419/E, July 2025",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf"
+  },
+  {
+    "mpn": "TPS63802DLAR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+    "path": "docs/datasheets/TPS63802DLAR.pdf",
+    "sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+    "retrieved_utc": "2026-11-09T18:12:24.757454+00:00",
+    "revision": "SLVSEU9D, revised January 2021",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
+  },
+  {
+    "mpn": "TPS22918DBVR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+    "path": "docs/datasheets/TPS22918DBVR.pdf",
+    "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c",
+    "retrieved_utc": "2026-11-09T18:12:24.995243+00:00",
+    "revision": "SLVSD76C, revised July 2017",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf"
+  },
+  {
+    "mpn": "TPD4E05U06DQAR",
+    "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+    "path": "docs/datasheets/TPD4E05U06DQAR.pdf",
+    "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6",
+    "retrieved_utc": "2026-11-09T18:12:25.396448+00:00",
+    "revision": "SLVSBO7O, revised August 2024",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+  },
+  {
+    "mpn": "LP603450",
+    "url": "https://www.lipolbattery.com/LiPo-Battery-Datahseet/LiPo_Battery_LP603450_3.7V_1100mAh.pdf",
+    "resolved_url": "https://www.lipolbattery.com/LiPo-Battery-Datahseet/LiPo_Battery_LP603450_3.7V_1100mAh.pdf",
+    "path": "docs/datasheets/LP603450.pdf",
+    "sha256": "46d1f33d6de0c5ff81b80471a1f5973744574150349fc1152e5967f51f017052",
+    "retrieved_utc": "2026-11-09T18:12:26.042624+00:00",
+    "revision": "FD_3450_70, 2019-10-02, index not specified",
+    "manufacturer_url": "https://www.lipolbattery.com/LiPo-Battery-Datahseet/LiPo_Battery_LP603450_3.7V_1100mAh.pdf",
+    "source_role": "Former three-wire battery candidate; retained as reference evidence, not selected for the two-wire build."
+  },
+  {
+    "mpn": "USB4105-GF-A",
+    "url": "https://s3.amazonaws.com/snapeda/datasheet/USB4105-GF-A_GCT.pdf",
+    "resolved_url": "https://s3.amazonaws.com/snapeda/datasheet/USB4105-GF-A_GCT.pdf",
+    "path": "docs/datasheets/USB4105-GF-A.pdf",
+    "sha256": "1077a88a61449995ed13bf7dba2585fcadf629aa071a4052691e2fd12759219b",
+    "retrieved_utc": "2026-11-09T18:16:27.901581+00:00",
+    "revision": "GCT USB4105 drawing A1, released 2019-10-24 (drawing date 2019-10-04); distributor-hosted original",
+    "manufacturer_url": "https://gct.co/files/drawings/usb4105.pdf"
+  },
+  {
+    "mpn": "TPS3700DDCR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "path": "docs/datasheets/TPS3700DDCR.pdf",
+    "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+    "retrieved_utc": "2026-11-09T18:17:28.200151+00:00",
+    "revision": "SBVS187G, revised February 2019; research only, not selected for populated build",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+  },
+  {
+    "mpn": "TLV75733PDRVR",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf",
+    "path": "docs/datasheets/TLV75733PDRVR.pdf",
+    "sha256": "239d1f1e9bce270377e9af29bd06a5f99fe45f489878612d249d88cf9f2dd7a1",
+    "retrieved_utc": "2026-11-09T18:18:04.834941+00:00",
+    "revision": "SBVS322C, revised March 2024; package appendix DRV0006A, 4222173/C, November 2025",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+  },
+  {
+    "mpn": "TMUX1511PWR",
+    "url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+    "path": "docs/datasheets/TMUX1511PWR.pdf",
+    "sha256": "04291b41a68347fedbbb0776aa44f500eaca65f2ca3af0e022ee60d41c7b1e9f",
+    "retrieved_utc": "2026-11-09T18:18:05.193453+00:00",
+    "revision": "SCDS390B, revised March 2025",
+    "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf"
+  },
+  {
+    "mpn": "SMF6.0A",
+    "url": "https://datasheet.octopart.com/SMF6.0A-Littelfuse-datasheet-14426042.pdf",
+    "resolved_url": "https://datasheet.octopart.com/SMF6.0A-Littelfuse-datasheet-14426042.pdf",
+    "path": "docs/datasheets/SMF6.0A.pdf",
+    "sha256": "543ea7413424eddda26798f6cb121c71ca701630dc936363818dbba00a3c27f5",
+    "retrieved_utc": "2026-11-09T18:18:05.738285+00:00",
+    "revision": "Littelfuse SMF series, revised 2013-03-04; distributor-hosted original",
+    "manufacturer_url": "https://www.littelfuse.com/products/overvoltage-protection/tvs-diodes/surface-mount/smf/smf6-0a"
+  },
+  {
+    "mpn": "532610371",
+    "url": "https://www.micros.com.pl/mediaserver/Z_MX-0532610371_MOLEX_0001.pdf",
+    "resolved_url": "https://www.micros.com.pl/mediaserver/Z_MX-0532610371_MOLEX_0001.pdf",
+    "path": "docs/datasheets/532610371-product.pdf",
+    "sha256": "6ec8cb03a0d6fddc78d45dc98dc09baf6dd69abc526a632cbe8943e03ca38d20",
+    "retrieved_utc": "2026-11-09T18:20:02.942022+00:00",
+    "revision": "Molex exact-part product export, no revision printed; product record only, not mechanical drawing",
+    "manufacturer_url": "https://www.molex.com/en-us/products/part-detail/0532610371",
+    "document_kind": "Product export only; mechanical drawing missing",
+    "source_role": "Former three-wire battery candidate; retained as reference evidence, not selected for the two-wire build."
+  },
+  {
+    "mpn": "AO3400A",
+    "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+    "manufacturer_url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+    "path": "docs/datasheets/AO3400A.pdf",
+    "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+    "revision": "Rev. 3.1, July 2023",
+    "facts": "docs/components/AO3400A.pins.json",
+    "note": "Shared component facts: docs/components/AO3400A.pins.json. Project 1=G, 2=S, 3=D mapping was independently matched to original top/bottom geometry; neither AOS source prints pin numbers."
+  },
+  {
+    "mpn": "AO3400A",
+    "path": "docs/datasheets/AOS-SOT23.pdf",
+    "url": "https://www.aosmd.com/sites/default/files/res/package/SOT23.pdf",
+    "manufacturer_url": "https://www.aosmd.com/sites/default/files/res/package/SOT23.pdf",
+    "revision": "PO-00001 VersionN; no printed date (product page lists2021-06-16)",
+    "sha256": "b6fac64d55f133ce74dd85ddddc618c3d5408e9531cb21e660f6a8ef3d8c5408",
+    "document_kind": "Manufacturer package outline; acquisition recorded in AOS-SOT23.source.json",
+    "retrieved_utc": "2026-11-09"
+  }
+]

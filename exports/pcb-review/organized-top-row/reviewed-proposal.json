@@ -1,0 +1,432 @@
+{
+  "source_board_sha256": "2ff74d95a154bce47ce87e97cf86c60af26514ff08235ffc70f8b9189b61ddda",
+  "tool": "KiCad 10.0.8",
+  "status": "proposal_checked_in_memory_no_CAD_saved",
+  "reference_count": 18,
+  "placements": [
+    {
+      "reference": "D401",
+      "x": 160,
+      "y": 103,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 144.0,
+      "original_y": 108.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C401",
+      "x": 157.5,
+      "y": 103,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 146.5,
+      "original_y": 111.5,
+      "original_rotation": 90.0
+    },
+    {
+      "reference": "D402",
+      "x": 180.5,
+      "y": 103,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 172.5,
+      "original_y": 108.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C402",
+      "x": 178.0,
+      "y": 103,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 175.0,
+      "original_y": 111.5,
+      "original_rotation": 90.0
+    },
+    {
+      "reference": "D403",
+      "x": 201,
+      "y": 103,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 201.0,
+      "original_y": 108.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C403",
+      "x": 198.5,
+      "y": 103,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 201.0,
+      "original_y": 112.0,
+      "original_rotation": 90.0
+    },
+    {
+      "reference": "U504",
+      "x": 186.5,
+      "y": 106.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 185.0,
+      "original_y": 105.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "D501",
+      "x": 196.5,
+      "y": 106.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 195.0,
+      "original_y": 105.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R507",
+      "x": 188.5,
+      "y": 102,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 180.5,
+      "original_y": 110.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C509",
+      "x": 192,
+      "y": 103,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 184.0,
+      "original_y": 110.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C510",
+      "x": 192,
+      "y": 106.5,
+      "rotation": 270,
+      "side": "F.Cu",
+      "original_x": 187.5,
+      "original_y": 110.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "Q501",
+      "x": 196.5,
+      "y": 111.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 195.0,
+      "original_y": 110.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R504",
+      "x": 196.5,
+      "y": 115.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 195.0,
+      "original_y": 114.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R505",
+      "x": 192.5,
+      "y": 111.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 191.0,
+      "original_y": 110.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R506",
+      "x": 192.5,
+      "y": 115.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "original_x": 191.0,
+      "original_y": 114.0,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "U501",
+      "x": 206,
+      "y": 107.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 205.0,
+      "original_y": 103.0,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "C501",
+      "x": 202,
+      "y": 107.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 201.0,
+      "original_y": 103.0,
+      "original_rotation": 180.0
+    },
+    {
+      "reference": "C502",
+      "x": 208,
+      "y": 105,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 208.0,
+      "original_y": 104.5,
+      "original_rotation": -90.0
+    }
+  ],
+  "groups": [
+    {
+      "name": "Top role LEDs",
+      "references": [
+        "D401",
+        "C401",
+        "D402",
+        "C402",
+        "D403",
+        "C403"
+      ],
+      "bounds_mm": [
+        156.725,
+        101.475,
+        202.565,
+        104.525
+      ]
+    },
+    {
+      "name": "Infrared optical group",
+      "references": [
+        "U504",
+        "D501",
+        "R507",
+        "C509",
+        "C510",
+        "Q501",
+        "R504",
+        "R505",
+        "R506"
+      ],
+      "translation_mm": [
+        1.5,
+        1
+      ],
+      "translation_exceptions": [
+        "R507",
+        "C509",
+        "C510"
+      ],
+      "bounds_mm": [
+        182.305,
+        101.225,
+        199.045,
+        116.495
+      ]
+    },
+    {
+      "name": "Ambient-light sensor",
+      "references": [
+        "U501",
+        "C501",
+        "C502"
+      ],
+      "bounds_mm": [
+        200.475,
+        104.225,
+        209.525,
+        108.695
+      ]
+    }
+  ],
+  "front_courtyard_count": 177,
+  "positive_area_courtyard_collisions": [],
+  "moved_pad_copper_outside_board": [],
+  "moved_pad_keepout_collisions": [],
+  "moved_reference_min_copper_edge_clearance_mm": {
+    "D401": 2.0999999999999943,
+    "C401": 1.7750000000000057,
+    "D402": 2.0999999999999943,
+    "C402": 1.7750000000000057,
+    "D403": 2.0999999999999943,
+    "C403": 1.7750000000000057,
+    "U504": 4.680000000000007,
+    "D501": 5.200000000000003,
+    "R507": 1.5250000000000057,
+    "C509": 1.7750000000000057,
+    "C510": 5.275000000000006,
+    "Q501": 10.25,
+    "R504": 12.074999999999989,
+    "R505": 11.025000000000006,
+    "R506": 14.525000000000006,
+    "U501": 2.3499999999999943,
+    "C501": 6.775000000000006,
+    "C502": 0.7750000000000057
+  },
+  "moved_reference_min_copper_H6_drill_clearance_mm": {
+    "D401": 43.86240452285823,
+    "C401": 47.08292561145554,
+    "D402": 23.95279290019,
+    "C402": 27.054210860617353,
+    "D403": 7.319653860997073,
+    "C403": 8.97063286077659,
+    "U504": 14.484394002383416,
+    "D501": 6.778693215531884,
+    "R507": 17.33037679136104,
+    "C509": 14.081999568818292,
+    "C510": 12.641618413815257,
+    "Q501": 6.2323833588529,
+    "R504": 7.015140044664683,
+    "R505": 10.676854883902847,
+    "R506": 10.968266298103321,
+    "U501": 2.4281043928875508,
+    "C501": 3.3768133456389493,
+    "C502": 4.997740756540379
+  },
+  "native_cached_courtyard_bounds_mm": {
+    "D401": [
+      158.435,
+      101.705,
+      161.565,
+      104.295
+    ],
+    "C401": [
+      156.725,
+      101.475,
+      158.275,
+      104.525
+    ],
+    "D402": [
+      178.935,
+      101.705,
+      182.065,
+      104.295
+    ],
+    "C402": [
+      177.225,
+      101.475,
+      178.775,
+      104.525
+    ],
+    "D403": [
+      199.435,
+      101.705,
+      202.565,
+      104.295
+    ],
+    "C403": [
+      197.725,
+      101.475,
+      199.275,
+      104.525
+    ],
+    "U504": [
+      182.305,
+      103.705,
+      190.695,
+      109.295
+    ],
+    "D501": [
+      193.955,
+      104.755,
+      199.045,
+      108.245
+    ],
+    "R507": [
+      186.975,
+      101.225,
+      190.025,
+      102.775
+    ],
+    "C509": [
+      191.225,
+      101.475,
+      192.775,
+      104.525
+    ],
+    "C510": [
+      191.225,
+      104.975,
+      192.775,
+      108.025
+    ],
+    "Q501": [
+      194.525,
+      109.755,
+      198.475,
+      113.245
+    ],
+    "R504": [
+      194.775,
+      114.505,
+      198.225,
+      116.495
+    ],
+    "R505": [
+      190.975,
+      110.725,
+      194.025,
+      112.275
+    ],
+    "R506": [
+      190.975,
+      114.225,
+      194.025,
+      115.775
+    ],
+    "U501": [
+      204.055,
+      106.305,
+      207.945,
+      108.695
+    ],
+    "C501": [
+      200.475,
+      106.725,
+      203.525,
+      108.275
+    ],
+    "C502": [
+      206.475,
+      104.225,
+      209.525,
+      105.775
+    ]
+  },
+  "pad_center_distances_mm": {
+    "C401.1_to_D401.4": 1.6008903772588552,
+    "C402.1_to_D402.4": 1.6008903772588552,
+    "C403.1_to_D403.4": 1.6008903772588552,
+    "C501.1_to_U501.1": 1.91637678967368,
+    "C502.1_to_U501.5": 2.5044959572736385,
+    "C509.1_to_U504.4": 2.76396906639709,
+    "C510.1_to_U504.4": 2.4015671966447245,
+    "R507.2_to_U504.4": 3.2463094430445167
+  },
+  "receiver_courtyard_to_glass_mm": 0.7049999999999983,
+  "ambient_courtyard_to_H6_courtyard_mm": 0.7587710000000101,
+  "analytical_drawn_stroked_U501_to_H6_courtyard_gap_mm": 0.7,
+  "analytical_drawn_stroked_receiver_to_glass_gap_mm": 0.725,
+  "source_values_and_pad_nets_unchanged": true,
+  "role_led_pitch_mm": 20.5,
+  "role_led_center_margin_to_straight_top_endpoints_mm": [
+    5,
+    5
+  ],
+  "notes": [
+    "Apply as a delta to the pinned staged candidate, preserving its earlier 32-reference corrections and left-open R4 outline.",
+    "LED rotation 180 puts VDD southwest, DI northwest and DO southeast. Vertical capacitors at 90 avoid the horizontal-capacitor courtyard collision.",
+    "R507/C509/C510 are exceptions to the rigid IR translation: their positions immediately above/right of U504 improve source-required local RC-filter proximity. Preserve all values/nets and route short supply and ground loops.",
+    "Native cached courtyard bounds include geometry-conversion margins; use the explicit analytical stroked-circle gap for the H6 sweep.",
+    "No native DRC was run on this unsaved proposal. Final native DRC, before/after parity and render inspection remain required.",
+    "Existing RF, NFC, raised-glass, flex, optical isolation and part-qualification gates remain."
+  ]
+}

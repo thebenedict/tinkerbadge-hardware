@@ -1,0 +1,304 @@
+{
+  "date": "2026-11-09",
+  "scope": "mcu.kicad_sch only; saved-file Konnect MCP writes",
+  "status": "PASS MCU endpoint, field, and local connectivity checks; full-system ERC pending",
+  "hashes": {
+    "mcu.kicad_sch": "78cf64f1287d4627792265044955fe1d02be1b42636e134f4ee26c646edaddc9",
+    "docs/design/mcu_contract.json": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+    ".build/mcu.net": "f918853751e0035a173adb752d28d17763957841afa3f60008e227e674fec55e",
+    ".build/mcu-v2.png": "bbae74a5e4f6c42ec3d6890e01b966257746cdf6c7efc4d2bd317a6fe2cea4a8",
+    "docs/components/ESP32-S3-WROOM-1-N16R8.library_acceptance.md": "aae0b2ad5a0ce05e2d359bd9750afdef9589e567777309364ee08812a7d0a57d"
+  },
+  "endpoint_check": {
+    "netlist": ".build/mcu.net",
+    "netlist_sha256": "f918853751e0035a173adb752d28d17763957841afa3f60008e227e674fec55e",
+    "contract_sha256": {
+      "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19"
+    },
+    "expected_components": 17,
+    "expected_endpoints": 67,
+    "intentional_nc_endpoints": 4,
+    "observed_endpoints_for_expected_components": 67,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "component_fields": [
+    {
+      "ref": "U201",
+      "value": "ESP32-S3-WROOM-1-N16R8",
+      "footprint": "RF_Module:ESP32-S3-WROOM-1",
+      "lib_id": "RF_Module:ESP32-S3-WROOM-1",
+      "pass": true
+    },
+    {
+      "ref": "R201",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "R202",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "R203",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "R204",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "R205",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "R206",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    },
+    {
+      "ref": "C201",
+      "value": "22uF 10V X5R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lib_id": "Device:C",
+      "pass": true
+    },
+    {
+      "ref": "C202",
+      "value": "100nF 16V X7R",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lib_id": "Device:C",
+      "pass": true
+    },
+    {
+      "ref": "C203",
+      "value": "1uF 10V X7R",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lib_id": "Device:C",
+      "pass": true
+    },
+    {
+      "ref": "TP201",
+      "value": "MCU_EN",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "TP202",
+      "value": "BOOT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "TP203",
+      "value": "+3V3",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "TP204",
+      "value": "GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "TP205",
+      "value": "UART_TX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "TP206",
+      "value": "UART_RX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "lib_id": "Connector:TestPoint",
+      "pass": true
+    },
+    {
+      "ref": "R207",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lib_id": "Device:R",
+      "pass": true
+    }
+  ],
+  "local_checks": {
+    "validate_wire_connections": {
+      "floating_count": 0,
+      "floating_endpoints": [],
+      "valid": true
+    },
+    "validate_component_connections": {
+      "unconnected_count": 0,
+      "unconnected_pins": [],
+      "valid": true
+    },
+    "find_shorted_nets": {
+      "short_count": 0,
+      "shorts": []
+    },
+    "find_orphan_items": {
+      "orphan_count": 0,
+      "orphans": [],
+      "tolerance": 0.05
+    }
+  },
+  "interim_root_erc": {
+    "report": ".build/mcu-integration-erc.json",
+    "counts": [
+      {
+        "severity": "warning",
+        "rule": "isolated_pin_label",
+        "count": 15
+      },
+      {
+        "severity": "error",
+        "rule": "power_pin_not_driven",
+        "count": 3
+      }
+    ],
+    "note": "Other sheets were being built concurrently. No suppression or waiver added; rerun root ERC after integration."
+  },
+  "visual_review": {
+    "image": ".build/mcu-v2.png",
+    "inspected": true,
+    "findings": "All main-sheet parts and labels readable; no observed text/body overlap after second rendering. Strap labels moved beyond adjacent global labels; EN junction explicit. Capacitor GND label clear of layout note."
+  },
+  "pending": [
+    "Integration-owner independent CAD review",
+    "Completed-root ERC",
+    "Exact passive MPN/effective capacitance and manufacturing footprint qualification",
+    "Human visual review and all prototype/PCB gates"
+  ],
+  "metadata_annotation": {
+    "verified_refs": [
+      {
+        "ref": "U201",
+        "MPN": "ESP32-S3-WROOM-1-N16R8",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R201",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R202",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R203",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R204",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R205",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R206",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "C201",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "C202",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "C203",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP201",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP202",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP203",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP204",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP205",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "TP206",
+        "MPN": "PCB pad only: no fitted component",
+        "Contract": "docs/design/mcu_contract.json"
+      },
+      {
+        "ref": "R207",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/mcu_contract.json"
+      }
+    ],
+    "pixel_identical_to_accepted_v2": true,
+    "hashes": {
+      "mcu.kicad_sch": "29e7598143e36c0ba33b1ea5875f514755eb59f60cc515947e747fa4303c45b3",
+      ".build/mcu-final.net": "54e12ee149a68e8647cb052f91a4b870ffd62f323cf6b95284078ccad8cd38eb",
+      ".build/mcu-v3.png": "bbae74a5e4f6c42ec3d6890e01b966257746cdf6c7efc4d2bd317a6fe2cea4a8"
+    },
+    "endpoint_check": {
+      "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/mcu-final.net",
+      "netlist_sha256": "54e12ee149a68e8647cb052f91a4b870ffd62f323cf6b95284078ccad8cd38eb",
+      "contract_sha256": {
+        "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19"
+      },
+      "expected_components": 17,
+      "expected_endpoints": 67,
+      "intentional_nc_endpoints": 4,
+      "observed_endpoints_for_expected_components": 67,
+      "missing_components": [],
+      "issues": [],
+      "status": "PASS"
+    }
+  }
+}

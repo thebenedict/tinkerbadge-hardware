@@ -1,0 +1,86 @@
+{
+  "sources": [
+    {
+      "id": "panel",
+      "filename": "ED037TC1_Waveshare_rev1_2020-05-29.pdf",
+      "url": "https://files.waveshare.com/upload/7/71/3.7inch_e-Paper_Specification.pdf",
+      "revision": "Rev 1.0; 2020-05-29; 19 PDF pages",
+      "sha256": "0d46ded5514356ea636796cefbec69fc2e00b90dcc1b3655ddb14ae218877852",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "hat",
+      "filename": "Waveshare_3.7inch_e-Paper_HAT_schematic.pdf",
+      "url": "https://files.waveshare.com/upload/8/8e/3.7inch_e-Paper_Schematic.pdf",
+      "revision": "Undated; 2 PDF pages; schematic on page 1",
+      "sha256": "dc5df982d82d55f99fe9fc40bd4870dbd209f8420198ca7b012075f3f8c8ab42",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "connector",
+      "filename": "Panasonic_Y5B_Y5BW.pdf",
+      "url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/277740",
+      "revision": "ACCTB1E 202309; September 2023; 14 PDF pages",
+      "sha256": "3ffd0ce7b07ef092417668908dee332e1e575be1b590c72656cbd694d6dfe9a7",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "mosfet",
+      "filename": "SI1308EDL.pdf",
+      "url": "https://www.vishay.com/docs/63399/si1308edl.pdf",
+      "revision": "63399; S14-1997 Rev C; 2014-10-06; 11 PDF pages",
+      "sha256": "a86d6f766f259d8b170a01081f577055f37b527257a0f9af497c8f2c33625c9a",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "ptn",
+      "filename": "SI1308EDL_PTN-SIL-029-2026.pdf",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8919/PTN-SIL-029-2026-REV-0.pdf",
+      "revision": "Vishay PTN-SIL-029-2026 Rev 0; 2026-04-30; 4 PDF pages; distributor mirror",
+      "sha256": "23d0f215190085e4bc5807424ec553eefd192129f70af225b9e74e087f937851",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "diode",
+      "filename": "MBR0530T1G.pdf",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/mbr0530t1-d.pdf",
+      "revision": "MBR0530T1/D Rev 9; October 2024; 5 PDF pages",
+      "sha256": "b7e27498724be8d5ccf1685120bc6e4c5375585aa3840402439aa15eed5d723e",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "controller",
+      "filename": "SSD1677_rev1_2018-11.pdf",
+      "url": "https://files.waveshare.com/upload/2/2a/SSD1677_1.0.pdf",
+      "revision": "Solomon Systech SSD1677 Rev 1.0; November 2018; 47 pages; supplier-hosted manufacturer document",
+      "sha256": "7abe5dedcd565d3cb5720a0c426e99beabc803a1d095e3cdf804fd0875def64e",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    },
+    {
+      "id": "buffer",
+      "filename": "SN74LVC541APWR.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc541a.pdf",
+      "revision": "SCAS298O; June 2026; packaging addendum October 2026; 47 PDF pages",
+      "sha256": "1341bf46dbe37ed3dd3a83767c09a607e760baba6ab541e69708d5c282b08f71",
+      "retrieved": "2026-11-09",
+      "status": "archived"
+    }
+  ],
+  "gaps": [
+    {
+      "target": "Exact Panasonic AYF532435 standalone CAD PDF",
+      "attempted_urls": [
+        "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/285547",
+        "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/264573"
+      ],
+      "result": "Both redirect to HTML download page; not archived as PDF. Official series PDF includes dimensional and recommended PCB/FPC drawings. Vendor drawing does not establish numbered terminal orientation. Footprint mating map remains unapproved."
+    }
+  ]
+}

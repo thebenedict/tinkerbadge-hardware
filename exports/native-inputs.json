@@ -1,0 +1,20 @@
+{
+  "sha256": {
+    "display.kicad_sch": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
+    "docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+    "docs/design/mcu_contract.json": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+    "docs/design/peripherals_contract.json": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+    "docs/design/power_contract.json": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+    "lighting.kicad_sch": "5f8dfbd32dac1d63130fe27f7fa7ad2f163bd08e2a4218f65aa1638fc7539c93",
+    "mcu.kicad_sch": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
+    "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+    "peripherals.kicad_sch": "b1720568ddb6838fb062a9bd79f975335523fd3676d6d5698764ade0fd79f4bf",
+    "power.kicad_sch": "a0dd355672d33e99b8eb194b2a6a329c244558220100f004813f9ab5948a7c09",
+    "power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+    "sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
+    "tinkerbadge.kicad_pro": "1de64a03f5268991dfee2b06ec78538e487a199e3e781900e26cf990833fc5ed",
+    "tinkerbadge.kicad_sch": "b0674aee63fcf567cd0c53f1ea582e1218c4a79851f0198947e7a77c12474069",
+    "tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1"
+  },
+  "unchanged_during_export": true
+}

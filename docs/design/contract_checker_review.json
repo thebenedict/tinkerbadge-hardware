@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-09",
+  "checker_sha256": "fdeade2340b26b87cafbb2cf66a49a4679d1358bfe99403eea324fb286a05c0d",
+  "test_sha256": "026dd5b9633b983849bdbd1e67ee913d2e4567221ca06126fe007027792b06ac",
+  "baseline_netlist_sha256": "1e46a0832bd87d9c9865ef00b65cf9348018a0625c7258de1bc76529fce55a8d",
+  "targeted_cases": [
+    {
+      "case": "missing component record",
+      "observed": "FAIL",
+      "expected": "FAIL"
+    },
+    {
+      "case": "duplicate exported endpoint",
+      "observed": "REJECT",
+      "expected": "REJECT"
+    },
+    {
+      "case": "unexpected numbered lead on reviewed component",
+      "observed": "FAIL",
+      "expected": "FAIL"
+    },
+    {
+      "case": "two expected nets electrically merged",
+      "observed": "FAIL",
+      "expected": "FAIL"
+    },
+    {
+      "case": "value change not in endpoint-checker scope",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "case": "duplicate list-form contract physical pin",
+      "observed": "PASS",
+      "desired": "REJECT",
+      "finding": "List-to-dict conversion erases duplicate before expected endpoint duplicate guard."
+    }
+  ],
+  "findings": [
+    "Reject duplicate physical numbers before converting list-form contract pins to dict. Current reviewed contracts have no such duplicates; this is fail-closed input hardening.",
+    "Endpoint checker deliberately omits value/MPN/rating/footprint/custom-property checks; keep independent metadata/BOM audit.",
+    "Current tests depend on mutable .build/display.net and exact generated unconnected-net spellings; add a pinned minimal fixture or explicit baseline input and more malformed-input cases."
+  ],
+  "assessment": "Same-basename split detection is correct for normal unique-name KiCad exports. Missing/extra endpoints, missing components, NC, net merges and duplicate exported endpoints are rejected. No electrical mismatch found in current verified artifacts.",
+  "repair": {
+    "status": "PASS",
+    "change": "Reject duplicate list-form physical pin numbers before conversion, normalizing numbers to string.",
+    "test_result": "12 deterministic unittest cases passed, including both string/string and string/integer duplicate physical numbers.",
+    "checker_sha256": "541af2d2b849e4cc1fa3ec1bdb51cc27487ccf0b4569ce39990b8a186413bf26",
+    "test_sha256": "09bd9f881b738b810dea1041e34da9c75013c04a5e269346ffdcd5f1a49cb933",
+    "fixture_manifest": "tests/fixtures/display_snapshot/manifest.json",
+    "fixture_manifest_sha256": "27553b62bfb7568bea3c330e4f8c071e155d7d363b8ba2d73e5ff1e8c4c090d5",
+    "live_exports_rechecked": [
+      ".build/display-final.net",
+      ".build/mcu-final.net",
+      ".build/power.net"
+    ]
+  }
+}

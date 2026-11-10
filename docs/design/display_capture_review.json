@@ -1,0 +1,628 @@
+{
+  "date": "2026-11-09",
+  "status": "PASS independent electrical capture and corrected v2 visual review",
+  "reviewer": "Independent display source extractor, not display CAD author",
+  "hashes": {
+    "display.kicad_sch": "96f687db90923b8398399747c0764a61544d29c7c5fff235ec29ffa5dc359953",
+    "docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+    ".build/display-independent.net": "631d0dfa993dd01c696d47ddfab52e6c8ae281c66852c4fa75c2464343f7de3b",
+    ".build/display-independent-root.net": "b81f782c51a8bf52782c52472d819c02035c1d83ad75616220ba15c41c830d35",
+    ".build/display.png": "0f1f8fa60728691a7363b4296a4f5c5c871241f4df22b6733b20a30e7feed9c0"
+  },
+  "endpoint_check": {
+    "netlist": ".build/display-independent.net",
+    "netlist_sha256": "631d0dfa993dd01c696d47ddfab52e6c8ae281c66852c4fa75c2464343f7de3b",
+    "contract_sha256": {
+      "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751"
+    },
+    "expected_components": 27,
+    "expected_endpoints": 95,
+    "intentional_nc_endpoints": 7,
+    "observed_endpoints_for_expected_components": 95,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "root_display_mcu_check": {
+    "netlist": ".build/display-independent-root.net",
+    "netlist_sha256": "b81f782c51a8bf52782c52472d819c02035c1d83ad75616220ba15c41c830d35",
+    "contract_sha256": {
+      "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+      "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19"
+    },
+    "expected_components": 44,
+    "expected_endpoints": 162,
+    "intentional_nc_endpoints": 11,
+    "observed_endpoints_for_expected_components": 162,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "field_check": [
+    {
+      "ref": "J301",
+      "actual_value": "ED037TC1_FPC",
+      "actual_footprint": null,
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "Q301",
+      "actual_value": "Si1308EDL-T1-GE3",
+      "actual_footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "D301",
+      "actual_value": "MBR0530T1G",
+      "actual_footprint": "Diode_SMD:D_SOD-123",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "D302",
+      "actual_value": "MBR0530T1G",
+      "actual_footprint": "Diode_SMD:D_SOD-123",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "D303",
+      "actual_value": "MBR0530T1G",
+      "actual_footprint": "Diode_SMD:D_SOD-123",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "U301",
+      "actual_value": "SN74LVC541APWR",
+      "actual_footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "L301",
+      "actual_value": "68uH",
+      "actual_footprint": null,
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R301",
+      "actual_value": "0.47 / 0.25W",
+      "actual_footprint": "Resistor_SMD:R_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R302",
+      "actual_value": "10k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C301",
+      "actual_value": "4.7u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C302",
+      "actual_value": "4.7u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C303",
+      "actual_value": "100n / 10V",
+      "actual_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C304",
+      "actual_value": "1u / 10V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C305",
+      "actual_value": "1u / 25V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C306",
+      "actual_value": "1u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C307",
+      "actual_value": "1u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C308",
+      "actual_value": "1u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C309",
+      "actual_value": "1u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C310",
+      "actual_value": "1u / 50V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C311",
+      "actual_value": "1u / 25V",
+      "actual_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "C312",
+      "actual_value": "100n / 10V",
+      "actual_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R303",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R304",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R305",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R306",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R307",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    },
+    {
+      "ref": "R308",
+      "actual_value": "100k",
+      "actual_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "value_and_shown_rating_match": true
+    }
+  ],
+  "local_checks": {
+    "validate_wire_connections": {
+      "floating_count": 0,
+      "floating_endpoints": [],
+      "valid": true
+    },
+    "validate_component_connections": {
+      "unconnected_count": 0,
+      "unconnected_pins": [],
+      "valid": true
+    },
+    "find_shorted_nets": {
+      "short_count": 0,
+      "shorts": []
+    },
+    "find_orphan_items": {
+      "orphan_count": 0,
+      "orphans": [],
+      "tolerance": 0.05
+    }
+  },
+  "critical_actual_endpoint_sets": {
+    "+3V3_EPD": [
+      {
+        "ref": "C114",
+        "pin": "1"
+      },
+      {
+        "ref": "C301",
+        "pin": "1"
+      },
+      {
+        "ref": "C303",
+        "pin": "1"
+      },
+      {
+        "ref": "C312",
+        "pin": "1"
+      },
+      {
+        "ref": "J301",
+        "pin": "15"
+      },
+      {
+        "ref": "J301",
+        "pin": "16"
+      },
+      {
+        "ref": "L301",
+        "pin": "1"
+      },
+      {
+        "ref": "R119",
+        "pin": "1"
+      },
+      {
+        "ref": "U104",
+        "pin": "6"
+      },
+      {
+        "ref": "U301",
+        "pin": "20"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_GDR": [
+      {
+        "ref": "J301",
+        "pin": "2"
+      },
+      {
+        "ref": "Q301",
+        "pin": "1"
+      },
+      {
+        "ref": "R302",
+        "pin": "1"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_PUMP": [
+      {
+        "ref": "C302",
+        "pin": "2"
+      },
+      {
+        "ref": "D301",
+        "pin": "2"
+      },
+      {
+        "ref": "D302",
+        "pin": "1"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_RESE": [
+      {
+        "ref": "J301",
+        "pin": "3"
+      },
+      {
+        "ref": "Q301",
+        "pin": "2"
+      },
+      {
+        "ref": "R301",
+        "pin": "1"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_RST_N_PANEL": [
+      {
+        "ref": "J301",
+        "pin": "10"
+      },
+      {
+        "ref": "U301",
+        "pin": "14"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_SW": [
+      {
+        "ref": "C302",
+        "pin": "1"
+      },
+      {
+        "ref": "D303",
+        "pin": "2"
+      },
+      {
+        "ref": "L301",
+        "pin": "2"
+      },
+      {
+        "ref": "Q301",
+        "pin": "3"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_VGH": [
+      {
+        "ref": "C307",
+        "pin": "1"
+      },
+      {
+        "ref": "D303",
+        "pin": "1"
+      },
+      {
+        "ref": "J301",
+        "pin": "21"
+      }
+    ],
+    "/03  E-PAPER DISPLAY/EPD_VGL": [
+      {
+        "ref": "C309",
+        "pin": "1"
+      },
+      {
+        "ref": "D302",
+        "pin": "2"
+      },
+      {
+        "ref": "J301",
+        "pin": "23"
+      }
+    ],
+    "EPD_BUSY": [
+      {
+        "ref": "J301",
+        "pin": "9"
+      },
+      {
+        "ref": "R308",
+        "pin": "1"
+      },
+      {
+        "ref": "U201",
+        "pin": "8"
+      }
+    ],
+    "EPD_EN": [
+      {
+        "ref": "R207",
+        "pin": "1"
+      },
+      {
+        "ref": "U104",
+        "pin": "3"
+      },
+      {
+        "ref": "U201",
+        "pin": "33"
+      }
+    ],
+    "EPD_RST_N": [
+      {
+        "ref": "R307",
+        "pin": "1"
+      },
+      {
+        "ref": "U201",
+        "pin": "22"
+      },
+      {
+        "ref": "U301",
+        "pin": "6"
+      }
+    ]
+  },
+  "nonblocking_findings": [
+    "RESOLVED: three +3V3_EPD labels moved to branch-end stubs; independent v2 visual check passed.",
+    "display.md and display_contract.json status prose still says independent source review pending, although review_display.md records acceptance of this unchanged contract hash.",
+    "Exact passive MPNs and all tolerance/derating requirements remain defined in the source contract, not fully encoded in native value fields."
+  ],
+  "release_gates": [
+    "Exact delivered panel identity, waveform and flex mating continuity",
+    "No J301 footprint approval; L301 exact MPN/footprint still unassigned",
+    "DC-bias capacitance, inductor saturation, sense-resistor pulse rating, 30V semiconductor overshoot",
+    "Transition/off-state leakage, BUSY logic margin and recovery firmware",
+    "Completed root ERC and prototype tests"
+  ],
+  "visual_correction_verified": {
+    "image": ".build/display-v2.png",
+    "inspected": true,
+    "finding": "All three switched-supply labels now attach to branch-end stubs with junctions. Text no longer crossed by wire. No new visual issue observed.",
+    "electrical_endpoint_sets_unchanged": true,
+    "hashes": {
+      "display.kicad_sch": "96f687db90923b8398399747c0764a61544d29c7c5fff235ec29ffa5dc359953",
+      ".build/display-v2.png": "d320f40b327b9dcc8d150c4b94c69cc905b2d49a9e23a25fb9691cc391b8b8a9",
+      ".build/display-final.net": "37e4242dd1de511200f38c74b9bd60557768cec73057c1c01ec820eaf33061e8"
+    },
+    "endpoint_check": {
+      "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/display-final.net",
+      "netlist_sha256": "37e4242dd1de511200f38c74b9bd60557768cec73057c1c01ec820eaf33061e8",
+      "contract_sha256": {
+        "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751"
+      },
+      "expected_components": 27,
+      "expected_endpoints": 95,
+      "intentional_nc_endpoints": 7,
+      "observed_endpoints_for_expected_components": 95,
+      "missing_components": [],
+      "issues": [],
+      "status": "PASS"
+    },
+    "local_checks": {
+      "validate_wire_connections": {
+        "floating_count": 0,
+        "floating_endpoints": [],
+        "valid": true
+      },
+      "validate_component_connections": {
+        "unconnected_count": 0,
+        "unconnected_pins": [],
+        "valid": true
+      },
+      "find_shorted_nets": {
+        "short_count": 0,
+        "shorts": []
+      },
+      "find_orphan_items": {
+        "orphan_count": 0,
+        "orphans": [],
+        "tolerance": 0.05
+      }
+    }
+  },
+  "metadata_annotation": {
+    "verified_refs": [
+      {
+        "ref": "J301",
+        "MPN": "ED037TC1_FPC",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "Q301",
+        "MPN": "SI1308EDL-T1-GE3",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "D301",
+        "MPN": "MBR0530T1G",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "D302",
+        "MPN": "MBR0530T1G",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "D303",
+        "MPN": "MBR0530T1G",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "U301",
+        "MPN": "SN74LVC541APWR",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "L301",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R301",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R302",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C301",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C302",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C303",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C304",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C305",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C306",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C307",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C308",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C309",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C310",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C311",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "C312",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R303",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R304",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R305",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R306",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R307",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      },
+      {
+        "ref": "R308",
+        "MPN": "TBD: specification-level support part",
+        "Contract": "docs/design/display_contract.json"
+      }
+    ],
+    "rating_fields_match": true,
+    "pixel_identical_to_accepted_v2": true,
+    "endpoint_check": {
+      "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/display-final.net",
+      "netlist_sha256": "1e46a0832bd87d9c9865ef00b65cf9348018a0625c7258de1bc76529fce55a8d",
+      "contract_sha256": {
+        "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751"
+      },
+      "expected_components": 27,
+      "expected_endpoints": 95,
+      "intentional_nc_endpoints": 7,
+      "observed_endpoints_for_expected_components": 95,
+      "missing_components": [],
+      "issues": [],
+      "status": "PASS"
+    },
+    "hashes": {
+      "display.kicad_sch": "8be61344e78d548e3f3712709e7a16c372141cc4027574d05ca7bf224ffaca6a",
+      ".build/display-final.net": "1e46a0832bd87d9c9865ef00b65cf9348018a0625c7258de1bc76529fce55a8d",
+      ".build/display-v3.png": "d320f40b327b9dcc8d150c4b94c69cc905b2d49a9e23a25fb9691cc391b8b8a9"
+    }
+  }
+}

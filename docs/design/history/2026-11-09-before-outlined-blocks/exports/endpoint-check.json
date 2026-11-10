@@ -1,0 +1,17 @@
+{
+  "netlist": "exports/tinkerbadge.net",
+  "netlist_sha256": "4f60f20df99af6cf7c5de7154a3eea9b2e1b3a47588914c9eb8b40e6e2ef8062",
+  "contract_sha256": {
+    "power": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+    "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+    "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+    "peripherals": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec"
+  },
+  "expected_components": 179,
+  "expected_endpoints": 576,
+  "intentional_nc_endpoints": 30,
+  "observed_endpoints_for_expected_components": 576,
+  "missing_components": [],
+  "issues": [],
+  "status": "PASS"
+}

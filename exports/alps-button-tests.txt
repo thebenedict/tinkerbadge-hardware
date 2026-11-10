@@ -1,0 +1,10 @@
+test_baseline (__main__.AlpsButtonsTests.test_baseline) ... ok
+test_missing_duplicate_terminal_is_rejected (__main__.AlpsButtonsTests.test_missing_duplicate_terminal_is_rejected) ... ok
+test_old_pin2_to_ground_is_rejected (__main__.AlpsButtonsTests.test_old_pin2_to_ground_is_rejected) ... ok
+test_unapproved_footprint_is_rejected (__main__.AlpsButtonsTests.test_unapproved_footprint_is_rejected) ... ok
+test_wrong_ganged_symbol_is_rejected (__main__.AlpsButtonsTests.test_wrong_ganged_symbol_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.060s
+
+OK

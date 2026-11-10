@@ -1,0 +1,347 @@
+{
+  "date": "2026-11-09",
+  "reviewer": "Independent display/MCU reviewer; not native author",
+  "status": "PASS for lighting/peripheral development capture and selected Alps prototype candidate",
+  "hashes": {
+    "lighting.kicad_sch": "c69b283fcddaf4dda80db415f7d009a5bf72508bbac4eab0f21db83e3aabc796",
+    "peripherals.kicad_sch": "c3997e92e5deee52c05a2b8e3f9453e36f269b825047058acbd8ac74b381f77e",
+    "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+    "docs/design/peripherals_contract.json": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec",
+    ".build/peripheral_cad/lighting.png": "a278bef89c5775537da1526968723cc1dfdb6af21d0cfddbca12805d37abc6dc",
+    ".build/peripheral_cad/peripherals.png": "4d2b5576ba327a073066048ea791e2c03152e30ec2a975bbfd6a35e898791979",
+    ".build/peripheral-independent-alps.net": "8d77f3347440692edbb2248819392f9513394766710d4f7de60bfdf3707a45cc",
+    ".build/peripheral_cad/root_erc.json": "96e252f469d26bafdba317aa168457b95b3d3f052a4c3b29ed7cf4c523621c30"
+  },
+  "endpoint_check": {
+    "netlist": ".build/peripheral-independent-alps.net",
+    "netlist_sha256": "8d77f3347440692edbb2248819392f9513394766710d4f7de60bfdf3707a45cc",
+    "contract_sha256": {
+      "peripherals": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec"
+    },
+    "expected_components": 75,
+    "expected_endpoints": 219,
+    "intentional_nc_endpoints": 5,
+    "observed_endpoints_for_expected_components": 219,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "full_review_export_endpoint_check": {
+    "netlist": ".build/peripheral-independent-alps.net",
+    "netlist_sha256": "8d77f3347440692edbb2248819392f9513394766710d4f7de60bfdf3707a45cc",
+    "contract_sha256": {
+      "power": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+      "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+      "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+      "peripherals": "e6c3819998aac6863f164209df1b9a84b1fa9d0e6f3a30eacf522b9cf9e4f1ec"
+    },
+    "expected_components": 179,
+    "expected_endpoints": 576,
+    "intentional_nc_endpoints": 30,
+    "observed_endpoints_for_expected_components": 576,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "property_check": {
+    "netlist_sha256": "8d77f3347440692edbb2248819392f9513394766710d4f7de60bfdf3707a45cc",
+    "checks_by_field": {
+      "MPN": 40,
+      "Populate": 3,
+      "Value": 62,
+      "lib_id": 19,
+      "Footprint": 20,
+      "NominalValue": 74,
+      "Rating": 74,
+      "VisibleVoltageRating": 36
+    },
+    "unassigned_footprints": [
+      "U101",
+      "U102",
+      "U103",
+      "U104",
+      "U105",
+      "U107",
+      "Q101",
+      "Q102",
+      "Q103",
+      "D101",
+      "D102",
+      "J101",
+      "J102",
+      "J103",
+      "J104",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R107",
+      "R108",
+      "R109",
+      "R110",
+      "R111",
+      "R112",
+      "R113",
+      "R114",
+      "R115",
+      "R116",
+      "R117",
+      "R118",
+      "R119",
+      "R120",
+      "R121",
+      "R122",
+      "R123",
+      "R124",
+      "R125",
+      "R126",
+      "R127",
+      "R128",
+      "R129",
+      "R130",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "L101",
+      "J301",
+      "L301",
+      "D401",
+      "D402",
+      "D403",
+      "D404",
+      "D405",
+      "D406",
+      "D407",
+      "D408",
+      "D409",
+      "SW401",
+      "SW402",
+      "U501",
+      "U502",
+      "U503",
+      "AE501",
+      "D501",
+      "U504",
+      "J501",
+      "J502"
+    ],
+    "issues": [],
+    "status": "PASS",
+    "scope": "Only explicitly specified property comparisons. Unassigned footprints and generic passive MPNs remain release gates."
+  },
+  "native_validators": [
+    {
+      "tool": "export_netlist",
+      "args": {
+        "board": "/Users/michael/code/tinkerbadge-hardware/tinkerbadge.kicad_sch",
+        "output": "/Users/michael/code/tinkerbadge-hardware/.build/peripheral-independent-alps.net"
+      },
+      "isError": false,
+      "result": [
+        {
+          "format": "kicad",
+          "output": "/Users/michael/code/tinkerbadge-hardware/.build/peripheral-independent-alps.net",
+          "success": true
+        }
+      ]
+    },
+    {
+      "tool": "validate_wire_connections",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/lighting.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "floating_count": 0,
+          "floating_endpoints": [],
+          "valid": true
+        }
+      ]
+    },
+    {
+      "tool": "validate_component_connections",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/lighting.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "unconnected_count": 0,
+          "unconnected_pins": [],
+          "valid": true
+        }
+      ]
+    },
+    {
+      "tool": "find_shorted_nets",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/lighting.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "short_count": 0,
+          "shorts": []
+        }
+      ]
+    },
+    {
+      "tool": "find_orphan_items",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/lighting.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "orphan_count": 0,
+          "orphans": [],
+          "tolerance": 0.05
+        }
+      ]
+    },
+    {
+      "tool": "validate_wire_connections",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/peripherals.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "floating_count": 0,
+          "floating_endpoints": [],
+          "valid": true
+        }
+      ]
+    },
+    {
+      "tool": "validate_component_connections",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/peripherals.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "unconnected_count": 0,
+          "unconnected_pins": [],
+          "valid": true
+        }
+      ]
+    },
+    {
+      "tool": "find_shorted_nets",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/peripherals.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "short_count": 0,
+          "shorts": []
+        }
+      ]
+    },
+    {
+      "tool": "find_orphan_items",
+      "args": {
+        "schematic": "/Users/michael/code/tinkerbadge-hardware/peripherals.kicad_sch"
+      },
+      "isError": false,
+      "result": [
+        {
+          "orphan_count": 0,
+          "orphans": [],
+          "tolerance": 0.05
+        }
+      ]
+    }
+  ],
+  "switch_saved_export_readback": [
+    {
+      "reference": "SW401",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "value": "SKSCLBE010",
+      "datasheet": "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf",
+      "footprint": "",
+      "pins": {
+        "1": "/04  LIGHTING + BUTTONS/BTN_A_SW_N",
+        "2": "/04  LIGHTING + BUTTONS/BTN_A_SW_N",
+        "3": "GND",
+        "4": "GND"
+      },
+      "properties": {
+        "ApplicationStatus": "Prototype candidate: KSC-701p5D11 continuous voltage and A2 capacitive load require qualification",
+        "Contract": "docs/design/peripherals_contract.json",
+        "FootprintStatus": "UNASSIGNED: exact pads/locating holes/half-mount edge/case fit require physical acceptance",
+        "JLCPCB": "C115361",
+        "LCSC": "C115361",
+        "MPN": "SKSCLBE010",
+        "Manufacturer": "Alps Alpine",
+        "Population": "fitted",
+        "Rating": "12VDC/50mA max;1VDC/10uA min;2.2+/-0.65N;four terminals;side push;guide bosses",
+        "Sheetname": "04  LIGHTING + BUTTONS",
+        "Sheetfile": "lighting.kicad_sch"
+      }
+    },
+    {
+      "reference": "SW402",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "value": "SKSCLBE010",
+      "datasheet": "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf",
+      "footprint": "",
+      "pins": {
+        "1": "/04  LIGHTING + BUTTONS/BTN_B_SW_N",
+        "2": "/04  LIGHTING + BUTTONS/BTN_B_SW_N",
+        "3": "GND",
+        "4": "GND"
+      },
+      "properties": {
+        "ApplicationStatus": "Prototype candidate: KSC-701p5D11 continuous voltage and A2 capacitive load require qualification",
+        "Contract": "docs/design/peripherals_contract.json",
+        "FootprintStatus": "UNASSIGNED: exact pads/locating holes/half-mount edge/case fit require physical acceptance",
+        "JLCPCB": "C115361",
+        "LCSC": "C115361",
+        "MPN": "SKSCLBE010",
+        "Manufacturer": "Alps Alpine",
+        "Population": "fitted",
+        "Rating": "12VDC/50mA max;1VDC/10uA min;2.2+/-0.65N;four terminals;side push;guide bosses",
+        "Sheetname": "04  LIGHTING + BUTTONS",
+        "Sheetfile": "lighting.kicad_sch"
+      }
+    }
+  ],
+  "non_switch_capture_delta": {
+    "baseline": ".build/power_single_3v3_root.net",
+    "baseline_sha256": "898e6009a07610ac7be276f8095d3bfa7aebe0c6d21d4074a7886b1f9b3f283c",
+    "non_switch_endpoints_unchanged": 568,
+    "status": "PASS"
+  },
+  "visuals": {
+    "lighting": "PASS: visually followed8pixel chain, separate status dies and both button groups. All4switch leads are explicit and each same-side pair externally joined, with one NO closure between groups. Clear label/junctions, passives readable, lastDO NC, shared3.3V exception and switch application cautions visible.",
+    "peripherals": "PASS: ambient/motion/NFC, expander, switched accessory rail and IR are distinct; labels/junctions readable; NC and DNP treatments visible. No requested native correction.",
+    "cosmetic_exception": "Existing top headers touch the inner border. Integration owner accepted this cosmetic draft exception; it does not obscure circuitry."
+  },
+  "erc_evidence": {
+    "source": "Author fresh root_erc.json inspected,0errors/1warning",
+    "warning": "LIS2DW12 U502.3 SDO/SA0 bidirectional pin tied to+3V3 for I2C address0x19; original source review permits this mode. No new switch warning. Final pinned root ERC remains integration-owner gate."
+  },
+  "limits": [
+    "Switch permanent-bias and capacitive-load application warning remains unresolved; selected prototype candidate, not unconditional reliability approval.",
+    "Switch footprints remain blank. Four pads,two locating holes,orientation,half-mount edge and enclosure fit are not accepted.",
+    "LED3.3V minimum exception, final passive/vendor selection, other physical footprints/interfaces,antenna tuning,storage/wake and system bench gates remain open.",
+    "This review does not claim fresh live GUI opening or PCB verification. It uses actual native export,readbacks,validators and inspected fresh rendered images."
+  ]
+}

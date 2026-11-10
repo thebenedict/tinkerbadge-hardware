@@ -1,0 +1,231 @@
+{
+  "mpn": "ED037TC1",
+  "package": "Waveshare raw 3.7-inch candidate, 24-position 0.5 mm FPC",
+  "source": {
+    "id": "panel",
+    "filename": "ED037TC1_Waveshare_rev1_2020-05-29.pdf",
+    "url": "https://files.waveshare.com/upload/7/71/3.7inch_e-Paper_Specification.pdf",
+    "revision": "Rev 1.0; 2020-05-29; 19 PDF pages",
+    "sha256": "0d46ded5514356ea636796cefbec69fc2e00b90dcc1b3655ddb14ae218877852",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "NC",
+      "function": "No connection",
+      "electrical_type": "no_connect",
+      "source_page": 6
+    },
+    {
+      "number": "2",
+      "name": "GDR",
+      "function": "External N-MOSFET gate drive",
+      "electrical_type": "output",
+      "source_page": 6
+    },
+    {
+      "number": "3",
+      "name": "RESE",
+      "function": "Current-sense input",
+      "electrical_type": "input",
+      "source_page": 6,
+      "source_conflict": "Panel I/O column says O; function text and SSD1677 p10 establish input."
+    },
+    {
+      "number": "4",
+      "name": "NC",
+      "function": "No connection",
+      "electrical_type": "no_connect",
+      "source_page": 6
+    },
+    {
+      "number": "5",
+      "name": "VSH2",
+      "function": "Reserved positive source rail, nominal 5 V",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "6",
+      "name": "TSCL",
+      "function": "External temperature sensor I2C clock",
+      "electrical_type": "output",
+      "source_page": 6
+    },
+    {
+      "number": "7",
+      "name": "TSDA",
+      "function": "External temperature sensor I2C data",
+      "electrical_type": "bidirectional",
+      "source_page": 6
+    },
+    {
+      "number": "8",
+      "name": "BS1",
+      "function": "Interface selection: low for 4-wire SPI",
+      "electrical_type": "input",
+      "source_page": 6,
+      "secondary_source": "SSD1677 p9"
+    },
+    {
+      "number": "9",
+      "name": "BUSY",
+      "function": "Controller busy status, active high",
+      "electrical_type": "output",
+      "source_page": 6,
+      "secondary_source": "SSD1677 p9"
+    },
+    {
+      "number": "10",
+      "name": "RES#",
+      "function": "Active-low global reset",
+      "electrical_type": "input",
+      "source_page": 6
+    },
+    {
+      "number": "11",
+      "name": "D/C#",
+      "function": "Data/command select",
+      "electrical_type": "input",
+      "source_page": 6
+    },
+    {
+      "number": "12",
+      "name": "CS#",
+      "function": "Active-low chip select",
+      "electrical_type": "input",
+      "source_page": 6
+    },
+    {
+      "number": "13",
+      "name": "SCL",
+      "function": "SPI clock input",
+      "electrical_type": "input",
+      "source_page": 6,
+      "source_conflict": "Panel I/O column says O; description and SSD1677 p9 establish input."
+    },
+    {
+      "number": "14",
+      "name": "SDA",
+      "function": "SPI serial data",
+      "electrical_type": "bidirectional",
+      "source_page": 6
+    },
+    {
+      "number": "15",
+      "name": "VDDIO",
+      "function": "Logic/I/O supply, nominal 3.3 V",
+      "electrical_type": "power_in",
+      "source_page": 6
+    },
+    {
+      "number": "16",
+      "name": "VCI",
+      "function": "Analog/chip supply, nominal 3.3 V",
+      "electrical_type": "power_in",
+      "source_page": 6
+    },
+    {
+      "number": "17",
+      "name": "VSS",
+      "function": "Ground",
+      "electrical_type": "power_in",
+      "source_page": 6
+    },
+    {
+      "number": "18",
+      "name": "VDD",
+      "function": "Core regulator node, nominal 1.8 V; decouple only for internal-regulator use",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "19",
+      "name": "VPP",
+      "function": "OTP programming node, nominal 7.5 V; no external programming supply in badge",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "20",
+      "name": "VSH1",
+      "function": "Positive source rail, nominal +15 V",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "21",
+      "name": "VGH",
+      "function": "Positive gate rail, nominal +20 V",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "22",
+      "name": "VSL",
+      "function": "Negative source rail, nominal -15 V",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "23",
+      "name": "VGL",
+      "function": "Negative gate rail, nominal -20 V",
+      "electrical_type": "power",
+      "source_page": 6
+    },
+    {
+      "number": "24",
+      "name": "VCOM",
+      "function": "Common-electrode drive output",
+      "electrical_type": "power",
+      "source_page": 6
+    }
+  ],
+  "identity_status": "Implemented candidate is the exact 19-page Waveshare 3.7-inch Rev1.0 document. ED037TC1/SSD1677 association is not proof of the currently shipped SKU18381 glass/flex revision.",
+  "pixel_review": "Inspected panel PDF pages5,6,8,13,14,18 and HAT schematic page1; SSD1677 diagram page45.",
+  "supply": {
+    "recommended_logic_v": [
+      2.4,
+      3.6
+    ],
+    "nominal_logic_v": 3.3,
+    "source_page": 8,
+    "note": "Do not confuse supply-table VDD notation with physical FPC18 VDD=1.8 V."
+  },
+  "logic": {
+    "vih_min_fraction": 0.8,
+    "vil_max_fraction": 0.2,
+    "voh_min_fraction": 0.8,
+    "vol_max_fraction": 0.2,
+    "output_test_current_uA": 400,
+    "source_page": 8
+  },
+  "current": {
+    "inrush_typ_A": 0.16,
+    "operation_typ_pattern_A": 0.016,
+    "inrush_heavy_pattern_A": 0.18,
+    "operation_heavy_pattern_A": 0.148,
+    "source_pages": [
+      8,
+      9
+    ],
+    "note": "Published pattern-dependent typical data, not a guaranteed transient maximum."
+  },
+  "mechanical": {
+    "glass_mm": [
+      54.9,
+      93.3,
+      0.78
+    ],
+    "active_mm": [
+      47.32,
+      81.12
+    ],
+    "flex_projection_mm": 13.8,
+    "source_page": 5,
+    "pin1_evidence": "Detail A explicitly marks flex terminal1 at one edge and24 at the other. With detail A rotated upright and contact fingers directed downward,1 is left and24 is right. This does not approve a board-footprint view or fold."
+  }
+}

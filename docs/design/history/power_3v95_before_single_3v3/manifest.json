@@ -1,0 +1,74 @@
+[
+  {
+    "original": "power.kicad_sch",
+    "sha256": "137e7f1daf40aac11d6c4be061468b6c48a9999a3ebdb6682e1a062be78fc4c8"
+  },
+  {
+    "original": "power_symbols.kicad_sym",
+    "sha256": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f"
+  },
+  {
+    "original": "docs/design/power_contract.json",
+    "sha256": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb"
+  },
+  {
+    "original": "docs/design/power.md",
+    "sha256": "65a398cd44da6eea3f83bd8c243346a39de90307eaa10817c19968e845902d49"
+  },
+  {
+    "original": "docs/design/power_pinouts.md",
+    "sha256": "2c7e1cdbcb261a33fb8d0aea4ac99d47a7b1687a68087d74469c283f8a6f7edb"
+  },
+  {
+    "original": "docs/design/power_symbol_map.json",
+    "sha256": "3df6c36f63ba1f794205fd5753df9a3852bd0bf4aa172aa7f69487c8cc655cbe"
+  },
+  {
+    "original": "docs/design/power_symbol_map.md",
+    "sha256": "6cd526afa6704a231512ffefb19a726f70faafb3334753b5168777cb1f9bf9a8"
+  },
+  {
+    "original": "docs/design/power_verification.json",
+    "sha256": "0c8a65938687083007119ebc709b07c9a65e7338d3b454fd45830538b1310e7f"
+  },
+  {
+    "original": "docs/design/power_verification.md",
+    "sha256": "4f03160db17b5b755f146f6506b749db12e6f3f5906f1ce7214c0285ab660e2b"
+  },
+  {
+    "original": "docs/design/power_capture_review.json",
+    "sha256": "91222a38dc005cf59529f409e47304c0b8c63021d84b973a20c992eb68dfbb2b"
+  },
+  {
+    "original": "docs/design/power_capture_review.md",
+    "sha256": "6ce2f25f05149e970bf5db5a2137def062bb07e3023da4df60a4bffe0696d761"
+  },
+  {
+    "original": "docs/design/review_power.md",
+    "sha256": "e983c091ff84b244d026f48246ee92956c04d787f8961b302f4f39e42c6b4ac8"
+  },
+  {
+    "original": "docs/components/power_facts.json",
+    "sha256": "98f0f030f7d2243e92564fe6bcca47ea7eca88cedc4b053dae91c342c95b4e17"
+  },
+  {
+    "original": "docs/datasheets/power_inventory.json",
+    "sha256": "82608df4ef69b9ce5da610d18c74648828f71f6a275316100e290c0693afa261"
+  },
+  {
+    "original": "docs/components/TLV75733PDRVR.md",
+    "sha256": "d8241e5dde16ebf77c6e8b2e8bb162842017d9368dd4739cc7434b65dfc5f760"
+  },
+  {
+    "original": "docs/datasheets/TLV75733PDRVR.pdf",
+    "sha256": "239d1f1e9bce270377e9af29bd06a5f99fe45f489878612d249d88cf9f2dd7a1"
+  },
+  {
+    "original": ".build/power.net",
+    "sha256": "f7becfc1633dc1065ae864f44d7bf41c62d5d64395a43ab665b5a6f64cec310b"
+  },
+  {
+    "original": ".build/power_final_reviewed.png",
+    "sha256": "7703f9b78a4eafbf3418aee859d446e965a00efd902e23f2b2076d88f7b0f0e0"
+  }
+]

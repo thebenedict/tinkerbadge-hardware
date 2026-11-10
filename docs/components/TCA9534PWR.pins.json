@@ -1,0 +1,113 @@
+{
+  "mpn": "TCA9534PWR",
+  "package": "PW TSSOP16,5.0\u00d74.4mm body,0.65mm pitch,1.2mm max height",
+  "source": {
+    "url": "https://www.ti.com/lit/ds/symlink/tca9534.pdf",
+    "revision": "SCPS197D,September2014 revised October2017; packagePW0016A drawing4220204/B December2023",
+    "filename": "TCA9534.pdf",
+    "sha256": "5e1ab781d3051f1af52a9c321f62b09d28b447448d56b962b35f9c8261994c04",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "A0",
+      "function": "Address strap",
+      "source_page": 4
+    },
+    {
+      "number": "2",
+      "name": "A1",
+      "function": "Address strap",
+      "source_page": 4
+    },
+    {
+      "number": "3",
+      "name": "A2",
+      "function": "Address strap",
+      "source_page": 4
+    },
+    {
+      "number": "4",
+      "name": "P0",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "5",
+      "name": "P1",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "6",
+      "name": "P2",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "7",
+      "name": "P3",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "8",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 4
+    },
+    {
+      "number": "9",
+      "name": "P4",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "10",
+      "name": "P5",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "11",
+      "name": "P6",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "12",
+      "name": "P7",
+      "function": "GPIO",
+      "source_page": 4
+    },
+    {
+      "number": "13",
+      "name": "INT_N",
+      "function": "Open-drain interrupt",
+      "source_page": 4
+    },
+    {
+      "number": "14",
+      "name": "SCL",
+      "function": "I2C bus",
+      "source_page": 4
+    },
+    {
+      "number": "15",
+      "name": "SDA",
+      "function": "I2C bus",
+      "source_page": 4
+    },
+    {
+      "number": "16",
+      "name": "VCC",
+      "function": "Supply",
+      "source_page": 4
+    }
+  ],
+  "package_metal": "16 pins, no EP. Non-A TCA9534 address base0x20; TCA9534A is a different address variant.",
+  "pixel_review": "Inspected actual p4 top-view pin table and p39 TSSOP package drawing, peripheral_views/TCA9534-page4.png/TCA9534-page39.png.",
+  "review_status": "pending_independent_review"
+}

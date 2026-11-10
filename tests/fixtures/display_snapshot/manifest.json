@@ -1,0 +1,10 @@
+{
+  "description": "Frozen exported KiCad display netlist and matching reviewed contract, test data only; authoritative design remains in root CAD/docs.",
+  "captured": "2026-11-09",
+  "source_export": ".build/display-final.net",
+  "source_export_method": "Konnect export_netlist; no native CAD copied or generated",
+  "sha256": {
+    "display.net": "1e46a0832bd87d9c9865ef00b65cf9348018a0625c7258de1bc76529fce55a8d",
+    "docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751"
+  }
+}

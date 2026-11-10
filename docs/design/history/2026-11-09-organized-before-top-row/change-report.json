@@ -1,0 +1,492 @@
+{
+  "source_sha256": "a49a19fdf1a2cea1b223f419887e369ab844f49adc9933a0688ba7f01e2ab7b4",
+  "board_sha256": "2ff74d95a154bce47ce87e97cf86c60af26514ff08235ffc70f8b9189b61ddda",
+  "status": "organized_80mm_one_sided_placement_pending_human_review_and_RF_qualification",
+  "tool": "KiCad 10.0.8",
+  "moved_references": [
+    {
+      "reference": "U107",
+      "before": [
+        151.0,
+        136.0,
+        0.0
+      ],
+      "after": [
+        119,
+        138,
+        0
+      ]
+    },
+    {
+      "reference": "R127",
+      "before": [
+        145.0,
+        133.0,
+        0.0
+      ],
+      "after": [
+        113,
+        135,
+        0
+      ]
+    },
+    {
+      "reference": "R128",
+      "before": [
+        145.0,
+        135.0,
+        180.0
+      ],
+      "after": [
+        113,
+        137,
+        180
+      ]
+    },
+    {
+      "reference": "R129",
+      "before": [
+        141.5,
+        137.2,
+        180.0
+      ],
+      "after": [
+        109.5,
+        139.2,
+        180
+      ]
+    },
+    {
+      "reference": "R130",
+      "before": [
+        145.0,
+        137.0,
+        180.0
+      ],
+      "after": [
+        113,
+        139,
+        180
+      ]
+    },
+    {
+      "reference": "C115",
+      "before": [
+        154.7,
+        132.3,
+        0.0
+      ],
+      "after": [
+        122.7,
+        134.3,
+        0
+      ]
+    },
+    {
+      "reference": "C116",
+      "before": [
+        141.5,
+        135.1,
+        180.0
+      ],
+      "after": [
+        109.5,
+        137.1,
+        180
+      ]
+    },
+    {
+      "reference": "U103",
+      "before": [
+        165.0,
+        130.0,
+        0.0
+      ],
+      "after": [
+        139,
+        147,
+        0
+      ]
+    },
+    {
+      "reference": "C107",
+      "before": [
+        165.0,
+        126.9,
+        180.0
+      ],
+      "after": [
+        139,
+        143.9,
+        180
+      ]
+    },
+    {
+      "reference": "C108",
+      "before": [
+        164.7,
+        133.8,
+        180.0
+      ],
+      "after": [
+        138.7,
+        150.8,
+        180
+      ]
+    },
+    {
+      "reference": "C109",
+      "before": [
+        164.7,
+        137.5,
+        180.0
+      ],
+      "after": [
+        138.7,
+        154.5,
+        180
+      ]
+    },
+    {
+      "reference": "R117",
+      "before": [
+        161.6,
+        131.2,
+        180.0
+      ],
+      "after": [
+        135.6,
+        148.199999,
+        180
+      ]
+    },
+    {
+      "reference": "R118",
+      "before": [
+        161.6,
+        129.1,
+        0.0
+      ],
+      "after": [
+        135.6,
+        146.1,
+        0
+      ]
+    },
+    {
+      "reference": "RES_L101",
+      "before": [
+        170.5,
+        130.0,
+        90.0
+      ],
+      "after": [
+        144.5,
+        147,
+        90
+      ]
+    },
+    {
+      "reference": "U104",
+      "before": [
+        154.0,
+        146.0,
+        0.0
+      ],
+      "after": [
+        147,
+        155,
+        0
+      ]
+    },
+    {
+      "reference": "C112",
+      "before": [
+        150.7,
+        145.2,
+        90.0
+      ],
+      "after": [
+        143.7,
+        154.2,
+        90
+      ]
+    },
+    {
+      "reference": "C113",
+      "before": [
+        154.8,
+        149.1,
+        0.0
+      ],
+      "after": [
+        147.8,
+        158.1,
+        0
+      ]
+    },
+    {
+      "reference": "C114",
+      "before": [
+        157.1,
+        143.8,
+        90.0
+      ],
+      "after": [
+        150.1,
+        152.8,
+        90
+      ]
+    },
+    {
+      "reference": "R119",
+      "before": [
+        158.0,
+        148.6,
+        180.0
+      ],
+      "after": [
+        151,
+        157.6,
+        180
+      ]
+    },
+    {
+      "reference": "U506",
+      "before": [
+        146,
+        124,
+        0
+      ],
+      "after": [
+        149,
+        136,
+        0
+      ]
+    },
+    {
+      "reference": "C514",
+      "before": [
+        151.5,
+        122,
+        0
+      ],
+      "after": [
+        154.5,
+        134,
+        0
+      ]
+    },
+    {
+      "reference": "C515",
+      "before": [
+        151.5,
+        125.5,
+        0
+      ],
+      "after": [
+        154.5,
+        137.5,
+        0
+      ]
+    },
+    {
+      "reference": "R514",
+      "before": [
+        143,
+        130,
+        0
+      ],
+      "after": [
+        146,
+        142,
+        0
+      ]
+    },
+    {
+      "reference": "R515",
+      "before": [
+        146,
+        130,
+        0
+      ],
+      "after": [
+        149,
+        142,
+        0
+      ]
+    },
+    {
+      "reference": "R516",
+      "before": [
+        149,
+        130,
+        0
+      ],
+      "after": [
+        152,
+        142,
+        0
+      ]
+    },
+    {
+      "reference": "R517",
+      "before": [
+        152,
+        130,
+        0
+      ],
+      "after": [
+        155,
+        142,
+        0
+      ]
+    },
+    {
+      "reference": "U502",
+      "before": [
+        162,
+        121,
+        0
+      ],
+      "after": [
+        162,
+        133,
+        0
+      ]
+    },
+    {
+      "reference": "C501",
+      "before": [
+        205,
+        106.5,
+        0
+      ],
+      "after": [
+        201,
+        103,
+        180
+      ]
+    },
+    {
+      "reference": "C502",
+      "before": [
+        159,
+        121,
+        0
+      ],
+      "after": [
+        208,
+        104.5,
+        270
+      ]
+    },
+    {
+      "reference": "C503",
+      "before": [
+        159,
+        124,
+        0
+      ],
+      "after": [
+        165,
+        133.5,
+        0
+      ]
+    },
+    {
+      "reference": "C504",
+      "before": [
+        187,
+        160,
+        0
+      ],
+      "after": [
+        165,
+        131.5,
+        0
+      ]
+    },
+    {
+      "reference": "C505",
+      "before": [
+        190.5,
+        160,
+        0
+      ],
+      "after": [
+        162,
+        136.5,
+        270
+      ]
+    }
+  ],
+  "move_count": 32,
+  "functional_groups": [
+    {
+      "name": "Quiet battery ADC",
+      "references": [
+        "U107",
+        "R127",
+        "R128",
+        "R129",
+        "R130",
+        "C115",
+        "C116"
+      ]
+    },
+    {
+      "name": "Main 3V3 converter",
+      "references": [
+        "U103",
+        "C107",
+        "C108",
+        "C109",
+        "R117",
+        "R118",
+        "RES_L101"
+      ]
+    },
+    {
+      "name": "Display load switch",
+      "references": [
+        "U104",
+        "C112",
+        "C113",
+        "C114",
+        "R119"
+      ]
+    },
+    {
+      "name": "I/O expander",
+      "references": [
+        "U506",
+        "C514",
+        "C515",
+        "R514",
+        "R515",
+        "R516",
+        "R517"
+      ]
+    },
+    {
+      "name": "Accelerometer",
+      "references": [
+        "U502",
+        "C503",
+        "C504",
+        "C505"
+      ]
+    },
+    {
+      "name": "Ambient-light bypass",
+      "references": [
+        "C501",
+        "C502"
+      ]
+    }
+  ],
+  "electrical_pad_net_mapping_unchanged": true,
+  "tracks": 0,
+  "remaining": "Native DRC, independent final readback, visual review and human placement approval. RF/flex/part-selection gates remain."
+}

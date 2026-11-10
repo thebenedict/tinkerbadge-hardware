@@ -1,0 +1,104 @@
+{
+  "boardSha256": "a7ac2778f423c3847b9a3a6200f00446d6a960bbee242b6ef8da7aff5ed24b84",
+  "pngSha256": "177f9ee372a9df21abb63f4b37f2b3ac7da904656174e82207198ce367c991bf",
+  "svgSha256": "d2a87b7d7b6c3b74c5e8ee60bdea1d95dbe3b1a19cd4a0170f5b74a7bffc8077",
+  "provenanceSha256": "0953f621a56c99b12881d0cce01a3d17486d905f95a4d3805dab8b578980c3d3",
+  "generatorSha256": "46d202beedd81676561679e5b8feb4c39be88b68d3c577d0f42c5dce3bc4581b",
+  "nativePngSha256": "99230b74ccd18e9f15c34a6152786001be3f11443ed2f5786e905d174e6937f2",
+  "embeddedNativePngByteIdentical": true,
+  "nativeImageScale": 1,
+  "integerTranslationPx": [
+    321,
+    144
+  ],
+  "outputDimensionsPx": [
+    2460,
+    1630
+  ],
+  "sixHoleCalibrationMaxResidualPx": 0.12324842335004721,
+  "functionalBlockCount": 14,
+  "nativeGroupChecksPassed": 5,
+  "infraredLeaderFrontCourtyardChecks": 176,
+  "opticalCenterPixelChecks": [
+    {
+      "reference": "U504",
+      "sourceCenterPx": [
+        697,
+        996
+      ],
+      "sampleWindowPx": [
+        9,
+        9
+      ],
+      "exactRgbMatch": true
+    },
+    {
+      "reference": "D501",
+      "sourceCenterPx": [
+        830,
+        996
+      ],
+      "sampleWindowPx": [
+        9,
+        9
+      ],
+      "exactRgbMatch": true
+    },
+    {
+      "reference": "U501",
+      "sourceCenterPx": [
+        776,
+        345
+      ],
+      "sampleWindowPx": [
+        9,
+        9
+      ],
+      "exactRgbMatch": true
+    },
+    {
+      "reference": "D405",
+      "sourceCenterPx": [
+        630,
+        1056
+      ],
+      "sampleWindowPx": [
+        9,
+        9
+      ],
+      "exactRgbMatch": true
+    },
+    {
+      "reference": "D406",
+      "sourceCenterPx": [
+        884,
+        1056
+      ],
+      "sampleWindowPx": [
+        9,
+        9
+      ],
+      "exactRgbMatch": true
+    }
+  ],
+  "personalAbsolutePathsAbsent": true,
+  "visualReview": "Complete full-frame PNG inspected. Fourteen readable exterior callouts; lower IR leader reaches group boundary through empty inter-LED gap; separate ambient sensor retained; no coil drawn.",
+  "cadModified": false,
+  "nativeRenderModified": false,
+  "artifactStatus": "visually approved",
+  "historicalReproduction": {
+    "date": "2026-11-10",
+    "directory": "exports/pcb-review/lower-ir/reproduction-check",
+    "pngSvgJsonByteIdenticalAtGeneration": true,
+    "currentPngSvgByteIdentical": true,
+    "currentJsonDifference": "The canonical provenance board path is tinkerbadge.kicad_pcb; the archived generation-time copy retains .build/lower-ir-one-sided/tinkerbadge.kicad_pcb. All other JSON content matches."
+  },
+  "canonicalBoardPath": "tinkerbadge.kicad_pcb",
+  "currentHelperDrift": {
+    "path": "../tinkerbadge-web/scripts/render_feature_views.py",
+    "generationSha256": "ddbb7f3c88020b0df25f718f2f40c3d09e129d577542b0452147598cfee78a16",
+    "observedSha256": "fef2d7f3e16f33aa2e189789a98d25368893898e9ad3890e6f180a5cdf0da590",
+    "difference": "Only the BOARD_SHA constant changed from 8fa1ac386d237944d634cd7b5be0ca3ad3188f87965fbee94499eb1a51859399 to a7ac2778f423c3847b9a3a6200f00446d6a960bbee242b6ef8da7aff5ed24b84. The annotation imports helper functions and does not use this constant.",
+    "currentToolReproductionRerun": false
+  }
+}

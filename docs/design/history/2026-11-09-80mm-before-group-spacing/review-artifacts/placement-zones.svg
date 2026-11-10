@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="840" viewBox="0 0 1280 840">
+<rect width="1280" height="840" fill="#f7f8fb"/>
+<g font-family="Helvetica,Arial,sans-serif">
+<text x="42" y="42" text-anchor="start" font-size="28" font-weight="bold" fill="#1d3045">TINKERBADGE · COMPACT PLACEMENT REVIEW</text>
+<text x="42" y="72" text-anchor="start" font-size="17" font-weight="normal" fill="#1d3045">110 × 80 mm · front-side SMT · 4.5 mm proposed display lift · unrouted</text>
+<text x="42" y="99" text-anchor="start" font-size="15" font-weight="normal" fill="#a34d16">Experimental RF packaging. Human placement review and unresolved interface qualification remain required.</text>
+<text x="62" y="140" text-anchor="start" font-size="18" font-weight="bold" fill="#1d3045">FRONT · viewed facing the badge</text>
+<polygon points="80.2,166.0 84.75,166.0 84.75,196.7125 312.25,196.7125 312.25,166.0 544.3,166.0 562.5,184.2 562.5,511.8 544.3,530.0 80.2,530.0 62.0,511.8 62.0,184.2" fill="#dfece5" stroke="#3b5f50" stroke-width="2"/>
+<rect x="157.55" y="168.275" width="81.89999999999999" height="116.02499999999999" fill="#9da9b5" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="198.5" y="230.2875" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">ESP32</text>
+<rect x="344.1" y="234.25" width="172.9" height="104.64999999999999" fill="#bdd4ec" fill-opacity="0.8" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="430.55" y="290.575" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">POWER</text>
+<rect x="300.875" y="338.9" width="195.65" height="118.3" fill="#b2d9ca" fill-opacity="0.8" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="398.7" y="402.04999999999995" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">DISPLAY SUPPORT</text>
+<rect x="214.425" y="252.45" width="104.64999999999999" height="81.89999999999999" fill="#d4d1e3" fill-opacity="0.8" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="266.75" y="297.4" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">I/O / ADC</text>
+<rect x="451.025" y="429.9" width="77.35" height="31.849999999999998" fill="#e2cde5" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="489.7" y="449.825" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">NFC / I²C</text>
+<rect x="494.2499999999999" y="329.8" width="63.699999999999996" height="81.89999999999999" fill="#dfcee7" fill-opacity="0.55" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="526.0999999999999" y="374.75" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">FPC?</text>
+<rect x="180.3" y="325.25" width="36.4" height="27.299999999999997" fill="#dfcee7" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="198.5" y="342.9" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">BAT?</text>
+<rect x="104.54249999999996" y="211.49999999999994" width="424.515" height="249.795" fill="#ffffff" fill-opacity="0.08" stroke="#344d64" stroke-width="1.2" stroke-dasharray="8 4"/>
+<text x="316.79999999999995" y="366.2" text-anchor="middle" font-size="14" font-weight="bold" fill="#263b51">RAISED DISPLAY GLASS</text>
+<text x="316.79999999999995" y="384.4" text-anchor="middle" font-size="12" font-weight="normal" fill="#263b51">93.3 × 54.9 mm</text>
+<rect x="255.375" y="197.85000000000002" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="385.05" y="197.85000000000002" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="514.7249999999999" y="197.85000000000002" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="91.575" y="495.875" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="198.5" y="495.875" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="305.425" y="495.875" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="412.35" y="495.875" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="519.2749999999999" y="495.875" width="13.649999999999999" height="13.649999999999999" fill="#f3c15e" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="61.99999999999998" y="362.7875" width="19.11" height="15.924999999999999" fill="#dd95ae" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="61.99999999999998" y="408.2875" width="19.11" height="15.924999999999999" fill="#dd95ae" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<rect x="529.0574999999999" y="264.644" width="33.442499999999995" height="39.312" fill="#8ca0b6" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="548.8499999999999" y="247.89999999999998" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">USB</text>
+<rect x="536.11" y="418.525" width="20.929999999999996" height="31.849999999999998" fill="#8ca0b6" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="530.65" y="407.15" text-anchor="middle" font-size="10" font-weight="normal" fill="#1d3045">QWIIC</text>
+<text x="462.4" y="184.2" text-anchor="middle" font-size="11" font-weight="normal" fill="#1d3045">IR / LIGHT</text>
+<rect x="435.1" y="466.3" width="81.89999999999999" height="59.15" fill="#e1d4eb" fill-opacity="0.75" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="476.05" y="499.875" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">NFC?</text>
+<circle cx="80.2" cy="245.625" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="544.3" cy="245.625" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="80.2" cy="466.3" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="544.3" cy="466.3" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="80.2" cy="220.6" r="7.28" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="544.3" cy="220.6" r="7.28" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<path d="M62,555.0 v10 M62,560.0 H562.5 M562.5,555.0 v10" stroke="#687a89" fill="none"/>
+<text x="312.25" y="582.0" text-anchor="middle" font-size="14" font-weight="normal" fill="#1d3045">110 mm</text>
+<path d="M30,166 h10 M35,166 V530.0 M30,530.0 h10" stroke="#687a89" fill="none"/>
+<text x="25" y="348.0" transform="rotate(-90 25 348.0)" text-anchor="middle" font-size="13" fill="#1d3045">80 mm</text>
+<text x="708" y="140" text-anchor="start" font-size="18" font-weight="bold" fill="#1d3045">REAR · viewed from the wearer</text>
+<polygon points="1190.3,166.0 1185.75,166.0 1185.75,196.7125 958.25,196.7125 958.25,166.0 726.2,166.0 708.0,184.2 708.0,511.8 726.2,530.0 1190.3,530.0 1208.5,511.8 1208.5,184.2" fill="#dfece5" stroke="#3b5f50" stroke-width="2"/>
+<rect x="883.175" y="257.0" width="159.25" height="250.25" fill="#e9cd8d" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray=""/>
+<text x="962.8" y="386.125" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">BATTERY ALLOWANCE</text>
+<text x="962.8" y="400.325" text-anchor="middle" font-size="12" font-weight="normal" fill="#65491f">35 × 55 × 7 mm</text>
+<rect x="945.2824999999999" y="213.77499999999998" width="57.785" height="31.849999999999998" fill="#ccb8de" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="974.175" y="233.7" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">SAO?</text>
+<rect x="1072.0" y="491.325" width="54.599999999999994" height="31.849999999999998" fill="#ccb8de" fill-opacity="1" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="1099.3" y="511.25" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">DOCK?</text>
+<circle cx="871.8" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<circle cx="858.15" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<circle cx="844.5" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<circle cx="830.85" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<circle cx="817.2" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<circle cx="803.55" cy="238.8" r="3.2" fill="#d8b644" stroke="#6a5a27"/>
+<text x="837.675" y="220.6" text-anchor="middle" font-size="11" font-weight="normal" fill="#1d3045">TEST PADS</text>
+<rect x="753.5" y="466.3" width="81.89999999999999" height="59.15" fill="#e1d4eb" fill-opacity="0.75" stroke="#718393" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="794.45" y="499.875" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3045">NFC?</text>
+<circle cx="1190.3" cy="245.625" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="726.2" cy="245.625" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="1190.3" cy="466.3" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="726.2" cy="466.3" r="5.005" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="1190.3" cy="220.6" r="7.28" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<circle cx="726.2" cy="220.6" r="7.28" fill="#f7f8fb" stroke="#687a89" stroke-width="1"/>
+<path d="M708,555.0 v10 M708,560.0 H1208.5 M1208.5,555.0 v10" stroke="#687a89" fill="none"/>
+<text x="958.25" y="582.0" text-anchor="middle" font-size="14" font-weight="normal" fill="#1d3045">110 mm</text>
+<text x="42" y="625" text-anchor="start" font-size="18" font-weight="bold" fill="#1d3045">What changed</text>
+<text x="42" y="651" text-anchor="start" font-size="15" font-weight="normal" fill="#1d3045">164 non-test electrical footprints are front-side. Rear retains six bare test pads and mechanical allowances.</text>
+<text x="42" y="677" text-anchor="start" font-size="15" font-weight="normal" fill="#1d3045">Affinity LEDs span the full bottom at 23.5 mm pitch. Both buttons stay on the left; USB and Qwiic face right.</text>
+<text x="42" y="703" text-anchor="start" font-size="15" font-weight="normal" fill="#9a431d">The top notch removes FR4 under the radio antenna. Glass remains only 3.5 mm behind the antenna.</text>
+<text x="42" y="729" text-anchor="start" font-size="15" font-weight="normal" fill="#9a431d">NFC area is only 18 × 13 mm. Its coil, display flex, exact part heights and enclosure remain unqualified.</text>
+<text x="42" y="782" text-anchor="start" font-size="14" font-weight="normal" fill="#546274">Functional diagram only. Dashed shapes and “?” labels are unresolved review envelopes, not approved parts.</text>
+</g></svg>

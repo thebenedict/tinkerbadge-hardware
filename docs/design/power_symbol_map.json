@@ -1,0 +1,905 @@
+[
+  {
+    "reference_example": "U101",
+    "mpn": "TPS2121RUXR",
+    "symbol": "Tinkerbadge_Power:TPS2121RUXR",
+    "source": "docs/datasheets/TPS2121RUXR.pdf",
+    "source_pages": [
+      4,
+      5,
+      6,
+      8,
+      13,
+      19,
+      21,
+      39,
+      40
+    ],
+    "symbol_pin_count": 12,
+    "physical_rows": 12,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "OUT",
+        "symbol_pin": "1",
+        "symbol_name": "OUT",
+        "symbol_type": "power_out",
+        "project_net": "VEXT_5V"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "IN2",
+        "symbol_pin": "2",
+        "symbol_name": "IN2",
+        "symbol_type": "power_in",
+        "project_net": "DOCK_5V"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "CP2",
+        "symbol_pin": "3",
+        "symbol_name": "CP2",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "OV2",
+        "symbol_pin": "4",
+        "symbol_name": "OV2",
+        "symbol_type": "input",
+        "project_net": "MUX_OV_DOCK"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "OV1",
+        "symbol_pin": "5",
+        "symbol_name": "OV1",
+        "symbol_type": "input",
+        "project_net": "MUX_OV_USB"
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "PR1",
+        "symbol_pin": "6",
+        "symbol_name": "PR1",
+        "symbol_type": "input",
+        "project_net": "MUX_PRIORITY_USB"
+      },
+      {
+        "physical_lead": "7",
+        "manufacturer_function": "IN1",
+        "symbol_pin": "7",
+        "symbol_name": "IN1",
+        "symbol_type": "power_in",
+        "project_net": "USB_VBUS"
+      },
+      {
+        "physical_lead": "8",
+        "manufacturer_function": "OUT",
+        "symbol_pin": "8",
+        "symbol_name": "OUT",
+        "symbol_type": "passive",
+        "project_net": "VEXT_5V"
+      },
+      {
+        "physical_lead": "9",
+        "manufacturer_function": "ST",
+        "symbol_pin": "9",
+        "symbol_name": "ST",
+        "symbol_type": "open_collector",
+        "project_net": "MUX_USB_SELECTED"
+      },
+      {
+        "physical_lead": "10",
+        "manufacturer_function": "ILM",
+        "symbol_pin": "10",
+        "symbol_name": "ILM",
+        "symbol_type": "passive",
+        "project_net": "MUX_ILM"
+      },
+      {
+        "physical_lead": "11",
+        "manufacturer_function": "SS",
+        "symbol_pin": "11",
+        "symbol_name": "SS",
+        "symbol_type": "passive",
+        "project_net": "MUX_SS"
+      },
+      {
+        "physical_lead": "12",
+        "manufacturer_function": "GND",
+        "symbol_pin": "12",
+        "symbol_name": "GND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      }
+    ]
+  },
+  {
+    "reference_example": "U102",
+    "mpn": "BQ24074RGTR",
+    "symbol": "Battery_Management:BQ24074RGT",
+    "source": "docs/datasheets/BQ24074RGTR.pdf",
+    "source_pages": [
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29,
+      30,
+      33,
+      34,
+      52
+    ],
+    "symbol_pin_count": 17,
+    "physical_rows": 17,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "TS",
+        "symbol_pin": "1",
+        "symbol_name": "TS",
+        "symbol_type": "passive",
+        "project_net": "BATT_NTC_OPTIONAL"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "BAT",
+        "symbol_pin": "2",
+        "symbol_name": "BAT",
+        "symbol_type": "power_out",
+        "project_net": "VBAT_PROTECTED"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "BAT",
+        "symbol_pin": "3",
+        "symbol_name": "BAT",
+        "symbol_type": "passive",
+        "project_net": "VBAT_PROTECTED"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "CE_N",
+        "symbol_pin": "4",
+        "symbol_name": "~{CE}",
+        "symbol_type": "input",
+        "project_net": "CHARGE_DISABLE"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "EN2",
+        "symbol_pin": "5",
+        "symbol_name": "EN2",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "EN1",
+        "symbol_pin": "6",
+        "symbol_name": "EN1",
+        "symbol_type": "input",
+        "project_net": "CHARGER_EN1"
+      },
+      {
+        "physical_lead": "7",
+        "manufacturer_function": "PGOOD_N",
+        "symbol_pin": "7",
+        "symbol_name": "~{PGOOD}",
+        "symbol_type": "open_collector",
+        "project_net": "CHARGER_PGOOD_N"
+      },
+      {
+        "physical_lead": "8",
+        "manufacturer_function": "VSS",
+        "symbol_pin": "8",
+        "symbol_name": "VSS",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "9",
+        "manufacturer_function": "CHG_N",
+        "symbol_pin": "9",
+        "symbol_name": "~{CHG}",
+        "symbol_type": "open_collector",
+        "project_net": "CHARGER_CHG_N"
+      },
+      {
+        "physical_lead": "10",
+        "manufacturer_function": "OUT",
+        "symbol_pin": "10",
+        "symbol_name": "OUT",
+        "symbol_type": "power_out",
+        "project_net": "VSYS"
+      },
+      {
+        "physical_lead": "11",
+        "manufacturer_function": "OUT",
+        "symbol_pin": "11",
+        "symbol_name": "OUT",
+        "symbol_type": "passive",
+        "project_net": "VSYS"
+      },
+      {
+        "physical_lead": "12",
+        "manufacturer_function": "ILIM",
+        "symbol_pin": "12",
+        "symbol_name": "ILIM",
+        "symbol_type": "passive",
+        "project_net": "CHARGER_ILIM"
+      },
+      {
+        "physical_lead": "13",
+        "manufacturer_function": "IN",
+        "symbol_pin": "13",
+        "symbol_name": "IN",
+        "symbol_type": "power_in",
+        "project_net": "VEXT_5V"
+      },
+      {
+        "physical_lead": "14",
+        "manufacturer_function": "TMR",
+        "symbol_pin": "14",
+        "symbol_name": "TMR",
+        "symbol_type": "input",
+        "project_net": "CHARGER_TMR"
+      },
+      {
+        "physical_lead": "15",
+        "manufacturer_function": "ITERM",
+        "symbol_pin": "15",
+        "symbol_name": "ITERM",
+        "symbol_type": "input",
+        "project_net": null
+      },
+      {
+        "physical_lead": "16",
+        "manufacturer_function": "ISET",
+        "symbol_pin": "16",
+        "symbol_name": "ISET",
+        "symbol_type": "passive",
+        "project_net": "CHARGER_ISET"
+      },
+      {
+        "physical_lead": "17",
+        "manufacturer_function": "EP",
+        "symbol_pin": "17",
+        "symbol_name": "VSS",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      }
+    ]
+  },
+  {
+    "reference_example": "U103",
+    "mpn": "TPS63802DLAR",
+    "symbol": "Tinkerbadge_Power:TPS63802DLAR",
+    "source": "docs/datasheets/TPS63802DLAR.pdf",
+    "source_pages": [
+      4,
+      5,
+      6,
+      11,
+      12,
+      18,
+      19,
+      20,
+      35,
+      36
+    ],
+    "symbol_pin_count": 10,
+    "physical_rows": 10,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "EN",
+        "symbol_pin": "1",
+        "symbol_name": "EN",
+        "symbol_type": "input",
+        "project_net": "VSYS"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "MODE",
+        "symbol_pin": "2",
+        "symbol_name": "MODE",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "AGND",
+        "symbol_pin": "3",
+        "symbol_name": "AGND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "FB",
+        "symbol_pin": "4",
+        "symbol_name": "FB",
+        "symbol_type": "input",
+        "project_net": "PRIMARY_FB"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "PG",
+        "symbol_pin": "5",
+        "symbol_name": "PG",
+        "symbol_type": "open_collector",
+        "project_net": null
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "VOUT",
+        "symbol_pin": "6",
+        "symbol_name": "VOUT",
+        "symbol_type": "power_out",
+        "project_net": "+3V3"
+      },
+      {
+        "physical_lead": "7",
+        "manufacturer_function": "L2",
+        "symbol_pin": "7",
+        "symbol_name": "L2",
+        "symbol_type": "passive",
+        "project_net": "PRIMARY_L2"
+      },
+      {
+        "physical_lead": "8",
+        "manufacturer_function": "GND",
+        "symbol_pin": "8",
+        "symbol_name": "GND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "9",
+        "manufacturer_function": "L1",
+        "symbol_pin": "9",
+        "symbol_name": "L1",
+        "symbol_type": "passive",
+        "project_net": "PRIMARY_L1"
+      },
+      {
+        "physical_lead": "10",
+        "manufacturer_function": "VIN",
+        "symbol_pin": "10",
+        "symbol_name": "VIN",
+        "symbol_type": "power_in",
+        "project_net": "VSYS"
+      }
+    ]
+  },
+  {
+    "reference_example": "U104",
+    "mpn": "TPS22918DBVR",
+    "symbol": "Tinkerbadge_Power:TPS22918DBVR",
+    "source": "docs/datasheets/TPS22918DBVR.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      14,
+      16,
+      17,
+      20
+    ],
+    "symbol_pin_count": 6,
+    "physical_rows": 6,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "VIN",
+        "symbol_pin": "1",
+        "symbol_name": "VIN",
+        "symbol_type": "power_in",
+        "project_net": "+3V3"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "GND",
+        "symbol_pin": "2",
+        "symbol_name": "GND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "ON",
+        "symbol_pin": "3",
+        "symbol_name": "ON",
+        "symbol_type": "input",
+        "project_net": "EPD_EN"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "CT",
+        "symbol_pin": "4",
+        "symbol_name": "CT",
+        "symbol_type": "passive",
+        "project_net": "EPD_CT"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "QOD",
+        "symbol_pin": "5",
+        "symbol_name": "QOD",
+        "symbol_type": "passive",
+        "project_net": "EPD_QOD"
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "VOUT",
+        "symbol_pin": "6",
+        "symbol_name": "VOUT",
+        "symbol_type": "power_out",
+        "project_net": "+3V3_EPD"
+      }
+    ]
+  },
+  {
+    "reference_example": "U105",
+    "mpn": "TPD4E05U06DQAR",
+    "symbol": "Power_Protection:TPD4E05U06DQA",
+    "source": "docs/datasheets/TPD4E05U06DQAR.pdf",
+    "source_pages": [
+      4,
+      6,
+      7,
+      13,
+      16,
+      23
+    ],
+    "symbol_pin_count": 10,
+    "physical_rows": 10,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "D1+",
+        "symbol_pin": "1",
+        "symbol_name": "D1+",
+        "symbol_type": "passive",
+        "project_net": "USB_DP"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "D1-",
+        "symbol_pin": "2",
+        "symbol_name": "D1-",
+        "symbol_type": "passive",
+        "project_net": "USB_DM"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "GND",
+        "symbol_pin": "3",
+        "symbol_name": "GND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "D2+",
+        "symbol_pin": "4",
+        "symbol_name": "D2+",
+        "symbol_type": "passive",
+        "project_net": "USB_CC1"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "D2-",
+        "symbol_pin": "5",
+        "symbol_name": "D2-",
+        "symbol_type": "passive",
+        "project_net": "USB_CC2"
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "NC",
+        "symbol_pin": "6",
+        "symbol_name": "NC",
+        "symbol_type": "free",
+        "project_net": null
+      },
+      {
+        "physical_lead": "7",
+        "manufacturer_function": "NC",
+        "symbol_pin": "7",
+        "symbol_name": "NC",
+        "symbol_type": "free",
+        "project_net": null
+      },
+      {
+        "physical_lead": "8",
+        "manufacturer_function": "GND",
+        "symbol_pin": "8",
+        "symbol_name": "GND",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "9",
+        "manufacturer_function": "NC",
+        "symbol_pin": "9",
+        "symbol_name": "NC",
+        "symbol_type": "free",
+        "project_net": null
+      },
+      {
+        "physical_lead": "10",
+        "manufacturer_function": "NC",
+        "symbol_pin": "10",
+        "symbol_name": "NC",
+        "symbol_type": "free",
+        "project_net": null
+      }
+    ]
+  },
+  {
+    "reference_example": "U107",
+    "mpn": "TMUX1511PWR",
+    "symbol": "Tinkerbadge_Power:TMUX1511PWR",
+    "source": "docs/datasheets/TMUX1511PWR.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      21,
+      22
+    ],
+    "symbol_pin_count": 14,
+    "physical_rows": 14,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "SEL1",
+        "symbol_pin": "1",
+        "symbol_name": "SEL1",
+        "symbol_type": "input",
+        "project_net": "+3V3"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "S1",
+        "symbol_pin": "2",
+        "symbol_name": "S1",
+        "symbol_type": "passive",
+        "project_net": "BAT_DIV_PRE"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "D1",
+        "symbol_pin": "3",
+        "symbol_name": "D1",
+        "symbol_type": "passive",
+        "project_net": "BAT_SENSE_ISOLATED"
+      },
+      {
+        "physical_lead": "4",
+        "manufacturer_function": "SEL2",
+        "symbol_pin": "4",
+        "symbol_name": "SEL2",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "5",
+        "manufacturer_function": "S2",
+        "symbol_pin": "5",
+        "symbol_name": "S2",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "6",
+        "manufacturer_function": "D2",
+        "symbol_pin": "6",
+        "symbol_name": "D2",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "7",
+        "manufacturer_function": "GND",
+        "symbol_pin": "7",
+        "symbol_name": "GND",
+        "symbol_type": "power_in",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "8",
+        "manufacturer_function": "D3",
+        "symbol_pin": "8",
+        "symbol_name": "D3",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "9",
+        "manufacturer_function": "S3",
+        "symbol_pin": "9",
+        "symbol_name": "S3",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "10",
+        "manufacturer_function": "SEL3",
+        "symbol_pin": "10",
+        "symbol_name": "SEL3",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "11",
+        "manufacturer_function": "D4",
+        "symbol_pin": "11",
+        "symbol_name": "D4",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "12",
+        "manufacturer_function": "S4",
+        "symbol_pin": "12",
+        "symbol_name": "S4",
+        "symbol_type": "passive",
+        "project_net": null
+      },
+      {
+        "physical_lead": "13",
+        "manufacturer_function": "SEL4",
+        "symbol_pin": "13",
+        "symbol_name": "SEL4",
+        "symbol_type": "input",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "14",
+        "manufacturer_function": "VDD",
+        "symbol_pin": "14",
+        "symbol_name": "VDD",
+        "symbol_type": "power_in",
+        "project_net": "+3V3"
+      }
+    ]
+  },
+  {
+    "reference_example": "J101",
+    "mpn": "USB4105-GF-A",
+    "symbol": "Connector:USB_C_Receptacle_USB2.0_16P",
+    "source": "docs/datasheets/USB4105-GF-A.pdf",
+    "source_pages": [
+      1,
+      2
+    ],
+    "symbol_pin_count": 17,
+    "physical_rows": 20,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "A1",
+        "manufacturer_function": "GND",
+        "symbol_pin": "A1",
+        "symbol_name": "GND",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "A4",
+        "manufacturer_function": "VBUS",
+        "symbol_pin": "A4",
+        "symbol_name": "VBUS",
+        "symbol_type": "passive",
+        "project_net": "USB_VBUS"
+      },
+      {
+        "physical_lead": "A5",
+        "manufacturer_function": "CC1",
+        "symbol_pin": "A5",
+        "symbol_name": "CC1",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_CC1"
+      },
+      {
+        "physical_lead": "A6",
+        "manufacturer_function": "Dp1",
+        "symbol_pin": "A6",
+        "symbol_name": "D+",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_DP"
+      },
+      {
+        "physical_lead": "A7",
+        "manufacturer_function": "Dn1",
+        "symbol_pin": "A7",
+        "symbol_name": "D-",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_DM"
+      },
+      {
+        "physical_lead": "A8",
+        "manufacturer_function": "SBU1",
+        "symbol_pin": "A8",
+        "symbol_name": "SBU1",
+        "symbol_type": "bidirectional",
+        "project_net": null
+      },
+      {
+        "physical_lead": "A9",
+        "manufacturer_function": "VBUS",
+        "symbol_pin": "A9",
+        "symbol_name": "VBUS",
+        "symbol_type": "passive",
+        "project_net": "USB_VBUS"
+      },
+      {
+        "physical_lead": "A12",
+        "manufacturer_function": "GND",
+        "symbol_pin": "A12",
+        "symbol_name": "GND",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "B1",
+        "manufacturer_function": "GND",
+        "symbol_pin": "B1",
+        "symbol_name": "GND",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "B4",
+        "manufacturer_function": "VBUS",
+        "symbol_pin": "B4",
+        "symbol_name": "VBUS",
+        "symbol_type": "passive",
+        "project_net": "USB_VBUS"
+      },
+      {
+        "physical_lead": "B5",
+        "manufacturer_function": "CC2",
+        "symbol_pin": "B5",
+        "symbol_name": "CC2",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_CC2"
+      },
+      {
+        "physical_lead": "B6",
+        "manufacturer_function": "Dp2",
+        "symbol_pin": "B6",
+        "symbol_name": "D+",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_DP"
+      },
+      {
+        "physical_lead": "B7",
+        "manufacturer_function": "Dn2",
+        "symbol_pin": "B7",
+        "symbol_name": "D-",
+        "symbol_type": "bidirectional",
+        "project_net": "USB_DM"
+      },
+      {
+        "physical_lead": "B8",
+        "manufacturer_function": "SBU2",
+        "symbol_pin": "B8",
+        "symbol_name": "SBU2",
+        "symbol_type": "bidirectional",
+        "project_net": null
+      },
+      {
+        "physical_lead": "B9",
+        "manufacturer_function": "VBUS",
+        "symbol_pin": "B9",
+        "symbol_name": "VBUS",
+        "symbol_type": "passive",
+        "project_net": "USB_VBUS"
+      },
+      {
+        "physical_lead": "B12",
+        "manufacturer_function": "GND",
+        "symbol_pin": "B12",
+        "symbol_name": "GND",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "S1",
+        "manufacturer_function": "SHELL",
+        "symbol_pin": "SH",
+        "symbol_name": "SHIELD",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "S2",
+        "manufacturer_function": "SHELL",
+        "symbol_pin": "SH",
+        "symbol_name": "SHIELD",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "S3",
+        "manufacturer_function": "SHELL",
+        "symbol_pin": "SH",
+        "symbol_name": "SHIELD",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "S4",
+        "manufacturer_function": "SHELL",
+        "symbol_pin": "SH",
+        "symbol_name": "SHIELD",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      }
+    ]
+  },
+  {
+    "reference_example": "Q101",
+    "mpn": "AO3400A",
+    "symbol": "Transistor_FET:AO3400A",
+    "source": "docs/datasheets/AO3400A.pdf",
+    "source_pages": [
+      1
+    ],
+    "symbol_pin_count": 3,
+    "physical_rows": 3,
+    "footprint_assignment": null,
+    "footprint_acceptance": "Pending; no manufacturing footprint is assigned in the electrical development capture.",
+    "rows": [
+      {
+        "physical_lead": "1",
+        "manufacturer_function": "G",
+        "symbol_pin": "1",
+        "symbol_name": "G",
+        "symbol_type": "input",
+        "project_net": "USB_PRESENT_GATE"
+      },
+      {
+        "physical_lead": "2",
+        "manufacturer_function": "S",
+        "symbol_pin": "2",
+        "symbol_name": "S",
+        "symbol_type": "passive",
+        "project_net": "GND"
+      },
+      {
+        "physical_lead": "3",
+        "manufacturer_function": "D",
+        "symbol_pin": "3",
+        "symbol_name": "D",
+        "symbol_type": "passive",
+        "project_net": "USB_PRESENT_N"
+      }
+    ]
+  }
+]

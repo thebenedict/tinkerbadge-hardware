@@ -1,0 +1,5235 @@
+{
+  "date": "2026-11-09",
+  "scope": "Read-only native electrical/footprint audit of pinned repaired placement, not routing or fabrication approval. No SaveBoard or native CAD writes.",
+  "kicad_version": "10.0.8",
+  "board": {
+    "sha256": "322dc5d129db733813ff2d9dc0912e813fc9aa27043376b74c5deea2b9d668fa",
+    "footprints": 186,
+    "electrical_footprints": 170,
+    "copper_layers": 4,
+    "tracks": 0,
+    "model_count": 167,
+    "footprint_zone_count": 2,
+    "board_zone_count": 0
+  },
+  "netlist": {
+    "path": "exports/tinkerbadge.net",
+    "sha256": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59"
+  },
+  "electrical": {
+    "logical_endpoints": 524,
+    "numbered_pad_primitives": 539,
+    "net_mismatches": [],
+    "missing_pads_in_placed_components": [],
+    "missing_electrical_references": [
+      "AE501",
+      "J102",
+      "J103",
+      "J104",
+      "J301",
+      "J502",
+      "L101",
+      "L301",
+      "U105"
+    ]
+  },
+  "source_comparison": {
+    "pad_geometry_mismatches": [],
+    "rounding_differences_at_most_1_nm": [],
+    "unexpected_attribute_differences": [],
+    "intentional_attribute_changes": [
+      {
+        "reference": "H1",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "H2",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "H5",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "H4",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "H6",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "H3",
+        "type": "board-only excluded from BOM and position files",
+        "expected_attributes": 28
+      },
+      {
+        "reference": "TP201",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      },
+      {
+        "reference": "TP202",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      },
+      {
+        "reference": "TP206",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      },
+      {
+        "reference": "TP203",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      },
+      {
+        "reference": "TP205",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      },
+      {
+        "reference": "TP204",
+        "type": "BOM inclusion follows symbol, not source-library exclusion",
+        "expected_attributes": 4
+      }
+    ],
+    "model_differences": [],
+    "unresolved_model_files": [],
+    "zone_differences": [],
+    "source_records": [
+      {
+        "reference": "D404",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R406",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C404",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C509",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "H1",
+        "library_id": "MountingHole:MountingHole_2.2mm_M2",
+        "source_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "U501",
+        "library_id": "Tinkerbadge:BH1730FVC_WSOF6",
+        "source_sha256": "6351d09a8d496431e3f72950a7aa1ab48668a1f268227726ef3c075db028c7a6",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/BH1730FVC_WSOF6_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C510",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U201",
+        "library_id": "RF_Module:ESP32-S3-WROOM-1",
+        "source_sha256": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": [
+          {
+            "name": "",
+            "rule_area": true,
+            "layers": "00000000_00000000_00000000_00000055",
+            "active_copper_layers": [
+              "F.Cu",
+              "In1.Cu",
+              "In2.Cu",
+              "B.Cu"
+            ],
+            "no_tracks": true,
+            "no_vias": true,
+            "no_pads": true,
+            "no_zone_fills": true,
+            "no_footprints": true,
+            "polygons_nm": [
+              [
+                [
+                  94000000,
+                  100000000
+                ],
+                [
+                  142000000,
+                  100000000
+                ],
+                [
+                  142000000,
+                  79000000
+                ],
+                [
+                  94000000,
+                  79000000
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "reference": "D501",
+        "library_id": "Tinkerbadge:IR67-21C_TR8",
+        "source_sha256": "669cd066610b7853315045ac2e06625dd131ac128eb0aabe9688d1aba823f930",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/IR67-21C_TR8_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D402",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R205",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C202",
+        "library_id": "Capacitor_SMD:C_0402_1005Metric",
+        "source_sha256": "0403382fc4583ed510b461b1fa4a36dfaec6f4c0d9b1a67e6b0027837a54e1b5",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C401",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C408",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "H2",
+        "library_id": "MountingHole:MountingHole_2.2mm_M2",
+        "source_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "MECH_NFC",
+        "library_id": "Tinkerbadge:Review_NFC_Area",
+        "source_sha256": "3b552aa8aa17940487337f051ab3d967e1bf4a8fb94d41f3866481c153d57b65",
+        "native_attributes": 28,
+        "models": [],
+        "zones": [
+          {
+            "name": "NFC reserved - coil and tuning pending",
+            "rule_area": true,
+            "layers": "00000000_00000000_00000000_00000055",
+            "active_copper_layers": [
+              "F.Cu",
+              "In1.Cu",
+              "In2.Cu",
+              "B.Cu"
+            ],
+            "no_tracks": true,
+            "no_vias": true,
+            "no_pads": true,
+            "no_zone_fills": true,
+            "no_footprints": true,
+            "polygons_nm": [
+              [
+                [
+                  176000000,
+                  181000000
+                ],
+                [
+                  206000000,
+                  181000000
+                ],
+                [
+                  206000000,
+                  198000000
+                ],
+                [
+                  176000000,
+                  198000000
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "reference": "C203",
+        "library_id": "Capacitor_SMD:C_0402_1005Metric",
+        "source_sha256": "0403382fc4583ed510b461b1fa4a36dfaec6f4c0d9b1a67e6b0027837a54e1b5",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "H5",
+        "library_id": "MountingHole:MountingHole_3.2mm_M3",
+        "source_sha256": "b83ec84428449465df3b459f1bc24b285045c812102a2052b1b7ce0f67e018f2",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R413",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U504",
+        "library_id": "Tinkerbadge:IRM-H638T_Reviewed",
+        "source_sha256": "0864bc3785524a5fbc906ea72ea89e19ef2ea92daf12d1d358b67039e11b6063",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/IRM-H638T_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "SW401",
+        "library_id": "Tinkerbadge:SKSCLBE010",
+        "source_sha256": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/SKSCLBE010_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R414",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "MECH_PANEL",
+        "library_id": "Tinkerbadge:Review_Panel_93.3x54.9",
+        "source_sha256": "301883b845385c010417dd4b50a092511787917bc994900a7a20ece895071844",
+        "native_attributes": 28,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/Review_Panel_93.3x54.9.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C501",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D403",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D401",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R206",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R411",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C409",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C406",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R401",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R402",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "SW402",
+        "library_id": "Tinkerbadge:SKSCLBE010",
+        "source_sha256": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/SKSCLBE010_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C402",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C405",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "H4",
+        "library_id": "MountingHole:MountingHole_2.2mm_M2",
+        "source_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "H6",
+        "library_id": "MountingHole:MountingHole_3.2mm_M3",
+        "source_sha256": "b83ec84428449465df3b459f1bc24b285045c812102a2052b1b7ce0f67e018f2",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "C411",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R405",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D407",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D405",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "J101",
+        "library_id": "Tinkerbadge:USB4105-GF-A_ProjectShells",
+        "source_sha256": "6c6eb2b980c1e4fa504aee622ea9e512db2a0cae43cce9af0c21639c488bfabc",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R202",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R507",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D406",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C201",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R201",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C407",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D408",
+        "library_id": "Tinkerbadge:WS2812C-2020-V6_Reviewed",
+        "source_sha256": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/WS2812C-2020-V6_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "H3",
+        "library_id": "MountingHole:MountingHole_2.2mm_M2",
+        "source_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R412",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D409",
+        "library_id": "Tinkerbadge:HSMF-C165",
+        "source_sha256": "0acf2ebd509f5fa1ac51ddd27e609cf3f7672486eda42cc8a60e558a964b200d",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/HSMF-C165_envelope.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C403",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C412",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R301",
+        "library_id": "Resistor_SMD:R_0805_2012Metric",
+        "source_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C105",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "TP201",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R517",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R117",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R110",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C116",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C113",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C302",
+        "library_id": "Capacitor_SMD:C_1206_3216Metric",
+        "source_sha256": "b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R515",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R106",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D102",
+        "library_id": "Tinkerbadge:SMF6.0A",
+        "source_sha256": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMF.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C511",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R513",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R120",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C301",
+        "library_id": "Capacitor_SMD:C_1206_3216Metric",
+        "source_sha256": "b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "Q102",
+        "library_id": "Package_TO_SOT_SMD:SOT-23",
+        "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R118",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R104",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R116",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R119",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C114",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C514",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R103",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R109",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R510",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C310",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D303",
+        "library_id": "Diode_SMD:D_SOD-123",
+        "source_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_U105",
+        "library_id": "Tinkerbadge:Review_ESD_Package",
+        "source_sha256": "d9906d44b7476f642399481b430002a244dda9b1dd3a33b41cc692e7e537db28",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "TP202",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "MECH_BATTERY",
+        "library_id": "Tinkerbadge:Review_Battery_Allowance",
+        "source_sha256": "b79a6000487262b4ed7aa027efaeab3e9ea4fb996bc23c8707c5f44f96bac645",
+        "native_attributes": 28,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/Review_Battery_Allowance.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D302",
+        "library_id": "Diode_SMD:D_SOD-123",
+        "source_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C515",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U503",
+        "library_id": "Tinkerbadge:NT3H2111W0FHKH_XQFN8",
+        "source_sha256": "c921a2eacb3fa641f30e7a92ea19194b1b6943d076a889da2fa830cb34c6bdf2",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/NT3H2111W0FHKH_XQFN8_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_J103",
+        "library_id": "Tinkerbadge:Review_Dock_Contacts",
+        "source_sha256": "009fddd4a64bae37c1c4ce09fef7739ec599e64623cb90a5b5ee729c51dff8f5",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "C112",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U103",
+        "library_id": "Tinkerbadge:TPS63802_DLA0010A_Reviewed",
+        "source_sha256": "8cc7eabdb367fb830a77a550854e1ad0f8a2ff0564a3c8f20d2929e61226d448",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/TPS63802_DLA0010A_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U506",
+        "library_id": "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
+        "source_sha256": "fbac79fc5f310754726589d67071a422c429216f843ecd6013bbe2e6a49e7064",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "TP206",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R107",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C306",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C108",
+        "library_id": "Capacitor_SMD:C_1210_3225Metric",
+        "source_sha256": "e1dae516e079b70c4736d001fb81bfb4ef5f9c2a37c8175223a44f83a04ff75f",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "TP203",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "TP205",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R123",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C303",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C312",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R122",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R403",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R203",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C503",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_J502",
+        "library_id": "Tinkerbadge:Review_SAO_12.7x7",
+        "source_sha256": "bfc421faf899cb5b527c27413d711a624b5bf35017acc9aa4af4bf55d43574db",
+        "native_attributes": 28,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/Review_SAO_12.7x7.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R113",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C304",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R130",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "J501",
+        "library_id": "Tinkerbadge:JST_SH_SM04B_ProjectTabs",
+        "source_sha256": "e64745900f944d009492fab9b12a2ba4c4ea30431a49330d0e1bf83257304558",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R308",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C507",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R509",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R129",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C311",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U102",
+        "library_id": "Tinkerbadge:BQ24074RGTR_Reviewed",
+        "source_sha256": "183807e26beb1a5099b0fa636f887be583d7843de45b1ca956ac82f9a7fe5260",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/BQ24074RGTR_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "Q301",
+        "library_id": "Package_TO_SOT_SMD:SOT-323_SC-70",
+        "source_sha256": "74e071f8714739c788536a0b053956a4f21489ee5173faf675e1a7ade4445ba8",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R121",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C101",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C504",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "Q101",
+        "library_id": "Package_TO_SOT_SMD:SOT-23",
+        "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C107",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C104",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C305",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C103",
+        "library_id": "Capacitor_SMD:C_1206_3216Metric",
+        "source_sha256": "b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C512",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C106",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_J102",
+        "library_id": "Tinkerbadge:Review_Battery_Connector",
+        "source_sha256": "70303a71081c815a2df7f22bcafdf9da014a1609bbab02a4789d74b7e1ffb965",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R504",
+        "library_id": "Resistor_SMD:R_0805_2012Metric",
+        "source_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R501",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C508",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R305",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R111",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R512",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "TP204",
+        "library_id": "TestPoint:TestPoint_Pad_D1.0mm",
+        "source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "native_attributes": 4,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R506",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R503",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R125",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C109",
+        "library_id": "Capacitor_SMD:C_1210_3225Metric",
+        "source_sha256": "e1dae516e079b70c4736d001fb81bfb4ef5f9c2a37c8175223a44f83a04ff75f",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R303",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R114",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R511",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C308",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R304",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "Q501",
+        "library_id": "Package_TO_SOT_SMD:SOT-23",
+        "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R207",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R508",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U505",
+        "library_id": "Package_TO_SOT_SMD:SOT-23-6",
+        "source_sha256": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R127",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R404",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R126",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C307",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_L301",
+        "library_id": "Tinkerbadge:Review_Inductor_5x5",
+        "source_sha256": "cd5dd00c97a5a3c4df4660219358ced9d1494dd20e8b7491a6d3fcf59b084c67",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "R105",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_L101",
+        "library_id": "Tinkerbadge:Review_Inductor_6x6",
+        "source_sha256": "b6ff1c562e59bb831ad4d84ab636647c84dc56aaff8f9ad9e73aa33f61c6c139",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "C513",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R302",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C102",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U107",
+        "library_id": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+        "source_sha256": "e4bf82cea6d3b3259ddf42469b1407628ad1181a28ae6f3f340190c0cca31ccd",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R516",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R102",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "RES_J301",
+        "library_id": "Tinkerbadge:Review_Flex_Mating",
+        "source_sha256": "c9b2c4d332364cf36b3c8288ba6cda9f5b1503c3a64352345a0261418f77d436",
+        "native_attributes": 28,
+        "models": [],
+        "zones": []
+      },
+      {
+        "reference": "C309",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R502",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C505",
+        "library_id": "Capacitor_SMD:C_0805_2012Metric",
+        "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R128",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D301",
+        "library_id": "Diode_SMD:D_SOD-123",
+        "source_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R505",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U104",
+        "library_id": "Package_TO_SOT_SMD:SOT-23-6",
+        "source_sha256": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R204",
+        "library_id": "Resistor_SMD:R_0402_1005Metric",
+        "source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "Q103",
+        "library_id": "Package_TO_SOT_SMD:SOT-23",
+        "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U502",
+        "library_id": "Package_LGA:LGA-12_2x2mm_P0.5mm",
+        "source_sha256": "79f95a62dac718b00e4cb6153be82f80b0ed27f9691a674a6cd2ef9eeb26a9cf",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_LGA.3dshapes/LGA-12_2x2mm_P0.5mm.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R306",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C506",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R108",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C115",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R101",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R514",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U101",
+        "library_id": "Tinkerbadge:TPS2121RUXR_Reviewed",
+        "source_sha256": "d220a06a114923d44146b3e92914def3d7f61e4f423b7b7a44f42a55bf76e76c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KIPRJMOD}/models/TPS2121RUXR_Reviewed_visual.wrl",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "D101",
+        "library_id": "Tinkerbadge:SMF6.0A",
+        "source_sha256": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMF.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R307",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R115",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R124",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "R112",
+        "library_id": "Resistor_SMD:R_0603_1608Metric",
+        "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "C502",
+        "library_id": "Capacitor_SMD:C_0603_1608Metric",
+        "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      },
+      {
+        "reference": "U301",
+        "library_id": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+        "source_sha256": "b7ca3a31dd45c1225609f9b94e8ba1534bd16edd193628c8d67a8ea669b26b72",
+        "native_attributes": 2,
+        "models": [
+          {
+            "file": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.step",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "zones": []
+      }
+    ]
+  },
+  "schematic_metadata": {
+    "path_differences": [],
+    "field_differences": [],
+    "electrical_reference_not_on_correct_Fab_layer": [],
+    "dnp_caveat": [
+      {
+        "reference": "C507",
+        "native_dnp": false,
+        "population_field": "DNP",
+        "value": "TUNE / DNP"
+      },
+      {
+        "reference": "C508",
+        "native_dnp": false,
+        "population_field": "DNP",
+        "value": "TUNE / DNP"
+      }
+    ]
+  },
+  "critical_ground_pads": {
+    "J101": [
+      {
+        "pad": "SH",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_5555755f"
+      },
+      {
+        "pad": "SH",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_5555755f"
+      },
+      {
+        "pad": "SH",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_5555755f"
+      },
+      {
+        "pad": "SH",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_5555755f"
+      }
+    ],
+    "U101": [
+      {
+        "pad": "3",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000800c"
+      },
+      {
+        "pad": "12",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000800c"
+      }
+    ],
+    "U102": [
+      {
+        "pad": "8",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000800c"
+      },
+      {
+        "pad": "17",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000000c"
+      }
+    ],
+    "U103": [
+      {
+        "pad": "2",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000800c"
+      },
+      {
+        "pad": "3",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000800c"
+      },
+      {
+        "pad": "8",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_0000000c"
+      }
+    ],
+    "U201": [
+      {
+        "pad": "1",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_00002003"
+      },
+      {
+        "pad": "40",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_00002003"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_00000000_00000003"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      },
+      {
+        "pad": "41",
+        "net": "GND",
+        "layers": "00000000_00000000_55555555_55555557"
+      }
+    ]
+  },
+  "u103_stencil_checks": {
+    "windows": 2,
+    "all_windows_back_paste_only": true,
+    "pad8_paste_absent": true,
+    "has_pad11": false
+  },
+  "u503_pad_shape_check": {
+    "all_rectangular": true,
+    "corner_radius": "Not applicable to rectangular pads. API roundrect radius is inactive metadata; prior warning withdrawn."
+  },
+  "status": "PASS_PLACEMENT_NATIVE_PARITY_WITH_OPEN_RELEASE_GATES",
+  "independent_drc": {
+    "path": ".build/pcb_power_review/final-independent-drc.json",
+    "sha256": "37d75dee48ad66c4703a8c0fb9bf0af80042ab10c38d8dea4cdf38eb79cc120d",
+    "date": "2026-11-09T12:29:31",
+    "source": "tinkerbadge.kicad_pcb",
+    "violations_by_type": {
+      "hole_clearance": 4,
+      "silk_edge_clearance": 2
+    },
+    "violations": [
+      {
+        "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+        "items": [
+          {
+            "description": "Pad A1 [GND] of J101 on F.Cu",
+            "pos": {
+              "x": 107.355,
+              "y": 126.8
+            },
+            "uuid": "a13ef46e-8554-4a1f-a072-f1387efa85cd"
+          },
+          {
+            "description": "NPTH pad of J101",
+            "pos": {
+              "x": 106.28,
+              "y": 127.11
+            },
+            "uuid": "412f6613-3514-40b7-b084-3dcae4383a22"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+        "items": [
+          {
+            "description": "Pad B12 [GND] of J101 on F.Cu",
+            "pos": {
+              "x": 107.355,
+              "y": 126.8
+            },
+            "uuid": "64a4aa50-6c40-4f3f-93b3-d5f5c02a45c7"
+          },
+          {
+            "description": "NPTH pad of J101",
+            "pos": {
+              "x": 106.28,
+              "y": 127.11
+            },
+            "uuid": "412f6613-3514-40b7-b084-3dcae4383a22"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+        "items": [
+          {
+            "description": "Pad A12 [GND] of J101 on F.Cu",
+            "pos": {
+              "x": 107.355,
+              "y": 133.2
+            },
+            "uuid": "2c2efbfe-4f47-4897-8034-da3acf327551"
+          },
+          {
+            "description": "NPTH pad of J101",
+            "pos": {
+              "x": 106.28,
+              "y": 132.89
+            },
+            "uuid": "3d16330e-12bc-48e9-9e2f-aba192ab8065"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+        "items": [
+          {
+            "description": "Pad B1 [GND] of J101 on F.Cu",
+            "pos": {
+              "x": 107.355,
+              "y": 133.2
+            },
+            "uuid": "2bdcdeaf-b6c7-4028-9e95-f6402ad227c9"
+          },
+          {
+            "description": "NPTH pad of J101",
+            "pos": {
+              "x": 106.28,
+              "y": 132.89
+            },
+            "uuid": "3d16330e-12bc-48e9-9e2f-aba192ab8065"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Silkscreen clipped by board edge",
+        "items": [
+          {
+            "description": "Segment on Edge.Cuts",
+            "pos": {
+              "x": 104.0,
+              "y": 100.0
+            },
+            "uuid": "16d0cbef-a6bd-4fba-8aaa-fc6eb6f3e3f1"
+          },
+          {
+            "description": "Segment of U201 on F.Silkscreen",
+            "pos": {
+              "x": 108.8,
+              "y": 93.85
+            },
+            "uuid": "373e7337-64ae-478c-b0ef-5b9fbeb51c5e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_edge_clearance"
+      },
+      {
+        "description": "Silkscreen clipped by board edge",
+        "items": [
+          {
+            "description": "Segment on Edge.Cuts",
+            "pos": {
+              "x": 104.0,
+              "y": 100.0
+            },
+            "uuid": "16d0cbef-a6bd-4fba-8aaa-fc6eb6f3e3f1"
+          },
+          {
+            "description": "Segment of U201 on F.Silkscreen",
+            "pos": {
+              "x": 127.2,
+              "y": 93.85
+            },
+            "uuid": "fa12db85-29b6-45a7-b38a-84b928fa9068"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_edge_clearance"
+      }
+    ],
+    "unconnected_items": 390,
+    "schematic_parity_items": 9,
+    "missing_footprints": [
+      "Missing footprint J102 (2-wire LiPo)",
+      "Missing footprint J103 (Dock 5V contacts)",
+      "Missing footprint J104 (NTC (DNP))",
+      "Missing footprint L101 (0.47uH)",
+      "Missing footprint U105 (TPD4E05U06DQAR)",
+      "Missing footprint J301 (ED037TC1_FPC)",
+      "Missing footprint L301 (68uH)",
+      "Missing footprint AE501 (PCB LOOP / TUNE)",
+      "Missing footprint J502 (SFH11-NBPC-D03-ST-BK)"
+    ],
+    "ignored_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "note": "Independent CLI run without refill-zones or save-board. Existing rules are not waived."
+  },
+  "final_delta_positions": {
+    "J501": {
+      "x": 206.5,
+      "y": 165.0,
+      "angle": 270.0,
+      "side": "B.Cu"
+    },
+    "RES_J502": {
+      "x": 151.5,
+      "y": 116.0,
+      "angle": 0.0,
+      "side": "B.Cu"
+    },
+    "SW401": {
+      "x": 102.1,
+      "y": 161.0,
+      "angle": 270.0,
+      "side": "F.Cu"
+    },
+    "SW402": {
+      "x": 102.1,
+      "y": 171.0,
+      "angle": 270.0,
+      "side": "F.Cu"
+    }
+  },
+  "review_notes": [
+    "All 170 placed electrical components match the refreshed exported pins and nets.",
+    "All actual source pad shapes and dimensions match. U503 pads are rectangular; roundrect radius API values are inactive metadata.",
+    "Both rule areas match their source polygons and restrictions on all four active copper layers.",
+    "All 167 model associations match source footprints and resolve to existing files; this is not full vendor-shape certification.",
+    "All 170 schematic UUID paths, sheet names/files, and exported fields match.",
+    "C507/C508 remain custom Population=DNP only, with native DNP false. Assembly exports must honor the approved population records."
+  ]
+}

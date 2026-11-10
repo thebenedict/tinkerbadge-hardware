@@ -1,0 +1,41 @@
+{
+  "mpn": "IRM-H638T/TR2",
+  "package": "Four-terminal SMD demodulating IR receiver, H6XXT package",
+  "source": {
+    "url": "https://www.everlighteurope.com/custom/files/datasheets/DMO-0000008.pdf",
+    "revision": "DMO-0000008 Rev3,1 January2025; approval stamp14 January2025",
+    "filename": "IRM-H638T-TR2.pdf",
+    "sha256": "6ba15dc59077b2a3357495e5cbfe9b68378a275ae1750e02e77f9d6f2663d22e",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 1
+    },
+    {
+      "number": "2",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 1
+    },
+    {
+      "number": "3",
+      "name": "OUT",
+      "function": "Active-low demodulated output with internal pull-up",
+      "source_page": 1
+    },
+    {
+      "number": "4",
+      "name": "VCC",
+      "function": "Supply",
+      "source_page": 1
+    }
+  ],
+  "package_metal": "No separate EP. Both ground pins connect. Do not substitute a three-pin remote receiver footprint.",
+  "pixel_review": "Inspected actual p1 pin-labelled photo, p2 application circuit and p6 package drawing, peripheral_views/IRM-page1.png, IRM-page2.png, IRM-page6.png.",
+  "review_status": "pending_independent_review"
+}

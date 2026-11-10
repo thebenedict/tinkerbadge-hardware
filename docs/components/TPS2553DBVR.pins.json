@@ -1,0 +1,53 @@
+{
+  "mpn": "TPS2553DBVR",
+  "package": "DBV SOT-23-6, active-high EN, nonlatching retry version",
+  "source": {
+    "url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+    "revision": "SLVS841G, November2008 revised October2026",
+    "filename": "TPS2553.pdf",
+    "sha256": "edd76d150b073ae8d4addbf85f6845b8c722fbd0b35ef025ac3c9e704a6a3385",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "IN",
+      "function": "Input supply",
+      "source_page": 4
+    },
+    {
+      "number": "2",
+      "name": "GND",
+      "function": "Ground",
+      "source_page": 4
+    },
+    {
+      "number": "3",
+      "name": "EN",
+      "function": "Active-high enable",
+      "source_page": 4
+    },
+    {
+      "number": "4",
+      "name": "FAULT_N",
+      "function": "Open-drain overcurrent/thermal/reverse fault",
+      "source_page": 4
+    },
+    {
+      "number": "5",
+      "name": "ILIM",
+      "function": "Current-limit programming",
+      "source_page": 4
+    },
+    {
+      "number": "6",
+      "name": "OUT",
+      "function": "Current-limited switched supply",
+      "source_page": 4
+    }
+  ],
+  "package_metal": "DBV has six terminals, no EP. DRV/WSON pin order differs.",
+  "pixel_review": "Inspected p4 DBV top-view/pin table pixels, peripheral_views/TPS2553-page4.png.",
+  "review_status": "pending_independent_review"
+}

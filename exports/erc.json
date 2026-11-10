@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Pins of type Bidirectional and Power output are connected: Symbol U502 Pin 3 [SDO/SA0, Bidirectional, Line]",
+    "items": [
+      {
+        "description": "Symbol U502 Pin 3 [SDO/SA0, Bidirectional, Line]",
+        "uuid": "115c22af-26b7-4361-b711-86c7f96e904e",
+        "x": 158.75,
+        "y": 86.36
+      },
+      {
+        "description": "Symbol U103 Pin 6 [VOUT, Power output, Line]",
+        "uuid": "66546500-20bc-4061-b38c-9794a4962224",
+        "x": 77.47,
+        "y": 182.88
+      }
+    ],
+    "rule": "pin_to_pin",
+    "severity": "warning",
+    "sheet": "/05  SENSORS + EXPANSION/",
+    "x": 158.75,
+    "y": 86.36
+  }
+]

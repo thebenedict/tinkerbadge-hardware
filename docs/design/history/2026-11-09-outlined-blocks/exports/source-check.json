@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/WS2812C-2020-V6.pdf",
+      "sha256": "8465b5176b9f31d77c177c279013e18cfb6f13737fbfbcd724c3562e437cbcf9",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/HSMF-C165_AV02-0584EN.pdf",
+      "sha256": "920539983de9e38efa1043f59639fbec6dbd360e0004761ecfb4e6c552ef725a",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/TPS2553.pdf",
+      "sha256": "edd76d150b073ae8d4addbf85f6845b8c722fbd0b35ef025ac3c9e704a6a3385",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/IR67-21C-TR8.pdf",
+      "sha256": "8b0cafbc6c75a60d705c078c8027fea96162e198b8125909d2658e66738f527c",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/AO3400A.pdf",
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/IRM-H638T-TR2.pdf",
+      "sha256": "6ba15dc59077b2a3357495e5cbfe9b68378a275ae1750e02e77f9d6f2663d22e",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/SFH11-NBPC-D03-ST-BK_official.pdf",
+      "sha256": "8bd076918a6a018206a1cce6969b8decce97273ce50e871fe3e8c839e1e73b40",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/SM04B-SRSS-TB.pdf",
+      "sha256": "1d07d13f7829795cd9b66e48f2c31a2cf68881140143480e73596305cabc5606",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/TCA9534.pdf",
+      "sha256": "5e1ab781d3051f1af52a9c321f62b09d28b447448d56b962b35f9c8261994c04",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/BH1730FVC.pdf",
+      "sha256": "012d391bb2712fc3f22d6596e83ad49075e294dd797b5a40634467dc567d0572",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/LIS2DW12TR.pdf",
+      "sha256": "87da41966ff6bfe17a47db2c1940173d490aa4dfb7af2cce1a5dd5c0260c8735",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/NT3H2111W0FHKH.pdf",
+      "sha256": "44a7cbee1220999138538341392aacde5a87aed7a284974328e8297b132a20c8",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/NT3H2111W0FHKH-errata.pdf",
+      "sha256": "37c7afb52db718fd4123580573ae62ce7e919cf6913cf0781e06f7394fc9d3df",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/Qwiic-Cable.pdf",
+      "sha256": "bf5a91ad8ebdafa23f7971e2e0bf35abc1e2ea0d9eba1963ae43ea82f438daef",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/Qwiic_reference_schematic.pdf",
+      "sha256": "c76164cf136ba5392b6a215e8eeaeec6eced1934c8dd3124586288c11fc645bd",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/AOS-SOT23.pdf",
+      "sha256": "b6fac64d55f133ce74dd85ddddc618c3d5408e9531cb21e660f6a8ef3d8c5408",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/SKSCLBE010.pdf",
+      "sha256": "06eed78e94af6bb6c3885a1baa87f00e6f522a61240e1aa8243afbaadf611521",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/SKSCLBE010_SKSC_catalog.pdf",
+      "sha256": "cc8baff4e324df2cf6a71b9319ab9dbfd9e56d2e589dce392456b8afc99ca5bb",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/peripheral_inventory.json",
+      "path": "docs/datasheets/WSOF6_ROHM_Rev005.pdf",
+      "sha256": "ad2aa218a499388d66fd5b040bad15cd7a4605c7a82713ee00d027425facc884",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TPS2121RUXR.pdf",
+      "sha256": "b2f5950f596dc2c4ca33e4ebac27fd35e4dcc68ea63e173466123e1118e91a06",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/BQ24074RGTR.pdf",
+      "sha256": "4fe4e4f9855501f83b400c6932e3098439e51c50539e40dc45b44a8d509e8db1",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TPS63802DLAR.pdf",
+      "sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TPS22918DBVR.pdf",
+      "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TPD4E05U06DQAR.pdf",
+      "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/LP603450.pdf",
+      "sha256": "46d1f33d6de0c5ff81b80471a1f5973744574150349fc1152e5967f51f017052",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/USB4105-GF-A.pdf",
+      "sha256": "1077a88a61449995ed13bf7dba2585fcadf629aa071a4052691e2fd12759219b",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TPS3700DDCR.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/TMUX1511PWR.pdf",
+      "sha256": "04291b41a68347fedbbb0776aa44f500eaca65f2ca3af0e022ee60d41c7b1e9f",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/SMF6.0A.pdf",
+      "sha256": "543ea7413424eddda26798f6cb121c71ca701630dc936363818dbba00a3c27f5",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/532610371-product.pdf",
+      "sha256": "6ec8cb03a0d6fddc78d45dc98dc09baf6dd69abc526a632cbe8943e03ca38d20",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/AO3400A.pdf",
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/power_inventory.json",
+      "path": "docs/datasheets/AOS-SOT23.pdf",
+      "sha256": "b6fac64d55f133ce74dd85ddddc618c3d5408e9531cb21e660f6a8ef3d8c5408",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/mcu_inventory.json",
+      "path": "docs/datasheets/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "sha256": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/mcu_inventory.json",
+      "path": "docs/datasheets/esp32-s3_datasheet_en.pdf",
+      "sha256": "2d5a7cb7fd559d8d972bd88db32669c0196d23f22d7afaafb0f63d099b589a3f",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/mcu_inventory.json",
+      "path": "docs/datasheets/esp32s3-hardware-design-guidelines.pdf",
+      "sha256": "4b3f3a5b3c18b04dd89b2bfce5f6a038cd7574ccd3d54c79c5b4924a8ad9c8ad",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/mcu_inventory.json",
+      "path": "docs/datasheets/esp32-s3_errata_en.pdf",
+      "sha256": "2148ab99c9c482e657b3b5710238cf8b6236eac00425e609ff30c51173cf9509",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/ED037TC1_Waveshare_rev1_2020-05-29.pdf",
+      "sha256": "0d46ded5514356ea636796cefbec69fc2e00b90dcc1b3655ddb14ae218877852",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/Waveshare_3.7inch_e-Paper_HAT_schematic.pdf",
+      "sha256": "dc5df982d82d55f99fe9fc40bd4870dbd209f8420198ca7b012075f3f8c8ab42",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/Panasonic_Y5B_Y5BW.pdf",
+      "sha256": "3ffd0ce7b07ef092417668908dee332e1e575be1b590c72656cbd694d6dfe9a7",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/SI1308EDL.pdf",
+      "sha256": "a86d6f766f259d8b170a01081f577055f37b527257a0f9af497c8f2c33625c9a",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/SI1308EDL_PTN-SIL-029-2026.pdf",
+      "sha256": "23d0f215190085e4bc5807424ec553eefd192129f70af225b9e74e087f937851",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/MBR0530T1G.pdf",
+      "sha256": "b7e27498724be8d5ccf1685120bc6e4c5375585aa3840402439aa15eed5d723e",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/SSD1677_rev1_2018-11.pdf",
+      "sha256": "7abe5dedcd565d3cb5720a0c426e99beabc803a1d095e3cdf804fd0875def64e",
+      "status": "PASS"
+    },
+    {
+      "inventory": "docs/datasheets/display_inventory.json",
+      "path": "docs/datasheets/SN74LVC541APWR.pdf",
+      "sha256": "1341bf46dbe37ed3dd3a83767c09a607e760baba6ab541e69708d5c282b08f71",
+      "status": "PASS"
+    }
+  ]
+}

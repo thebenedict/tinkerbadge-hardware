@@ -1,0 +1,1679 @@
+
+=== PDF PAGE 1 ===
+
+A
+B
+C
+D
+1 2 3 4 5 6
+TINKERBADGE / ELECTRICAL OVERVIEW
+Prototype schematic 0.1 | 2026-11-09
+Source-controlled circuit contracts: docs/design/
+Electrical source review precedes each populated block.
+A
+01 POWER + CHARGING
+02 PROCESSOR + RECOVERY
+03 E-PAPER DISPLAY
+USB / dock input selection
+Power path, protected BAT sensing
+Single nominal 3.3 V shared rail
+ESP32-S3-WROOM-1-N16R8 Native USB, UART and boot/reset
+Reviewed GPIO allocation
+ED037TC1 electrical interface
+Switched logic and isolated inputs
+Exact panel boost support
+B
+File: power.kicad_sch
+File: mcu.kicad_sch
+File: display.kicad_sch
+04 LIGHTING + BUTTONS
+05 SENSORS + EXPANSION
+Three role + five affinity pixels
+Red / green power indicator
+Two buttons, RTC wake
+Ambient, motion, dynamic NFC
+IR transmit / receive
+Qwiic / SAO and status expander
+INITIAL VARIANT Onboard charging is disabled.
+Two-wire protected LiPo; optional NTC not fitted.
+See docs/design/implementation_status.md
+for physical and prototype release gates.
+PROTOTYPE RAIL DECISION
+Shared 3.3 V supply, including the eight RGB LEDs.
+Tolerance can fall below the LED specified minimum.
+Startup / low-battery / Wi-Fi / LED-step tests required.
+C
+File: lighting.kicad_sch
+File: peripherals.kicad_sch
+Sheet: /
+File: tinkerbadge.kicad_sch
+D
+Title:
+Size: A4
+Date:
+Rev:
+KiCad E.D.A. 10.0.8
+Id: 1/6
+1 2 3 4 5 6
+
+=== PDF PAGE 2 ===
+
+1 2 3 4 5 6 7 8
+USB / dock inputs
+USB-priority source selection
+Power path: charging disabled
+A
+B
+C
+USB_CC1 USB_CC2
+J101
+USB4105-GF-A
+VBUS CC1 CC2 D- D- D+ D+ R101
+5.1k 1%
+R102
+5.1k 1%
+SHIELD
+GND
+SH
+A1
+GND
+GND
+DOCK_5V
+J103
+J103
+1
+1
+2
+2
+GND
+A4
+A5
+B5
+A7
+B7
+A6
+B6
+USB_VBUS
+USB_CC1
+USB_CC2
+GND
+GND
+USB_DM
+USB_DM
+USB_DP
+USB_DP
+USB_DP
+USB_DM
+U105
+NC 10 U105
+NC 10
+D1+ 1
+D1+ 1
+D1- 2
+D1- 2
+NC 9
+NC 9
+SBU1 SBU2 A8
+B8
+GND 3
+GND 3
+GND
+GND
+USB_VBUS
+D101
+SMF6.0A
+GND
+DOCK_5V
+D102
+D102
+SMF6.0A
+SMF6.0A
+GND
+GND
+Dock 5V contacts
+Dock 5V contacts
+NC 7
+NC 7
+D2+ 4
+D2+ 4
+D2- 5
+D2- 5
+NC 6
+NC 6
+USB_CC1
+USB_CC2
+GND
+USB_VBUS
+DOCK_5V
+MUX_PRIORITY_USB
+MUX_OV_USB
+MUX_OV_DOCK
+7
+2
+6
+3
+IN1
+IN2
+PR1
+CP2
+5
+4 OV1
+OV2
+GND
+U101
+TPS2121RUXR
+OUT 1
+OUT 8
+ST 9
+ILM 10
+SS 11
+VEXT_5V
+VEXT_5V
+MUX_USB_SELECTED
+MUX_ILM
+MUX_SS
+MUX_ILM R109
+80.6k 1%
+VEXT_5V
+C103
+4.7uF 25V X7R
+GND
+TPD4E05U06DQAR
+TPD4E05U06DQAR
+12
+GND
+MUX_SS
+C104
+GND
+USB_VBUS
+C101
+C101
+1uF 25V X7R
+1uF 25V X7R
+DOCK_5V
+R105
+44.2k 0.1%
+MUX_OV_DOCK
+R106
+10.0k 0.1%
+GND
+USB_VBUS
+R107
+31.6k 0.1%
+MUX_PRIORITY_USB
+R108
+10.0k 0.1%
+GND
+MUX_USB_SELECTED
+100nF 16V X7R
+CHARGER_TMR
+R114
+47.5k 1%
+VEXT_5V
+GND
+CHARGE_DISABLE
+R120
+0
+U102 BQ24074RGTR
+15
+ITERM
+IN 13
+OUT 10
+VSYS
+VSYS
+CHARGER_EN1
+4
+CE
+14
+TMR
+6
+5 EN1
+EN2
+CHARGER_ILIM
+CHARGER_ISET
+12
+16
+ILIM
+ISET
+BAT 2
+TS 1
+PGOOD 7
+CHG 9
+VBAT_PROTECTED
+BATT_NTC_OPTIONAL
+VSS
+8
+CHARGER_PGOOD_N
+CHARGER_CHG_N
+CHARGER_ILIM
+CHARGER_ISET
+GND
+GND
+R112
+4.32k 1%
+R113
+R113
+3.32k 1%
+3.32k 1%
+GND
+VSYS
+C105
+10uF 10V X7R
+GND
+DOCK_5V
+C102
+USB_VBUS
+R103
+44.2k 0.1%
+MUX_OV_USB
+R104
+10.0k 0.1%
+GND
+1uF 25V X7R
+GND
+GND
+1
+GND
+VSYS
+R110
+10k 1%
+MUX_USB_SELECTED
+CHARGER_EN1
+2 3
+Q103 AO3400A
+GND
+GND
+VSYS
+R111
+100k 1%
+CHARGER_EN1
+GND
+2-wire LiPo
+VBAT_PROTECTED
+J102
+1
+2
+GND
+VBAT_PROTECTED
+C106
+10uF 10V X7R
+GND
+BATT_NTC_OPTIONAL
++3V3
++3V3
+R115
+100k 1%
+R116
+R116
+100k 1%
+100k 1%
+J104
+J104
+1
+1
+2
+2
+CHARGER_PGOOD_N
+GND
+GND
+CHARGER_CHG_N
+NTC (DNP)
+NTC (DNP)
+Shared nominal 3.3 V rail Battery ADC / source presence
+Display power
+0.47uH
+L101
+U103
+TPS63802DLAR
++3V3
+C115
+PRIMARY_L2
++3V3
+D
+PRIMARY_L1
+C107
+10uF 10V X7R
+GND
+VSYS
+VSYS
+GND
+9
+10
+1
+2
+L1
+VIN
+EN
+L2 7
+VOUT 6
+FB 4
+PG 5
+MODE
+AGND
+GND
+PRIMARY_FB
+C108
+C109
+3
+8
+GND
+GND
+E
+22uF 10V X7R
+GND
++3V3
+R117
+56.0k 0.1%
+PRIMARY_FB
+R118
+10.0k 0.1%
+GND
+22uF 10V X7R
+GND
+FIRST-PROTOTYPE RAIL EXCEPTION
+56k / 10k: 3.3 V nominal. No LDO.
+PWM static estimate: 3.256 to 3.344 V.
+LED source minimum is 3.3 V.
+LED operation is NOT guaranteed.
+Test startup, low battery, Wi-Fi and
+full-white steps at the LED pins.
+See power.md for limits and test gates.
+VBAT_PROTECTED
+R127
+100k 0.1%
+BAT_DIV_PRE
+100nF 6.3V X7R
+C116
+C116
+10nF 6.3V X7R
+10nF 6.3V X7R +3V3
++3V3
+GND
+R128
+100k 0.1%
+U107
+U107
+TMUX1511PWR
+TMUX1511PWR
++3V3
++3V3
+GND GND
+BAT_DIV_PRE
+1
+1
+VDD 14
+VDD 14
+SEL1
+SEL1
+2 D1 3
+2 D1 3
+S1
+S1
+4
+4
+SEL2
+SEL2
+5 D2 6
+5 D2 6
+S2
+S2
+10
+10
+9 SEL3
+9 SEL3
+S3
+S3
+13
+13
+12 12 SEL4
+SEL4
+S4
+S4
+GND
+GND
+D3 8
+D3 8
+D4 D4 11
+11
+BAT_SENSE_ISOLATED
++3V3
+7
+7
+GND
+GND
+R123
+R123
+100k 1% GND
+100k 1%
+USB_PRESENT_N
+R121
+USB_VBUS
+1
+2 3
+Q101 AO3400A
+R124
+DOCK_5V
+100k 1%
+USB_PRESENT_GATE
+GND
+100k 1%
+DOCK_PRESENT_GATE
+R122
+470k 1%
+GND
+GND
++3V3
++3V3
+C112
+1uF 6.3V X7R
+GND
+EPD_EN
+EPD_CT
+1
+1
+3
+3
+4
+4
+VIN
+VIN
+ON
+ON
+CT
+CT
+GND
+2
+2
+C113
+U104
+U104
+TPS22918DBVR
+TPS22918DBVR
++3V3_EPD
+VOUT 6
+VOUT 6
+QOD 5
+QOD 5
+C114
+EPD_QOD
+10uF 6.3V X7R
+GND
+GND
+GND
++3V3_EPD
+R119
+1k 1%
+EPD_QOD
+R130
+10k 0.1%
+1
+R125
+470k 1%
+BAT_ADC
+R129
+100k 0.1%
++3V3
+GND
+GND
+R126
+R126
+100k 1%
+100k 1%
+DOCK_PRESENT_N
+2 3
+Q102 AO3400A
+GND
+1nF 16V C0G
+GND
+DEVELOPMENT SAFETY GATES
+R120 fitted: charging OFF. J104 thermistor DNP.
+Fitting a sensor alone does not enable charging.
+J102 terminal numbers are logical, not vendor polarity.
+Footprints / exact pack / thermal and peak loads: pending.
+USB 100 mA and dock 500 mA modes need bench validation.
+Sheet: /01 POWER + CHARGING/
+File: power.kicad_sch
+Title:
+Size: A3
+Date:
+Electrical development draft. No PCB layout or manufacturing release. See docs/design/power.md.
+KiCad E.D.A. 10.0.8
+F
+1 2 3 4 5 6 7 8
+Rev:
+Id: 2/6
+A
+B
+C
+D
+E
+F
+
+=== PDF PAGE 3 ===
+
+1 2 3 4 5 6
+02 PROCESSOR + RECOVERY
+ESP32-S3 Processor + Interfaces
+A
+C201
+22uF 10V X5R
+Enable + Reset
++3V3 +3V3
+B
+R201
+R201
+10k 1%
+10k 1%
+MCU_EN
+C203
+C203
+1uF 10V X7R
+1uF 10V X7R
+GND
+GND
+EN: 10 k / 1 uF. Pull low to reset.
+TP201
+Boot / Download
++3V3
++3V3
+R202
+R202
+10k 1%
+10k 1%
+BOOT_N
+TP202
++3V3
+C202
+100nF 16V X7R
+Place 100 nF at VDD; keep bulk nearby.
+GND
+MCU_EN
+BOOT_N
+BAT_ADC
+BTN_A_N
+BTN_B_N
+USB_PRESENT_N
+DOCK_PRESENT_N
+MOTION_INT1
+I2C_SDA
+I2C_SCL
+EPD_CS_N
+EPD_MOSI
+EPD_SCK
+EPD_DC
+EPD_RST_N
+EPD_BUSY
+EXT_SDA
+U201
+U201
+ESP32-S3-WROOM-1-N16R8
+ESP32-S3-WROOM-1-N16R8
++3V3
++3V3
+3
+3
+27
+27
+39
+39
+38 38 15
+15
+4
+4
+5
+5
+6
+6
+7
+7
+12
+12
+17
+17
+18
+18
+19
+19
+20
+20
+21
+21
+22
+22
+8
+8
+9
+9
+A
+UART RECOVERY
+TP205
+UART_TX
+TP206
+UART_RX
+EN
+EN
+IO0
+IO0
+IO1
+IO1
+IO2
+IO2
+IO3
+IO3
+IO4
+IO4
+IO5
+IO5
+IO6
+IO6
+IO7
+IO7
+IO8
+IO8
+IO9
+IO9
+IO10
+IO10
+IO11
+IO11
+IO12
+IO12
+IO13
+IO13
+IO14
+IO14
+IO15
+IO15
+IO16
+IO16
+1 3V3 2
+1 3V3 2
+GND
+GND
+TXD0 37
+TXD0 37
+RXD0 36
+RXD0 36
+IO17 10
+IO17 10
+IO18 11
+IO18 11
+USB_D- 13
+USB_D- 13
+USB_D+ 14
+USB_D+ 14
+IO21 23
+IO21 23
+PSRAM
+IO35 28
+IO35 28
+IO36 29
+IO36 29
+IO37 30
+IO37 30
+IO38 31
+IO38 31
+IO39 32
+IO39 32
+IO40 33
+IO40 33
+IO41 34
+IO41 34
+IO42 35
+IO42 35
+IO45 26
+IO45 26
+IO46 16
+IO46 16
+IO47 24
+IO47 24
+IO48 25
+IO48 25
+UART_TX
+UART_RX
+IR_TX
+IR_RX_N
+USB 2.0 FS
+R205
+22R 1%
+MCU_USB_DM
+MCU_USB_DP
+USB_DM
+USB_DP
+B
+RGB_DATA
+PWR_LED_G
+PWR_LED_R
+EPD_EN
+EXT_SCL
+SAO_GPIO1
+STRAP45
+STRAP46
+SAO_GPIO2
+NFC_FD_N
+Hold BOOT low while resetting EN.
+GND
+GND
+C
+Power Test
+DISPLAY DEFAULT OFF
+EPD_EN
+R207
+R207
+100k 1%
+100k 1%
+R206
+22R 1%
+BOOT STRAPS
+STRAP45
+STRAP46
+R203
+R203
+10k 1%
+10k 1%
+GND
+GND
+Default: SPI boot, 3.3 V flash.
+R204
+R204
+10k 1%
+10k 1%
+GND
+GND
+C
++3V3
+TP203 TP204
+TP204
+GND GND
+GND
+GND
+GPIO40 may go high in USB-OTG ROM recovery.
+The panel remains reset by its local pull-down.
+D
+Sheet: /02 PROCESSOR + RECOVERY/
+File: mcu.kicad_sch
+N16R8: GPIO35 / 36 / 37 reserved for octal PSRAM.
+GPIO3 left open with default eFuse JTAG selection.
+GND pins 1, 40 and exposed pad 41 are one net.
+Antenna keepout and RF layout are PCB release gates.
+D
+KiCad E.D.A. 10.0.8
+Id: 3/6
+1 2 3 4 5 6
+Title:
+Size: A4
+Date:
+Rev:
+
+=== PDF PAGE 4 ===
+
+A
+B
+C
+D
+E
+F
+1 2 3 4 5 6 7 8
+Prototype electrical capture. Physical FPC mating and panel revision must be verified before layout.
+Panel interface / 3.7-inch display
+U301
+SN74LVC541APWR
++3V3_EPD
+C312
+100n / 10V
+GND
+EPD_MOSI
+EPD_SCK
+EPD_CS_N
+EPD_DC
+EPD_RST_N
+A1
+A2
+A3
+A4
+A5
+A6
+A7
+A8
+VCC 20
+OE1#
+OE2#
+GND
+2
+3
+4
+5
+6
+7
+8
+9
+1
+19
+10
+GND GND
+Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 18
+17
+16
+15
+14
+13
+12
+11
+EPD_MOSI_PANEL
+EPD_SCK_PANEL
+EPD_CS_N_PANEL
+EPD_DC_PANEL
+EPD_RST_N_PANEL
+EPD_BUSY
+J301
+ED037TC1_FPC
+VDDIO 15
+VCI 16
+14
+13 SDA/MOSI
+12 SCL/SCK
+11 CS#
+10 D/C#
+9 RES#
+8 BUSY
+BS1
+6
+TSCL
+7
+TSDA
+1
+NC
+4
+NC
+GDR 2
+RESE 3
+VSH2 5
+VDD_1V8 18
+VPP 19
+VSH1 20
+VGH 21
+VSL 22
+VGL 23
+VCOM 24
+VSS
+17
+GND GND
+A
++3V3_EPD
+C303
+100n / 10V
+EPD_GDR
+EPD_RESE
+EPD_VSH2
+EPD_VDD_1V8
+EPD_VPP
+EPD_VSH1
+EPD_VGH
+EPD_VSL
+EPD_VGL
+EPD_VCOM
+GND
+B
+U301 isolates MCU outputs when the panel supply is off (Ioff-rated). BUSY is a pulled-down input. Power-on: hold reset low, enable +3V3_EPD, initialize, then update. Quiesce SPI and sleep the panel before power-off.
+Panel boost and charge pump
+Panel rail decoupling
+Use nonpolar X7R capacitors; verify capacitance under DC bias.
+EPD_VPP EPD_VSH1
+EPD_VDD_1V8 EPD_VGH
+C304
+C305
+C306
+C
+C307
+L301
+68uH
++3V3_EPD
+EPD_SW
+D303
+MBR0530T1G
+1u / 10V
+1u / 25V
+1u / 50V
+EPD_VGH
+EPD_PUMP
+C301
+4.7u / 50V
+GND
+1u / 50V
+GND
+EPD_VSH2
+C311
+EPD_GDR
+1
+1
+R302
+10k
+GND
+C302
+C302
+2 3
+2 3
+4.7u / 50V
+4.7u / 50V Q301 Si1308EDL-T1-GE3
+Q301 Si1308EDL-T1-GE3
+EPD_RESE
+R301
+0.47 / 0.25W
+GND
+D301
+MBR0530T1G
+D302
+MBR0530T1G
+EPD_VGL
+EPD_VSL
+C308
+EPD_VGL
+C309
+EPD_VCOM
+C310
+1u / 50V
+1u / 50V
+1u / 50V
+GND
+1u / 25V
+GND
+D
+Boot / off-state bias
++3V3
+EPD_MOSI
+EPD_SCK
+R303
+100k
+GND
+R304
+100k
+EPD_DC EPD_RST_N
+R305
+100k
+R306
+100k
+EPD_CS_N
+GND GND
+EPD_BUSY
+R307
+100k
+R308
+100k
+FPC pins 1 and 4 are NC per the raw-panel document.
+Pin 5 is VSH2. VDD on pin 18 is local 1.8 V, not the 3.3 V input.
+Release gates: exact panel, FPC orientation, inductor saturation,
+capacitor derating, measured startup/refresh/off-state waveforms.
+J301 intentionally has no PCB footprint pending the mating audit.
+E
+GND
+GND
+Sheet: /03 E-PAPER DISPLAY/
+File: display.kicad_sch
+Title:
+Size: A3
+Date:
+KiCad E.D.A. 10.0.8
+1 2 3 4 5 6 7 8
+Rev:
+Id: 4/6
+F
+
+=== PDF PAGE 5 ===
+
+A
+B
+C
+D
+E
+F
+1 2 3 4 5 6 7 8
+04 LIGHTING + BUTTONS
+Addressable RGB Chain
+RGB chain: exact WS2812C-2020-V6 on shared nominal +3V3. Below 3.3 V operation is not guaranteed.
+Send black before storage. Respect the system power/current budget in firmware.
+Prototype gate: scope startup, low battery, Wi-Fi and full-white transitions at the LEDs; verify shared peak capacity.
++3V3
+C409
+22u / 10V
+GND
+R401
+330
+RGB_DATA
+C401
+100n / 10V
+RGB_DIN
+3
+3
+VDD 4
+VDD 4
+DI
+DI
+DO 1
+DO 1
+GND
+RGB_LINK_1 3
+3
+VDD 4
+VDD 4
+C402
+100n / 10V
+GND
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_2
+3
+3
+C403
+100n / 10V
+C404
+100n / 10V
+VDD 4
+VDD 4
+GND
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_3 3
+3
+VDD 4
+VDD 4
+GND
+VDD 4
+VDD 4
+C405
+100n / 10V
+GND
+VDD 4
+VDD 4
+C406
+100n / 10V
+GND
+VDD 4
+VDD 4
+C407
+100n / 10V
+GND
+VDD 4
+VDD 4
+C408
+100n / 10V
+GND
+3
+3
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_6 GND
+GND
+3
+3
+R402
+R402
+100k
+100k
+GND
+GND
+2
+2
+GND
+GND
+D401
+D401
+WS2812C-2020-V6
+WS2812C-2020-V6
+GND
+GND
+GND
+2
+2
+GND
+GND
+2
+2
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_4 3
+3
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_5
+GND
+GND
+GND
+GND
+2
+2
+2
+2
+GND
+GND
+GND
+GND GND
+GND GND GND
+D402
+D402
+D403
+D403
+D404
+D404
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+D405
+D405
+WS2812C-2020-V6
+WS2812C-2020-V6
+2
+2
+GND
+GND
+D406
+D406
+WS2812C-2020-V6
+WS2812C-2020-V6
+DI
+DI
+DO 1
+DO 1
+RGB_LINK_7
+3
+3
+DI
+DI
+DO 1
+DO 1
+GND
+GND
+GND
+GND
+2
+2
+2
+2
+GND
+GND
+GND GND
+D407
+D407
+D408
+D408
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+WS2812C-2020-V6
+Independent Green / Red Power Indicator
+User Buttons
+R403
+2.2k
+A_GREEN
+A_RED
+PWR_LED_G
+PWR_LED_R
+R405
+100k
+R404
+2.2k
+R406
+100k
+GND GND
+PWR_GREEN_A
+D409
+HSMF-C165
+1
+2
+PWR_RED_A
+Both LED control outputs default low. Current is limited by 2.2k per die.
+K_GREEN 3
+K_RED 4
+GND
+A is the retained storage-wake button; B is a normal input.
+3
+4
+GND
++3V3
+R412
+100k
+R411
+330
+1
+BTN_A_SW_N BTN_B_SW_N
+BTN_A_N
+3
+1
+2
+4
+2
+C411
+100n / 10V
+GND
+GND
+SW401
+SKSCLBE010
+SW402
+SKSCLBE010
+Alps side push, 2.2 N. Common pairs: 1-2 and 3-4.
+Always-on bias and capacitive loading need application qualification.
+100k / 100nF gives about 10 ms debounce; firmware must also debounce.
++3V3
+R414
+100k
+R413
+330
+BTN_B_N
+C412
+100n / 10V
+GND
+Footprints for the exact LEDs and switch are intentionally blank pending their physical pad audit.
+Sheet: /04 LIGHTING + BUTTONS/
+File: lighting.kicad_sch
+Title:
+Size: A3
+Date:
+Rev:
+KiCad E.D.A. 10.0.8
+1 2 3 4 5 6 7 8
+Id: 5/6
+A
+B
+C
+D
+E
+F
+
+=== PDF PAGE 6 ===
+
+A
+B
+C
+D
+E
+F
+1 2 3 4 5 6 7 8
+05 SENSORS + EXPANSION
+Ambient Light + I2C Pull-ups
+Motion Sensor
+Dynamic NFC Tag + Antenna
++3V3
+R501
+4.7k
+R502
+4.7k
+I2C_SCL
+I2C_SDA
+6
+6
+4
+4
+U501
+U501
+BH1730FVC
+BH1730FVC
++3V3
++3V3
+VCC 1
+VCC 1
+DVI 5
+DVI 5
+SCL
+SCL
+SDA
+SDA
+GND
+GND
+3
+3
+GND
+BH1730: 0x29; poll ambient light. INT unused.
+INT 2
+INT 2
++3V3
+U503
+U503
+NT3H2111W0FHKH
+NT3H2111W0FHKH
++3V3
++3V3
+C501
+100n / 10V
+C502
+100n / 10V
+GND GND
+U502
+U502
+LIS2DW12TR
+LIS2DW12TR
+I2C_SCL
+I2C_SDA
++3V3
+C505
+C505
+10u / 10V
+10u / 10V
+C503
+100n / 10V
+C504
+C504
+100n / 10V
+100n / 10V
+GND
+MOTION_INT1
+A
+C506
+100n / 10V
+1
+1
+4
+4
+2
+2
+3
+3
+GND
+GND
+VDD 9
+VDD 9
+SCL/SPC
+SCL/SPC
+VDD_IO 10
+VDD_IO 10
+SDA/SDI/SDO
+SDA/SDI/SDO
+INT1 INT1 INT2 INT2 12
+12
+11
+11
+CS
+CS
+SDO/SA0
+SDO/SA0
+GND
+GND
+NC 5
+NC 5
+RES
+RES
+GND
+GND
+6
+6
+7
+7
+8
+8
+GND
+LIS2DW12: 0x19; INT1 for motion event wake.
+CS and SA0 high. Reserved pad 7 is grounded.
+GND
+AE501
+PCB LOOP / TUNE
++3V3
+R503
+10k
+GND
+I2C_SCL
+I2C_SDA
+NFC_FD_N
+3
+3
+5
+5
+4
+4
+SCL
+SCL
+SDA
+SDA
+FD
+FD
+VCC 6
+VCC 6
+LA 1
+LA 1
+LB 8
+LB 8
+VOUT 7
+VOUT 7
+VSS
+VSS
+2
+2
+GND
+NTAG: 0x55. Center metal is NOT soldered.
+Tune the PCB loop in the finished badge; tuning caps DNP.
+NFC_LA
+B
+C507
+TUNE / DNP
+C508
+TUNE / DNP
+NFC_LB
+ONBOARD I2C: 100 kHz initially. NTAG errata: STOP/START >= 50 us; guard RF edges; quiet bus for 1 ms at startup.
+Status / Enable Expander
+Protected Accessory Rail + Qwiic / SAO
+I2C_SCL
+I2C_SDA
+GND
+TCA9534 address: 0x20.
+Write latch 0x00 before
+direction register 0xFB.
+U506
+U506
+TCA9534PWR
+TCA9534PWR
++3V3
++3V3
+14
+14
+15
+15
+13
+13
+1
+1
+2
+2
+3
+3
+8
+8
+GND
+SCL
+SCL
+SDA
+SDA
+INT
+INT
+A0
+A0
+A1
+A1
+A2
+A2
+VDD 16
+VDD 16
+GND
+GND
+C514
+100n / 10V
+C515
+1u / 10V
+GND GND
+CHARGER_CHG_N
+CHARGER_PGOOD_N
+ACC_FAULT_N
+ACC_EN
+P0 4
+P0 4
+P1 5
+P1 5
+P2 6
+P2 6
+P3 7
+P3 7
+P4 9
+P4 9
+P5 10
+P5 10
+P6 11
+P6 11
+P7 12
+P7 12
+EXP_UNUSED_P4
+50 mA normal total. 210k / 1% sets 109-152.3 mA current limit.
+Qwiic + SAO: 3.3 V only, 50 mA shared budget.
+No hot-plug, external power or off-state GPIO drive.
+C512
++3V3
+10u / 10V
+1
+3
+5
+U505
+TPS2553DBVR
+2
+C
+C511
+1u / 10V
+GND
+ACC_EN
+GND
+ACC_3V3
+EXP_UNUSED_P6
+EXP_UNUSED_P7
+R517
+100k
+R516
+100k
+EXP_UNUSED_P5
+R515
+100k
+IN
+EN
+ILIM
+OUT 6
+FAULT_N 4
+GND
+R509
+100k
+ACC_ILIM
+R508
+210k
++3V3
+R510
+100k
+R514
+100k
+GND
+Optional IR Transmitter
+Optional IR Receiver
+100 ohm / 0.25 W
+limits pulses.
+C513
+10u / 10V
+GND
+ACC_FAULT_N
+ACC_3V3
+R512
+4.7k
+R513
+4.7k
+EXT_SDA
+EXT_SCL
+R511
+100k
+GND
+D
+R505
+100
+IR_TX
+IR_GATE
+1
+R506
+100k
++3V3
++3V3
+R504
+R504
+100
+100
+IR_LED_A
+1
+D501
+IR67-21C/TR8
+2
+IR_LED_K
+2 3
+Q501
+AO3400A
+GND
+R507
+100
+ACC_3V3
+U504
+IRM-H638T/TR2
+IR_RX_3V3
+VCC 4
+OUT 3
+GND
+GND
+PWR_FLAG
+ACC_3V3
+GND
+J501
+SM04B-SRSS-TB(LF)(SN)
+GND
+EXT_SDA
+EXT_SCL
+1
+2
+3
+4
+J502
+SFH11-NBPC-D03-ST-BK
+ACC_3V3
+EXT_SDA
+SAO_GPIO1
+1 2
+3 4
+5 6
+GND
+EXT_SCL
+SAO_GPIO2
+E
+1
+2
+C509
+C509
+4.7u / 10V
+4.7u / 10V
+GND
+IR_RX_N
+GND
+GND
+C510
+C510
+100n / 10V
+100n / 10V
+GND
+IR RX shares ACC_EN. Quiesce I/O before disabling.
+Sheet: /05 SENSORS + EXPANSION/
+File: peripherals.kicad_sch
+Title:
+KiCad E.D.A. 10.0.8
+1 2 3 4 5 6 7 8
+Id: 6/6
+F
+Size: A3
+Date:
+Rev:

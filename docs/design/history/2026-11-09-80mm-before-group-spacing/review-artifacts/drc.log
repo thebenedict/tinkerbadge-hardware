@@ -1,0 +1,5 @@
+Fontconfig error: Cannot load default config file: No such file: (null)
+Found 5 violations
+Found 390 unconnected items
+Found 9 schematic parity issues
+Saved DRC Report to exports/pcb-review/compact-one-sided/drc.json

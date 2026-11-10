@@ -1,0 +1,66 @@
+{
+  "source_board_sha256": "a7ac2778f423c3847b9a3a6200f00446d6a960bbee242b6ef8da7aff5ed24b84",
+  "board_sha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "proposal_sha256": "f59c34e67640ffa3a946cf936eb1d938c25e09132c22cba7cf975433a2d21e4e",
+  "tool": "KiCad 10.0.8",
+  "moves": [
+    {
+      "reference": "U501",
+      "before": [
+        145,
+        108.25,
+        0
+      ],
+      "after": [
+        143.5,
+        170.5,
+        90
+      ]
+    },
+    {
+      "reference": "C501",
+      "before": [
+        141.25,
+        108.25,
+        180
+      ],
+      "after": [
+        143.5,
+        174.75,
+        270
+      ]
+    },
+    {
+      "reference": "C502",
+      "before": [
+        148.75,
+        108.25,
+        0
+      ],
+      "after": [
+        143.5,
+        166.25,
+        90
+      ]
+    },
+    {
+      "reference": "R504",
+      "before": [
+        147.5,
+        171.75,
+        0
+      ],
+      "after": [
+        150.75,
+        172,
+        180
+      ]
+    }
+  ],
+  "move_count": 4,
+  "native_group_count": 8,
+  "pad_net_mapping_unchanged": true,
+  "tracks": 0,
+  "NFC_geometry_unchanged": true,
+  "status": "shared_passive_optics_and_rear_NFC_plan_pending_human_placement_review"
+}

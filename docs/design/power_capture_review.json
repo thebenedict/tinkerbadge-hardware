@@ -1,0 +1,1581 @@
+{
+  "date": "2026-11-09",
+  "status": "PASS independently reviewed native single-3.3 V prototype electrical and visual capture",
+  "reviewer": "Display/MCU reviewer, independent of power author",
+  "hashes": {
+    "power.kicad_sch": "377d3afaa8323e6f61d6cef0f8e670254b959091fdc766e32c5c063dad6d121f",
+    "docs/design/power_contract.json": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+    ".build/power-independent-single3v3.net": "e516bbae113c89aea26574083f35281a8f212997e392044e743a3b23d77adbda",
+    ".build/power.net": "50fff81ca965032effc1873117facb7b481d832ebbb8d1944f844718fced5edf",
+    ".build/power_final_reviewed.png": "5bca714550c126438e0f0ab12fda2b1071d87f0450cd5ac655035bd5c81601b2"
+  },
+  "endpoint_check": {
+    "netlist": ".build/power-independent-single3v3.net",
+    "netlist_sha256": "e516bbae113c89aea26574083f35281a8f212997e392044e743a3b23d77adbda",
+    "contract_sha256": {
+      "power": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563"
+    },
+    "expected_components": 60,
+    "expected_endpoints": 195,
+    "intentional_nc_endpoints": 14,
+    "observed_endpoints_for_expected_components": 195,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "local_checks": {
+    "export_netlist": {
+      "isError": false,
+      "result": [
+        {
+          "format": "kicad",
+          "output": "/Users/michael/code/tinkerbadge-hardware/.build/power-independent-single3v3.net",
+          "success": true
+        }
+      ]
+    },
+    "validate_wire_connections": {
+      "isError": false,
+      "result": [
+        {
+          "floating_count": 0,
+          "floating_endpoints": [],
+          "valid": true
+        }
+      ]
+    },
+    "validate_component_connections": {
+      "isError": false,
+      "result": [
+        {
+          "unconnected_count": 0,
+          "unconnected_pins": [],
+          "valid": true
+        }
+      ]
+    },
+    "find_shorted_nets": {
+      "isError": false,
+      "result": [
+        {
+          "short_count": 0,
+          "shorts": []
+        }
+      ]
+    },
+    "find_orphan_items": {
+      "isError": false,
+      "result": [
+        {
+          "orphan_count": 0,
+          "orphans": [],
+          "tolerance": 0.05
+        }
+      ]
+    }
+  },
+  "property_checker": {
+    "netlist_sha256": "e516bbae113c89aea26574083f35281a8f212997e392044e743a3b23d77adbda",
+    "checks_by_field": {
+      "MPN": 12,
+      "Populate": 1,
+      "Value": 45
+    },
+    "unassigned_footprints": [
+      "U101",
+      "U102",
+      "U103",
+      "U104",
+      "U105",
+      "U107",
+      "Q101",
+      "Q102",
+      "Q103",
+      "D101",
+      "D102",
+      "J101",
+      "J102",
+      "J103",
+      "J104",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R107",
+      "R108",
+      "R109",
+      "R110",
+      "R111",
+      "R112",
+      "R113",
+      "R114",
+      "R115",
+      "R116",
+      "R117",
+      "R118",
+      "R119",
+      "R120",
+      "R121",
+      "R122",
+      "R123",
+      "R124",
+      "R125",
+      "R126",
+      "R127",
+      "R128",
+      "R129",
+      "R130",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "L101"
+    ],
+    "issues": [],
+    "status": "PASS",
+    "scope": "Only explicitly specified property comparisons. Unassigned footprints and generic passive MPNs remain release gates."
+  },
+  "independent_full_field_audit": {
+    "status": "PASS",
+    "check_count": 235,
+    "checks": [
+      {
+        "ref": "U101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U101",
+        "field": "MPN",
+        "expected": "TPS2121RUXR",
+        "actual": "TPS2121RUXR"
+      },
+      {
+        "ref": "U101",
+        "field": "VisibleValue",
+        "expected": "TPS2121RUXR",
+        "actual": "TPS2121RUXR"
+      },
+      {
+        "ref": "U102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U102",
+        "field": "MPN",
+        "expected": "BQ24074RGTR",
+        "actual": "BQ24074RGTR"
+      },
+      {
+        "ref": "U102",
+        "field": "VisibleValue",
+        "expected": "BQ24074RGTR",
+        "actual": "BQ24074RGTR"
+      },
+      {
+        "ref": "U103",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U103",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U103",
+        "field": "MPN",
+        "expected": "TPS63802DLAR",
+        "actual": "TPS63802DLAR"
+      },
+      {
+        "ref": "U103",
+        "field": "VisibleValue",
+        "expected": "TPS63802DLAR",
+        "actual": "TPS63802DLAR"
+      },
+      {
+        "ref": "U104",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U104",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U104",
+        "field": "MPN",
+        "expected": "TPS22918DBVR",
+        "actual": "TPS22918DBVR"
+      },
+      {
+        "ref": "U104",
+        "field": "VisibleValue",
+        "expected": "TPS22918DBVR",
+        "actual": "TPS22918DBVR"
+      },
+      {
+        "ref": "U105",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U105",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U105",
+        "field": "MPN",
+        "expected": "TPD4E05U06DQAR",
+        "actual": "TPD4E05U06DQAR"
+      },
+      {
+        "ref": "U105",
+        "field": "VisibleValue",
+        "expected": "TPD4E05U06DQAR",
+        "actual": "TPD4E05U06DQAR"
+      },
+      {
+        "ref": "U107",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "U107",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "U107",
+        "field": "MPN",
+        "expected": "TMUX1511PWR",
+        "actual": "TMUX1511PWR"
+      },
+      {
+        "ref": "U107",
+        "field": "VisibleValue",
+        "expected": "TMUX1511PWR",
+        "actual": "TMUX1511PWR"
+      },
+      {
+        "ref": "Q101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "Q101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "Q101",
+        "field": "MPN",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "Q101",
+        "field": "VisibleValue",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "Q102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "Q102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "Q102",
+        "field": "MPN",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "Q102",
+        "field": "VisibleValue",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "Q103",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "Q103",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "Q103",
+        "field": "MPN",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "Q103",
+        "field": "VisibleValue",
+        "expected": "AO3400A",
+        "actual": "AO3400A"
+      },
+      {
+        "ref": "D101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "D101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "D101",
+        "field": "MPN",
+        "expected": "SMF6.0A",
+        "actual": "SMF6.0A"
+      },
+      {
+        "ref": "D101",
+        "field": "VisibleValue",
+        "expected": "SMF6.0A",
+        "actual": "SMF6.0A"
+      },
+      {
+        "ref": "D102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "D102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "D102",
+        "field": "MPN",
+        "expected": "SMF6.0A",
+        "actual": "SMF6.0A"
+      },
+      {
+        "ref": "D102",
+        "field": "VisibleValue",
+        "expected": "SMF6.0A",
+        "actual": "SMF6.0A"
+      },
+      {
+        "ref": "J101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "J101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "J101",
+        "field": "MPN",
+        "expected": "USB4105-GF-A",
+        "actual": "USB4105-GF-A"
+      },
+      {
+        "ref": "J101",
+        "field": "VisibleValue",
+        "expected": "USB4105-GF-A",
+        "actual": "USB4105-GF-A"
+      },
+      {
+        "ref": "J102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "J102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "J103",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "J103",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "J104",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "J104",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "J104",
+        "field": "Populate",
+        "expected": "DNP",
+        "actual": "DNP"
+      },
+      {
+        "ref": "R101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R101",
+        "field": "Specification",
+        "expected": "5.1k 1%",
+        "actual": "5.1k 1%"
+      },
+      {
+        "ref": "R101",
+        "field": "VisibleValue",
+        "expected": "5.1k 1%",
+        "actual": "5.1k 1%"
+      },
+      {
+        "ref": "R102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R102",
+        "field": "Specification",
+        "expected": "5.1k 1%",
+        "actual": "5.1k 1%"
+      },
+      {
+        "ref": "R102",
+        "field": "VisibleValue",
+        "expected": "5.1k 1%",
+        "actual": "5.1k 1%"
+      },
+      {
+        "ref": "R103",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R103",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R103",
+        "field": "Specification",
+        "expected": "44.2k 0.1%",
+        "actual": "44.2k 0.1%"
+      },
+      {
+        "ref": "R103",
+        "field": "VisibleValue",
+        "expected": "44.2k 0.1%",
+        "actual": "44.2k 0.1%"
+      },
+      {
+        "ref": "R104",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R104",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R104",
+        "field": "Specification",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R104",
+        "field": "VisibleValue",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R105",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R105",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R105",
+        "field": "Specification",
+        "expected": "44.2k 0.1%",
+        "actual": "44.2k 0.1%"
+      },
+      {
+        "ref": "R105",
+        "field": "VisibleValue",
+        "expected": "44.2k 0.1%",
+        "actual": "44.2k 0.1%"
+      },
+      {
+        "ref": "R106",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R106",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R106",
+        "field": "Specification",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R106",
+        "field": "VisibleValue",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R107",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R107",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R107",
+        "field": "Specification",
+        "expected": "31.6k 0.1%",
+        "actual": "31.6k 0.1%"
+      },
+      {
+        "ref": "R107",
+        "field": "VisibleValue",
+        "expected": "31.6k 0.1%",
+        "actual": "31.6k 0.1%"
+      },
+      {
+        "ref": "R108",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R108",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R108",
+        "field": "Specification",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R108",
+        "field": "VisibleValue",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R109",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R109",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R109",
+        "field": "Specification",
+        "expected": "80.6k 1%",
+        "actual": "80.6k 1%"
+      },
+      {
+        "ref": "R109",
+        "field": "VisibleValue",
+        "expected": "80.6k 1%",
+        "actual": "80.6k 1%"
+      },
+      {
+        "ref": "R110",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R110",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R110",
+        "field": "Specification",
+        "expected": "10k 1%",
+        "actual": "10k 1%"
+      },
+      {
+        "ref": "R110",
+        "field": "VisibleValue",
+        "expected": "10k 1%",
+        "actual": "10k 1%"
+      },
+      {
+        "ref": "R111",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R111",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R111",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R111",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R112",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R112",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R112",
+        "field": "Specification",
+        "expected": "4.32k 1%",
+        "actual": "4.32k 1%"
+      },
+      {
+        "ref": "R112",
+        "field": "VisibleValue",
+        "expected": "4.32k 1%",
+        "actual": "4.32k 1%"
+      },
+      {
+        "ref": "R113",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R113",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R113",
+        "field": "Specification",
+        "expected": "3.32k 1%",
+        "actual": "3.32k 1%"
+      },
+      {
+        "ref": "R113",
+        "field": "VisibleValue",
+        "expected": "3.32k 1%",
+        "actual": "3.32k 1%"
+      },
+      {
+        "ref": "R114",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R114",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R114",
+        "field": "Specification",
+        "expected": "47.5k 1%",
+        "actual": "47.5k 1%"
+      },
+      {
+        "ref": "R114",
+        "field": "VisibleValue",
+        "expected": "47.5k 1%",
+        "actual": "47.5k 1%"
+      },
+      {
+        "ref": "R115",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R115",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R115",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R115",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R116",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R116",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R116",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R116",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R117",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R117",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R117",
+        "field": "Specification",
+        "expected": "56.0k 0.1%",
+        "actual": "56.0k 0.1%"
+      },
+      {
+        "ref": "R117",
+        "field": "VisibleValue",
+        "expected": "56.0k 0.1%",
+        "actual": "56.0k 0.1%"
+      },
+      {
+        "ref": "R118",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R118",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R118",
+        "field": "Specification",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R118",
+        "field": "VisibleValue",
+        "expected": "10.0k 0.1%",
+        "actual": "10.0k 0.1%"
+      },
+      {
+        "ref": "R119",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R119",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R119",
+        "field": "Specification",
+        "expected": "1k 1%",
+        "actual": "1k 1%"
+      },
+      {
+        "ref": "R119",
+        "field": "VisibleValue",
+        "expected": "1k 1%",
+        "actual": "1k 1%"
+      },
+      {
+        "ref": "R120",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R120",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R120",
+        "field": "Specification",
+        "expected": "0",
+        "actual": "0"
+      },
+      {
+        "ref": "R120",
+        "field": "VisibleValue",
+        "expected": "0",
+        "actual": "0"
+      },
+      {
+        "ref": "R121",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R121",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R121",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R121",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R122",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R122",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R122",
+        "field": "Specification",
+        "expected": "470k 1%",
+        "actual": "470k 1%"
+      },
+      {
+        "ref": "R122",
+        "field": "VisibleValue",
+        "expected": "470k 1%",
+        "actual": "470k 1%"
+      },
+      {
+        "ref": "R123",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R123",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R123",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R123",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R124",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R124",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R124",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R124",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R125",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R125",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R125",
+        "field": "Specification",
+        "expected": "470k 1%",
+        "actual": "470k 1%"
+      },
+      {
+        "ref": "R125",
+        "field": "VisibleValue",
+        "expected": "470k 1%",
+        "actual": "470k 1%"
+      },
+      {
+        "ref": "R126",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R126",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R126",
+        "field": "Specification",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R126",
+        "field": "VisibleValue",
+        "expected": "100k 1%",
+        "actual": "100k 1%"
+      },
+      {
+        "ref": "R127",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R127",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R127",
+        "field": "Specification",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R127",
+        "field": "VisibleValue",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R128",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R128",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R128",
+        "field": "Specification",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R128",
+        "field": "VisibleValue",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R129",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R129",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R129",
+        "field": "Specification",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R129",
+        "field": "VisibleValue",
+        "expected": "100k 0.1%",
+        "actual": "100k 0.1%"
+      },
+      {
+        "ref": "R130",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "R130",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "R130",
+        "field": "Specification",
+        "expected": "10k 0.1%",
+        "actual": "10k 0.1%"
+      },
+      {
+        "ref": "R130",
+        "field": "VisibleValue",
+        "expected": "10k 0.1%",
+        "actual": "10k 0.1%"
+      },
+      {
+        "ref": "C101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C101",
+        "field": "Specification",
+        "expected": "1uF 25V X7R",
+        "actual": "1uF 25V X7R"
+      },
+      {
+        "ref": "C101",
+        "field": "VisibleValue",
+        "expected": "1uF 25V X7R",
+        "actual": "1uF 25V X7R"
+      },
+      {
+        "ref": "C102",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C102",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C102",
+        "field": "Specification",
+        "expected": "1uF 25V X7R",
+        "actual": "1uF 25V X7R"
+      },
+      {
+        "ref": "C102",
+        "field": "VisibleValue",
+        "expected": "1uF 25V X7R",
+        "actual": "1uF 25V X7R"
+      },
+      {
+        "ref": "C103",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C103",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C103",
+        "field": "Specification",
+        "expected": "4.7uF 25V X7R",
+        "actual": "4.7uF 25V X7R"
+      },
+      {
+        "ref": "C103",
+        "field": "VisibleValue",
+        "expected": "4.7uF 25V X7R",
+        "actual": "4.7uF 25V X7R"
+      },
+      {
+        "ref": "C104",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C104",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C104",
+        "field": "Specification",
+        "expected": "100nF 16V X7R",
+        "actual": "100nF 16V X7R"
+      },
+      {
+        "ref": "C104",
+        "field": "VisibleValue",
+        "expected": "100nF 16V X7R",
+        "actual": "100nF 16V X7R"
+      },
+      {
+        "ref": "C105",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C105",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C105",
+        "field": "Specification",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C105",
+        "field": "VisibleValue",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C106",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C106",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C106",
+        "field": "Specification",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C106",
+        "field": "VisibleValue",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C107",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C107",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C107",
+        "field": "Specification",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C107",
+        "field": "VisibleValue",
+        "expected": "10uF 10V X7R",
+        "actual": "10uF 10V X7R"
+      },
+      {
+        "ref": "C108",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C108",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C108",
+        "field": "Specification",
+        "expected": "22uF 10V X7R",
+        "actual": "22uF 10V X7R"
+      },
+      {
+        "ref": "C108",
+        "field": "VisibleValue",
+        "expected": "22uF 10V X7R",
+        "actual": "22uF 10V X7R"
+      },
+      {
+        "ref": "C109",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C109",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C109",
+        "field": "Specification",
+        "expected": "22uF 10V X7R",
+        "actual": "22uF 10V X7R"
+      },
+      {
+        "ref": "C109",
+        "field": "VisibleValue",
+        "expected": "22uF 10V X7R",
+        "actual": "22uF 10V X7R"
+      },
+      {
+        "ref": "C112",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C112",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C112",
+        "field": "Specification",
+        "expected": "1uF 6.3V X7R",
+        "actual": "1uF 6.3V X7R"
+      },
+      {
+        "ref": "C112",
+        "field": "VisibleValue",
+        "expected": "1uF 6.3V X7R",
+        "actual": "1uF 6.3V X7R"
+      },
+      {
+        "ref": "C113",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C113",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C113",
+        "field": "Specification",
+        "expected": "1nF 16V C0G",
+        "actual": "1nF 16V C0G"
+      },
+      {
+        "ref": "C113",
+        "field": "VisibleValue",
+        "expected": "1nF 16V C0G",
+        "actual": "1nF 16V C0G"
+      },
+      {
+        "ref": "C114",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C114",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C114",
+        "field": "Specification",
+        "expected": "10uF 6.3V X7R",
+        "actual": "10uF 6.3V X7R"
+      },
+      {
+        "ref": "C114",
+        "field": "VisibleValue",
+        "expected": "10uF 6.3V X7R",
+        "actual": "10uF 6.3V X7R"
+      },
+      {
+        "ref": "C115",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C115",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C115",
+        "field": "Specification",
+        "expected": "100nF 6.3V X7R",
+        "actual": "100nF 6.3V X7R"
+      },
+      {
+        "ref": "C115",
+        "field": "VisibleValue",
+        "expected": "100nF 6.3V X7R",
+        "actual": "100nF 6.3V X7R"
+      },
+      {
+        "ref": "C116",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "C116",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "C116",
+        "field": "Specification",
+        "expected": "10nF 6.3V X7R",
+        "actual": "10nF 6.3V X7R"
+      },
+      {
+        "ref": "C116",
+        "field": "VisibleValue",
+        "expected": "10nF 6.3V X7R",
+        "actual": "10nF 6.3V X7R"
+      },
+      {
+        "ref": "L101",
+        "field": "Contract",
+        "expected": "docs/design/power_contract.json",
+        "actual": "docs/design/power_contract.json"
+      },
+      {
+        "ref": "L101",
+        "field": "Footprint",
+        "expected": "",
+        "actual": ""
+      },
+      {
+        "ref": "L101",
+        "field": "Specification",
+        "expected": "0.47uH",
+        "actual": "0.47uH"
+      },
+      {
+        "ref": "L101",
+        "field": "VisibleValue",
+        "expected": "0.47uH",
+        "actual": "0.47uH"
+      }
+    ],
+    "issues": [],
+    "exact_component_set": true,
+    "removed_refs_absent": [
+      "U106",
+      "C110",
+      "C111"
+    ],
+    "old_net_VLED_3V9_absent": true
+  },
+  "visual_review": [
+    "Viewed fresh full-page power_final_reviewed.png. Shared nominal3.3V group is legible; R11756.0k and retained C108/C109 correctly drawn, U106/C110/C111 and old LDO headline absent.",
+    "Rail labels are on branch-end stubs with visible junctions. U103 reference/value are separated above body; divider, inductor and bypass network remain readable.",
+    "Charging-disabled header, fitted R120 and optional J104 NTC(DNP) note remain explicit. First-prototype LED exception includes3.3V minimum and bench tests.",
+    "No new overlap, ambiguous junction or orphan visible. Native validators independently confirm zero floating/unconnected/short/orphan findings."
+  ],
+  "acceptance_limit": "Development schematic only. User-selected LED undervoltage exception, exact pack/connector, charging disable, magnetic/passive procurement, physical footprints, root ERC and bench qualification remain separate gates. Historical3.95V capture is preserved in docs/design/history/power_3v95_before_single_3v3."
+}

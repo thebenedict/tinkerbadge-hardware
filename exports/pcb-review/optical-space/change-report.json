@@ -1,0 +1,170 @@
+{
+  "source_board_sha256": "08b5de1ac1b194544ebf15598fd0b40e66a4e0c05123c6da75603a769d91554e",
+  "board_sha256": "8fa1ac386d237944d634cd7b5be0ca3ad3188f87965fbee94499eb1a51859399",
+  "proposal_sha256": "82f20c240a81a21c08dcd1f3fe61cbb57a9714c7e0a47db879c98935ead96db9",
+  "tool": "KiCad 10.0.8",
+  "moves": [
+    {
+      "reference": "U501",
+      "before": [
+        206,
+        107.5,
+        0
+      ],
+      "after": [
+        145,
+        108.25,
+        0
+      ]
+    },
+    {
+      "reference": "C501",
+      "before": [
+        202,
+        107.5,
+        180
+      ],
+      "after": [
+        141.25,
+        108.25,
+        180
+      ]
+    },
+    {
+      "reference": "C502",
+      "before": [
+        208,
+        105,
+        0
+      ],
+      "after": [
+        148.75,
+        108.25,
+        0
+      ]
+    },
+    {
+      "reference": "U504",
+      "before": [
+        186.5,
+        106.5,
+        0.0
+      ],
+      "after": [
+        166,
+        106.5,
+        180
+      ]
+    },
+    {
+      "reference": "C510",
+      "before": [
+        192,
+        106.5,
+        270
+      ],
+      "after": [
+        162,
+        111,
+        270
+      ]
+    },
+    {
+      "reference": "C509",
+      "before": [
+        192,
+        103,
+        90
+      ],
+      "after": [
+        164.25,
+        111,
+        270
+      ]
+    },
+    {
+      "reference": "R507",
+      "before": [
+        188.5,
+        102,
+        0
+      ],
+      "after": [
+        166.5,
+        111,
+        180
+      ]
+    },
+    {
+      "reference": "D501",
+      "before": [
+        196.5,
+        106.5,
+        0.0
+      ],
+      "after": [
+        176,
+        107.5,
+        0
+      ]
+    },
+    {
+      "reference": "Q501",
+      "before": [
+        196.5,
+        111.5,
+        0.0
+      ],
+      "after": [
+        176,
+        112,
+        0
+      ]
+    },
+    {
+      "reference": "R504",
+      "before": [
+        196.5,
+        115.5,
+        0.0
+      ],
+      "after": [
+        176,
+        116,
+        0
+      ]
+    },
+    {
+      "reference": "R505",
+      "before": [
+        192.5,
+        111.5,
+        0.0
+      ],
+      "after": [
+        172,
+        112,
+        0
+      ]
+    },
+    {
+      "reference": "R506",
+      "before": [
+        192.5,
+        115.0,
+        0.0
+      ],
+      "after": [
+        172,
+        115.5,
+        0
+      ]
+    }
+  ],
+  "move_count": 12,
+  "native_group_count": 8,
+  "pad_net_mapping_unchanged": true,
+  "tracks": 0,
+  "NFC_geometry_unchanged": true,
+  "status": "organized_80mm_optical_space_pending_human_review_and_qualification"
+}

@@ -1,0 +1,230 @@
+{
+  "source_board_sha256": "8fa1ac386d237944d634cd7b5be0ca3ad3188f87965fbee94499eb1a51859399",
+  "tool": "KiCad 10.0.8",
+  "status": "proposal_checked_in_memory_no_CAD_saved",
+  "reference_count": 9,
+  "placements": [
+    {
+      "reference": "U504",
+      "x": 137.75,
+      "y": 168.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 166.0,
+      "original_y": 106.5,
+      "original_rotation": 180.0
+    },
+    {
+      "reference": "C510",
+      "x": 131.5,
+      "y": 168.75,
+      "rotation": 90,
+      "side": "F.Cu",
+      "original_x": 162.0,
+      "original_y": 111.0,
+      "original_rotation": -90.0
+    },
+    {
+      "reference": "C509",
+      "x": 131.5,
+      "y": 171.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 164.25,
+      "original_y": 111.0,
+      "original_rotation": -90.0
+    },
+    {
+      "reference": "R507",
+      "x": 128,
+      "y": 168.75,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 166.5,
+      "original_y": 111.0,
+      "original_rotation": 180.0
+    },
+    {
+      "reference": "D501",
+      "x": 150,
+      "y": 168.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 176.0,
+      "original_y": 107.5,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "Q501",
+      "x": 155,
+      "y": 168.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 176.0,
+      "original_y": 112.0,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R504",
+      "x": 147.5,
+      "y": 171.75,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 176.0,
+      "original_y": 116.0,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R505",
+      "x": 159,
+      "y": 169.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "original_x": 172.0,
+      "original_y": 112.0,
+      "original_rotation": 0.0
+    },
+    {
+      "reference": "R506",
+      "x": 159,
+      "y": 166.75,
+      "rotation": 0,
+      "side": "F.Cu",
+      "original_x": 172.0,
+      "original_y": 115.5,
+      "original_rotation": 0.0
+    }
+  ],
+  "groups": [
+    {
+      "name": "Infrared optical group",
+      "references": [
+        "U504",
+        "D501",
+        "R507",
+        "C509",
+        "C510",
+        "Q501",
+        "R504",
+        "R505",
+        "R506"
+      ],
+      "bounds_mm": [
+        126.475,
+        165.705,
+        160.525,
+        172.745
+      ]
+    }
+  ],
+  "front_courtyard_count": 177,
+  "positive_area_courtyard_collisions": [],
+  "moved_pad_copper_outside_board": [],
+  "moved_pad_keepout_collisions": [],
+  "moved_reference_min_copper_edge_clearance_mm": {
+    "U504": 9.680000000000007,
+    "C510": 10.025000000000006,
+    "C509": 8.025000000000006,
+    "R507": 10.775000000000006,
+    "D501": 10.199999999999989,
+    "Q501": 10.25,
+    "R504": 7.550000000000011,
+    "R505": 10.025000000000006,
+    "R506": 12.775000000000006
+  },
+  "moved_reference_min_copper_H6_drill_clearance_mm": {
+    "U504": 82.95675652713565,
+    "C510": 91.02423140073729,
+    "C509": 92.58168521574314,
+    "R507": 93.66951337895509,
+    "D501": 75.44610632601753,
+    "Q501": 72.52532755012909,
+    "R504": 80.62780956616761,
+    "R505": 71.60559130259723,
+    "R506": 69.48240800820554
+  },
+  "native_cached_courtyard_bounds_mm": {
+    "U504": [
+      133.555,
+      165.705,
+      141.945,
+      171.295
+    ],
+    "C510": [
+      130.725,
+      167.225,
+      132.275,
+      170.275
+    ],
+    "C509": [
+      129.975,
+      170.725,
+      133.025,
+      172.275
+    ],
+    "R507": [
+      126.475,
+      167.975,
+      129.525,
+      169.525
+    ],
+    "D501": [
+      147.455,
+      166.755,
+      152.545,
+      170.245
+    ],
+    "Q501": [
+      153.025,
+      166.755,
+      156.975,
+      170.245
+    ],
+    "R504": [
+      145.775,
+      170.755,
+      149.225,
+      172.745
+    ],
+    "R505": [
+      157.475,
+      168.725,
+      160.525,
+      170.275
+    ],
+    "R506": [
+      157.475,
+      165.975,
+      160.525,
+      167.525
+    ]
+  },
+  "pad_center_distances_mm": {
+    "C401.1_to_D401.4": 1.6008903772588552,
+    "C402.1_to_D402.4": 1.6008903772588552,
+    "C403.1_to_D403.4": 1.6008903772588552,
+    "C501.1_to_U501.1": 1.6763054614240211,
+    "C502.1_to_U501.5": 1.6,
+    "C509.1_to_U504.4": 2.898020876391335,
+    "C510.1_to_U504.4": 3.1096663808196534,
+    "R507.2_to_U504.4": 5.864386157135288
+  },
+  "receiver_courtyard_to_glass_mm": 0.8050000000000068,
+  "ambient_courtyard_to_H6_courtyard_mm": 56.56755243809404,
+  "optical_courtyard_to_glass_mm": {
+    "U504": 0.8050000000000068,
+    "D501": 1.8549999999999898
+  },
+  "source_values_and_pad_nets_unchanged": true,
+  "role_led_pitch_mm": 20.5,
+  "role_led_center_margin_to_straight_top_endpoints_mm": [
+    5,
+    5
+  ],
+  "notes": [
+    "Proposal only. Repack the full nine-part IR circuit below the glass and above/between D405 and D406, keeping all other placements unchanged.",
+    "Receiver and emitter remain front-facing and outside the glass. Preserve short receiver VCC/filter/ground and emitter/driver/current-resistor loops.",
+    "NFC rear-coil plan and all keepouts are unchanged. No antenna copper or routing is added.",
+    "Independent electrical, physical, optical and visual checks are required before applying."
+  ]
+}

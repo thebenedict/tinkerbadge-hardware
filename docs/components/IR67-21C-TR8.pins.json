@@ -1,0 +1,29 @@
+{
+  "mpn": "IR67-21C/TR8",
+  "package": "SMD3528 two-terminal emitter,3.5\u00d72.7\u00d71.9mm",
+  "source": {
+    "url": "https://www.everlighteurope.com/custom/files/datasheets/DIR-0000986.pdf",
+    "revision": "DIR-0000986 Rev3,10 July2013; approval stamp12 July2013",
+    "filename": "IR67-21C-TR8.pdf",
+    "sha256": "8b0cafbc6c75a60d705c078c8027fea96162e198b8125909d2658e66738f527c",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "ANODE",
+      "function": "IR LED anode",
+      "source_page": 2
+    },
+    {
+      "number": "2",
+      "name": "CATHODE",
+      "function": "IR LED cathode",
+      "source_page": 2
+    }
+  ],
+  "package_metal": "No exposed pad. Polarity mark and pad numbering must match exact drawing.",
+  "pixel_review": "Inspected actual p1\u20132 package and pin-table pixels, peripheral_views/IR67-page1.png and IR67-page2.png.",
+  "review_status": "pending_independent_review"
+}

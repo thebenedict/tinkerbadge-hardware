@@ -1,0 +1,142 @@
+{
+  "status": "accepted_for_schematic_capture_with_user_approved_shared_3v3_prototype_exception",
+  "date": "2026-11-09",
+  "scope": "Lighting and peripheral physical-pin endpoint assignments; native schematic captured through Konnect MCP.",
+  "source_inventory": "docs/datasheets/peripheral_inventory.json",
+  "components": [
+    {
+      "ref": "SW401",
+      "mpn": "SKSCLBE010",
+      "bom_id": "UI-03",
+      "package": "SKSC side push with guide bosses;3.5x3.55x1.25mm;4 terminals",
+      "population": "fitted",
+      "pins": {
+        "1": "BTN_A_SW_N",
+        "2": "BTN_A_SW_N",
+        "3": "GND",
+        "4": "GND"
+      },
+      "pin_fact_file": "docs/components/SKSCLBE010.pins.json",
+      "notes": "Manufacturer-numbered pairs1-2 and3-4; SPST normally-open,2.2N; JLC C115361. Footprint and case fit unqualified. BTN_A retained storagewake.",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "footprint": ""
+    },
+    {
+      "ref": "SW402",
+      "mpn": "SKSCLBE010",
+      "bom_id": "UI-03",
+      "package": "SKSC side push with guide bosses;3.5x3.55x1.25mm;4 terminals",
+      "population": "fitted",
+      "pins": {
+        "1": "BTN_B_SW_N",
+        "2": "BTN_B_SW_N",
+        "3": "GND",
+        "4": "GND"
+      },
+      "pin_fact_file": "docs/components/SKSCLBE010.pins.json",
+      "notes": "Manufacturer-numbered pairs1-2 and3-4; SPST normally-open,2.2N; JLC C115361. Footprint and case fit unqualified. BTN_A retained storagewake.",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "footprint": ""
+    }
+  ],
+  "interfaces": {
+    "rails": {
+      "logic": "+3V3",
+      "logic_required_envelope_V": [
+        3.0,
+        3.6
+      ],
+      "logic_nominal_V": 3.3,
+      "rgb": "+3V3",
+      "rgb_operating_V": [
+        3.3,
+        5.3
+      ],
+      "accessory": "ACC_3V3",
+      "accessory_nominal_V": 3.3,
+      "accessory_normal_total_mA": 50,
+      "accessory_calculated_fault_max_mA": 152.253332,
+      "accessory_fault_reserve_mA": 155,
+      "rgb_nominal_V": 3.3,
+      "rgb_datasheet_operating_minimum_V": 3.3,
+      "rgb_prototype_exception": "User-approved nominal 3.3 V shared prototype supply. Tolerance, wiring losses and transients may put LEDs below the documented 3.3 V minimum; operation and timing there are not guaranteed.",
+      "rgb_actual_rail_bounds_source": "docs/design/power_contract.json"
+    },
+    "onboard_i2c": {
+      "nets": [
+        "I2C_SDA",
+        "I2C_SCL"
+      ],
+      "pullups": "R501/R5024.7k to+3V3",
+      "initial_speed_Hz": 100000,
+      "addresses_7bit": {
+        "U501": "0x29",
+        "U502": "0x19",
+        "U503": "0x55",
+        "U506": "0x20"
+      },
+      "notes": "NTAG errata: STOP/START>=50us, RF edge guards, bus quiet>=1ms at startup"
+    },
+    "external_i2c": {
+      "nets": [
+        "EXT_SDA",
+        "EXT_SCL"
+      ],
+      "pullups": "R512/R5134.7k toACC_3V3",
+      "initial_speed_Hz": 100000,
+      "notes": "Separate MCU bus. Inputs highZ/no pulls whileoff. Duplicate accessory addresses not resolved."
+    },
+    "mcu_required": {
+      "RGB_DATA": "RMT output",
+      "PWR_LED_G": "output optionalPWM resetlow",
+      "PWR_LED_R": "output optionalPWM resetlow",
+      "BTN_A_N": "active-low retained storagewake",
+      "BTN_B_N": "active-low input",
+      "MOTION_INT1": "interrupt/eventwake input",
+      "NFC_FD_N": "both-edge capture/wake input",
+      "IR_TX": "RMT output resetlow",
+      "IR_RX_N": "RMT input no internalpull",
+      "SAO_GPIO1": "3.3V GPIO highZ/low whileoff",
+      "SAO_GPIO2": "3.3V GPIO highZ/low whileoff"
+    },
+    "power_status_inputs": [
+      "CHARGER_CHG_N",
+      "CHARGER_PGOOD_N"
+    ],
+    "expander": {
+      "address": "0x20",
+      "port_bits": {
+        "0": "CHARGER_CHG_N input",
+        "1": "CHARGER_PGOOD_N input",
+        "2": "ACC_EN output",
+        "3": "ACC_FAULT_N input",
+        "4": "unused pulldown input",
+        "5": "unused pulldown input",
+        "6": "unused pulldown input",
+        "7": "unused pulldown input"
+      },
+      "safe_output_latch": "0x00",
+      "direction_register": "0xFB",
+      "interrupt_pin": "NC, polled"
+    }
+  },
+  "unresolved": [
+    "Independent source/endpoint review before CAD.",
+    "Shared nominal3.3V power envelope/transient/thermal qualification required. Exact WS2812C-2020-V6 minimum remains3.3V; tolerance and transients below it are the user-approved prototype exception. Measure startup, low battery and combined Wi-Fi/display/full-white LED demand at load pins.",
+    "Qwiic cable and SAO keyed physical mating/footprint review before layout.",
+    "NFC PCB loop geometry and loaded tuning pending.",
+    "IR optics/protocol tests pending.",
+    "Passive exact MPN selection pending.",
+    "NTAG195uA typical idle means storage runtime unproved.",
+    "No hot-plug/self-powered accessories; port ESD qualification pending.",
+    "AO3400A numbers1G/2S/3D are derived from datasheet indexed G terminal plus conventional SOT23 numbering; separate manufacturer package PDF supplies dimensions but is unnumbered. Independent reviewer acceptance required.",
+    "Alps SKSCLBE010: blank footprint pending four-pad/locating-hole/board-edge/case acceptance. KSC-701 p5 D11 continuous-applied-voltage warning and A2 capacitive-load qualification remain open for the always-pulled-up storagewake application. Prototype candidate only; no source-qualified biased-life claim."
+  ],
+  "revision": {
+    "date": "2026-11-09",
+    "change": "Replace both function switches with user-selected Alps SKSCLBE010/C115361; four manufacturer-numbered terminals per switch, pairs1/2 signal and3/4ground. All other endpoints unchanged. Also replace the stale historical4.10V acceptance note with the approved shared3.3V prototype qualification gate.",
+    "previous_sha256": "97c79e1fdfab079aed4900ddf0f3fceebcc630a3a8663b13ed0e22de3d09a514",
+    "previous_file": "docs/design/revisions/peripherals_contract_2026-11-09_before_alps_buttons.json",
+    "review_status": "pending independent critical source review"
+  }
+}

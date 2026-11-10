@@ -1,0 +1,12 @@
+test_baseline (__main__.PropertyCheckerTests.test_baseline) ... ok
+test_unapproved_connector_footprint (__main__.PropertyCheckerTests.test_unapproved_connector_footprint) ... ok
+test_unit_display_equivalence (__main__.PropertyCheckerTests.test_unit_display_equivalence) ... ok
+test_wrong_full_rating (__main__.PropertyCheckerTests.test_wrong_full_rating) ... ok
+test_wrong_mpn (__main__.PropertyCheckerTests.test_wrong_mpn) ... ok
+test_wrong_nominal_value (__main__.PropertyCheckerTests.test_wrong_nominal_value) ... ok
+test_wrong_visible_voltage (__main__.PropertyCheckerTests.test_wrong_visible_voltage) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.068s
+
+OK

@@ -1,0 +1,54 @@
+{
+  "mpn": "SM04B-SRSS-TB(LF)(SN)",
+  "package": "Side-entry SH four-contact1mm pitch SMT header with two solder retention tabs",
+  "source": {
+    "url": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+    "revision": "JST SH catalog extract,printed pages2\u20133, no visible date/revision",
+    "filename": "SM04B-SRSS-TB.pdf",
+    "sha256": "1d07d13f7829795cd9b66e48f2c31a2cf68881140143480e73596305cabc5606",
+    "retrieved": "2026-11-09",
+    "status": "archived",
+    "download_url": "https://static.maritex.eu/file/display/V4fDhAsiKnBEyPCW56dCheFp9nEKP1kk/SM04B-SRSS-TB.pdf"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "CONTACT_1",
+      "function": "First circuit, manufacturer marked CircuitNo.1",
+      "source_page": 2
+    },
+    {
+      "number": "2",
+      "name": "CONTACT_2",
+      "function": "Second circuit",
+      "source_page": 2
+    },
+    {
+      "number": "3",
+      "name": "CONTACT_3",
+      "function": "Third circuit",
+      "source_page": 2
+    },
+    {
+      "number": "4",
+      "name": "CONTACT_4",
+      "function": "Fourth circuit",
+      "source_page": 2
+    },
+    {
+      "number": "MP1",
+      "name": "RETENTION_1",
+      "function": "Unnumbered solder retention tab, mechanical only",
+      "source_page": 1
+    },
+    {
+      "number": "MP2",
+      "name": "RETENTION_2",
+      "function": "Unnumbered solder retention tab, mechanical only",
+      "source_page": 1
+    }
+  ],
+  "package_metal": "Four electrical contacts plus two unnumbered retention tabs. Tabs are not a signal pin or EP; use unnumbered mechanical pads in footprint.",
+  "pixel_review": "Inspected actual PDF p1 component-side land pattern and p2 side-entry drawing. First circuit is explicitly marked in side-entry mating view. Qwiic reference schematic J3/J4 independently confirms project numbering; archived Qwiic-reference.png.",
+  "review_status": "pending_independent_review"
+}

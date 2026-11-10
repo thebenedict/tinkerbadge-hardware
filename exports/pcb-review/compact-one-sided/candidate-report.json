@@ -1,0 +1,25 @@
+{
+  "status": "experimental_80mm_one_sided_placement_pending_human_review_and_RF_qualification",
+  "source_sha256": "99158950ecce21da92f8c0e9343ecf60316f321255fd496f790517ac7717f49f",
+  "board_sha256": "a49a19fdf1a2cea1b223f419887e369ab844f49adc9933a0688ba7f01e2ab7b4",
+  "tool": "KiCad 10.0.8",
+  "board_mm": [
+    110,
+    80
+  ],
+  "footprints": 186,
+  "electrical": 170,
+  "front_electrical": 164,
+  "back_electrical": 6,
+  "endpoint_count": 539,
+  "nets_unchanged": true,
+  "tracks": 0,
+  "source_netlist_sha256": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59",
+  "new_local_footprints": [
+    "Tinkerbadge:Review_Panel_Raised_4p5",
+    "Tinkerbadge:Review_NFC_18x13",
+    "Tinkerbadge:Review_SAO_Front_Tail_Reserve",
+    "Tinkerbadge:Review_Cord_Hole_3p2"
+  ],
+  "pending": "Native DRC, independent final placement review, height/flex/RF verification, human approval. No routing."
+}

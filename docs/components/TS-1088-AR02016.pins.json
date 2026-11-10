@@ -1,0 +1,30 @@
+{
+  "mpn": "TS-1088-AR02016",
+  "package": "Two-terminal normally-open momentary tactile,4\u00d72.9mm body,2.0mm height, no bottom peg",
+  "source": {
+    "url": "https://www.xunpu.com.cn/product/liaohao/1098.html",
+    "revision": "XUNPU TS-1088 two-page catalog, no printed date/revision",
+    "filename": "revisions/2026-11-09-before-alps-buttons/TS-1088-AR02016.pdf",
+    "sha256": "c3d53bdb7ea97d7e9f0f5a6385d59e368daf6e27832471966fee82119e6f9e2c",
+    "retrieved": "2026-11-09",
+    "status": "archived",
+    "download_url": "https://storage.googleapis.com/graviton-electric-symbols/document_assets/lcsc/2409302330_XUNPU-TS-1088-AR02016_C720477.pdf"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "CONTACT_A",
+      "function": "Project-numbered first unpolarized terminal; factory drawing unnumbered",
+      "source_page": 2
+    },
+    {
+      "number": "2",
+      "name": "CONTACT_B",
+      "function": "Project-numbered second unpolarized terminal; closes to contactA when pressed",
+      "source_page": 2
+    }
+  ],
+  "package_metal": "Two electrical terminals only, no four-pin duplicated contacts or EP. Project numbering explicitly assigned because source does not number contacts.",
+  "pixel_review": "Inspected p1 exact part-code table/body and p2 two-pad land/circuit pixels. Pad1/2 centers4.15mm apart; each1.35\u00d71.80mm per p2.",
+  "review_status": "historical_superseded_by_SKSCLBE010"
+}

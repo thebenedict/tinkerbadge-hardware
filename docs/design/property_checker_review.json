@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-09",
+  "status": "PASS for stated explicit-property scope; limitations recorded",
+  "hashes": {
+    "tools/check_schematic_properties.py": "8192d8e74c8cd7dd56caf03e1941f82822f4667fdbdfaba3f317e5ca9ee9e669",
+    "tools/test_property_checker.py": "fc4f9819eecff5fe3f8b4fc9898c7ff448497300c7fe3f6fe42e0b0f9439891d",
+    "tests/fixtures/display_snapshot/manifest.json": "27553b62bfb7568bea3c330e4f8c071e155d7d363b8ba2d73e5ff1e8c4c090d5"
+  },
+  "tests": "7 tests passed:5 negative cases, baseline and unit-equivalence positive cases. Fixture hashes verified by tests.",
+  "observations": [
+    "Exact declared MPN, passives nominal value/rating, visible voltage when both ratings state one, explicit lib_id/footprint and DNP checks are correctly implemented.",
+    "DNP handling recognizes population=dnp or fitted=false and Populate/Population output property. Display uses populated=true for fitted parts; no current DNP is missed by that difference.",
+    "A missing mandatory value can raise rather than return a formatted issue; it does not false-pass.",
+    "The check deliberately omits Contract trace fields, power Specification metadata, visible IC values when only mpn is declared, and undeclared footprint approval. These were independently audited for the current power capture.",
+    "Seven tests are not seven negative tests. There are5 negative cases and2 positive cases; DNP and lib_id paths lack negative tests in this fixture.",
+    "Nominal parser compares scaled numbers without dimensions; this permits display-style100n versus100nF but does not prove unit correctness. Exact rating/field review remains necessary.",
+    "Duplicate component/property names are overwritten by dictionaries rather than rejected. This is a malformed-export hardening opportunity, not an observed current export defect."
+  ],
+  "current_power_property_status": "PASS",
+  "recommendation": "Keep endpoint, explicit-property, source/physical, visual and bench gates separate. Add trace fields and malformed-input/DNP tests when extending checker scope; no current native correction required."
+}

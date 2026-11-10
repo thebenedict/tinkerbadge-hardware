@@ -1,0 +1,510 @@
+{
+  "tool": "KiCad 10.0.8",
+  "baseline_path": "tinkerbadge.kicad_pcb",
+  "candidate_path": ".build/shared-optics-one-sided/tinkerbadge.kicad_pcb",
+  "baseline_sha256": "a7ac2778f423c3847b9a3a6200f00446d6a960bbee242b6ef8da7aff5ed24b84",
+  "candidate_sha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "footprints": 186,
+  "moved_references": [
+    "C501",
+    "C502",
+    "R504",
+    "U501"
+  ],
+  "move_set_matches": true,
+  "placement_errors": [],
+  "candidate_poses": {
+    "U501": [
+      143.5,
+      170.5,
+      90.0,
+      "F.Cu"
+    ],
+    "C501": [
+      143.5,
+      174.75,
+      270.0,
+      "F.Cu"
+    ],
+    "C502": [
+      143.5,
+      166.25,
+      90.0,
+      "F.Cu"
+    ],
+    "R504": [
+      150.75,
+      172.0,
+      180.0,
+      "F.Cu"
+    ]
+  },
+  "baseline_poses": {
+    "U501": [
+      145.0,
+      108.25,
+      0.0,
+      "F.Cu"
+    ],
+    "C501": [
+      141.25,
+      108.25,
+      180.0,
+      "F.Cu"
+    ],
+    "C502": [
+      148.75,
+      108.25,
+      0.0,
+      "F.Cu"
+    ],
+    "R504": [
+      147.5,
+      171.75,
+      0.0,
+      "F.Cu"
+    ]
+  },
+  "complete_inverse_footprint_differences": [],
+  "inverse_comparison_method": "Full native KiCad footprint Format after restoring baseline pose in memory; semantic S-expression equality, only attribute/item ordering normalized. All fields, models, pads/nets, graphics, UUIDs included; ordered vertices preserved. CAD files never saved.",
+  "board_content_outside_footprints_unchanged": true,
+  "board_content_comparison_scope": "All non-footprint board S-expression fields, including layers, setup, nets, groups, outline, rule areas and metadata.",
+  "native_groups_unchanged": true,
+  "native_groups": {
+    "Ambient-light sensor": [
+      "C501",
+      "C502",
+      "U501"
+    ],
+    "Top role LEDs": [
+      "C401",
+      "C402",
+      "C403",
+      "D401",
+      "D402",
+      "D403"
+    ],
+    "Infrared optical group": [
+      "C509",
+      "C510",
+      "D501",
+      "Q501",
+      "R504",
+      "R505",
+      "R506",
+      "R507",
+      "U504"
+    ],
+    "Accelerometer": [
+      "C503",
+      "C504",
+      "C505",
+      "U502"
+    ],
+    "Main 3V3 converter": [
+      "C107",
+      "C108",
+      "C109",
+      "R117",
+      "R118",
+      "RES_L101",
+      "U103"
+    ],
+    "I/O expander": [
+      "C514",
+      "C515",
+      "R514",
+      "R515",
+      "R516",
+      "R517",
+      "U506"
+    ],
+    "Display load switch": [
+      "C112",
+      "C113",
+      "C114",
+      "R119",
+      "U104"
+    ],
+    "Quiet battery ADC": [
+      "C115",
+      "C116",
+      "R127",
+      "R128",
+      "R129",
+      "R130",
+      "U107"
+    ]
+  },
+  "groups_sanity": "",
+  "pad_primitives": 568,
+  "numbered_pad_primitives": 539,
+  "electrical_footprints": 170,
+  "front_electrical": 164,
+  "tracks_vias": 0,
+  "copper_layers": 4,
+  "outline_valid": true,
+  "outline_count": 1,
+  "outline_holes": 0,
+  "outline_bounds_mm": [
+    100.0,
+    100.0,
+    210.0,
+    180.0
+  ],
+  "courtyard_counts": {
+    "F.Cu": 177,
+    "B.Cu": 9
+  },
+  "courtyard_collisions": [],
+  "moved_copper_outside": [],
+  "moved_copper_keepout_intersections": [],
+  "moved_min_copper_edge_mm": {
+    "U501": 7.849999999999994,
+    "C501": 4.025000000000006,
+    "C502": 12.525000000000006,
+    "R504": 7.300000000000011
+  },
+  "moved_min_copper_drill_mm": {
+    "U501": {
+      "mm": 37.8793294580602,
+      "reference": "H3"
+    },
+    "C501": {
+      "mm": 38.68244352211807,
+      "reference": "H3"
+    },
+    "C502": {
+      "mm": 37.92602482041547,
+      "reference": "H3"
+    },
+    "R504": {
+      "mm": 44.56084054771318,
+      "reference": "H3"
+    }
+  },
+  "moved_courtyard_bounds_mm": {
+    "U501": [
+      142.305,
+      168.555,
+      144.695,
+      172.445
+    ],
+    "C501": [
+      142.725,
+      173.225,
+      144.275,
+      176.275
+    ],
+    "C502": [
+      142.725,
+      164.725,
+      144.275,
+      167.775
+    ],
+    "R504": [
+      149.025,
+      171.005,
+      152.475,
+      172.995
+    ]
+  },
+  "nearby_courtyard_boundary_gaps_mm": [
+    [
+      "U501",
+      "U504",
+      0.45999999999997954
+    ],
+    [
+      "R504",
+      "D501",
+      0.8600000000000136
+    ],
+    [
+      "U501",
+      "C501",
+      0.8799999999999955
+    ],
+    [
+      "U501",
+      "C502",
+      0.8799999999999955
+    ],
+    [
+      "C501",
+      "U501",
+      0.8799999999999955
+    ],
+    [
+      "C502",
+      "U501",
+      0.8799999999999955
+    ],
+    [
+      "C502",
+      "U504",
+      0.8799999999999955
+    ],
+    [
+      "R504",
+      "D406",
+      1.0600000000000023
+    ],
+    [
+      "R504",
+      "Q501",
+      1.88732615093416
+    ],
+    [
+      "C501",
+      "U504",
+      2.2125324856372157
+    ],
+    [
+      "U501",
+      "D501",
+      2.859999999999985
+    ],
+    [
+      "C502",
+      "D501",
+      3.280000000000001
+    ],
+    [
+      "R504",
+      "C406",
+      4.349999999999994
+    ],
+    [
+      "U501",
+      "R504",
+      4.429999999999978
+    ],
+    [
+      "R504",
+      "U501",
+      4.429999999999978
+    ],
+    [
+      "C501",
+      "D501",
+      4.499422185125562
+    ],
+    [
+      "C501",
+      "R504",
+      4.861213840184358
+    ],
+    [
+      "R504",
+      "C501",
+      4.861213840184358
+    ],
+    [
+      "R504",
+      "R505",
+      5.16709783147174
+    ],
+    [
+      "C501",
+      "C502",
+      5.550000000000011
+    ]
+  ],
+  "ALS_courtyard_to_glass_mm": 3.655000000000001,
+  "moved_pad_positions_and_nets": {
+    "U501": [
+      {
+        "number": "1",
+        "net": "+3V3",
+        "xy_mm": [
+          143.0,
+          171.875
+        ]
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(U501-INT-Pad2)",
+        "xy_mm": [
+          143.5,
+          171.875
+        ]
+      },
+      {
+        "number": "3",
+        "net": "GND",
+        "xy_mm": [
+          144.0,
+          171.875
+        ]
+      },
+      {
+        "number": "4",
+        "net": "I2C_SDA",
+        "xy_mm": [
+          144.0,
+          169.125
+        ]
+      },
+      {
+        "number": "5",
+        "net": "+3V3",
+        "xy_mm": [
+          143.5,
+          169.125
+        ]
+      },
+      {
+        "number": "6",
+        "net": "I2C_SCL",
+        "xy_mm": [
+          143.0,
+          169.125
+        ]
+      }
+    ],
+    "C501": [
+      {
+        "number": "1",
+        "net": "+3V3",
+        "xy_mm": [
+          143.5,
+          173.975
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "xy_mm": [
+          143.5,
+          175.525
+        ]
+      }
+    ],
+    "C502": [
+      {
+        "number": "1",
+        "net": "+3V3",
+        "xy_mm": [
+          143.5,
+          167.025
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "xy_mm": [
+          143.5,
+          165.475
+        ]
+      }
+    ],
+    "R504": [
+      {
+        "number": "1",
+        "net": "+3V3",
+        "xy_mm": [
+          151.6625,
+          172.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/05  SENSORS + EXPANSION/IR_LED_A",
+        "xy_mm": [
+          149.8375,
+          172.0
+        ]
+      }
+    ]
+  },
+  "local_pad_center_distances_mm": {
+    "C501.1_to_U501.1": 2.1587033144922905,
+    "C502.1_to_U501.5": 2.1,
+    "C509.1_to_U504.4": 2.898020876391335,
+    "C510.1_to_U504.4": 3.1096663808196534,
+    "R507.2_to_U504.4": 5.864386157135288,
+    "C401.1_to_D401.4": 1.6008903772588552,
+    "C402.1_to_D402.4": 1.6008903772588552,
+    "C403.1_to_D403.4": 1.6008903772588552,
+    "R504.2_to_D501.1": 3.7468528460562736,
+    "D501.2_to_Q501.3": 2.5625
+  },
+  "TX_divider_corridor": {
+    "bounds_mm": [
+      146.6,
+      165.25,
+      147.1,
+      175.75
+    ],
+    "front_courtyard_intersections": [],
+    "front_pad_intersections": [],
+    "area_outside_board_mm2": 0.0,
+    "status": "Evaluated empty PCB corridor only. No enclosure wall or CAD keepout has been implemented; no mechanical sealing or optical approval implied."
+  },
+  "keepouts": [
+    {
+      "owner": "U201",
+      "area_mm2": 1008.0,
+      "layers": [
+        "F.Cu",
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ]
+    },
+    {
+      "owner": "MECH_NFC",
+      "area_mm2": 234.0,
+      "layers": [
+        "F.Cu",
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ]
+    }
+  ],
+  "dependency_file_count": 54,
+  "dependency_differences": [],
+  "model_assignments": 167,
+  "distinct_model_files": 33,
+  "missing_model_files": [],
+  "drc": {
+    "candidate_path": ".build/shared-optics-one-sided/drc.json",
+    "baseline_path": "exports/pcb-review/lower-ir/drc.json",
+    "candidate_sha256": "cf4749f48c54d21dc05268229c4e4449e266aaa7141ef0a860c017edea0afb99",
+    "baseline_sha256": "22ca679ea547cf28d48371d9d3aa2919d7bc489a18633844ee24c5de71e86429",
+    "violations": {
+      "hole_clearance": 4,
+      "silk_edge_clearance": 1
+    },
+    "unconnected_items": 390,
+    "schematic_parity": 9,
+    "same_violation_UUIDs_types_severity_descriptions": true,
+    "same_parity_UUIDs_types_severity_descriptions": true,
+    "same_unconnected_UUID_pairs": false,
+    "unconnected_pairs_added": 15,
+    "unconnected_pairs_removed": 15,
+    "ignored_checks_unchanged": true,
+    "reviewer_reran_engine": false,
+    "status": "Existing four USB hole-clearance errors, one radio silkscreen-edge warning, unconnected placement and missing-footprint parity warnings remain. Not DRC-clean."
+  },
+  "actual_render_pixels_inspected_by_this_reviewer": false,
+  "source_hashes": {
+    "BH1730FVC": "012d391bb2712fc3f22d6596e83ad49075e294dd797b5a40634467dc567d0572",
+    "IRM-H638T-TR2": "6ba15dc59077b2a3357495e5cbfe9b68378a275ae1750e02e77f9d6f2663d22e",
+    "IR67-21C-TR8": "8b0cafbc6c75a60d705c078c8027fea96162e198b8125909d2658e66738f527c"
+  },
+  "source_hashes_match_records": {
+    "BH1730FVC": true,
+    "IRM-H638T-TR2": true,
+    "IR67-21C-TR8": true
+  },
+  "geometry_tolerances_mm": {
+    "pad_polygon_error": 0.001,
+    "outline_error": 0.005
+  },
+  "status": "PASS_FOUR_PART_SHARED_PASSIVE_OPTICS_PLACEMENT_DELTA_WITH_ENCLOSURE_AND_PROTOTYPE_GATES",
+  "human_placement_approval_before_routing": true,
+  "baseline_and_candidate_hashes_unchanged_after_review": true
+}

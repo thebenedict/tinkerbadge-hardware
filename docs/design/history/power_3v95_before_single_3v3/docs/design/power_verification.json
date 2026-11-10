@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-09",
+  "scope": "Power electrical development capture only",
+  "kicad_version": "10.0.8",
+  "contract_sha256": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb",
+  "schematic_sha256": "137e7f1daf40aac11d6c4be061468b6c48a9999a3ebdb6682e1a062be78fc4c8",
+  "symbol_library_sha256": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+  "netlist_sha256": "f7becfc1633dc1065ae864f44d7bf41c62d5d64395a43ab665b5a6f64cec310b",
+  "contract_comparison": {
+    "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/power.net",
+    "netlist_sha256": "f7becfc1633dc1065ae864f44d7bf41c62d5d64395a43ab665b5a6f64cec310b",
+    "contract_sha256": {
+      "power": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb"
+    },
+    "expected_components": 63,
+    "expected_endpoints": 206,
+    "intentional_nc_endpoints": 16,
+    "observed_endpoints_for_expected_components": 206,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "konnect_checks": {
+    "validate_component_connections": {
+      "unconnected_count": 0,
+      "unconnected_pins": [],
+      "valid": true
+    },
+    "validate_wire_connections": {
+      "floating_count": 0,
+      "floating_endpoints": [],
+      "valid": true
+    },
+    "find_shorted_nets": {
+      "short_count": 0,
+      "shorts": []
+    },
+    "find_orphan_items": {
+      "orphan_count": 0,
+      "orphans": [],
+      "tolerance": 0.05
+    }
+  },
+  "root_erc_snapshot": {
+    "file": ".build/power_root_erc.json",
+    "findings_naming_power_references": 0,
+    "whole_project_findings": 282,
+    "whole_project_status": "Incomplete: other sheets were still under construction; not a project ERC pass."
+  },
+  "visual_preview": ".build/power_final_reviewed.png",
+  "source_review": "docs/design/review_power.md",
+  "independent_capture_review": "Pending separate reviewer signoff",
+  "safety_state": {
+    "charging": "Hard disabled by fitted R120 from VSYS to CE",
+    "battery": "Logical two-wire protected 1S 4.2 V LiPo interface; exact pack/connector/polarity pending",
+    "thermistor": "Separate J104 is unpopulated; fitting it alone does not enable or qualify charging",
+    "footprints": "All power-instance footprints are blank pending physical acceptance"
+  }
+}

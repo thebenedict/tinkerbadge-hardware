@@ -1,0 +1,291 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-09T20:02:18.714267+00:00",
+  "scope": "Graphics-only revision of the five actual circuit sheets; root hierarchy, component records, electrical nets, libraries and project settings not changed by the revision.",
+  "functional_frames": 24,
+  "sheets": [
+    {
+      "sheet": "power",
+      "input_sha256": "377d3afaa8323e6f61d6cef0f8e670254b959091fdc766e32c5c063dad6d121f",
+      "output_sha256": "a0dd355672d33e99b8eb194b2a6a329c244558220100f004813f9ab5948a7c09",
+      "frames": 6,
+      "changed_existing_nodes": 72,
+      "new_nodes": 6,
+      "geometry_events": [
+        {
+          "region": [
+            10,
+            100,
+            30,
+            136
+          ],
+          "offset": [
+            10.16,
+            0
+          ],
+          "references": [
+            "J103"
+          ],
+          "nodes": 7
+        },
+        {
+          "region": [
+            60,
+            19,
+            105,
+            42
+          ],
+          "offset": [
+            0,
+            5.08
+          ],
+          "references": [
+            "R101",
+            "R102"
+          ],
+          "nodes": 10
+        },
+        {
+          "region": [
+            120,
+            220,
+            180,
+            283
+          ],
+          "offset": [
+            17.78,
+            -3.81
+          ],
+          "references": [
+            "Q101",
+            "R121",
+            "R122",
+            "R123"
+          ],
+          "nodes": 22
+        },
+        {
+          "region": [
+            215,
+            220,
+            258,
+            283
+          ],
+          "offset": [
+            0,
+            -3.81
+          ],
+          "references": [
+            "Q102",
+            "R124",
+            "R125",
+            "R126"
+          ],
+          "nodes": 22
+        },
+        {
+          "point_shift": [
+            7.62,
+            0
+          ],
+          "nodes": [
+            "8af63fd8-da9a-42d0-9460-6536b1d0e3b4",
+            "7e0d7f00-8beb-4202-9de3-7d049d8e1765",
+            "c939bb19-adfa-4f39-9e97-f9699b9f24e8"
+          ]
+        }
+      ],
+      "non_geometric_tokens_preserved": true
+    },
+    {
+      "sheet": "mcu",
+      "input_sha256": "29e7598143e36c0ba33b1ea5875f514755eb59f60cc515947e747fa4303c45b3",
+      "output_sha256": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
+      "frames": 4,
+      "changed_existing_nodes": 6,
+      "new_nodes": 4,
+      "geometry_events": [],
+      "non_geometric_tokens_preserved": true
+    },
+    {
+      "sheet": "display",
+      "input_sha256": "8be61344e78d548e3f3712709e7a16c372141cc4027574d05ca7bf224ffaca6a",
+      "output_sha256": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
+      "frames": 4,
+      "changed_existing_nodes": 15,
+      "new_nodes": 4,
+      "geometry_events": [
+        {
+          "region": [
+            20,
+            225,
+            50,
+            255
+          ],
+          "offset": [
+            7.62,
+            0
+          ],
+          "references": [
+            "R303"
+          ],
+          "nodes": 6
+        }
+      ],
+      "non_geometric_tokens_preserved": true
+    },
+    {
+      "sheet": "lighting",
+      "input_sha256": "c69b283fcddaf4dda80db415f7d009a5bf72508bbac4eab0f21db83e3aabc796",
+      "output_sha256": "5f8dfbd32dac1d63130fe27f7fa7ad2f163bd08e2a4218f65aa1638fc7539c93",
+      "frames": 3,
+      "changed_existing_nodes": 9,
+      "new_nodes": 3,
+      "geometry_events": [],
+      "non_geometric_tokens_preserved": true
+    },
+    {
+      "sheet": "peripherals",
+      "input_sha256": "c3997e92e5deee52c05a2b8e3f9453e36f269b825047058acbd8ac74b381f77e",
+      "output_sha256": "b1720568ddb6838fb062a9bd79f975335523fd3676d6d5698764ade0fd79f4bf",
+      "frames": 7,
+      "changed_existing_nodes": 21,
+      "new_nodes": 11,
+      "geometry_events": [
+        {
+          "point_shift": [
+            0,
+            -3.81
+          ],
+          "nodes": [
+            "455f99e2-2dfe-46f2-9b4a-f01184d2f7ee",
+            "b0e4bfa2-1fd1-4cb7-857f-256fd6f3768e",
+            "36b7245c-f3e8-4ab2-a23a-dd415c740e45",
+            "cd203b72-0c79-46ed-af43-1481b1ebcc62"
+          ]
+        }
+      ],
+      "non_geometric_tokens_preserved": true
+    }
+  ],
+  "baseline_netlist_sha256": "36c8b03dd498981a6cd9319d109cf308d9a5e321132183d819c042c077bee0a9",
+  "final_netlist_sha256": "212045b88dc12efff422beff88cfc720e44492397b4746e8df83978cceb6d97a",
+  "electrical_equivalence": {
+    "before": ".build/outlined_blocks/baseline/tinkerbadge.net",
+    "before_sha256": "36c8b03dd498981a6cd9319d109cf308d9a5e321132183d819c042c077bee0a9",
+    "after": "exports/tinkerbadge.net",
+    "after_sha256": "212045b88dc12efff422beff88cfc720e44492397b4746e8df83978cceb6d97a",
+    "component_count": 179,
+    "net_count": 141,
+    "library_part_count": 32,
+    "scope": "Every exported component record, actual named net membership/node properties and library physical-pin definitions. Export timestamps and numeric net codes are ignored.",
+    "issues": [],
+    "status": "PASS"
+  },
+  "independent_reviews": {
+    "review-power-display-final.json": {
+      "status": "PASS",
+      "scope": "Independent review of bounded native editing and actual before/after native power/display files; independently re-executed whole-project exported electrical comparison; visual inspection of fresh power/display PNGs.",
+      "hashes": {
+        "candidate/power.kicad_sch": "a0dd355672d33e99b8eb194b2a6a329c244558220100f004813f9ab5948a7c09",
+        "candidate/display.kicad_sch": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
+        "candidate/exports/power.png": "48272ab70ca2f1e802c60f4eb9f0c7332b3a234436a1273f327c938f77dc1e6a",
+        "candidate/exports/display.png": "2b92c76b5e849a4e1c03e1fcdef7791d632a23281e09e4d6fdf9202594b2f97a",
+        "candidate/exports/tinkerbadge.net": "cefffea07d75cfbaaf9b560843c9026cd74a648af74806ef95379b98bdb7034f",
+        "baseline/tinkerbadge.net": "36c8b03dd498981a6cd9319d109cf308d9a5e321132183d819c042c077bee0a9",
+        "../../tools/apply_outlined_blocks.py": "e26b4f79c6f3fa85a0dc656601a3920ff5b24ba381e99b3d60a85003e5d8b4d3"
+      },
+      "native_audit": {
+        "missing_nontext_items": 0,
+        "unexpected_non_geometric_changes": 0,
+        "added_items": "Only native decorative rectangles and free text.",
+        "power_frames": 6,
+        "display_frames": 4,
+        "U107_ground_items": "Both symbols and short wire exactly restored to baseline; unintended initial-candidate shifts are absent."
+      },
+      "editor_review": {
+        "status": "PASS_FOR_REVIEWED_FROZEN_BASELINE",
+        "notes": [
+          "Preserves untouched source sections and checks balanced native structure, stable UUIDs and non-geometric records.",
+          "Presence branch selectors are narrowed and assert explicit power-symbol sets as well as ordinary component sets.",
+          "Geometric selectors still require full exported-netlist validation on any new baseline; semantics-only checks cannot prove electrical connectivity."
+        ]
+      },
+      "electrical_comparison": {
+        "status": "PASS",
+        "component_records": 179,
+        "named_nets": 141,
+        "library_parts": 32,
+        "issues": 0,
+        "ignored": "Export timestamps and numeric net codes only."
+      },
+      "contract_check": {
+        "status": "PASS",
+        "components": 179,
+        "endpoints": 576
+      },
+      "erc": {
+        "errors": 0,
+        "warnings": 1,
+        "remaining_warning": "U502 SDO/SA0 bidirectional pin tied to the +3V3 power-output net."
+      },
+      "visual_review": {
+        "power": "PASS: six meaningful dashed magenta unfilled groups, consistent blue titles, restored U107 grounds, C114 value clear of right frame; frame boundaries clear of circuitry, page border and title block.",
+        "display": "PASS: four meaningful groups; all direct interface connections remain inside one block; clear titles, component/support enclosure and note separation; no newly introduced overlaps observed."
+      },
+      "resolves": "review-power-display-initial.json",
+      "limits": "Review approves this graphics/layout revision, not PCB release, footprint assignment, prototype performance or the pre-existing electrical design.",
+      "cad_or_exports_modified_by_reviewer": false
+    },
+    "review-interface-final.json": {
+      "review": "Independent final visual review of MCU, lighting and peripheral outlined blocks",
+      "reviewed_at_utc": "2026-11-09T19:59:39.799893+00:00",
+      "status": "accepted",
+      "scope": "All three candidate PNGs were visually inspected. Corrected MCU and peripheral renders were reinspected; lighting source/render hashes remain identical to the accepted initial inspection. This is a visual/layout acceptance only, not an electrical, footprint or production-release approval. No native CAD or exports modified by reviewer.",
+      "files": {
+        "mcu": {
+          "native_path": ".build/outlined_blocks/candidate/mcu.kicad_sch",
+          "native_sha256": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
+          "render_path": ".build/outlined_blocks/candidate/exports/mcu.png",
+          "render_sha256": "8084af2aa3d23ca7f9ad6ef31c338244649cfb13ecc55d66890ef25d3c28abda"
+        },
+        "lighting": {
+          "native_path": ".build/outlined_blocks/candidate/lighting.kicad_sch",
+          "native_sha256": "5f8dfbd32dac1d63130fe27f7fa7ad2f163bd08e2a4218f65aa1638fc7539c93",
+          "render_path": ".build/outlined_blocks/candidate/exports/lighting.png",
+          "render_sha256": "10bc6a13ea95e21718095d27726a18365519495630d41bd42e38599c67422218"
+        },
+        "peripherals": {
+          "native_path": ".build/outlined_blocks/candidate/peripherals.kicad_sch",
+          "native_sha256": "b1720568ddb6838fb062a9bd79f975335523fd3676d6d5698764ade0fd79f4bf",
+          "render_path": ".build/outlined_blocks/candidate/exports/peripherals.png",
+          "render_sha256": "79c1e1a2571b10edab0b0273c62313e917002d30b19af0c10459d564604471b0"
+        }
+      },
+      "resolved_findings": [
+        {
+          "sheet": "mcu",
+          "resolution": "Power Test frame/title left coordinate is now 20.32 mm, with visible clearance from the +3V3 text."
+        },
+        {
+          "sheet": "peripherals",
+          "resolution": "C505 reference/value now sit at x=223.52 mm, clear of the vertical supply wire, with no new collision."
+        }
+      ],
+      "accepted_observations": [
+        "Dashed magenta unfilled rectangles and blue captions reproduce the Transit-style functional organization.",
+        "MCU module/support grouping avoids cutting directly connected USB wires; recovery and test groups are distinct.",
+        "Lighting RGB chain, status indicator and user buttons are independently framed with readable notes.",
+        "Peripheral sensors, NFC, expander, accessory rail/connectors and optional IR groups are distinguishable.",
+        "IR TX bottom clearance is resolved and the accessory frame and notes remain clear of the title block.",
+        "No remaining new frame/wire crossing, obscured label, misleading group boundary or title-block overlap found in these three inspected renders."
+      ],
+      "unresolved_visual_findings": [],
+      "electrical_checks": "Parent reports unchanged 179 components/576 pins and ERC zero errors/one unchanged warning. These checks were not independently rerun as part of this visual review.",
+      "prior_review": ".build/outlined_blocks/review-interface-initial.json"
+    }
+  },
+  "final_renders_match_reviewed_candidates": true,
+  "review_snapshot": "history/2026-11-09-outlined-blocks/",
+  "remaining_limits": "Pre-existing prototype, footprint, battery/charging, mechanical, thermal and manufacturing gates remain. PCB preparation is separate."
+}

@@ -1,0 +1,229 @@
+{
+  "mpn": "AYF532435",
+  "package": "Y5B 24-position dual-contact FPC/FFC, horizontal back-lock",
+  "source": {
+    "id": "connector",
+    "filename": "Panasonic_Y5B_Y5BW.pdf",
+    "url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/277740",
+    "revision": "ACCTB1E 202309; September 2023; 14 PDF pages",
+    "sha256": "3ffd0ce7b07ef092417668908dee332e1e575be1b590c72656cbd694d6dfe9a7",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "2",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "3",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "4",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "5",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "6",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "7",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "8",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "9",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "10",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "11",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "12",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "13",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "14",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "15",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "16",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "17",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "18",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "19",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "20",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "21",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "22",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "23",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    },
+    {
+      "number": "24",
+      "name": "contact",
+      "function": "Electrically independent dual-contact FPC position",
+      "electrical_type": "passive",
+      "source_page": 5,
+      "number_status": "Project flex-contact numbering, not asserted manufacturer terminal numbering"
+    }
+  ],
+  "ratings": {
+    "contact_pitch_mm": 0.5,
+    "fpc_thickness_mm": 0.3,
+    "fpc_thickness_tolerance_mm": 0.03,
+    "rated_voltage_V": 50,
+    "rated_current_A": 0.5,
+    "mating_cycles": 20,
+    "source_pages": [
+      4,
+      5
+    ]
+  },
+  "mechanical": {
+    "body_length_mm": 14.0,
+    "body_height_mm": 1.0,
+    "body_depth_mm": 3.2,
+    "depth_including_lever_mm": 3.7,
+    "contact_span_mm": 11.5,
+    "source_page": 5
+  },
+  "pin_numbering_status": "Unapproved physical mapping: official series drawing does not label1/24. Symbol number n means panel FPC contact n. Footprint must be assigned only after mating/fold/top-view audit.",
+  "pixel_review": "Inspected official PDF pages2-5 and8; dual-contact cross section, FPC dimensions, and recommended PCB pads."
+}

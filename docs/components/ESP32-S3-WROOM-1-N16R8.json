@@ -1,0 +1,438 @@
+{
+  "mpn": "ESP32-S3-WROOM-1-N16R8",
+  "package": "ESP32-S3-WROOM-1; PCB antenna; 18 x 25.5 mm",
+  "source": "../datasheets/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+  "revision": "v1.8",
+  "pin_table_pages": [
+    11,
+    12
+  ],
+  "diagram_page": 10,
+  "diagram_view": "top view; pin1 upper left beneath antenna; perimeter numbered counterclockwise; exposed pad41 GND",
+  "pins": [
+    {
+      "number": "1",
+      "name": "GND",
+      "gpio": null,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "2",
+      "name": "3V3",
+      "gpio": null,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "3",
+      "name": "EN",
+      "gpio": null,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "4",
+      "name": "IO4",
+      "gpio": 4,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "5",
+      "name": "IO5",
+      "gpio": 5,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "6",
+      "name": "IO6",
+      "gpio": 6,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "7",
+      "name": "IO7",
+      "gpio": 7,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "8",
+      "name": "IO15",
+      "gpio": 15,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "9",
+      "name": "IO16",
+      "gpio": 16,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "10",
+      "name": "IO17",
+      "gpio": 17,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "11",
+      "name": "IO18",
+      "gpio": 18,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "12",
+      "name": "IO8",
+      "gpio": 8,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "13",
+      "name": "IO19",
+      "gpio": 19,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "14",
+      "name": "IO20",
+      "gpio": 20,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "15",
+      "name": "IO3",
+      "gpio": 3,
+      "rtc_gpio": true,
+      "restrictions": [
+        "boot strap; excluded from accessory I/O"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "16",
+      "name": "IO46",
+      "gpio": 46,
+      "rtc_gpio": false,
+      "restrictions": [
+        "boot strap; excluded from accessory I/O"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "17",
+      "name": "IO9",
+      "gpio": 9,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "18",
+      "name": "IO10",
+      "gpio": 10,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "19",
+      "name": "IO11",
+      "gpio": 11,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "20",
+      "name": "IO12",
+      "gpio": 12,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "21",
+      "name": "IO13",
+      "gpio": 13,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "22",
+      "name": "IO14",
+      "gpio": 14,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "23",
+      "name": "IO21",
+      "gpio": 21,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "24",
+      "name": "IO47",
+      "gpio": 47,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "25",
+      "name": "IO48",
+      "gpio": 48,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "26",
+      "name": "IO45",
+      "gpio": 45,
+      "rtc_gpio": false,
+      "restrictions": [
+        "boot strap; excluded from accessory I/O"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "27",
+      "name": "IO0",
+      "gpio": 0,
+      "rtc_gpio": true,
+      "restrictions": [
+        "boot strap; excluded from accessory I/O"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "28",
+      "name": "IO35",
+      "gpio": 35,
+      "rtc_gpio": false,
+      "restrictions": [
+        "N16R8 octal PSRAM; no user connection"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "29",
+      "name": "IO36",
+      "gpio": 36,
+      "rtc_gpio": false,
+      "restrictions": [
+        "N16R8 octal PSRAM; no user connection"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "30",
+      "name": "IO37",
+      "gpio": 37,
+      "rtc_gpio": false,
+      "restrictions": [
+        "N16R8 octal PSRAM; no user connection"
+      ],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "31",
+      "name": "IO38",
+      "gpio": 38,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "number": "32",
+      "name": "IO39",
+      "gpio": 39,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "33",
+      "name": "IO40",
+      "gpio": 40,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "34",
+      "name": "IO41",
+      "gpio": 41,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "35",
+      "name": "IO42",
+      "gpio": 42,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "36",
+      "name": "RXD0",
+      "gpio": 44,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "37",
+      "name": "TXD0",
+      "gpio": 43,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "38",
+      "name": "IO2",
+      "gpio": 2,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "39",
+      "name": "IO1",
+      "gpio": 1,
+      "rtc_gpio": true,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "40",
+      "name": "GND",
+      "gpio": null,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "number": "41",
+      "name": "EPAD",
+      "gpio": null,
+      "rtc_gpio": false,
+      "restrictions": [],
+      "source_pages": [
+        12
+      ]
+    }
+  ]
+}

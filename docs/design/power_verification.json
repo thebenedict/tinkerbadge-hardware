@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-09",
+  "scope": "Power electrical development capture only",
+  "kicad_version": "10.0.8",
+  "contract_sha256": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+  "schematic_sha256": "377d3afaa8323e6f61d6cef0f8e670254b959091fdc766e32c5c063dad6d121f",
+  "symbol_library_sha256": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+  "netlist_sha256": "50fff81ca965032effc1873117facb7b481d832ebbb8d1944f844718fced5edf",
+  "contract_comparison": {
+    "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/power.net",
+    "netlist_sha256": "50fff81ca965032effc1873117facb7b481d832ebbb8d1944f844718fced5edf",
+    "contract_sha256": {
+      "power": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563"
+    },
+    "expected_components": 60,
+    "expected_endpoints": 195,
+    "intentional_nc_endpoints": 14,
+    "observed_endpoints_for_expected_components": 195,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "konnect_checks": {
+    "validate_component_connections": {
+      "unconnected_count": 0,
+      "unconnected_pins": [],
+      "valid": true
+    },
+    "validate_wire_connections": {
+      "floating_count": 0,
+      "floating_endpoints": [],
+      "valid": true
+    },
+    "find_shorted_nets": {
+      "short_count": 0,
+      "shorts": []
+    },
+    "find_orphan_items": {
+      "orphan_count": 0,
+      "orphans": [],
+      "tolerance": 0.05
+    }
+  },
+  "root_erc_snapshot": {
+    "file": ".build/power_root_erc.json",
+    "findings_naming_power_references": 1,
+    "whole_project_findings": 1,
+    "whole_project_errors": 0,
+    "whole_project_warnings": 1,
+    "whole_project_status": "Completed root ERC; inspect and justify every recorded finding. Footprint/prototype gates remain."
+  },
+  "visual_preview": ".build/power_final_reviewed.png",
+  "source_review": "docs/design/review_power.md",
+  "independent_capture_review": "PASS independent electrical, properties and visual capture; matching sheet and contract hashes",
+  "property_comparison": {
+    "status": "PASS",
+    "checks": {
+      "MPN": 12,
+      "Contract": 60,
+      "Specification": 45,
+      "Populate": 1
+    },
+    "issues": [],
+    "removed_refs_absent": [
+      "U106",
+      "C110",
+      "C111"
+    ],
+    "netlist_sha256": "50fff81ca965032effc1873117facb7b481d832ebbb8d1944f844718fced5edf"
+  },
+  "root_contract_comparison": {
+    "netlist": ".build/power_single_3v3_root.net",
+    "netlist_sha256": "898e6009a07610ac7be276f8095d3bfa7aebe0c6d21d4074a7886b1f9b3f283c",
+    "contract_sha256": {
+      "power": "20fb7654f96922426fbc6a5b73ef70995b394aab9696421ed483bcbc73615563",
+      "mcu": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+      "display": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+      "peripherals": "97c79e1fdfab079aed4900ddf0f3fceebcc630a3a8663b13ed0e22de3d09a514"
+    },
+    "expected_components": 179,
+    "expected_endpoints": 572,
+    "intentional_nc_endpoints": 30,
+    "observed_endpoints_for_expected_components": 572,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "safety_state": {
+    "charging": "Hard disabled by fitted R120 from VSYS to CE",
+    "battery": "Logical two-wire protected 1S 4.2 V LiPo interface; exact pack/connector/polarity pending",
+    "thermistor": "Separate J104 is unpopulated; fitting it alone does not enable or qualify charging",
+    "rail": "One nominal 3.3 V rail; calculated 3.2559–3.3443 V static PWM bounds. Below-3.3 V LED behavior is an accepted prototype exception, not guaranteed.",
+    "footprints": "All power-instance footprints are blank pending physical acceptance"
+  }
+}

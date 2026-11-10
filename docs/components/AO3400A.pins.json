@@ -1,0 +1,45 @@
+{
+  "mpn": "AO3400A",
+  "package": "SOT-23 N-channel MOSFET",
+  "source": {
+    "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+    "revision": "Rev3.1,July2023",
+    "filename": "AO3400A.pdf",
+    "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "G",
+      "function": "Gate",
+      "source_page": 1
+    },
+    {
+      "number": "2",
+      "name": "S",
+      "function": "Source",
+      "source_page": 1
+    },
+    {
+      "number": "3",
+      "name": "D",
+      "function": "Drain",
+      "source_page": 1
+    }
+  ],
+  "package_metal": "Three electrical leads, noEP. Numeric numbering is conventional derivation as documented, not a printed AOS pin-number table.",
+  "pixel_review": "Inspected datasheetRev3.1 p1 actual labelled G/S/D top and bottom views; inspected separate official PO-00001N p1 package drawing. Datasheetp5 is test waveforms, NOT package.",
+  "review_status": "pending_independent_review",
+  "package_source": {
+    "url": "https://www.aosmd.com/sites/default/files/res/package/SOT23.pdf",
+    "revision": "PO-00001 VersionN; no printed date (product page lists2021-06-16)",
+    "filename": "AOS-SOT23.pdf",
+    "sha256": "b6fac64d55f133ce74dd85ddddc618c3d5408e9531cb21e660f6a8ef3d8c5408",
+    "retrieved": "2026-11-09",
+    "status": "archived",
+    "role": "AO3400A package dimensions"
+  },
+  "numbering_basis": "Derived: datasheetp1 marks gate-end terminal with index dot and labels G/S/D. Conventional SOT23 numbering assigns index terminal1=G, paired terminal2=S, opposite3=D. Neither archived AOS drawing prints terminal numbers. Reviewer must explicitly accept this derivation and verify symbol-to-physical orientation."
+}

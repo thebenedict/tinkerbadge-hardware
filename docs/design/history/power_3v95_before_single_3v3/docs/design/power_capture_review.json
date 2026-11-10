@@ -1,0 +1,719 @@
+{
+  "date": "2026-11-09",
+  "status": "PASS final electrical and visual capture of historical 3.95V/3.3V architecture; new single-3.3V amendment pending review",
+  "reviewer": "Display/MCU reviewer, independent of power CAD author",
+  "hashes": {
+    "docs/design/power_contract.json": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb",
+    ".build/power-independent.net": "725657c32dbb53f2b1b0338cdda7a8fc38cd7bce9be6d469b3b4ef1d5c9466ad",
+    ".build/power_final.png": "a5560a0107c8eb61f22e9da08eb6ac0c486be41aa2afca27dd10101e99b77e0a"
+  },
+  "endpoint_check": {
+    "netlist": ".build/power-independent.net",
+    "netlist_sha256": "725657c32dbb53f2b1b0338cdda7a8fc38cd7bce9be6d469b3b4ef1d5c9466ad",
+    "contract_sha256": {
+      "power": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb"
+    },
+    "expected_components": 63,
+    "expected_endpoints": 206,
+    "intentional_nc_endpoints": 16,
+    "observed_endpoints_for_expected_components": 206,
+    "missing_components": [],
+    "issues": [],
+    "status": "PASS"
+  },
+  "local_checks": {
+    "validate_wire_connections": {
+      "floating_count": 0,
+      "floating_endpoints": [],
+      "valid": true
+    },
+    "validate_component_connections": {
+      "unconnected_count": 0,
+      "unconnected_pins": [],
+      "valid": true
+    },
+    "find_shorted_nets": {
+      "short_count": 0,
+      "shorts": []
+    },
+    "find_orphan_items": {
+      "orphan_count": 0,
+      "orphans": [],
+      "tolerance": 0.05
+    }
+  },
+  "component_value_checks": [
+    {
+      "ref": "U101",
+      "actual_value": "TPS2121RUXR",
+      "expected_value_or_mpn": "TPS2121RUXR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U102",
+      "actual_value": "BQ24074RGTR",
+      "expected_value_or_mpn": "BQ24074RGTR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U103",
+      "actual_value": "TPS63802DLAR",
+      "expected_value_or_mpn": "TPS63802DLAR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U104",
+      "actual_value": "TPS22918DBVR",
+      "expected_value_or_mpn": "TPS22918DBVR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U105",
+      "actual_value": "TPD4E05U06DQAR",
+      "expected_value_or_mpn": "TPD4E05U06DQAR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U106",
+      "actual_value": "TLV75733PDRVR",
+      "expected_value_or_mpn": "TLV75733PDRVR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "U107",
+      "actual_value": "TMUX1511PWR",
+      "expected_value_or_mpn": "TMUX1511PWR",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "Q101",
+      "actual_value": "AO3400A",
+      "expected_value_or_mpn": "AO3400A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "Q102",
+      "actual_value": "AO3400A",
+      "expected_value_or_mpn": "AO3400A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "Q103",
+      "actual_value": "AO3400A",
+      "expected_value_or_mpn": "AO3400A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "D101",
+      "actual_value": "SMF6.0A",
+      "expected_value_or_mpn": "SMF6.0A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "D102",
+      "actual_value": "SMF6.0A",
+      "expected_value_or_mpn": "SMF6.0A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "J101",
+      "actual_value": "USB4105-GF-A",
+      "expected_value_or_mpn": "USB4105-GF-A",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "J102",
+      "actual_value": "2-wire LiPo",
+      "expected_value_or_mpn": null,
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "J103",
+      "actual_value": "Dock 5V contacts",
+      "expected_value_or_mpn": null,
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "J104",
+      "actual_value": "NTC (DNP)",
+      "expected_value_or_mpn": null,
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R101",
+      "actual_value": "5.1k 1%",
+      "expected_value_or_mpn": "5.1k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R102",
+      "actual_value": "5.1k 1%",
+      "expected_value_or_mpn": "5.1k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R103",
+      "actual_value": "44.2k 0.1%",
+      "expected_value_or_mpn": "44.2k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R104",
+      "actual_value": "10.0k 0.1%",
+      "expected_value_or_mpn": "10.0k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R105",
+      "actual_value": "44.2k 0.1%",
+      "expected_value_or_mpn": "44.2k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R106",
+      "actual_value": "10.0k 0.1%",
+      "expected_value_or_mpn": "10.0k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R107",
+      "actual_value": "31.6k 0.1%",
+      "expected_value_or_mpn": "31.6k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R108",
+      "actual_value": "10.0k 0.1%",
+      "expected_value_or_mpn": "10.0k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R109",
+      "actual_value": "80.6k 1%",
+      "expected_value_or_mpn": "80.6k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R110",
+      "actual_value": "10k 1%",
+      "expected_value_or_mpn": "10k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R111",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R112",
+      "actual_value": "4.32k 1%",
+      "expected_value_or_mpn": "4.32k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R113",
+      "actual_value": "3.32k 1%",
+      "expected_value_or_mpn": "3.32k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R114",
+      "actual_value": "47.5k 1%",
+      "expected_value_or_mpn": "47.5k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R115",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R116",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R117",
+      "actual_value": "69.0k 0.1%",
+      "expected_value_or_mpn": "69.0k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R118",
+      "actual_value": "10.0k 0.1%",
+      "expected_value_or_mpn": "10.0k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R119",
+      "actual_value": "1k 1%",
+      "expected_value_or_mpn": "1k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R120",
+      "actual_value": "0",
+      "expected_value_or_mpn": "0",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R121",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R122",
+      "actual_value": "470k 1%",
+      "expected_value_or_mpn": "470k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R123",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R124",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R125",
+      "actual_value": "470k 1%",
+      "expected_value_or_mpn": "470k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R126",
+      "actual_value": "100k 1%",
+      "expected_value_or_mpn": "100k 1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R127",
+      "actual_value": "100k 0.1%",
+      "expected_value_or_mpn": "100k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R128",
+      "actual_value": "100k 0.1%",
+      "expected_value_or_mpn": "100k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R129",
+      "actual_value": "100k 0.1%",
+      "expected_value_or_mpn": "100k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "R130",
+      "actual_value": "10k 0.1%",
+      "expected_value_or_mpn": "10k 0.1%",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C101",
+      "actual_value": "1uF 25V X7R",
+      "expected_value_or_mpn": "1uF 25V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C102",
+      "actual_value": "1uF 25V X7R",
+      "expected_value_or_mpn": "1uF 25V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C103",
+      "actual_value": "4.7uF 25V X7R",
+      "expected_value_or_mpn": "4.7uF 25V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C104",
+      "actual_value": "100nF 16V X7R",
+      "expected_value_or_mpn": "100nF 16V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C105",
+      "actual_value": "10uF 10V X7R",
+      "expected_value_or_mpn": "10uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C106",
+      "actual_value": "10uF 10V X7R",
+      "expected_value_or_mpn": "10uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C107",
+      "actual_value": "10uF 10V X7R",
+      "expected_value_or_mpn": "10uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C108",
+      "actual_value": "22uF 10V X7R",
+      "expected_value_or_mpn": "22uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C109",
+      "actual_value": "22uF 10V X7R",
+      "expected_value_or_mpn": "22uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C110",
+      "actual_value": "10uF 10V X7R",
+      "expected_value_or_mpn": "10uF 10V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C111",
+      "actual_value": "10uF 6.3V X7R",
+      "expected_value_or_mpn": "10uF 6.3V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C112",
+      "actual_value": "1uF 6.3V X7R",
+      "expected_value_or_mpn": "1uF 6.3V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C113",
+      "actual_value": "1nF 16V C0G",
+      "expected_value_or_mpn": "1nF 16V C0G",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C114",
+      "actual_value": "10uF 6.3V X7R",
+      "expected_value_or_mpn": "10uF 6.3V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C115",
+      "actual_value": "100nF 6.3V X7R",
+      "expected_value_or_mpn": "100nF 6.3V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "C116",
+      "actual_value": "10nF 6.3V X7R",
+      "expected_value_or_mpn": "10nF 6.3V X7R",
+      "match": true,
+      "footprint": null
+    },
+    {
+      "ref": "L101",
+      "actual_value": "0.47uH",
+      "expected_value_or_mpn": "0.47uH",
+      "match": true,
+      "footprint": null
+    }
+  ],
+  "critical_actual_endpoint_sets": {
+    "/BATT_NTC_OPTIONAL": [
+      [
+        "J104",
+        "1"
+      ],
+      [
+        "U102",
+        "1"
+      ]
+    ],
+    "/BAT_DIV_PRE": [
+      [
+        "C116",
+        "1"
+      ],
+      [
+        "R127",
+        "2"
+      ],
+      [
+        "R128",
+        "1"
+      ],
+      [
+        "U107",
+        "2"
+      ]
+    ],
+    "/BAT_SENSE_ISOLATED": [
+      [
+        "R130",
+        "1"
+      ],
+      [
+        "U107",
+        "3"
+      ]
+    ],
+    "/CHARGER_EN1": [
+      [
+        "Q103",
+        "3"
+      ],
+      [
+        "R111",
+        "2"
+      ],
+      [
+        "U102",
+        "6"
+      ]
+    ],
+    "/CHARGE_DISABLE": [
+      [
+        "R120",
+        "2"
+      ],
+      [
+        "U102",
+        "4"
+      ]
+    ],
+    "/EPD_CT": [
+      [
+        "C113",
+        "1"
+      ],
+      [
+        "U104",
+        "4"
+      ]
+    ],
+    "/EPD_QOD": [
+      [
+        "R119",
+        "2"
+      ],
+      [
+        "U104",
+        "5"
+      ]
+    ],
+    "/MUX_USB_SELECTED": [
+      [
+        "Q103",
+        "1"
+      ],
+      [
+        "R110",
+        "2"
+      ],
+      [
+        "U101",
+        "9"
+      ]
+    ],
+    "/PRIMARY_FB": [
+      [
+        "R117",
+        "2"
+      ],
+      [
+        "R118",
+        "1"
+      ],
+      [
+        "U103",
+        "4"
+      ]
+    ],
+    "/PRIMARY_L1": [
+      [
+        "L101",
+        "1"
+      ],
+      [
+        "U103",
+        "9"
+      ]
+    ],
+    "/PRIMARY_L2": [
+      [
+        "L101",
+        "2"
+      ],
+      [
+        "U103",
+        "7"
+      ]
+    ],
+    "BAT_ADC": [
+      [
+        "R129",
+        "1"
+      ],
+      [
+        "R130",
+        "2"
+      ]
+    ],
+    "VLED_3V9": [
+      [
+        "C108",
+        "1"
+      ],
+      [
+        "C109",
+        "1"
+      ],
+      [
+        "C110",
+        "1"
+      ],
+      [
+        "R117",
+        "1"
+      ],
+      [
+        "U103",
+        "6"
+      ],
+      [
+        "U106",
+        "4"
+      ],
+      [
+        "U106",
+        "6"
+      ]
+    ]
+  },
+  "J104_DNP": "Verified value NTC (DNP), Populate=DNP, Safety and FootprintStatus properties; no claim of native KiCad DNP attribute.",
+  "requested_visual_corrections": [
+    "R120 body/value overlap CHARGER_TMR and CHARGER_EN1 labels.",
+    "J102 value/nearby VBAT_PROTECTED caption overlap, and J104 BATT_NTC_OPTIONAL label/C106 GND overlap.",
+    "U106 value touches +3V3 rail label.",
+    "R121/R124 value text intersects vertical gate wiring.",
+    "VLED_3V9 at U103 output/U106 input and +3V3_EPD at U104 output cross continuous wires."
+  ],
+  "pending": [
+    "Fresh corrected visual review",
+    "Completed-root ERC",
+    "Power architecture remains subject to parent/user review; any electrical change requires refreshed contract and checks",
+    "Exact footprints/pack polarity/thermistor qualification, thermal/current/USB source-mode and prototype gates"
+  ],
+  "corrected_visual_review": {
+    "image": ".build/power_final_reviewed.png",
+    "inspected": true,
+    "finding": "All reported overlaps resolved after final U103 field move; no new visual issue observed.",
+    "endpoint_check": {
+      "netlist": "/Users/michael/code/tinkerbadge-hardware/.build/power.net",
+      "netlist_sha256": "f7becfc1633dc1065ae864f44d7bf41c62d5d64395a43ab665b5a6f64cec310b",
+      "contract_sha256": {
+        "power": "e6117b29bcaa7d7c11b527b3b0ae852f057ef4d57d010c1c6cd636974148bccb"
+      },
+      "expected_components": 63,
+      "expected_endpoints": 206,
+      "intentional_nc_endpoints": 16,
+      "observed_endpoints_for_expected_components": 206,
+      "missing_components": [],
+      "issues": [],
+      "status": "PASS"
+    },
+    "local_checks": {
+      "validate_wire_connections": {
+        "floating_count": 0,
+        "floating_endpoints": [],
+        "valid": true
+      },
+      "validate_component_connections": {
+        "unconnected_count": 0,
+        "unconnected_pins": [],
+        "valid": true
+      },
+      "find_shorted_nets": {
+        "short_count": 0,
+        "shorts": []
+      },
+      "find_orphan_items": {
+        "orphan_count": 0,
+        "orphans": [],
+        "tolerance": 0.05
+      }
+    },
+    "hashes": {
+      "power.kicad_sch": "137e7f1daf40aac11d6c4be061468b6c48a9999a3ebdb6682e1a062be78fc4c8",
+      ".build/power.net": "f7becfc1633dc1065ae864f44d7bf41c62d5d64395a43ab665b5a6f64cec310b",
+      ".build/power_final_reviewed.png": "7703f9b78a4eafbf3418aee859d446e965a00efd902e23f2b2076d88f7b0f0e0"
+    }
+  }
+}

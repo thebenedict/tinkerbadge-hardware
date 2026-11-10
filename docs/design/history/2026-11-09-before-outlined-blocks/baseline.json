@@ -1,0 +1,21 @@
+{
+  "power.kicad_sch": "377d3afaa8323e6f61d6cef0f8e670254b959091fdc766e32c5c063dad6d121f",
+  "tinkerbadge.kicad_sch": "b0674aee63fcf567cd0c53f1ea582e1218c4a79851f0198947e7a77c12474069",
+  "display.kicad_sch": "8be61344e78d548e3f3712709e7a16c372141cc4027574d05ca7bf224ffaca6a",
+  "lighting.kicad_sch": "c69b283fcddaf4dda80db415f7d009a5bf72508bbac4eab0f21db83e3aabc796",
+  "peripherals.kicad_sch": "c3997e92e5deee52c05a2b8e3f9453e36f269b825047058acbd8ac74b381f77e",
+  "mcu.kicad_sch": "29e7598143e36c0ba33b1ea5875f514755eb59f60cc515947e747fa4303c45b3",
+  "tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1",
+  "power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+  "peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+  "sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
+  "tinkerbadge.kicad_pro": "27fa81b53df9980c0afb4f138cfe1141978e83dd731eeec7b88cf66de1a8b9fc",
+  "docs/style_guide/schematic.md": "878b8ca0c4d7d5d68afd919d3d73fb48c04c2307fa9f74ef0b259584b22b1438",
+  "docs/design/verification.md": "26f90299238436580e10c3eb588ad8b7f792a4c9d0ae3dad5db59e90748f69bd",
+  "exports/manifest.json": "679c86aadb3a86a4e10d90921aa6232e77842ed7b91045e38ebad65fd2a3e33d",
+  "exports/tinkerbadge.net": "4f60f20df99af6cf7c5de7154a3eea9b2e1b3a47588914c9eb8b40e6e2ef8062",
+  "exports/tinkerbadge-schematic.pdf": "9516523a1be33c6c1af468c0ebb220828f21e2c53a53185ba15d123d06c63092",
+  "exports/erc.json": "260b337ff1fb81e8286cea6913cd27fe00b542aeaa25623e8878feff293fa147",
+  "exports/endpoint-check.json": "591b1d6aa97d35c368676c9f3c53c19f1ff8420b48e033ecaeb37d0c4cc40997",
+  "exports/property-check.json": "c873107e97134cb0ad8e6c26258b1ec02f7e3b8b9b9b08cc06a423dd7b08b714"
+}

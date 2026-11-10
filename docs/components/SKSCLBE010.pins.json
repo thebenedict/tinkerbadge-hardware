@@ -1,0 +1,168 @@
+{
+  "mpn": "SKSCLBE010",
+  "manufacturer": "Alps Alpine",
+  "package": "SKSC side-push type with guide bosses, four electrical terminals, body3.5x3.55mm, height1.25mm",
+  "sources": [
+    {
+      "mpn": "SKSCLBE010",
+      "url": "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf",
+      "revision": "KSC-701, Date 201707, 6 pages, For reference",
+      "filename": "SKSCLBE010.pdf",
+      "sha256": "06eed78e94af6bb6c3885a1baa87f00e6f522a61240e1aa8243afbaadf611521",
+      "retrieved": "2026-11-09",
+      "status": "archived",
+      "component_record": "docs/components/SKSCLBE010.md",
+      "pin_fact_file": "docs/components/SKSCLBE010.pins.json"
+    },
+    {
+      "mpn": "SKSCLBE010",
+      "role": "Exact SKSC mechanical drawing No.2 and terminal circuit",
+      "url": "https://tech.alpsalpine.com/cms.media/product_catalog_ta_02_sksc_en_f9e52a07d5.pdf",
+      "revision": "SKSC Series catalog, Update 2510, 3 pages; exact SKSCLBE010 row selects Drawing No.2",
+      "filename": "SKSCLBE010_SKSC_catalog.pdf",
+      "sha256": "cc8baff4e324df2cf6a71b9319ab9dbfd9e56d2e589dce392456b8afc99ca5bb",
+      "retrieved": "2026-11-09",
+      "status": "archived",
+      "component_record": "docs/components/SKSCLBE010.md",
+      "pin_fact_file": "docs/components/SKSCLBE010.pins.json"
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "CONTACT_A",
+      "function": "Permanently common with terminal 2; momentary press joins pairs A and B",
+      "source_page": 2,
+      "source_document": "SKSCLBE010_SKSC_catalog.pdf",
+      "view": "Drawing No.2 component illustration, actuator toward lower edge; land drawing explicitly viewed from switch mounting face",
+      "position_in_illustration": "lower left",
+      "symbol_pin": "1",
+      "symbol_type": "passive",
+      "footprint_pad": null
+    },
+    {
+      "number": "2",
+      "name": "CONTACT_A",
+      "function": "Permanently common with terminal 1; momentary press joins pairs A and B",
+      "source_page": 2,
+      "source_document": "SKSCLBE010_SKSC_catalog.pdf",
+      "view": "Drawing No.2 component illustration, actuator toward lower edge; land drawing explicitly viewed from switch mounting face",
+      "position_in_illustration": "lower right",
+      "symbol_pin": "2",
+      "symbol_type": "passive",
+      "footprint_pad": null
+    },
+    {
+      "number": "3",
+      "name": "CONTACT_B",
+      "function": "Permanently common with terminal 4; momentary press joins pairs A and B",
+      "source_page": 2,
+      "source_document": "SKSCLBE010_SKSC_catalog.pdf",
+      "view": "Drawing No.2 component illustration, actuator toward lower edge; land drawing explicitly viewed from switch mounting face",
+      "position_in_illustration": "upper left",
+      "symbol_pin": "3",
+      "symbol_type": "passive",
+      "footprint_pad": null
+    },
+    {
+      "number": "4",
+      "name": "CONTACT_B",
+      "function": "Permanently common with terminal 3; momentary press joins pairs A and B",
+      "source_page": 2,
+      "source_document": "SKSCLBE010_SKSC_catalog.pdf",
+      "view": "Drawing No.2 component illustration, actuator toward lower edge; land drawing explicitly viewed from switch mounting face",
+      "position_in_illustration": "upper right",
+      "symbol_pin": "4",
+      "symbol_type": "passive",
+      "footprint_pad": null
+    }
+  ],
+  "counts": {
+    "physical_electrical_terminals": 4,
+    "symbol_pins": 4,
+    "independent_contacts": 2,
+    "intentional_common_pairs": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "exposed_pads": 0,
+    "separate_ground_terminals": 0,
+    "mechanical_locating_bosses": 2,
+    "assigned_footprint_pads": null
+  },
+  "mechanical": {
+    "source": "SKSC catalog Update2510 p2 Drawing No.2",
+    "terminal_outer_span_mm": {
+      "nominal": 4.85,
+      "tolerance": 0.1
+    },
+    "body_width_mm": {
+      "nominal": 3.5,
+      "tolerance": 0.1
+    },
+    "body_depth_mm": {
+      "nominal": 3.55,
+      "tolerance": 0.15
+    },
+    "height_above_pcb_mm": {
+      "nominal": 1.25,
+      "plus": 0.05,
+      "minus": 0.15
+    },
+    "boss_diameter_mm": {
+      "nominal": 0.6,
+      "tolerance": 0.1
+    },
+    "boss_protrusion_below_pcb_mm": {
+      "nominal": 0.5,
+      "tolerance": 0.1
+    },
+    "hole_diameter_mm": {
+      "nominal": 0.8,
+      "tolerance": 0.05
+    },
+    "hole_pitch_mm": {
+      "nominal": 1.8,
+      "tolerance": 0.05
+    },
+    "land_outer_span_mm": 5,
+    "land_inner_gap_mm": 2.2,
+    "land_pair_outer_depth_mm": 2.2,
+    "land_row_gap_mm": 0.4,
+    "derived_individual_land_mm": [
+      1.4,
+      0.9
+    ],
+    "land_derivation": "(5-2.2)/2 width and (2.2-0.4)/2 height; not a footprint acceptance. Locating holes use manufacturer datum, not assumed pad-center alignment."
+  },
+  "symbol": {
+    "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+    "footprint": "",
+    "acceptance": "Exact custom common-pair glyph; saved pin readback and disposable render prepared for independent review. Generic SW_Push_Dual rejected because it is two ganged switches."
+  },
+  "ratings": {
+    "voltage_max_V": 12,
+    "current_max_A": 0.05,
+    "voltage_min_V": 1,
+    "current_min_A": 1e-05,
+    "initial_contact_resistance_max_ohm": 0.1,
+    "bounce_ms_max": 10,
+    "force_N": 2.2,
+    "force_tolerance_N": 0.65,
+    "travel_mm": 0.2,
+    "travel_plus_mm": 0.1,
+    "travel_minus_mm": 0.05,
+    "cycles": 100000,
+    "operating_temperature_C": [
+      -30,
+      85
+    ]
+  },
+  "review_status": "pending_independent_review"
+}

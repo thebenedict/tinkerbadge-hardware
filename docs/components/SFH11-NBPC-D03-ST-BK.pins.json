@@ -1,0 +1,53 @@
+{
+  "mpn": "SFH11-NBPC-D03-ST-BK",
+  "package": "Keyed female2\u00d73 straight through-hole socket,2.54mm row/contact pitch",
+  "source": {
+    "url": "https://drawings-pdf.s3.amazonaws.com/11160.pdf",
+    "revision": "Sullins drawing11160 RevJ,12 May2015",
+    "filename": "SFH11-NBPC-D03-ST-BK_official.pdf",
+    "sha256": "8bd076918a6a018206a1cce6969b8decce97273ce50e871fe3e8c839e1e73b40",
+    "retrieved": "2026-11-09",
+    "status": "archived"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "CONTACT_1",
+      "function": "Project SAO contact, upper-left top/mating view",
+      "source_page": 1
+    },
+    {
+      "number": "2",
+      "name": "CONTACT_2",
+      "function": "Project SAO contact, lower-left top/mating view",
+      "source_page": 1
+    },
+    {
+      "number": "3",
+      "name": "CONTACT_3",
+      "function": "Project SAO contact, upper-middle",
+      "source_page": 1
+    },
+    {
+      "number": "4",
+      "name": "CONTACT_4",
+      "function": "Project SAO contact, lower-middle",
+      "source_page": 1
+    },
+    {
+      "number": "5",
+      "name": "CONTACT_5",
+      "function": "Project SAO contact, upper-right",
+      "source_page": 1
+    },
+    {
+      "number": "6",
+      "name": "CONTACT_6",
+      "function": "Project SAO contact, lower-right",
+      "source_page": 1
+    }
+  ],
+  "package_metal": "Six isolated contacts. Factory drawing has no pad numbers; project numbers follow author SAOv2 host convention. No EP.",
+  "pixel_review": "Inspected exact manufacturer drawing from its product-page link and SAO author top-view pin graphic (peripheral_views/SFH11-NBPC-D03-ST-BK-page1.png and SAOv2-host.png). Keyed housing orientation must be checked against actual mating add-on before footprint release.",
+  "review_status": "pending_independent_review"
+}

@@ -1,0 +1,149 @@
+{
+  "purpose": "Frozen graphics-only revision before separate footprint/layout work",
+  "files": {
+    "power.kicad_sch": {
+      "sha256": "a0dd355672d33e99b8eb194b2a6a329c244558220100f004813f9ab5948a7c09",
+      "bytes": 259106
+    },
+    "tinkerbadge.kicad_sch": {
+      "sha256": "b0674aee63fcf567cd0c53f1ea582e1218c4a79851f0198947e7a77c12474069",
+      "bytes": 6521
+    },
+    "display.kicad_sch": {
+      "sha256": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
+      "bytes": 117596
+    },
+    "lighting.kicad_sch": {
+      "sha256": "5f8dfbd32dac1d63130fe27f7fa7ad2f163bd08e2a4218f65aa1638fc7539c93",
+      "bytes": 125845
+    },
+    "peripherals.kicad_sch": {
+      "sha256": "b1720568ddb6838fb062a9bd79f975335523fd3676d6d5698764ade0fd79f4bf",
+      "bytes": 195589
+    },
+    "mcu.kicad_sch": {
+      "sha256": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
+      "bytes": 75959
+    },
+    "tinkerbadge.kicad_sym": {
+      "sha256": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1",
+      "bytes": 9925
+    },
+    "power_symbols.kicad_sym": {
+      "sha256": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+      "bytes": 11619
+    },
+    "peripheral_symbols.kicad_sym": {
+      "sha256": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+      "bytes": 20639
+    },
+    "sym-lib-table": {
+      "sha256": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
+      "bytes": 388
+    },
+    "tinkerbadge.kicad_pro": {
+      "sha256": "1de64a03f5268991dfee2b06ec78538e487a199e3e781900e26cf990833fc5ed",
+      "bytes": 10201
+    },
+    "exports/property-checker-tests.txt": {
+      "sha256": "7984864015dc2f84c62c9d1932c53ff5e36fe531f47d1caac3eece64c4f1b9c0",
+      "bytes": 711
+    },
+    "exports/endpoint-check.json": {
+      "sha256": "27a43360b02bb9f2a4942b1d8505eef2c140243dfac6f6497b582cd739968c3f",
+      "bytes": 698
+    },
+    "exports/native-inputs.json": {
+      "sha256": "05ca4ef2eec3c83a43707815942e39b9ad8ea4676a887377927ea9e293f3fd86",
+      "bytes": 1537
+    },
+    "exports/erc.json": {
+      "sha256": "ef9f46c49b9eaffedd7f5668860427801bdc53a0ce0fd99617a72a2514af53f2",
+      "bytes": 661
+    },
+    "exports/tinkerbadge.net": {
+      "sha256": "212045b88dc12efff422beff88cfc720e44492397b4746e8df83978cceb6d97a",
+      "bytes": 377005
+    },
+    "exports/power.png": {
+      "sha256": "48272ab70ca2f1e802c60f4eb9f0c7332b3a234436a1273f327c938f77dc1e6a",
+      "bytes": 626128
+    },
+    "exports/alps-button-tests.txt": {
+      "sha256": "fa77f103954854531e7bdf1e8633136fa3782fb8607a409c92c9a348488cd6c7",
+      "bytes": 611
+    },
+    "exports/endpoint-checker-tests.txt": {
+      "sha256": "39a23f43e80f5e4b67dfd47d0c695c96475a4e8e25fb4bba08a312ba7408ee09",
+      "bytes": 1291
+    },
+    "exports/tinkerbadge.png": {
+      "sha256": "1cd2bf56ea97b370337f2580a070d04ac320a9dba54e4830633921c4a7310b66",
+      "bytes": 261990
+    },
+    "exports/property-check.json": {
+      "sha256": "a165e2371884ca7be471e420383968825285ee69b199df5001531a6ccfa3fda5",
+      "bytes": 1457
+    },
+    "exports/tinkerbadge-schematic.pdf": {
+      "sha256": "b51f1c89b40ce636be4e5a7abafea236626e98cf6994b9fbabe2799f8ce90097",
+      "bytes": 617997
+    },
+    "exports/endpoint-check.log": {
+      "sha256": "27a43360b02bb9f2a4942b1d8505eef2c140243dfac6f6497b582cd739968c3f",
+      "bytes": 698
+    },
+    "exports/lighting.png": {
+      "sha256": "10bc6a13ea95e21718095d27726a18365519495630d41bd42e38599c67422218",
+      "bytes": 311766
+    },
+    "exports/display.png": {
+      "sha256": "2b92c76b5e849a4e1c03e1fcdef7791d632a23281e09e4d6fdf9202594b2f97a",
+      "bytes": 351493
+    },
+    "exports/mcu.png": {
+      "sha256": "8084af2aa3d23ca7f9ad6ef31c338244649cfb13ecc55d66890ef25d3c28abda",
+      "bytes": 423486
+    },
+    "exports/manifest.json": {
+      "sha256": "404ac9cc0b2ef8df1294c903078f2a7293fac53c5e58468dd27772e3a520bde5",
+      "bytes": 39299
+    },
+    "exports/property-check.log": {
+      "sha256": "a165e2371884ca7be471e420383968825285ee69b199df5001531a6ccfa3fda5",
+      "bytes": 1457
+    },
+    "exports/source-check.json": {
+      "sha256": "e10dcb6c3e080a38d5e6e64762bcfaefb5c28995799b6e505218039db62cc220",
+      "bytes": 10391
+    },
+    "exports/peripherals.png": {
+      "sha256": "79c1e1a2571b10edab0b0273c62313e917002d30b19af0c10459d564604471b0",
+      "bytes": 455959
+    },
+    "exports/export_tools.json": {
+      "sha256": "865e7df900cd773abe11655fccc7674ce2d636486df0608c239c931223392a3f",
+      "bytes": 6624
+    },
+    "exports/graphics-only-check.json": {
+      "sha256": "483e29c8c584e96e51ddc58dac1c6895cc87c247b567f3b570b582445dc090b0",
+      "bytes": 569
+    },
+    "exports/pdf-extracted-text.txt": {
+      "sha256": "4192d73d63bc549ba8b6722854222a01350c90ef2f09693f513e79b34caef39b",
+      "bytes": 15075
+    },
+    "docs/design/outlined_blocks_review.md": {
+      "sha256": "3b7c7b5ebd58e3d2ab762a9567661729ee9b95463698b12de4d704a10de02f08",
+      "bytes": 3226
+    },
+    "docs/design/outlined_blocks_review.json": {
+      "sha256": "082211a6ee5082f8b25d7f4f3725b3be0b282e44958fb307935d3cc6a006a63b",
+      "bytes": 11897
+    },
+    "docs/design/verification.md": {
+      "sha256": "b8425337b7e6276c3f18fdab8b24df9aa71560112aae3fd5a88afb8131baa5f8",
+      "bytes": 6584
+    }
+  }
+}

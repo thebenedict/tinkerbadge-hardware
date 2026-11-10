@@ -1,0 +1,1517 @@
+{
+  "status": "experimental_80mm_one_sided_placement_pending_human_review_and_RF_qualification",
+  "board_mm": [
+    110,
+    80
+  ],
+  "origin_mm": [
+    100,
+    100
+  ],
+  "copper_layers": 4,
+  "placements": [
+    {
+      "reference": "U201",
+      "x": 130,
+      "y": 113.25,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "J101",
+      "x": 206.325,
+      "y": 126.0,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "SW401",
+      "x": 102.1,
+      "y": 145,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "buttons"
+    },
+    {
+      "reference": "SW402",
+      "x": 102.1,
+      "y": 155,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "buttons"
+    },
+    {
+      "reference": "C201",
+      "x": 115.5,
+      "y": 111,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "C202",
+      "x": 118.5,
+      "y": 108.8,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "C203",
+      "x": 115.5,
+      "y": 115.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R201",
+      "x": 116.5,
+      "y": 119,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R202",
+      "x": 138,
+      "y": 129,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R205",
+      "x": 111.5,
+      "y": 119,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R206",
+      "x": 111.5,
+      "y": 122.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R203",
+      "x": 126,
+      "y": 129,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R204",
+      "x": 129.5,
+      "y": 129,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "R207",
+      "x": 138,
+      "y": 132.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "processor/radio"
+    },
+    {
+      "reference": "TP201",
+      "x": 174,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP202",
+      "x": 177,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP203",
+      "x": 180,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP204",
+      "x": 183,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP205",
+      "x": 186,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "TP206",
+      "x": 189,
+      "y": 116,
+      "rotation": 0,
+      "side": "B.Cu",
+      "group": "recovery/test"
+    },
+    {
+      "reference": "D401",
+      "x": 144,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C401",
+      "x": 146.5,
+      "y": 111.5,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D402",
+      "x": 172.5,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C402",
+      "x": 175,
+      "y": 111.5,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D403",
+      "x": 201,
+      "y": 108.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C403",
+      "x": 201,
+      "y": 112,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D404",
+      "x": 108,
+      "y": 174,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C404",
+      "x": 110.5,
+      "y": 174,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D405",
+      "x": 131.5,
+      "y": 174,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C405",
+      "x": 134.0,
+      "y": 174,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D406",
+      "x": 155,
+      "y": 174,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C406",
+      "x": 157.5,
+      "y": 174,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D407",
+      "x": 178.5,
+      "y": 174,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C407",
+      "x": 178.5,
+      "y": 177,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "D408",
+      "x": 202,
+      "y": 174,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "role/affinity light"
+    },
+    {
+      "reference": "C408",
+      "x": 204.5,
+      "y": 174,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "LED decoupling"
+    },
+    {
+      "reference": "C409",
+      "x": 145.5,
+      "y": 120,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "LED bulk"
+    },
+    {
+      "reference": "D409",
+      "x": 104,
+      "y": 122,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "power indicator"
+    },
+    {
+      "reference": "R401",
+      "x": 142,
+      "y": 117,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R402",
+      "x": 143,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R403",
+      "x": 105,
+      "y": 125,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R404",
+      "x": 105,
+      "y": 128,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R405",
+      "x": 114,
+      "y": 145,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R406",
+      "x": 114,
+      "y": 155,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R411",
+      "x": 106,
+      "y": 149,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "C411",
+      "x": 109.5,
+      "y": 149,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R412",
+      "x": 113,
+      "y": 149,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R413",
+      "x": 106,
+      "y": 159,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "C412",
+      "x": 109.5,
+      "y": 159,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "R414",
+      "x": 113,
+      "y": 159,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "buttons/status"
+    },
+    {
+      "reference": "U101",
+      "x": 183.5,
+      "y": 124.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "U102",
+      "x": 177.0,
+      "y": 124.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "U103",
+      "x": 165.0,
+      "y": 130.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "Q103",
+      "x": 168.8,
+      "y": 125,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "Q101",
+      "x": 195.5,
+      "y": 122.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "Q102",
+      "x": 121.0,
+      "y": 166.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "D101",
+      "x": 198.9,
+      "y": 131.8,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "D102",
+      "x": 119.0,
+      "y": 175.0,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "C101",
+      "x": 187,
+      "y": 124.4,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "C102",
+      "x": 180.8,
+      "y": 125.2,
+      "rotation": 270,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "C103",
+      "x": 180.5,
+      "y": 120.8,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "C104",
+      "x": 183.3,
+      "y": 120.19999999999999,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "C105",
+      "x": 177.4,
+      "y": 127.5,
+      "rotation": 180,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "C106",
+      "x": 173,
+      "y": 124,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "C107",
+      "x": 165.0,
+      "y": 126.9,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "C108",
+      "x": 164.7,
+      "y": 133.8,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "C109",
+      "x": 164.7,
+      "y": 137.5,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "R101",
+      "x": 198.7,
+      "y": 128.4,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "R102",
+      "x": 195.6,
+      "y": 128.4,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "R103",
+      "x": 184.7,
+      "y": 127.19999999999999,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R104",
+      "x": 184.7,
+      "y": 130.2,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R105",
+      "x": 187.8,
+      "y": 127.19999999999999,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R106",
+      "x": 187.8,
+      "y": 130.2,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R107",
+      "x": 190.9,
+      "y": 127.19999999999999,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R108",
+      "x": 190.9,
+      "y": 130.2,
+      "rotation": 270.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R109",
+      "x": 186.2,
+      "y": 121.0,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R110",
+      "x": 168.8,
+      "y": 122,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R111",
+      "x": 175.5,
+      "y": 133.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R112",
+      "x": 180.5,
+      "y": 129.6,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R113",
+      "x": 177.0,
+      "y": 120.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R114",
+      "x": 177.0,
+      "y": 117.9,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R115",
+      "x": 177.4,
+      "y": 130.2,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R116",
+      "x": 182.9,
+      "y": 128.5,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R117",
+      "x": 161.6,
+      "y": 131.2,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "R118",
+      "x": 161.6,
+      "y": 129.1,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "R120",
+      "x": 174,
+      "y": 121,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Mux and disabled charger"
+    },
+    {
+      "reference": "R121",
+      "x": 199.2,
+      "y": 121.8,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "R122",
+      "x": 195.5,
+      "y": 119.8,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "R123",
+      "x": 192.5,
+      "y": 119,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "R124",
+      "x": 117.4,
+      "y": 163.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "R125",
+      "x": 117.4,
+      "y": 165.1,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "R126",
+      "x": 124.5,
+      "y": 166.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Dock protection and sensing"
+    },
+    {
+      "reference": "U107",
+      "x": 151.0,
+      "y": 136.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "R127",
+      "x": 145.0,
+      "y": 133.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "R128",
+      "x": 145.0,
+      "y": 135.0,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "R129",
+      "x": 141.5,
+      "y": 137.2,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "R130",
+      "x": 145.0,
+      "y": 137.0,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "C115",
+      "x": 154.7,
+      "y": 132.3,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "C116",
+      "x": 141.5,
+      "y": 135.1,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Quiet battery ADC"
+    },
+    {
+      "reference": "U104",
+      "x": 154.0,
+      "y": 146.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "C112",
+      "x": 150.7,
+      "y": 145.2,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "C113",
+      "x": 154.8,
+      "y": 149.1,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "C114",
+      "x": 157.1,
+      "y": 143.8,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R119",
+      "x": 158.0,
+      "y": 148.6,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "U301",
+      "x": 186.0,
+      "y": 141.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R302",
+      "x": 163.8,
+      "y": 157.2,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "R303",
+      "x": 179.7,
+      "y": 137.4,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R304",
+      "x": 179.7,
+      "y": 139.5,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R305",
+      "x": 179.7,
+      "y": 141.6,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R306",
+      "x": 179.7,
+      "y": 143.7,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R307",
+      "x": 179.7,
+      "y": 145.8,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "R308",
+      "x": 188.0,
+      "y": 145.9,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "Q301",
+      "x": 167,
+      "y": 156.4,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "R301",
+      "x": 170.2,
+      "y": 157.2,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "D301",
+      "x": 175.5,
+      "y": 149.3,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "D302",
+      "x": 175.5,
+      "y": 152.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "D303",
+      "x": 171.8,
+      "y": 160.0,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C301",
+      "x": 162.5,
+      "y": 147.9,
+      "rotation": 180.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C302",
+      "x": 171.8,
+      "y": 153.5,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C303",
+      "x": 192.0,
+      "y": 145.5,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "C304",
+      "x": 179.7,
+      "y": 149.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C305",
+      "x": 175.5,
+      "y": 163.2,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C306",
+      "x": 179.7,
+      "y": 163.2,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C307",
+      "x": 176.1,
+      "y": 160.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C308",
+      "x": 179.7,
+      "y": 160.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C309",
+      "x": 179.7,
+      "y": 152.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C310",
+      "x": 175.5,
+      "y": 156.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C311",
+      "x": 179.7,
+      "y": 156.5,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "C312",
+      "x": 191.5,
+      "y": 138.2,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "Display load switch and signal isolation"
+    },
+    {
+      "reference": "U501",
+      "x": 205,
+      "y": 103,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C501",
+      "x": 205,
+      "y": 106.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "U504",
+      "x": 185,
+      "y": 105.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "D501",
+      "x": 195,
+      "y": 105.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R507",
+      "x": 180.5,
+      "y": 110.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C509",
+      "x": 184,
+      "y": 110.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "C510",
+      "x": 187.5,
+      "y": 110.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "Q501",
+      "x": 195,
+      "y": 110.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R504",
+      "x": 195,
+      "y": 114.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R505",
+      "x": 191,
+      "y": 110.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "R506",
+      "x": 191,
+      "y": 114,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensing/IR"
+    },
+    {
+      "reference": "U502",
+      "x": 162,
+      "y": 121,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "C502",
+      "x": 159,
+      "y": 121,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "C503",
+      "x": 159,
+      "y": 124,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "R501",
+      "x": 155,
+      "y": 128,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "R502",
+      "x": 158.5,
+      "y": 128,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "sensors/I2C"
+    },
+    {
+      "reference": "U503",
+      "x": 191,
+      "y": 163.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "R503",
+      "x": 198,
+      "y": 160.8,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C504",
+      "x": 187,
+      "y": 160,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C505",
+      "x": 190.5,
+      "y": 160,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C506",
+      "x": 194,
+      "y": 161.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C507",
+      "x": 188,
+      "y": 164,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "C508",
+      "x": 195,
+      "y": 164,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "NFC"
+    },
+    {
+      "reference": "U505",
+      "x": 195,
+      "y": 158,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "J501",
+      "x": 206.5,
+      "y": 159,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C511",
+      "x": 192,
+      "y": 151,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C512",
+      "x": 192,
+      "y": 148,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "C513",
+      "x": 200.5,
+      "y": 158,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R508",
+      "x": 187,
+      "y": 154,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R509",
+      "x": 190.5,
+      "y": 154,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R510",
+      "x": 187,
+      "y": 157.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R511",
+      "x": 190.5,
+      "y": 157.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R512",
+      "x": 202.3,
+      "y": 162.6,
+      "rotation": 90,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "R513",
+      "x": 199.2,
+      "y": 162.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "accessories"
+    },
+    {
+      "reference": "U506",
+      "x": 146,
+      "y": 124,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "C514",
+      "x": 151.5,
+      "y": 122,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "C515",
+      "x": 151.5,
+      "y": 125.5,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R514",
+      "x": 143,
+      "y": 130,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R515",
+      "x": 146,
+      "y": 130,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R516",
+      "x": 149,
+      "y": 130,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    },
+    {
+      "reference": "R517",
+      "x": 152,
+      "y": 130,
+      "rotation": 0,
+      "side": "F.Cu",
+      "group": "I/O expander"
+    }
+  ],
+  "blocked_electrical_references": {
+    "U105": "DQA0010A/B package acceptance",
+    "J102": "pack connector/polarity/current",
+    "J103": "dock contact and guide mechanics",
+    "J104": "optional DNP thermistor interface",
+    "L101": "exact .47uH inductor",
+    "J301": "FPC mating/contact side/fold",
+    "L301": "exact68uH inductor",
+    "AE501": "antenna/tuning design",
+    "J502": "housing key-to-contact verification"
+  },
+  "non_electrical_envelopes": [
+    {
+      "reference": "MECH_PANEL",
+      "footprint": "Tinkerbadge:Review_Panel_Raised_4p5",
+      "x": 156,
+      "y": 137.45,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "MECH_BATTERY",
+      "footprint": "Tinkerbadge:Review_Battery_Allowance",
+      "x": 154,
+      "y": 147.5,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "MECH_NFC",
+      "footprint": "Tinkerbadge:Review_NFC_18x13",
+      "x": 191,
+      "y": 172.5,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "RES_J301",
+      "footprint": "Tinkerbadge:Review_Flex_Mating",
+      "x": 202,
+      "y": 145,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "RES_U105",
+      "footprint": "Tinkerbadge:Review_ESD_Package",
+      "x": 199.0,
+      "y": 126.0,
+      "rotation": 0.0,
+      "side": "F.Cu",
+      "group": "USB connector and protection"
+    },
+    {
+      "reference": "RES_L101",
+      "footprint": "Tinkerbadge:Review_Inductor_6x6",
+      "x": 170.5,
+      "y": 130.0,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Main 3V3 converter"
+    },
+    {
+      "reference": "RES_L301",
+      "footprint": "Tinkerbadge:Review_Inductor_5x5",
+      "x": 167.0,
+      "y": 152.0,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "Display boost and panel rail capacitors"
+    },
+    {
+      "reference": "RES_J502",
+      "footprint": "Tinkerbadge:Review_SAO_Front_Tail_Reserve",
+      "x": 151.5,
+      "y": 114,
+      "rotation": 0,
+      "side": "B.Cu"
+    },
+    {
+      "reference": "RES_J102",
+      "footprint": "Tinkerbadge:Review_Battery_Connector",
+      "x": 130,
+      "y": 138,
+      "rotation": 0,
+      "side": "F.Cu"
+    },
+    {
+      "reference": "RES_J103",
+      "footprint": "Tinkerbadge:Review_Dock_Contacts",
+      "x": 124,
+      "y": 175,
+      "rotation": 0,
+      "side": "B.Cu"
+    }
+  ],
+  "mounting_holes_mm": [
+    [
+      104,
+      117.5,
+      2.2
+    ],
+    [
+      206,
+      117.5,
+      2.2
+    ],
+    [
+      104,
+      166,
+      2.2
+    ],
+    [
+      206,
+      166,
+      2.2
+    ]
+  ],
+  "lanyard_holes_mm": [
+    [
+      104,
+      112,
+      3.2
+    ],
+    [
+      206,
+      112,
+      3.2
+    ]
+  ],
+  "notes": [
+    "Experimental 110x80 placement. Human approval required before routing; no routing performed.",
+    "All164 non-testpoint electrical footprints are front-side. Six unpopulated copper test pads remain rear. SAO is a future rear through-hole secondary assembly.",
+    "Panel underside4.5mm proposal above front PCB, thickness0.92mm envelope. Exact supports, solder/warp/tolerance stack and flex remain unqualified.",
+    "The full module native keepout remains all-layer; true board notch removes FR4. Glass is only3.5mm behind antenna, below the recommended15mm housing clearance. No RF-compliance claim.",
+    "NFC18x13 reserve replaces30x17. No coil copper exists; inductance/coupling/read range/tuning remain open.",
+    "Bottom LED pitch23.5mm from x108 to202. Leftmost X stays108; Y moves from190 to174 for the compact board.",
+    "Role LED X positions unchanged; Y moves114 to108.5 for compact mechanical margin. This supersedes the prior fixed-left-LED location request for the approved compact trial only.",
+    "Textile-only cord reservations\u00d85.2, drill\u00d83.2; no metal clip. Structural holes\u00d82.2 with maximum\u00d84.5 nonconductive head/boss assumed.",
+    "Existing USB hole-to-pad DRC exceptions remain unresolved. Nine electrical footprints remain unassigned. Charging disabled."
+  ],
+  "glass_underside_mm": 4.5,
+  "outline_note": "True top-open notch x105..155 to y106.75; internal radius0.5. RF free-space/assembled performance unqualified."
+}

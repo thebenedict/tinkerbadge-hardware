@@ -1,0 +1,27 @@
+{
+  "netlist_sha256": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59",
+  "checks_by_field": {
+    "MPN": 40,
+    "Footprint": 90,
+    "Populate": 3,
+    "Value": 62,
+    "lib_id": 19,
+    "NominalValue": 74,
+    "Rating": 74,
+    "VisibleVoltageRating": 36
+  },
+  "unassigned_footprints": [
+    "U105",
+    "J102",
+    "J103",
+    "J104",
+    "L101",
+    "J301",
+    "L301",
+    "AE501",
+    "J502"
+  ],
+  "issues": [],
+  "status": "PASS",
+  "scope": "Only explicitly specified property comparisons. Unassigned footprints and generic passive MPNs remain release gates."
+}

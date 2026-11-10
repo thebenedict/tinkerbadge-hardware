@@ -1,0 +1,35 @@
+# Local builds, editor state and backups
+.build/
+.work/
+.DS_Store
+__pycache__/
+*.pyc
+*-backups/
+*.kicad_prl
+*.lck
+~*.lck
+
+# Private configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Vendor documents are linked by the source/hash inventories.
+# Redistribution rights for these local research copies are not established.
+**/datasheets/**/*.pdf
+**/datasheets/**/*.txt
+**/datasheets/**/*.png
+**/datasheets/**/*.html
+
+# Historical annotation tooling retains machine-specific evidence locally.
+# Publish the portable current optical annotation instead.
+/exports/pcb-review/annotate_functional_blocks.py
+/exports/pcb-review/organized-top-row/annotation-reproduction.md
+/exports/pcb-review/organized-top-row/functional-blocks.json
+/docs/design/history/**/annotation-reproduction.md
+/docs/design/history/**/functional-blocks*.json
+/docs/design/history/**/annotate_functional_blocks*.py
+
+# Older checkpoint bookkeeping does not describe the current board.
+/exports/pcb-review/checkpoint-manifest.json

@@ -1,0 +1,12 @@
+{
+  "tool": "official KiCad pcbnew native API",
+  "kicad": "10.0.8",
+  "sha256": "569e8b567610d22d249757adf08e459150a3c826895195993ba3a863f131b0bf",
+  "footprints": 186,
+  "electrical": 170,
+  "tracks": 0,
+  "model_references": 167,
+  "footprint_rule_areas": 2,
+  "layers": 4,
+  "source_netlist_sha256": "a8423302141acd40bdc3e6df77b78a1139c5a551a542ff643a16cc0b09238b6c"
+}

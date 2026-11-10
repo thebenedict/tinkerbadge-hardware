@@ -1,0 +1,22 @@
+{
+  "url": "https://fscdn.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1730fvc-e.pdf",
+  "revision": "8 June 2016 Rev.001",
+  "filename": "BH1730FVC.pdf",
+  "sha256": "012d391bb2712fc3f22d6596e83ad49075e294dd797b5a40634467dc567d0572",
+  "retrieved": "2026-11-09",
+  "status": "archived",
+  "supplementary_documents": [
+    {
+      "url": "https://fscdn.rohm.com/en/techdata_basic/ic/package/Jisso_WSOF6-1-2_Rev005s_TR%28MSL3%29.pdf",
+      "revision": "TSZ02201-WSOF6-1-2, 2020/01/31 Rev.005",
+      "filename": "WSOF6_ROHM_Rev005.pdf",
+      "sha256": "ad2aa218a499388d66fd5b040bad15cd7a4605c7a82713ee00d027425facc884",
+      "retrieved": "2026-11-09",
+      "status": "archived official manufacturer PDF; actual p7 land-pattern diagram inspected",
+      "mpn": "BH1730FVC",
+      "role": "supplementary manufacturer WSOF6 land pattern, p7",
+      "component_record": "docs/components/BH1730FVC.md",
+      "pin_fact_file": "docs/components/BH1730FVC.pins.json"
+    }
+  ]
+}

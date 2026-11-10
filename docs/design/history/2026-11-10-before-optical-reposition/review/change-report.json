@@ -1,0 +1,248 @@
+{
+  "source_board_sha256": "2ff74d95a154bce47ce87e97cf86c60af26514ff08235ffc70f8b9189b61ddda",
+  "root_before_sha256": "a49a19fdf1a2cea1b223f419887e369ab844f49adc9933a0688ba7f01e2ab7b4",
+  "board_sha256": "08b5de1ac1b194544ebf15598fd0b40e66a4e0c05123c6da75603a769d91554e",
+  "proposal_sha256": "dbc48a415c7baaaa8301889147fbea7d39b233784c95cc977eb9cc623ac22338",
+  "tool": "KiCad 10.0.8",
+  "moves": [
+    {
+      "reference": "D401",
+      "before": [
+        144,
+        108.5,
+        0
+      ],
+      "after": [
+        160,
+        103,
+        180
+      ]
+    },
+    {
+      "reference": "C401",
+      "before": [
+        146.5,
+        111.5,
+        90
+      ],
+      "after": [
+        157.5,
+        103,
+        90
+      ]
+    },
+    {
+      "reference": "D402",
+      "before": [
+        172.5,
+        108.5,
+        0
+      ],
+      "after": [
+        180.5,
+        103,
+        180
+      ]
+    },
+    {
+      "reference": "C402",
+      "before": [
+        175,
+        111.5,
+        90
+      ],
+      "after": [
+        178.0,
+        103,
+        90
+      ]
+    },
+    {
+      "reference": "D403",
+      "before": [
+        201,
+        108.5,
+        0
+      ],
+      "after": [
+        201,
+        103,
+        180
+      ]
+    },
+    {
+      "reference": "C403",
+      "before": [
+        201,
+        112,
+        90
+      ],
+      "after": [
+        198.5,
+        103,
+        90
+      ]
+    },
+    {
+      "reference": "U504",
+      "before": [
+        185,
+        105.5,
+        0
+      ],
+      "after": [
+        186.5,
+        106.5,
+        0.0
+      ]
+    },
+    {
+      "reference": "D501",
+      "before": [
+        195,
+        105.5,
+        0
+      ],
+      "after": [
+        196.5,
+        106.5,
+        0.0
+      ]
+    },
+    {
+      "reference": "R507",
+      "before": [
+        180.5,
+        110.5,
+        0
+      ],
+      "after": [
+        188.5,
+        102,
+        0
+      ]
+    },
+    {
+      "reference": "C509",
+      "before": [
+        184,
+        110.5,
+        0
+      ],
+      "after": [
+        192,
+        103,
+        90
+      ]
+    },
+    {
+      "reference": "C510",
+      "before": [
+        187.5,
+        110.5,
+        0
+      ],
+      "after": [
+        192,
+        106.5,
+        270
+      ]
+    },
+    {
+      "reference": "Q501",
+      "before": [
+        195,
+        110.5,
+        0
+      ],
+      "after": [
+        196.5,
+        111.5,
+        0.0
+      ]
+    },
+    {
+      "reference": "R504",
+      "before": [
+        195,
+        114.5,
+        0
+      ],
+      "after": [
+        196.5,
+        115.5,
+        0.0
+      ]
+    },
+    {
+      "reference": "R505",
+      "before": [
+        191,
+        110.5,
+        0
+      ],
+      "after": [
+        192.5,
+        111.5,
+        0.0
+      ]
+    },
+    {
+      "reference": "R506",
+      "before": [
+        191,
+        114,
+        0
+      ],
+      "after": [
+        192.5,
+        115.0,
+        0.0
+      ]
+    },
+    {
+      "reference": "U501",
+      "before": [
+        205,
+        103,
+        0
+      ],
+      "after": [
+        206,
+        107.5,
+        0
+      ]
+    },
+    {
+      "reference": "C501",
+      "before": [
+        201,
+        103,
+        180
+      ],
+      "after": [
+        202,
+        107.5,
+        180
+      ]
+    },
+    {
+      "reference": "C502",
+      "before": [
+        208,
+        104.5,
+        270
+      ],
+      "after": [
+        208,
+        105,
+        0
+      ]
+    }
+  ],
+  "move_count": 18,
+  "native_group_count": 8,
+  "pad_net_mapping_unchanged": true,
+  "tracks": 0,
+  "status": "organized_80mm_top_role_row_pending_human_review_and_RF_qualification"
+}
