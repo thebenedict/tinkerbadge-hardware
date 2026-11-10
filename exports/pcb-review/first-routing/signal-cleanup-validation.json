@@ -1,0 +1,177 @@
+{
+  "candidate": ".build/signal-cleanup/with-testpad.kicad_pcb",
+  "source_sha256": "7cccc70518e5068d3e131a139cd630a8f67a6d1f5a1edace2e28cfd7154cdbb5",
+  "candidate_sha256": "26b613f0509a2da923853ade8dfe94b52c591522a35b113101bb8c7fcc3d0d71",
+  "project_sha256": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+  "original_copper_items_preserved_exactly": 1522,
+  "added_tracks": 44,
+  "added_vias": 9,
+  "added_by_net": {
+    "GND": 2,
+    "EPD_CS_N": 31,
+    "NFC_FD_N": 10,
+    "/02  PROCESSOR + RECOVERY/BOOT_N": 10
+  },
+  "footprints_drawings_zone_definitions_unchanged": true,
+  "original_copper_uuid_and_serialization_unchanged": true,
+  "project_unchanged": true,
+  "held_net_additions": 0,
+  "inner_signal_additions": 0,
+  "zones_refilled": true,
+  "source_unchanged": true,
+  "assembly_via_check": {
+    "new_vias": 9,
+    "smd_lands_checked": 525,
+    "positive_paste_expansions": 0,
+    "intersection_count": 0,
+    "intersections": [],
+    "passed": true,
+    "method": "Native copper/paste envelope polygons, 1 um conservative approximation; original source vias excluded by UUID."
+  },
+  "source_unconnected": 52,
+  "candidate_unconnected": 48,
+  "source_violations": 5,
+  "candidate_violations": 5,
+  "new_violations": 0,
+  "remaining_selected_connections": [
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 4 [I2C_SDA] of U502 on F.Cu",
+          "pos": {
+            "x": 161.2375,
+            "y": 133.75
+          },
+          "uuid": "f023ce6f-1308-4ec3-9d65-5331ec14facb"
+        },
+        {
+          "description": "Track [I2C_SDA] on F.Cu, length 1.0887 mm",
+          "pos": {
+            "x": 155.0552,
+            "y": 127.2302
+          },
+          "uuid": "b965d30b-5c26-4c7a-b09e-5254842a70e2"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 4 [I2C_SDA] of U502 on F.Cu",
+          "pos": {
+            "x": 161.2375,
+            "y": 133.75
+          },
+          "uuid": "f023ce6f-1308-4ec3-9d65-5331ec14facb"
+        },
+        {
+          "description": "Pad 5 [I2C_SDA] of U503 on F.Cu",
+          "pos": {
+            "x": 191.6,
+            "y": 164.0
+          },
+          "uuid": "7b87a4e9-1bb1-4c83-8789-50980e74c4e6"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Track [I2C_SCL] on F.Cu, length 1.9882 mm",
+          "pos": {
+            "x": 148.7086,
+            "y": 164.8056
+          },
+          "uuid": "c03eca63-6ee8-4604-aea5-364451ce120c"
+        },
+        {
+          "description": "Track [I2C_SCL] on F.Cu, length 1.0235 mm",
+          "pos": {
+            "x": 150.4799,
+            "y": 134.3013
+          },
+          "uuid": "d64d4625-6176-4c01-8a86-ac991d360920"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Track [CHARGER_CHG_N] on F.Cu, length 2.2568 mm",
+          "pos": {
+            "x": 182.067,
+            "y": 127.675
+          },
+          "uuid": "292827c4-45e7-460c-b7de-6fef1277a95d"
+        },
+        {
+          "description": "Pad 9 [CHARGER_CHG_N] of U102 on F.Cu",
+          "pos": {
+            "x": 178.4625,
+            "y": 124.75
+          },
+          "uuid": "a3391190-2afb-4631-91d0-38f4c3c78301"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 7 [CHARGER_PGOOD_N] of U102 on F.Cu",
+          "pos": {
+            "x": 177.25,
+            "y": 125.4625
+          },
+          "uuid": "7898abf6-6e38-4e0b-92eb-1eacac4d4e21"
+        },
+        {
+          "description": "Track [CHARGER_PGOOD_N] on B.Cu, length 1.3644 mm",
+          "pos": {
+            "x": 176.9615,
+            "y": 127.9863
+          },
+          "uuid": "3cf709a5-e93a-4fdd-a453-eaed88cad675"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 1 [/05  SENSORS + EXPANSION/EXP_UNUSED_P6] of R516 on F.Cu",
+          "pos": {
+            "x": 151.175,
+            "y": 142.0
+          },
+          "uuid": "97f653f9-7260-4e5d-8718-6b17c9239bb1"
+        },
+        {
+          "description": "Pad 11 [/05  SENSORS + EXPANSION/EXP_UNUSED_P6] of U506 on F.Cu",
+          "pos": {
+            "x": 151.8625,
+            "y": 136.975
+          },
+          "uuid": "973b6446-76f2-4123-a8c5-c3d10ad0f1d9"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    }
+  ],
+  "archived_input_report_sha256": "d99412c53e1b94965ba3eb1d0fd17cd13641e776a0e5de2c9125a3e6f6ed6f5a"
+}

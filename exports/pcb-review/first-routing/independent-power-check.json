@@ -1,0 +1,196 @@
+{
+  "board_sha256": "6fd556ca6c3a619faf28f395a3acfaec5d4a59687f133956994b6d8c4fbfc738",
+  "project_sha256": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+  "source_sha256": "3ae60934e962d5ab66a2c06276e3c3b25e060e23c9db52a39f2539f3c7698b73",
+  "tracks_and_vias": 815,
+  "added": 106,
+  "old_missing": [],
+  "old_changed": [],
+  "endpoint_checks": [
+    {
+      "from": "C109.1",
+      "to": "C512.1",
+      "connected": true
+    },
+    {
+      "from": "C105.1",
+      "to": "C107.1",
+      "connected": true
+    },
+    {
+      "from": "C106.1",
+      "to": "R127.1",
+      "connected": true
+    },
+    {
+      "from": "C407.1",
+      "to": "C408.1",
+      "connected": true
+    },
+    {
+      "from": "U101.4",
+      "to": "R105.2",
+      "connected": true
+    },
+    {
+      "from": "U101.11",
+      "to": "C104.1",
+      "connected": true
+    },
+    {
+      "from": "C105.1",
+      "to": "R111.1",
+      "connected": true
+    },
+    {
+      "from": "U102.4",
+      "to": "R120.2",
+      "connected": true
+    },
+    {
+      "from": "R120.1",
+      "to": "C105.1",
+      "connected": true
+    },
+    {
+      "from": "U102.3",
+      "to": "C106.1",
+      "connected": true
+    },
+    {
+      "from": "R118.2",
+      "to": "U103.8",
+      "connected": true
+    },
+    {
+      "from": "U102.17",
+      "to": "U102.8",
+      "connected": true
+    }
+  ],
+  "planes": [
+    {
+      "layer": 4,
+      "polygons": 1,
+      "islands": [
+        false
+      ]
+    },
+    {
+      "layer": 6,
+      "polygons": 1,
+      "islands": [
+        false
+      ]
+    }
+  ],
+  "ground_vias": 144,
+  "ground_vias_missing_plane": [],
+  "new_via_holes_in_paste_copper": [],
+  "kelvin_front_count": 1,
+  "kelvin_back_count": 2,
+  "new_kelvin_intersections": [],
+  "power_via_pairs": [
+    {
+      "primary": [
+        142.25,
+        154.5
+      ],
+      "parallel": [
+        142.25,
+        155.4
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        190.575,
+        152.25
+      ],
+      "parallel": [
+        191.475,
+        152.25
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        177.3,
+        128.75
+      ],
+      "parallel": [
+        175.9,
+        128.75
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        147.5,
+        140.5
+      ],
+      "parallel": [
+        148.4,
+        140.5
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        142.0,
+        143.0
+      ],
+      "parallel": [
+        141.1,
+        143.0
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        141.45,
+        143.9
+      ],
+      "parallel": [
+        140.04999999999998,
+        145.3
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        177.725,
+        175.925
+      ],
+      "parallel": [
+        178.625,
+        175.925
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    },
+    {
+      "primary": [
+        205.975,
+        174.775
+      ],
+      "parallel": [
+        206.875,
+        174.775
+      ],
+      "both_0p8_0p4": true,
+      "connected": true
+    }
+  ],
+  "drc_violations": 5,
+  "drc_baseline_identity_match": true,
+  "drc_unconnected": 126,
+  "scope": "Independent read-only native geometry/connectivity review. DRC run in corrected project-library context.",
+  "archived_input_report_sha256": "6506450cbc1846ab0c057e2f1391d12a82ad72cf0d665b1c6059c83cf9af543e"
+}

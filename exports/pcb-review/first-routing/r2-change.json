@@ -1,0 +1,12 @@
+{
+  "source_commit": "1809844",
+  "source_board_sha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "staged_board_sha256": "7a8ee13fb3316d4805277af601e36a95870fb759bb63196677df283e972bd4ba",
+  "tool": "10.0.8",
+  "outline_change": "R2 at exposed tip; tangent endpoints (155,102), (157,100), center (157,102). Existing R0.5 concave return retained.",
+  "footprints_unchanged": true,
+  "native_outline_valid": true,
+  "routing": false,
+  "active_source_unchanged": true,
+  "archived_input_report_sha256": "f3c454effae9a8d363b0ea030c075eb99ebef75888365bdbbfabbbda90676df8"
+}

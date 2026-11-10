@@ -1,5 +1,5 @@
 {
-  "status": "shared_passive_optics_and_rear_NFC_plan_pending_human_placement_review",
+  "status": "first_routing_pass_incomplete_pending_visual_and_electrical_review",
   "board_mm": [
     110,
     80
@@ -54,7 +54,7 @@
       "reference": "C202",
       "x": 118.5,
       "y": 108.8,
-      "rotation": 0,
+      "rotation": 180,
       "side": "F.Cu",
       "group": "processor/radio"
     },
@@ -1244,17 +1244,17 @@
     },
     {
       "reference": "C511",
-      "x": 192,
-      "y": 151,
-      "rotation": 0,
+      "x": 193,
+      "y": 154.65,
+      "rotation": 90,
       "side": "F.Cu",
       "group": "accessories"
     },
     {
       "reference": "C512",
-      "x": 192,
-      "y": 148,
-      "rotation": 0,
+      "x": 193.8,
+      "y": 151.3,
+      "rotation": 90,
       "side": "F.Cu",
       "group": "accessories"
     },
@@ -1268,9 +1268,9 @@
     },
     {
       "reference": "R508",
-      "x": 187,
-      "y": 154,
-      "rotation": 0,
+      "x": 197.925,
+      "y": 158.3,
+      "rotation": 270,
       "side": "F.Cu",
       "group": "accessories"
     },
@@ -1502,30 +1502,30 @@
     ]
   ],
   "notes": [
-    "Experimental 110 × 80 mm placement. Human approval is required before routing; no routing has been performed.",
+    "Experimental 110 × 80 mm board. Human placement review was followed by explicit routing authorization. A first routing pass is implemented; fabrication and final visual review remain open.",
     "All 164 non-test electrical footprints are front-side, including two tuning footprints marked DNP in custom fields. Six bare copper test pads remain on the rear. The proposed rear through-hole SAO socket would require secondary assembly.",
     "The proposed panel underside is 4.5 mm above the front PCB surface, with a 0.92 mm glass envelope. Supports, solder/warp/tolerance stack and flex remain unqualified.",
     "The full native module keepout remains on all four copper layers, and the left-open board cutout removes FR4 beneath it. Glass is only 3.5 mm behind the antenna, below the recommended 15 mm surrounding clearance. RF performance remains unqualified.",
     "The 18 × 13 mm NFC reserve replaces the prior 30 × 17 mm reserve. No coil copper exists; inductance, coupling, read range and tuning remain open.",
     "The five bottom LEDs have 23.5 mm pitch from x 108 to 202, all y 174. The leftmost X remains 108; the row moved up for the compact board.",
-    "The three role LEDs are evenly spaced at x 160, 180.5 and 201, all y 103. Their 20.5 mm pitch and 5 mm end-center margins follow the latest user request and supersede prior role-LED positions.",
+    "The three role LEDs retain x 160, 180.5, 201 at y 103 and 20.5 mm pitch. The R2 notch tip changes the straight top-edge start to x 157, giving 3/5 mm end-center margins without moving the LEDs.",
     "Textile cord reservations have Ø5.2 mm sweep and Ø3.2 mm drills; no metal clip is qualified. Structural holes are Ø2.2 mm with a maximum Ø4.5 mm nonconductive head/boss assumption.",
     "The existing USB hole-to-pad DRC failures remain unresolved. Nine electrical footprints remain unassigned. Charging is disabled.",
     "The user requested organized circuit groups spread into available board area and removal of the narrow PCB sliver left of the antenna opening.",
     "Rigid moves preserve the local geometry of ADC sensing, converter, display power switch and I/O expander. The longer VSYS feed needs low-impedance copper and a continuous return.",
     "Sensor bypass placement follows the source contract: C501/C502 at U501, and C503/C504/C505 at U502. Values, nets and selected footprints are unchanged.",
     "The requested functional-block labels are separate render overlays, with no copper or silkscreen changes.",
-    "All RF, display-flex, exact-part, manufacturing and human placement-review gates remain in force.",
-    "The ambient sensor and its two bypass capacitors occupy the exposed shoulder immediately right of the MCU. The sensor center is (145,108.25), outside the glass.",
+    "RF, display-flex, exact-part, manufacturing and final human visual-review gates remain in force.",
     "The user selected a rear-copper NFC PCB coil with the front area kept clear. Plan the eventual coil on B.Cu and retain front/inner-layer metal clearance, battery/display separation and nearby front-side tag/tuning parts. No antenna traces or tuned geometry exist yet; current all-layer reservations remain until antenna-specific rules are reviewed.",
     "Receiver and emitter courtyards are respectively 0.805 and 1.855 mm below the glass. Their faces remain forward-looking; field of view, optical isolation and tolerances still require assembled qualification.",
     "U501 and its two bypass capacitors now sit beside U504 below the display. The two passive detectors can share a visible-and-940 nm-transmitting window, separate from the IR emitter window and RGB diffuser.",
     "U501 is at (143.5,170.5),90°. Its courtyard clears the glass by 3.655 mm. This improves the display-side view and consolidates the enclosure aperture; it does not improve LED isolation by distance.",
-    "R504 moves slightly right to preserve local emitter support and leave an evaluated 0.5 mm-wide enclosure-divider corridor at x146.6..147.1/y165.25..175.75. No enclosure barrier, copper keepout or routing is added.",
-    "The lower ALS is about 12.02 mm from its nearest affinity LED. Opaque visible/940 nm barriers, cover transmission/FOV qualification and IR-off integration with LED-on/off characterization remain required."
+    "R504 moves slightly right to preserve local emitter support and leave an evaluated 0.5 mm-wide enclosure-divider corridor at x146.6..147.1/y165.25..175.75. No enclosure barrier or copper keepout is implemented; copper routing now uses the current placement.",
+    "The lower ALS is about 12.02 mm from its nearest affinity LED. Opaque visible/940 nm barriers, cover transmission/FOV qualification and IR-off integration with LED-on/off characterization remain required.",
+    "Routing support corrections: C202 rotates 180° at its unchanged center; C511/C512/R508 move locally to improve TPS2553 bypass/bulk/ILIM wiring. User-visible LEDs, sensors, buttons, connectors and display remain fixed."
   ],
   "glass_underside_mm": 4.5,
-  "outline_note": "Antenna cutout is open to the left edge. Outer R4 from (100,110.75) to (104,106.75); shoulder to (154.5,106.75), inner R0.5 return to (155,106.25), then top edge at y100. Overall 110 x 80 mm.",
+  "outline_note": "Antenna cutout is open to the left edge. Outer R4 from (100,110.75) to (104,106.75); shoulder to (154.5,106.75), inner R0.5 return to (155,106.25). Approved convex R2 tip joins (155,102) to (157,100), center (157,102). Overall 110 x 80 mm.",
   "native_functional_groups": [
     {
       "name": "Ambient-light sensor",
@@ -1625,11 +1625,11 @@
     "center_y_mm": 103,
     "pitch_mm": 20.5,
     "straight_top_edge_x_mm": [
-      155,
+      157,
       206
     ],
     "end_center_margins_mm": [
-      5,
+      3,
       5
     ],
     "LED_rotation_degrees": 180
@@ -1684,7 +1684,7 @@
     "glass_bottom_y_mm": 164.9,
     "receiver_courtyard_gap_mm": 0.805,
     "emitter_courtyard_gap_mm": 1.855,
-    "routing_status": "unrouted",
+    "routing_status": "first routing pass; see pinned routing review for remaining connections",
     "transmitter_resistor_mm": [
       150.75,
       172,
@@ -1716,6 +1716,16 @@
       175.75
     ],
     "enclosure_implemented": false,
-    "routing_status": "unrouted"
+    "routing_status": "first routing pass; see pinned routing review for remaining connections"
+  },
+  "routing_board_sha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+  "routing_review": {
+    "path": "docs/design/first_routing_pass_review.md",
+    "tracks": 1258,
+    "vias": 328,
+    "inner_GND_planes": 2,
+    "unconnected_item_reports": 48,
+    "missing_footprints": 9,
+    "fabrication_ready": false
   }
 }

@@ -1,8 +1,8 @@
-# Organized one-sided PCB placement review
+# PCB placement and first routing review
 
-10 November 2026. **Experimental placement for human review. Unrouted; not a manufacturing release or an RF-compliance claim.**
+10 November 2026. **Experimental first routing pass. Human placement approval and routing authorization are recorded; final visual, electrical, RF and manufacturing review remain open.**
 
-The active board is 110 × 80 mm, SHA256 `ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d`. The previous 110 × 100 mm, two-sided placement and its libraries/models are preserved under `history/2026-11-09-100mm-two-sided-fallback/`. The first 80 mm placement is preserved under `history/2026-11-09-80mm-before-group-spacing/`; the intermediate group-spacing revision is under `history/2026-11-09-organized-before-top-row/`.
+The active board is 110 × 80 mm, SHA256 `dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70`. The previous 110 × 100 mm, two-sided placement and its libraries/models are preserved under `history/2026-11-09-100mm-two-sided-fallback/`. The first 80 mm placement is preserved under `history/2026-11-09-80mm-before-group-spacing/`; the intermediate group-spacing revision is under `history/2026-11-09-organized-before-top-row/`.
 
 ## Changes made
 
@@ -11,8 +11,8 @@ The active board is 110 × 80 mm, SHA256 `ddf824f2a59bc82568bbb03bcb3f89959f2ee1
 - USB J101 is at F(206.325,126),90°, with its mating face at the right PCB edge x 210. The Qwiic connector is also front/right, at F(206.5,159),90°.
 - Both side-actuated buttons remain together on the left, now at y 145 and 155, 10 mm apart, pointing outward.
 - The five affinity LEDs are at x 108,131.5,155,178.5,202, all y 174. Pitch is 23.5 mm, with 8 mm end margins. The leftmost LED retains its horizontal position; the row moved upward to fit the shorter board.
-- The three role LEDs are now at x 160,180.5,201, all y 103, evenly spaced at 20.5 mm pitch along the remaining straight top edge (x 155..206). Their centers have 5 mm end margins. Each LED is rotated 180° and its local bypass capacitor sits 2.5 mm west at 90°. This follows the latest request to reposition all three top LEDs.
-- U201 remains at F(130,113.25). Its antenna lies inside the board's overall rectangle, x 121..139/y 100.5..106.5. The antenna opening now extends fully to the left edge, removing the narrow sliver. A 4 mm outer shoulder radius meets the edge at y 110.75 and joins the horizontal shoulder at y 106.75; the right internal radius remains 0.5 mm. Native copper-to-shoulder clearance at the first module pads is 0.79 mm.
+- The three role LEDs are now at x 160,180.5,201, all y 103, evenly spaced at 20.5 mm pitch along the remaining top edge. The approved R2 tip makes the straight portion x 157..206; their centers retain the approved positions with 3/5 mm margins to that straight portion. Each LED is rotated 180° and its local bypass capacitor sits 2.5 mm west at 90°. This follows the latest request to reposition all three top LEDs.
+- U201 remains at F(130,113.25). Its antenna lies inside the board's overall rectangle, x 121..139/y 100.5..106.5. The antenna opening now extends fully to the left edge, removing the narrow sliver. A 4 mm outer shoulder radius meets the edge at y 110.75 and joins the horizontal shoulder at y 106.75; the right internal radius remains 0.5 mm. The exposed upper tip now has the approved R2 radius, tangent at (155,102) and (157,100). Native copper-to-shoulder clearance at the first module pads is 0.79 mm.
 - The NFC reservation shrinks from 30 × 17 to 18 × 13 mm, at x 182..200/y 166..179, between the last two affinity LEDs. It is an all-four-layer no-metal rule area, not a completed antenna.
 - C101/C102 are allocated as local TPS2121 input bypass, with unchanged values and nets. Their positive pads are 1.876/2.027 mm from the respective mux inputs. D101/D102 and the USB ESD reservation stay at the ports.
 
@@ -30,7 +30,7 @@ The glass ends at y164.9. ALS courtyard clearance is 3.655 mm; receiver/emitter 
 
 The lower ALS is 12.02 mm from D406 and 12.50 mm from D405, closer to visible emitters than its former 15.89 mm separation from D401. This move improves enclosure grouping and display-side access, not self-light rejection by distance. Use characterized visible/IR-transmitting cover material, barriers opaque at both visible wavelengths and 940 nm, local IR-off intervals throughout ALS integration, and assembled RGB-on/off calibration. Roughly ±30° is an initial aperture-design target, not a guaranteed field of view. Shorter integration trades sensitivity and 50/60 Hz rejection for less disruptive LED blanking if testing shows blanking is needed.
 
-The local electrical geometry remains practical: C501/C502 positive pads are 2.159/2.100 mm from their ALS supply pins; R504-to-emitter anode is 3.747 mm. Receiver filtering remains unchanged, with C509/C510 2.90/3.11 mm from VCC. Use independent local ground vias into a continuous reference plane rather than sharing LED or transmitter return paths. I2C and IR signals need ordinary board-scale routing with ground continuity and switching-node avoidance. No routing or detailed escape trial has been performed.
+The local electrical geometry remains practical: C501/C502 positive pads are 2.159/2.100 mm from their ALS supply pins; R504-to-emitter anode is 3.747 mm. Receiver filtering remains unchanged, with C509/C510 2.90/3.11 mm from VCC. Use independent local ground vias into a continuous reference plane rather than sharing LED or transmitter return paths. I2C and IR signals need ordinary board-scale routing with ground continuity and switching-node avoidance. A first routing pass now connects local support and ordinary signals; remaining native connections and sensitive-net holds are listed in [the routing review](first_routing_pass_review.md).
 
 C509's front courtyard projects slightly across the unresolved rear dock reservation, but its copper and nominal body remain outside the nominal dock drawing. This is not a same-side collision. The exact dock contact, through-board tails, seating motion and insulation remain unqualified, so the revision does not claim a completed dock fit.
 
@@ -62,20 +62,15 @@ Four structural Ø2.2 mm NPTH holes use a maximum Ø4.5 mm head/boss assumption.
 
 ## Checks performed on this revision
 
-Native KiCad 10.0.8:
+Native KiCad 10.0.8, board SHA256 `dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70`:
 
-- 186 total footprints:170 schematic-linked electrical,10 padless review reservations and 6 holes.
-- 539 numbered physical pad primitives,524 distinct logical endpoints. Independent inverse-transform comparison confirms every electrical pad's number/net, local position/orientation, size, drill, shape, layers and mask/paste settings are unchanged.
-- 164 electrical footprints front,6 test pads rear. Zero tracks, vias or copper pours.
-- Single closed 110 × 80 mm Edge.Cuts outline, with 11 primitives and the true left-open antenna shoulder. Its 0.5 mm internal radius requires a suitable fabrication tool or approved process.
-- Exact complete inverse-transform comparison passes for all 186 footprints against the previous checked board. Exactly the four intended ALS/support poses changed; board-level content and all eight native groups remain unchanged. The earlier organized-group/top-row passes retain their separate pinned reviews.
-- Footprint-owned radio and NFC keepouts preserved on all four copper layers. NFC reserve is fully on-board at 234 mm².
-- No positive-area courtyard collisions, inter-component copper clearance/shorts, mask bridges or keepout violations. The native courtyard comparison checks 177 front and 9 rear polygons.
-- All 167 model references resolve through 33 distinct model files. Electrical model assignments are unchanged. New padless review footprints represent raised glass, smaller NFC area, SAO tail allowance and textile cord holes.
-- Fresh schematic contract and property checks pass:179 components,576 contract endpoints and 30 intentional NCs. Source netlist remains SHA256 `8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59`.
-- Fresh ERC: zero errors, same one LIS2DW12 SDO/SA0 bidirectional-to-power warning.
+- 186 footprints remain: 170 schematic-linked electrical, 10 padless review reservations and 6 holes. 164 electrical footprints are front-side and 6 test pads rear.
+- Full inverse-transform footprint comparison and pad/net signatures match the published source. The only routing-support pose changes are C202, C511, C512 and R508; their rationale and before/after coordinates are in [the routing review](first_routing_pass_review.md).
+- The approved R2 tip produces one closed 110 × 80 mm outline with 12 primitives. All component/model records and radio/NFC rule areas are retained.
+- 1258 tracks, 328 through vias and 2 filled inner GND planes are present. No signal tracks use the inner layers. Native checks find no new via/SMD-land intersections, NC-net copper or antenna-keepout copper.
+- Fresh source contract/property checks pass for 179 components, 576 endpoints and 30 intentional NCs. The unchanged netlist SHA256 is `8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59`. ERC remains zero errors and the one documented LIS2DW12 SDO/SA0 warning.
 
-DRC is **not clean**: four existing USB source-footprint NPTH-to-pad clearance errors remain (0.1944 mm against the provisional 0.25 mm rule), plus one module silkscreen/notch-edge warning. 390 unconnected-item reports are expected because the board is unrouted. Nine missing-footprint parity reports correspond exactly to the unresolved references below. No rule was relaxed or failure suppressed.
+DRC is **not clean**: four existing USB source-footprint NPTH-to-pad errors remain (0.1944 mm against 0.25 mm), plus the existing module silkscreen/notch-edge warning. There are 48 unconnected-item reports and 9 missing-footprint parity reports. No new geometric violation, global-rule reduction or DRC exclusion was introduced. See the routing review for deliberately held interfaces and unfinished ordinary connections.
 
 ## Remaining electrical/mechanical gates
 
@@ -91,17 +86,16 @@ DRC is **not clean**: four existing USB source-footprint NPTH-to-pad clearance e
 | AE501 | Design and qualify the smaller NFC antenna and tuning. |
 | J502 | Confirm exact keyed SAO socket mating view, pad numbers and key orientation. |
 
-Generic passive MPNs, effective capacitance/ratings, high-current and fine-pitch escapes, controlled-impedance stackup, USB hotplug/inrush, optical isolation, full height/tolerance/deflection stack, cable/plug motions, fabricator constraints and prototype tests remain pending. The placement leaves routing corridors but no trial escape or routing has been performed.
+Generic passive MPNs, effective capacitance/ratings, high-current and fine-pitch escapes, controlled-impedance stackup, USB hotplug/inrush, optical isolation, full height/tolerance/deflection stack, cable/plug motions, fabricator constraints and prototype tests remain pending. The first pass uses checked local escapes and outer-layer routing; load/thermal qualification, remaining routes and a final routing/visual refinement are still required.
 
 R120 still holds charger CE high. Charging remains disabled. The shared 3.3 V LED supply retains its documented prototype qualification gate. C507/C508 custom population fields say DNP while their native KiCad DNP flags remain false, matching the existing schematic workflow; do not issue a native-flag-only assembly BOM.
 
 ## Review artifacts and decision
 
-`exports/pcb-review/shared-optics/` contains native front-with-display, rear-with-battery, exposed-front-components and raised-display-perspective images, native assembly SVGs, DRC/ERC and contract/property reports. Images use rendering-only derivatives that show the three virtual review envelopes; authoritative board exclusions and electrical geometry are unchanged.
+`exports/pcb-review/first-routing/` contains current native copper/ground-plane SVGs, routing overview/close-ups, front/rear 3D previews, DRC/ERC and contract/property reports. Rendering-only copies make the panel/battery/socket review envelopes visible; the authoritative board attributes are unchanged. Earlier shared-optics images are historical.
 
-The static `functional-blocks` annotations in earlier export folders are historical; a current static annotation has not been generated for this shared-optics revision. Use the web viewer's regenerated callouts for the current labeled view. Native preview images are in `exports/pcb-review/shared-optics/`.
+Earlier static `functional-blocks` annotations are historical. The web viewer must regenerate geometry, renders and callouts from this board hash before its next publication.
 
-The panel/battery/socket are dimensional allowances. Source-supported mechanical findings are in `compact_one_sided_mechanical_review.md`, RF tradeoffs in `one_sided_rf_mechanical_review.md`, and this pass's independent check is `shared_passive_optics_review.md`. Earlier optical checks remain in `lower_ir_placement_review.md` and `optical_space_placement_review.md`. Earlier organized/top-row checks are retained in `organized_top_row_final_review.md`, `top_role_placement_review.md` and `left_open_antenna_final_review.md`. Their images and the preceding compact/spread views are historical.
+The panel/battery/socket are dimensional allowances. Source-supported mechanical findings are in `compact_one_sided_mechanical_review.md`, RF tradeoffs in `one_sided_rf_mechanical_review.md`, and the passive optical placement's independent check is `shared_passive_optics_review.md`. The current routing checks are summarized in `first_routing_pass_review.md`. Earlier optical checks remain in `lower_ir_placement_review.md` and `optical_space_placement_review.md`. Earlier organized/top-row checks are retained in `organized_top_row_final_review.md`, `top_role_placement_review.md` and `left_open_antenna_final_review.md`. Their images and the preceding compact/spread views are historical.
 
-**Ask the user to review the 80 mm form factor, raised display, shared passive optical group, left buttons, right connectors, LED arrangement and antenna cutout as a placement direction. Do not start detailed routing without approval, and do not treat placement approval as resolving the listed RF, flex, part-selection or fabrication gates.**
-
+**Placement was approved and the user authorized this first routing pass after the initial viewer publication. Review the new routing and R2 tip before release. Approval does not resolve the listed RF, flex, part-selection, charging, prototype or fabrication gates.**

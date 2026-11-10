@@ -6,7 +6,7 @@
 
 Open `tinkerbadge.kicad_pro` in KiCad 10, then its root schematic. Double-click a sheet box to enter a block. Project-local symbol libraries use `${KIPRJMOD}` paths. KiCad standard libraries are also required.
 
-PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The selected NFC plan is a B.Cu coil with front/inner clearance and front-side tag/tuning components; no coil geometry exists yet. It is unrouted and awaits human placement review and RF/flex/part qualification. No board-release conclusion follows from schematic verification.
+PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The selected NFC plan is a B.Cu coil with front/inner clearance and front-side tag/tuning components; no coil geometry exists yet. Placement review was followed by explicit routing authorization. The [first routing pass](first_routing_pass_review.md) now adds the approved R2 tip, local support corrections, power/analog wiring, digital paths and inner ground planes; it remains incomplete and awaits RF/flex/part and final board qualification. No board-release conclusion follows from schematic verification.
 
 ## Current build decisions
 
@@ -71,6 +71,6 @@ Before a PCB can be released:
 - Select inductors and passive MPNs. Test regulator capacity/temperature, the shared dynamic rail, display boost overshoot/inrush, current scheduling and accessory faults.
 - Validate radio/NFC antenna layout, panel flex, glass/battery/enclosure fit, USB/ESD layout and test access.
 - Measure normal, idle and storage current, source sensing, wake, low-voltage behavior and unpowered leakage/backfeed.
-- Obtain human schematic/placement review before routing. Perform board connectivity/DRC and prototype validation on a pinned revision afterward.
+- Complete final routing/visual review, all remaining native connections and DRC issues, then prototype validation on one pinned revision. Initial placement review and first-pass routing authorization are complete.
 
 Population fields need special care: the installed MCP cannot set KiCad's native DNP flag. Optional parts are identified in visible values, `Populate`/`Population` fields and source contracts. Do not export an assembly BOM without reconciling these fields and excluding unpopulated parts.

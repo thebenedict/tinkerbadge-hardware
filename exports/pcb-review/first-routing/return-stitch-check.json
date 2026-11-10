@@ -1,0 +1,79 @@
+{
+  "source_board_sha256": "26b613f0509a2da923853ade8dfe94b52c591522a35b113101bb8c7fcc3d0d71",
+  "final_board_sha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+  "project_sha256": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+  "preserved_copper_items": 1575,
+  "added_ground_vias": 11,
+  "stitches": [
+    {
+      "x_mm": 157.0347,
+      "y_mm": 113.5474,
+      "uuid": "8e532331-aa5e-443b-a6c3-fb1e8656a07a",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 136.7058,
+      "y_mm": 122.1032,
+      "uuid": "85627924-8aba-4171-8a92-9a9534da0194",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 140.2091,
+      "y_mm": 118.1882,
+      "uuid": "7a7a705d-6d62-4385-aaa5-e0209edd1f72",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 131.634999,
+      "y_mm": 124.5236,
+      "uuid": "d1101734-4b31-4c23-bdd1-bbd1d2766c18",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 131.733,
+      "y_mm": 138.1345,
+      "uuid": "ac057f0c-5d1a-4d5e-bf8a-3598522ad567",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 136.4589,
+      "y_mm": 128.1702,
+      "uuid": "4e78c7e0-3330-4b67-b96b-68e10abe0137",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 173.6318,
+      "y_mm": 135.2071,
+      "uuid": "1fa3c68a-efb4-40db-a73a-2846c194fe84",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 170.1512,
+      "y_mm": 152.8471,
+      "uuid": "d59c4c7e-945d-4af1-948e-abf4a1aee65d",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 147.3689,
+      "y_mm": 135.4185,
+      "uuid": "d533831d-d377-4f88-87bf-071389bb3ee7",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 201.058,
+      "y_mm": 168.3849,
+      "uuid": "2477536e-46c4-4fd8-aace-c8a42a23118f",
+      "both_GND_planes": true
+    },
+    {
+      "x_mm": 151.6,
+      "y_mm": 132.199999,
+      "uuid": "a6655803-828b-4dce-8728-d99d72793fea",
+      "both_GND_planes": true
+    }
+  ],
+  "footprints_unchanged": true,
+  "outside_board_label_updated": true,
+  "zones_refilled": true,
+  "drc_status": "Run native final DRC separately."
+}

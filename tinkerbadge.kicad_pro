@@ -206,7 +206,18 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.8,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -233,7 +244,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -292,20 +312,137 @@
         "wire_width": 6
       },
       {
+        "bus_width": 12,
         "clearance": 0.2,
-        "name": "Power",
-        "priority": -1,
-        "track_width": 0.6,
-        "via_diameter": 0.8,
-        "via_drill": 0.4
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PowerBranch",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       },
       {
-        "clearance": 0.25,
-        "name": "EPD_HV",
-        "priority": -1,
-        "track_width": 0.25,
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "AnalogSense",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
-        "via_drill": 0.3
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "EPD_HV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_HOLD",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "NFC_HOLD",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Switching_HOLD",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_Trunk",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -313,7 +450,180 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "+3V3_EPD"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/BATT_NTC_OPTIONAL"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/BAT_DIV_PRE"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/BAT_SENSE_ISOLATED"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/CHARGER_ILIM"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/CHARGER_ISET"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/CHARGER_TMR"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/MUX_ILM"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/MUX_OV_DOCK"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/MUX_OV_USB"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/MUX_PRIORITY_USB"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/MUX_SS"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/01  POWER + CHARGING/PRIMARY_FB"
+      },
+      {
+        "netclass": "Switching_HOLD",
+        "pattern": "/01  POWER + CHARGING/PRIMARY_L1"
+      },
+      {
+        "netclass": "Switching_HOLD",
+        "pattern": "/01  POWER + CHARGING/PRIMARY_L2"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "/01  POWER + CHARGING/VBAT_PROTECTED"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "/01  POWER + CHARGING/VEXT_5V"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "/01  POWER + CHARGING/VSYS"
+      },
+      {
+        "netclass": "USB_HOLD",
+        "pattern": "/02  PROCESSOR + RECOVERY/MCU_USB_DM"
+      },
+      {
+        "netclass": "USB_HOLD",
+        "pattern": "/02  PROCESSOR + RECOVERY/MCU_USB_DP"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_PUMP"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_RESE"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_SW"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VCOM"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VGH"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VGL"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VPP"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VSH1"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VSH2"
+      },
+      {
+        "netclass": "EPD_HV",
+        "pattern": "/03  E-PAPER DISPLAY/EPD_VSL"
+      },
+      {
+        "netclass": "PowerBranch",
+        "pattern": "/05  SENSORS + EXPANSION/ACC_3V3"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "/05  SENSORS + EXPANSION/ACC_ILIM"
+      },
+      {
+        "netclass": "PowerBranch",
+        "pattern": "/05  SENSORS + EXPANSION/IR_LED_A"
+      },
+      {
+        "netclass": "PowerBranch",
+        "pattern": "/05  SENSORS + EXPANSION/IR_LED_K"
+      },
+      {
+        "netclass": "PowerBranch",
+        "pattern": "/05  SENSORS + EXPANSION/IR_RX_3V3"
+      },
+      {
+        "netclass": "NFC_HOLD",
+        "pattern": "/05  SENSORS + EXPANSION/NFC_LA"
+      },
+      {
+        "netclass": "NFC_HOLD",
+        "pattern": "/05  SENSORS + EXPANSION/NFC_LB"
+      },
+      {
+        "netclass": "AnalogSense",
+        "pattern": "BAT_ADC"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "DOCK_5V"
+      },
+      {
+        "netclass": "USB_HOLD",
+        "pattern": "USB_DM"
+      },
+      {
+        "netclass": "USB_HOLD",
+        "pattern": "USB_DP"
+      },
+      {
+        "netclass": "Power_Trunk",
+        "pattern": "USB_VBUS"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

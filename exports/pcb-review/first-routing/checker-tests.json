@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests": {
+    "contract_checker": 12,
+    "property_checker": 7,
+    "alps_button_contract": 5
+  },
+  "total": 24,
+  "scope": "Repository contract/property/button regressions; PCB native DRC and geometry checks are separate."
+}

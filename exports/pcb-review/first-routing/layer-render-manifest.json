@@ -1,0 +1,24 @@
+{
+  "board_sha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+  "native_cli_version": "10.0.8",
+  "rear_view": "mirrored, viewed from rear",
+  "inner_views": "front coordinates",
+  "artifacts": {
+    "front-components.png": "b224cc3ed95d81ecafb9fa5e04d1a85ecf16b05b24f0a03e7a4c07fd4bd83daf",
+    "front-copper-detail-27-64.svg": "c0f88528ecc9a0afb12897d77f178c86e94d8491a1c69aa6785cd7d797a85218",
+    "front-copper-detail-32-43.svg": "f1ade249da563c5ecb1f8651e91dc0d98026aeb7621816614011ecc67e54168d",
+    "front-copper-detail-62-14.svg": "2b1fb3b4185aaf0556a454cf099b97733dfff368a88c67291b88f8d644edfd43",
+    "front-copper-detail-88-43.svg": "4f35e23fef8873284638d3329ff8019a83b8c6c27f5c3b5b0b8819e22b469e94",
+    "front-copper.svg": "74ce50a1c303d0d72362940a7ce340cc538f7bc42e6501813aef11d63e916c7f",
+    "front-with-display.png": "f29dab669e2df745a9431bb029dd37c3c5f35ac9ac608dbac9926ed5f316b9cf",
+    "inner-ground-1.svg": "3d5578dc7e8c72ab3643ff8ae7ea0a6a41ff7999999776388826b97ced3badad",
+    "inner-ground-2.svg": "eb24590698bb4b1004cc32b060963004d1db61ba2c6353cd72d8ddf3a67bbbea",
+    "raised-display-perspective.png": "73d406fb59dbe4b26279f98f2150a366eceb9e65b9572ecf298400955ff7460d",
+    "rear-copper.svg": "88dee47c1dc0e5eea7d4b5bbcd43cf7295c22eabdbe2c2fbfcb39405d876a6cd",
+    "rear-with-battery.png": "0b866d9ec4986016720e426949fadb92f6529520a6fc37e3e1e595b846732e59",
+    "routing-closeups.html": "8d93eb6891a565c382707b230db30f297e08b6d9cac5493f090cd0988606e43d",
+    "routing-closeups.png": "084f2132a966973c9ffbc8441fc9a4cedf45c6a2682323f1c2bc1437020c7419",
+    "routing-overview.html": "8c54c9b7f4ff95f793d4315e8a1f7d689afe36790e879f18fec793ab325ff140",
+    "routing-overview.png": "c6de7bc5a95dc493aacef5a513c790ef200c12b822c67664cabedeb6e5ca905b"
+  }
+}

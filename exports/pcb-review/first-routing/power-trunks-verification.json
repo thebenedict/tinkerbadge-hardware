@@ -1,0 +1,63 @@
+{
+  "input_sha256": "3ae60934e962d5ab66a2c06276e3c3b25e060e23c9db52a39f2539f3c7698b73",
+  "output_sha256": "6fd556ca6c3a619faf28f395a3acfaec5d4a59687f133956994b6d8c4fbfc738",
+  "project_sha256": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+  "source_copper": 709,
+  "final_copper": 815,
+  "added_copper": 106,
+  "missing_source_copper": [],
+  "changed_source_copper": [],
+  "footprints_unchanged": true,
+  "connectivity": [
+    {
+      "from": "C109.1",
+      "to": "C512.1",
+      "connected": true
+    },
+    {
+      "from": "C105.1",
+      "to": "C107.1",
+      "connected": true
+    },
+    {
+      "from": "C106.1",
+      "to": "R127.1",
+      "connected": true
+    },
+    {
+      "from": "C407.1",
+      "to": "C408.1",
+      "connected": true
+    },
+    {
+      "from": "C104.1",
+      "to": "U101.11",
+      "connected": true
+    },
+    {
+      "from": "R105.2",
+      "to": "U101.4",
+      "connected": true
+    },
+    {
+      "from": "R106.1",
+      "to": "U101.4",
+      "connected": true
+    },
+    {
+      "from": "R111.1",
+      "to": "C105.1",
+      "connected": true
+    }
+  ],
+  "remaining_requested": [],
+  "tp203_not_in_scope_not_connected": true,
+  "drc": {
+    "baseline_violations": 5,
+    "final_violations": 5,
+    "same_violation_identities": true,
+    "baseline_unconnected": 133,
+    "final_unconnected": 126
+  },
+  "archived_input_report_sha256": "1628abd1cf8be8e02183145d6203221064a71f26dfd4571a0b567bd2c23339cf"
+}

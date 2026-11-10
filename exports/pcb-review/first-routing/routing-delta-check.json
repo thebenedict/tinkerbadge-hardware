@@ -1,0 +1,112 @@
+{
+  "source_sha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "candidate_sha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+  "tool": "10.0.8",
+  "footprint_count": 186,
+  "poses_changed": [
+    "C202",
+    "C511",
+    "C512",
+    "R508"
+  ],
+  "complete_inverse_footprint_differences": [],
+  "pad_net_mapping_unchanged": true,
+  "outline_valid": true,
+  "outline_primitives": 12,
+  "counts": {
+    "tracks": 1258,
+    "vias": 328
+  },
+  "widths": [
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.2,
+      "count": 224
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.25,
+      "count": 1
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.3,
+      "count": 5
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.5,
+      "count": 25
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.6,
+      "count": 4
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.8,
+      "count": 8
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 1.0,
+      "count": 18
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "count": 11
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.2,
+      "count": 643
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.25,
+      "count": 23
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.3,
+      "count": 227
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "count": 43
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.5,
+      "count": 20
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.6,
+      "count": 4
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 1.0,
+      "count": 2
+    }
+  ],
+  "copper_outside": [],
+  "copper_keepout_intersections": [],
+  "NC_net_copper": [],
+  "new_via_SMD_land_intersections": [],
+  "critical_local_connections": {
+    "charger_CE_tied_to_VSYS": true,
+    "BAT_local_bypass": true,
+    "charger_EP_ground": true,
+    "converter_control_ground_local": true
+  },
+  "plane_layers": [
+    "In1.Cu",
+    "In2.Cu"
+  ],
+  "status": "Native geometry/electrical-delta check; DRC, return-path and visual review are separate."
+}

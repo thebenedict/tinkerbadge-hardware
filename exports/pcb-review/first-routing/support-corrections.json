@@ -1,0 +1,62 @@
+{
+  "source_sha256": "7a8ee13fb3316d4805277af601e36a95870fb759bb63196677df283e972bd4ba",
+  "board_sha256": "09ee72f157485ff42cd5d8f7f9169cdae5b277b6a620e6c5cd672c3b1a402c16",
+  "moves": [
+    {
+      "reference": "C511",
+      "before": [
+        192.0,
+        151.0,
+        0.0
+      ],
+      "after": [
+        193,
+        154.65,
+        90
+      ]
+    },
+    {
+      "reference": "C512",
+      "before": [
+        192.0,
+        148.0,
+        0.0
+      ],
+      "after": [
+        193.8,
+        151.3,
+        90
+      ]
+    },
+    {
+      "reference": "R508",
+      "before": [
+        187.0,
+        154.0,
+        0.0
+      ],
+      "after": [
+        197.925,
+        158.3,
+        270
+      ]
+    },
+    {
+      "reference": "C202",
+      "before": [
+        118.5,
+        108.8,
+        0.0
+      ],
+      "after": [
+        118.5,
+        108.8,
+        180
+      ]
+    }
+  ],
+  "positive_area_courtyard_collisions": [],
+  "copper_outside": [],
+  "authorization": "Authorized routing includes narrow local support corrections that preserve visible anchors.",
+  "archived_input_report_sha256": "eebfd653541e9c042693f37bb7909d8112845550af5934ed8f6bded927903576"
+}

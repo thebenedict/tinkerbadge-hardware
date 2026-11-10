@@ -1,0 +1,408 @@
+{
+  "candidate": ".build/digital-route-trial/final/candidate.kicad_pcb",
+  "candidate_sha256": "7cccc70518e5068d3e131a139cd630a8f67a6d1f5a1edace2e28cfd7154cdbb5",
+  "source_board_sha256": "6fd556ca6c3a619faf28f395a3acfaec5d4a59687f133956994b6d8c4fbfc738",
+  "source_project_sha256": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+  "preservation": {
+    "source_sha256": "6fd556ca6c3a619faf28f395a3acfaec5d4a59687f133956994b6d8c4fbfc738",
+    "candidate_sha256": "7cccc70518e5068d3e131a139cd630a8f67a6d1f5a1edace2e28cfd7154cdbb5",
+    "original_copper_items_preserved_exactly": 815,
+    "added_tracks": 600,
+    "added_vias": 107,
+    "footprints_drawings_zone_definitions_unchanged": true,
+    "original_copper_uuid_and_serialization_unchanged": true,
+    "held_net_additions": 0,
+    "zones_refilled": true,
+    "source_unchanged": true,
+    "native_import_drill_substitutions_discarded": [
+      {
+        "uuid": "0bbeab52-f94d-4017-9ca6-3ac2aa384fcf",
+        "net": "/01  POWER + CHARGING/VSYS",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "78f74a20-66d7-4aaf-8306-7810b0a3e460",
+        "net": "/01  POWER + CHARGING/VSYS",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "d2bc825b-457a-4254-be63-d18cf3fc7561",
+        "net": "/01  POWER + CHARGING/VSYS",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "dc10ae79-88eb-41d1-822c-7ce5fe5f455f",
+        "net": "/01  POWER + CHARGING/VSYS",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "de847280-e6a8-447d-b68a-cb7f4bbb0af8",
+        "net": "/01  POWER + CHARGING/VSYS",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "6421f7bc-6140-4479-8634-915dce68b9e4",
+        "net": "+3V3",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "76b2d7b5-bd4d-49d8-98f0-1319fc8f7056",
+        "net": "+3V3",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "84715d19-2e5d-44fe-97f5-f8a8cbe07922",
+        "net": "+3V3",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "f0665dcc-5b14-4b9e-a8da-a3564e9471f6",
+        "net": "+3V3",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "4ceb7434-2c6a-4460-bb95-c840870fdab3",
+        "net": "/01  POWER + CHARGING/VBAT_PROTECTED",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "4e1ef877-30c2-429f-b7a8-d5686f6c6223",
+        "net": "/01  POWER + CHARGING/VBAT_PROTECTED",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "66f1412f-c5c4-400a-85f6-431d382043e1",
+        "net": "/01  POWER + CHARGING/VBAT_PROTECTED",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      },
+      {
+        "uuid": "6d025923-74b0-43bc-b442-d7ae4dfcdd27",
+        "net": "/01  POWER + CHARGING/VBAT_PROTECTED",
+        "source_drill_mm": 0.3,
+        "discarded_import_drill_mm": 0.4
+      }
+    ],
+    "assembly_via_check": {
+      "new_vias": 107,
+      "smd_lands_checked": 525,
+      "positive_paste_expansions": 0,
+      "intersection_count": 0,
+      "intersections": [],
+      "passed": true,
+      "method": "Native copper/paste envelope polygons, 1 um conservative approximation; original source vias excluded by UUID."
+    },
+    "native_drc": "REQUIRED: run full native DRC and compare to source before adoption"
+  },
+  "ses_audit": {
+    "manifest_sha256": "8cf5d4149c5e5a336d2c185e3bdbc3fd8c23993ab8bed338fa7f94eb1788df28",
+    "ses_sha256": "6347685a1dfd053da661797f591f27c1f8afefe8eaadd52dda57b1b1c76730ac",
+    "router_result_sha256": "b0e9d6d75cdd3a1a6d717e205c32a9e7f952e7578da943a404d21d70373f1425",
+    "fixed_copper_items": 815,
+    "missing_fixed": 0,
+    "added_tracks": 600,
+    "added_vias": 107,
+    "added_by_net": {
+      "/05  SENSORS + EXPANSION/EXP_UNUSED_P7": 11,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_4": 11,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_3": 22,
+      "/05  SENSORS + EXPANSION/EXP_UNUSED_P5": 11,
+      "PWR_LED_R": 17,
+      "EXT_SCL": 15,
+      "I2C_SDA": 39,
+      "I2C_SCL": 28,
+      "DOCK_PRESENT_N": 13,
+      "/02  PROCESSOR + RECOVERY/MCU_EN": 17,
+      "BTN_B_N": 13,
+      "USB_PRESENT_N": 17,
+      "MOTION_INT1": 20,
+      "EPD_BUSY": 27,
+      "EXT_SDA": 25,
+      "IR_TX": 23,
+      "IR_RX_N": 13,
+      "/02  PROCESSOR + RECOVERY/STRAP46": 4,
+      "EPD_CS_N": 2,
+      "EPD_MOSI": 18,
+      "EPD_SCK": 26,
+      "EPD_DC": 21,
+      "EPD_RST_N": 27,
+      "RGB_DATA": 9,
+      "NFC_FD_N": 21,
+      "/02  PROCESSOR + RECOVERY/STRAP45": 9,
+      "/02  PROCESSOR + RECOVERY/BOOT_N": 11,
+      "PWR_LED_G": 18,
+      "EPD_EN": 23,
+      "/02  PROCESSOR + RECOVERY/UART_RX": 6,
+      "/02  PROCESSOR + RECOVERY/UART_TX": 4,
+      "BTN_A_N": 15,
+      "CHARGER_CHG_N": 18,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_2": 5,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_1": 5,
+      "/05  SENSORS + EXPANSION/ACC_FAULT_N": 14,
+      "CHARGER_PGOOD_N": 23,
+      "/05  SENSORS + EXPANSION/ACC_EN": 17,
+      "/05  SENSORS + EXPANSION/EXP_UNUSED_P4": 16,
+      "/04  LIGHTING + BUTTONS/BTN_B_SW_N": 10,
+      "/04  LIGHTING + BUTTONS/BTN_A_SW_N": 10,
+      "/04  LIGHTING + BUTTONS/PWR_GREEN_A": 4,
+      "/04  LIGHTING + BUTTONS/RGB_DIN": 13,
+      "/05  SENSORS + EXPANSION/IR_GATE": 1,
+      "/04  LIGHTING + BUTTONS/PWR_RED_A": 5,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_7": 14,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_6": 10,
+      "/04  LIGHTING + BUTTONS/RGB_LINK_5": 6
+    },
+    "held_net_additions": 0,
+    "all_networks_and_obstacles_loaded": true,
+    "placement_unchanged": true,
+    "router_state": "COMPLETED",
+    "errors": [],
+    "passed": true
+  },
+  "source_violations": {
+    "hole_clearance": 4,
+    "silk_edge_clearance": 1
+  },
+  "candidate_violations": {
+    "hole_clearance": 4,
+    "silk_edge_clearance": 1
+  },
+  "new_violations": [],
+  "source_unconnected": 126,
+  "candidate_unconnected": 52,
+  "remaining_selected_count": 9,
+  "remaining_selected_by_net": {
+    "I2C_SDA": 2,
+    "I2C_SCL": 1,
+    "EPD_CS_N": 1,
+    "NFC_FD_N": 1,
+    "/02  PROCESSOR + RECOVERY/BOOT_N": 1,
+    "CHARGER_CHG_N": 1,
+    "CHARGER_PGOOD_N": 1,
+    "/05  SENSORS + EXPANSION/EXP_UNUSED_P6": 1
+  },
+  "remaining_selected_connections": [
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 4 [I2C_SDA] of U502 on F.Cu",
+          "pos": {
+            "x": 161.2375,
+            "y": 133.75
+          },
+          "uuid": "f023ce6f-1308-4ec3-9d65-5331ec14facb"
+        },
+        {
+          "description": "Track [I2C_SDA] on F.Cu, length 1.0887 mm",
+          "pos": {
+            "x": 155.0552,
+            "y": 127.2302
+          },
+          "uuid": "b965d30b-5c26-4c7a-b09e-5254842a70e2"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 4 [I2C_SDA] of U502 on F.Cu",
+          "pos": {
+            "x": 161.2375,
+            "y": 133.75
+          },
+          "uuid": "f023ce6f-1308-4ec3-9d65-5331ec14facb"
+        },
+        {
+          "description": "Pad 5 [I2C_SDA] of U503 on F.Cu",
+          "pos": {
+            "x": 191.6,
+            "y": 164.0
+          },
+          "uuid": "7b87a4e9-1bb1-4c83-8789-50980e74c4e6"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Track [I2C_SCL] on F.Cu, length 1.9882 mm",
+          "pos": {
+            "x": 148.7086,
+            "y": 164.8056
+          },
+          "uuid": "c03eca63-6ee8-4604-aea5-364451ce120c"
+        },
+        {
+          "description": "Track [I2C_SCL] on F.Cu, length 1.0235 mm",
+          "pos": {
+            "x": 150.4799,
+            "y": 134.3013
+          },
+          "uuid": "d64d4625-6176-4c01-8a86-ac991d360920"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 18 [EPD_CS_N] of U201 on F.Cu",
+          "pos": {
+            "x": 126.825,
+            "y": 125.75
+          },
+          "uuid": "8ccbda08-5caa-4e46-9124-4d69d88677b4"
+        },
+        {
+          "description": "Pad 1 [EPD_CS_N] of R305 on F.Cu",
+          "pos": {
+            "x": 180.525,
+            "y": 141.6
+          },
+          "uuid": "3d42bb68-a0ee-43a1-a55a-beb5fe0fbbfb"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 4 [NFC_FD_N] of U503 on F.Cu",
+          "pos": {
+            "x": 191.0,
+            "y": 164.1
+          },
+          "uuid": "5cb2ef62-21ab-477d-a2c5-b2911f7cc052"
+        },
+        {
+          "description": "Track [NFC_FD_N] on F.Cu, length 0.9000 mm",
+          "pos": {
+            "x": 198.825,
+            "y": 159.9
+          },
+          "uuid": "37391610-c2af-4146-a7c8-3d9c26a07209"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 27 [/02  PROCESSOR + RECOVERY/BOOT_N] of U201 on F.Cu",
+          "pos": {
+            "x": 138.75,
+            "y": 124.5
+          },
+          "uuid": "19910ef5-0dce-4111-9e1a-177392d7b385"
+        },
+        {
+          "description": "Pad 2 [/02  PROCESSOR + RECOVERY/BOOT_N] of R202 on F.Cu",
+          "pos": {
+            "x": 138.51,
+            "y": 129.0
+          },
+          "uuid": "f628bbd9-5cd8-4b0f-ae5f-8e4dcfdbceb7"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Track [CHARGER_CHG_N] on F.Cu, length 0.8330 mm",
+          "pos": {
+            "x": 182.9,
+            "y": 127.675
+          },
+          "uuid": "e6e4ac74-747f-44d7-9d3e-59ecccd49b10"
+        },
+        {
+          "description": "Pad 9 [CHARGER_CHG_N] of U102 on F.Cu",
+          "pos": {
+            "x": 178.4625,
+            "y": 124.75
+          },
+          "uuid": "a3391190-2afb-4631-91d0-38f4c3c78301"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 7 [CHARGER_PGOOD_N] of U102 on F.Cu",
+          "pos": {
+            "x": 177.25,
+            "y": 125.4625
+          },
+          "uuid": "7898abf6-6e38-4e0b-92eb-1eacac4d4e21"
+        },
+        {
+          "description": "Track [CHARGER_PGOOD_N] on B.Cu, length 1.3644 mm",
+          "pos": {
+            "x": 176.9615,
+            "y": 127.9863
+          },
+          "uuid": "3cf709a5-e93a-4fdd-a453-eaed88cad675"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 1 [/05  SENSORS + EXPANSION/EXP_UNUSED_P6] of R516 on F.Cu",
+          "pos": {
+            "x": 151.175,
+            "y": 142.0
+          },
+          "uuid": "97f653f9-7260-4e5d-8718-6b17c9239bb1"
+        },
+        {
+          "description": "Pad 11 [/05  SENSORS + EXPANSION/EXP_UNUSED_P6] of U506 on F.Cu",
+          "pos": {
+            "x": 151.8625,
+            "y": 136.975
+          },
+          "uuid": "973b6446-76f2-4123-a8c5-c3d10ad0f1d9"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    }
+  ],
+  "held_connections_remaining": 43,
+  "status": "VALIDATED PARTIAL CANDIDATE",
+  "promoted": false,
+  "archived_input_report_sha256": "3dc78f0016269ed161d7926989028665ee6cafc13be1fb7ac4c9846fa9fa8768"
+}
