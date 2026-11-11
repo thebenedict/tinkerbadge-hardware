@@ -1,5 +1,7 @@
 # Peripheral design decisions
 
+> **Updated by the [10 November design review](design_review_2026-11-10.md).** The SAO socket (J502) is on the front top edge. AE501 is a drawn 10-turn rear coil (about 1.7 µH estimated) with C507 fitted at 27 pF and C508 as trim. R508 is 200 kΩ.
+
 9 November 2026. PDFs and hashes: `docs/datasheets/peripheral_inventory.json`. Source pin maps are separate from `peripherals_contract.json`. Source facts and original assignments passed independent review. The later user-approved shared-3.3-V mapping delta was independently accepted before native capture. The earlier contract is preserved under `docs/design/revisions/`.
 
 ## Power and interfaces

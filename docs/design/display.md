@@ -1,5 +1,7 @@
 # Display circuit decisions
 
+> **Superseded in part by the [10 November design review](design_review_2026-11-10.md).** The SN74LVC541 buffer (U301), C312 and the MCU-side bias resistors R303–R307 are removed; the MCU drives the panel directly and firmware must drive SPI/DC/RST low before EPD_EN goes low. J301 now uses the Hirose FH12-24S-0.5SH(55) footprint and L301 is Bourns SRN4018-680M. The flex-orientation check with a real panel is still required.
+
 Revision 1, 9 November 2026. Source extraction complete; independent electrical review is pending. This is a schematic candidate, not a manufacturing release.
 
 ## Implemented candidate and authority

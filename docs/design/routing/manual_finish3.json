@@ -1,0 +1,22 @@
+{
+ "comment": "Finishing pass 3: clear SAO_GPIO2 from under MCU pad 25 and the +3V3 feed beside accelerometer pad 4 so NFC_FD_N and I2C_SDA can leave; both are re-routed afterwards.",
+ "rip_nets": [
+  "SAO_GPIO2"
+ ],
+ "rip_spots": [
+  [
+   "+3V3",
+   160.7,
+   134.0,
+   0.1
+  ],
+  [
+   "+3V3",
+   160.95,
+   132.75,
+   0.1
+  ]
+ ],
+ "tracks": [],
+ "vias": []
+}

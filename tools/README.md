@@ -21,3 +21,14 @@ Run configuration-only checks without opening KiCad or starting Konnect:
 ```sh
 python3 tests/test_konnect_config.py
 ```
+
+## Design-review tools (10 November 2026)
+
+These need only `kicad-cli` and KiCad's bundled Python, not Konnect. See `docs/design/design_review_2026-11-10.md`.
+
+- `schlib.py`, `apply_design_review_schematic.py`, `apply_design_review_contracts.py`: one-shot schematic and contract edits.
+- `create_review_footprints.py`: dock pads, front SAO socket and rear NFC coil footprints.
+- `sync_board_design_review.py`, `pcb_dump.py`, `route_remaining.py`, `pcb_apply_routes.py`, `pcb_prune_dangling.py`, `finish_board_review.py`: board sync, grid router and finishing.
+- `rebuild_review.sh`, `export_design_review.sh`, `drc_summary.py`: replay, evidence export and a compact DRC summary.
+- `check_power_paths.py`: narrowest link on each main power path.
+- `assign_jlc_parts.py`, `apply_jlc_release.py`, `export_jlc.py`: LCSC part assignment, JLCPCB rule and silkscreen fixes, and the order package in `production/jlcpcb/`.

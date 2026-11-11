@@ -2101,56 +2101,56 @@
 		(uuid "7d1fea8e-621e-4076-bfcc-0dd992217dda")
 	)
 	(text "04  LIGHTING + BUTTONS"
-  (at 17.78 20.32 0)
-  (effects
-    (font
-      (size 2.54 2.54)
-      (bold yes)
-    )
-    (justify left bottom)
-  )
-  (uuid "aabec930-9415-4cae-836f-c36e1f8e8db4")
-)
+		(at 17.78 20.32 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "aabec930-9415-4cae-836f-c36e1f8e8db4")
+	)
 	(text "Addressable RGB Chain"
-  (at 17.78 26.67 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "8a87c606-e602-4486-9de5-b08c2bb98b2e")
-)
+		(at 17.78 26.67 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a87c606-e602-4486-9de5-b08c2bb98b2e")
+	)
 	(text "Send black before storage. Respect the system power/current budget in firmware."
-  (at 20.32 38.1 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "43617aaa-2e29-4491-a935-fd188bc6330a")
-)
+		(at 20.32 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43617aaa-2e29-4491-a935-fd188bc6330a")
+	)
 	(text "Independent Green / Red Power Indicator"
-  (at 17.78 132.08 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "faad98a2-2940-4a28-9f17-1e493f43c796")
-)
+		(at 17.78 132.08 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "faad98a2-2940-4a28-9f17-1e493f43c796")
+	)
 	(text "User Buttons"
-  (at 175.26 132.08 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "e8c1eafc-a5c4-4009-96b6-fabf0b5117fe")
-)
+		(at 175.26 132.08 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8c1eafc-a5c4-4009-96b6-fabf0b5117fe")
+	)
 	(text "A is the retained storage-wake button; B is a normal input."
 		(at 177.8 137.16 0)
 		(effects
@@ -2162,15 +2162,15 @@
 		(uuid "706989d9-fe90-47ec-8023-1f07eb2a06cb")
 	)
 	(text "Both LED control outputs default low. Current is limited by 2.2k per die."
-  (at 20.32 235 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "d7e35b47-c4f5-484b-870c-7e7430d890e1")
-)
+		(at 20.32 235 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7e35b47-c4f5-484b-870c-7e7430d890e1")
+	)
 	(text "100k / 100nF gives about 10 ms debounce; firmware must also debounce."
 		(at 177.8 226.06 0)
 		(effects
@@ -2182,35 +2182,35 @@
 		(uuid "b961c672-d245-4441-8214-b88dfe78360b")
 	)
 	(text "Footprints for the exact LEDs and switch are intentionally blank pending their physical pad audit."
-  (at 20.32 250.19 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "f1e7f460-a1d8-43bc-a99a-0c4d84abec3e")
-)
+		(at 20.32 250.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1e7f460-a1d8-43bc-a99a-0c4d84abec3e")
+	)
 	(text "RGB chain: exact WS2812C-2020-V6 on shared nominal +3V3. Below 3.3 V operation is not guaranteed."
-  (at 20.32 33.02 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "595635ad-11f8-46e3-b8ac-f331d37a94fc")
-)
+		(at 20.32 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "595635ad-11f8-46e3-b8ac-f331d37a94fc")
+	)
 	(text "Prototype gate: scope startup, low battery, Wi-Fi and full-white transitions at the LEDs; verify shared peak capacity."
-  (at 20.32 43.18 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "d09e0229-75c0-460e-a760-e2519086aed2")
-)
+		(at 20.32 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d09e0229-75c0-460e-a760-e2519086aed2")
+	)
 	(label "RGB_LINK_1"
 		(at 74.93 88.9 0)
 		(effects
@@ -2386,16 +2386,26 @@
 		)
 		(uuid "48397f33-5d28-4063-b24e-22e19374a545")
 	)
-  (text "Alps side push, 2.2 N. Common pairs: 1-2 and 3-4."
-    (at 177.8 215.9 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "67246223-d069-43c9-b295-e3245495c9e0")
-  )
-  (text "Always-on bias and capacitive loading need application qualification."
-    (at 177.8 220.98 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "e7019dc4-c2c7-4327-aadc-b1abae8a1098")
-  )
+	(text "Alps side push, 2.2 N. Common pairs: 1-2 and 3-4."
+		(at 177.8 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67246223-d069-43c9-b295-e3245495c9e0")
+	)
+	(text "Always-on bias and capacitive loading need application qualification."
+		(at 177.8 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7019dc4-c2c7-4327-aadc-b1abae8a1098")
+	)
 	(symbol
 		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
 		(at 63.5 88.9 0)
@@ -2500,6 +2510,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2572,7 +2600,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 78.74 67.31 0)
 			(hide yes)
 			(effects
@@ -2604,6 +2632,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C401")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2712,6 +2758,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2784,7 +2848,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 121.92 67.31 0)
 			(hide yes)
 			(effects
@@ -2816,6 +2880,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C402")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2924,6 +3006,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2996,7 +3096,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 165.1 67.31 0)
 			(hide yes)
 			(effects
@@ -3028,6 +3128,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C403")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3136,6 +3254,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3208,7 +3344,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 208.28 67.31 0)
 			(hide yes)
 			(effects
@@ -3240,6 +3376,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C404")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3348,6 +3502,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3420,7 +3592,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 251.46 67.31 0)
 			(hide yes)
 			(effects
@@ -3452,6 +3624,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C405")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3560,6 +3750,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3632,7 +3840,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 294.64 67.31 0)
 			(hide yes)
 			(effects
@@ -3664,6 +3872,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C406")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3772,6 +3998,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3844,7 +4088,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 337.82 67.31 0)
 			(hide yes)
 			(effects
@@ -3876,6 +4120,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C407")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3984,6 +4246,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55109522"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4056,7 +4336,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 381 67.31 0)
 			(hide yes)
 			(effects
@@ -4088,6 +4368,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C408")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4163,7 +4461,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 25.4 66.04 0)
 			(hide yes)
 			(effects
@@ -4195,6 +4493,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C409")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4268,7 +4584,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF3300T5E"
 			(at 40.64 88.9 0)
 			(hide yes)
 			(effects
@@ -4300,6 +4616,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R401")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4373,7 +4707,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 48.26 104.14 0)
 			(hide yes)
 			(effects
@@ -4405,6 +4739,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R402")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4513,6 +4865,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C188726"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4583,7 +4953,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF2201T5E"
 			(at 76.2 179.07 0)
 			(hide yes)
 			(effects
@@ -4615,6 +4985,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R403")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4688,7 +5076,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF2201T5E"
 			(at 76.2 184.15 0)
 			(hide yes)
 			(effects
@@ -4720,6 +5108,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R404")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4793,7 +5199,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 50.8 198.12 0)
 			(hide yes)
 			(effects
@@ -4825,6 +5231,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R405")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4898,7 +5322,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 63.5 210.82 0)
 			(hide yes)
 			(effects
@@ -4930,6 +5354,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R406")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5003,7 +5445,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF3300T5E"
 			(at 220.98 177.8 0)
 			(hide yes)
 			(effects
@@ -5035,6 +5477,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R411")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5108,7 +5568,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 243.84 157.48 0)
 			(hide yes)
 			(effects
@@ -5140,6 +5600,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R412")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5215,7 +5693,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 243.84 191.77 0)
 			(hide yes)
 			(effects
@@ -5247,6 +5725,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C411")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5320,7 +5816,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF3300T5E"
 			(at 322.58 177.8 0)
 			(hide yes)
 			(effects
@@ -5352,6 +5848,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R413")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5425,7 +5939,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 345.44 157.48 0)
 			(hide yes)
 			(effects
@@ -5457,6 +5971,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "R414")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 345.44 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 345.44 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5532,7 +6064,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 345.44 191.77 0)
 			(hide yes)
 			(effects
@@ -5564,6 +6096,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
 					(reference "C412")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7416,6 +7966,15 @@
 				)
 			)
 		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Tinkerbadge_Peripherals:SKSCLBE010")
@@ -7476,7 +8035,6 @@
 				)
 			)
 		)
-	
 		(property "ApplicationStatus" "Prototype candidate: KSC-701p5D11 continuous voltage and A2 capacitive load require qualification"
 			(at 297.18 177.8 0)
 			(hide yes)
@@ -7557,9 +8115,54 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
-
-  (rectangle (start 17.78 27.94) (end 400.05 124.46) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "7e2e7922-439e-5770-9870-99fd55ce678c"))
-  (rectangle (start 17.78 134.62) (end 170.18 238.76) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "2d3f56b9-f952-54a4-873d-f6951fd8b159"))
-  (rectangle (start 175.26 134.62) (end 400.05 238.76) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "256a4056-8802-56bc-beeb-a463a31e2abd"))
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 17.78 27.94)
+		(end 400.05 124.46)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7e2e7922-439e-5770-9870-99fd55ce678c")
+	)
+	(rectangle
+		(start 17.78 134.62)
+		(end 170.18 238.76)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2d3f56b9-f952-54a4-873d-f6951fd8b159")
+	)
+	(rectangle
+		(start 175.26 134.62)
+		(end 400.05 238.76)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "256a4056-8802-56bc-beeb-a463a31e2abd")
+	)
 )

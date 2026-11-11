@@ -1,0 +1,51 @@
+{
+ "comment": "Router configuration for the 2026-11-10 design-review routing pass.",
+ "rips": [],
+ "pre_vias": [
+  {
+   "x": 181.0,
+   "y": 166.1,
+   "d": 0.6,
+   "drill": 0.3,
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "x": 186.8,
+   "y": 170.9,
+   "d": 0.6,
+   "drill": 0.3,
+   "net": "/05  SENSORS + EXPANSION/NFC_LB"
+  }
+ ],
+ "priority": [
+  "EPD_VCOM",
+  "EPD_VGL",
+  "EPD_VSL",
+  "EPD_VGH",
+  "EPD_VSH1",
+  "EPD_VPP",
+  "EPD_VDD_1V8",
+  "EPD_VSH2",
+  "EPD_RESE",
+  "EPD_GDR",
+  "EPD_BUSY",
+  "EPD_RST_N",
+  "EPD_DC",
+  "EPD_CS_N",
+  "EPD_SCK",
+  "EPD_MOSI",
+  "+3V3_EPD",
+  "USB_DP",
+  "USB_DM",
+  "USB_CC1",
+  "USB_CC2",
+  "USB_VBUS",
+  "NFC_LA",
+  "NFC_LB",
+  "CHARGER_EN1",
+  "CHARGER_CHG_N"
+ ],
+ "widths": {
+  "EPD_SW": 0.3
+ }
+}

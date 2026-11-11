@@ -1953,26 +1953,26 @@
 		(uuid "268891d3-c09a-477b-80c2-0b2f560b9350")
 	)
 	(text "02  PROCESSOR + RECOVERY"
-  (at 17.78 20.32 0)
-  (effects
-    (font
-      (size 2.54 2.54)
-      (bold yes)
-    )
-    (justify left bottom)
-  )
-  (uuid "a2a9dc14-8c14-4e56-8b42-6e9e0627fb1d")
-)
+		(at 17.78 20.32 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2a9dc14-8c14-4e56-8b42-6e9e0627fb1d")
+	)
 	(text "ESP32-S3 Processor + Interfaces"
-  (at 83.82 27.94 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "106ed363-6eac-4bdc-852e-c7db608869c3")
-)
+		(at 83.82 27.94 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "106ed363-6eac-4bdc-852e-c7db608869c3")
+	)
 	(text "Place 100 nF at VDD; keep bulk nearby."
 		(at 86.36 55.88 0)
 		(effects
@@ -1984,15 +1984,15 @@
 		(uuid "312f92e3-eaf1-4f5d-88d0-64949bb7172a")
 	)
 	(text "Enable + Reset"
-  (at 22.86 53.34 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "c99e38fe-5f2b-4d31-9a06-ae716f8a834d")
-)
+		(at 22.86 53.34 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "c99e38fe-5f2b-4d31-9a06-ae716f8a834d")
+	)
 	(text "EN: 10 k / 1 uF. Pull low to reset."
 		(at 25.4 93.98 0)
 		(effects
@@ -2004,15 +2004,15 @@
 		(uuid "0fe2d59b-108f-45e1-9e98-767ce1517feb")
 	)
 	(text "Boot / Download"
-  (at 22.86 101.6 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "edffb5a8-0d8a-46db-9d4b-38a5e2a8d6b5")
-)
+		(at 22.86 101.6 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "edffb5a8-0d8a-46db-9d4b-38a5e2a8d6b5")
+	)
 	(text "Hold BOOT low while resetting EN."
 		(at 25.4 129.54 0)
 		(effects
@@ -2067,15 +2067,15 @@
 		(uuid "4f985f33-af0b-4908-952a-8f2bdc59d1a6")
 	)
 	(text "Power Test"
-  (at 20.32 142.24 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "edcd81e4-656e-4ea1-b30e-79851f3acffa")
-)
+		(at 20.32 142.24 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "edcd81e4-656e-4ea1-b30e-79851f3acffa")
+	)
 	(text "DISPLAY DEFAULT OFF"
 		(at 86.36 135.89 0)
 		(effects
@@ -2088,15 +2088,15 @@
 		(uuid "ee8aa616-06a7-4480-a9cc-337400389fed")
 	)
 	(text "GPIO40 may go high in USB-OTG ROM recovery.\nThe panel remains reset by its local pull-down."
-  (at 144.78 157.48 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "5ab2f67d-e03e-422e-b932-c1d8995669bc")
-)
+		(at 144.78 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ab2f67d-e03e-422e-b932-c1d8995669bc")
+	)
 	(text "N16R8: GPIO35 / 36 / 37 reserved for octal PSRAM.\nGPIO3 left open with default eFuse JTAG selection.\nGND pins 1, 40 and exposed pad 41 are one net.\nAntenna keepout and RF layout are PCB release gates."
 		(at 25.4 180.34 0)
 		(effects
@@ -2614,7 +2614,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 139.7 96.52 0)
 			(hide yes)
@@ -2632,7 +2631,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C2913202"
+			(at 139.7 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 139.7 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 40.64 67.31 0)
@@ -2692,7 +2710,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 40.64 67.31 0)
 			(hide yes)
@@ -2702,7 +2719,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF1002TCE"
 			(at 40.64 67.31 0)
 			(hide yes)
 			(effects
@@ -2710,7 +2727,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25744"
+			(at 40.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 40.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 40.64 113.03 0)
@@ -2770,7 +2806,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 40.64 113.03 0)
 			(hide yes)
@@ -2780,7 +2815,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF1002TCE"
 			(at 40.64 113.03 0)
 			(hide yes)
 			(effects
@@ -2788,7 +2823,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25744"
+			(at 40.64 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 40.64 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 213.36 128.27 0)
@@ -2848,7 +2902,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 213.36 128.27 0)
 			(hide yes)
@@ -2858,7 +2911,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF1002TCE"
 			(at 213.36 128.27 0)
 			(hide yes)
 			(effects
@@ -2866,7 +2919,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25744"
+			(at 213.36 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 213.36 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 238.76 128.27 0)
@@ -2926,7 +2998,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 238.76 128.27 0)
 			(hide yes)
@@ -2936,7 +3007,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF1002TCE"
 			(at 238.76 128.27 0)
 			(hide yes)
 			(effects
@@ -2944,7 +3015,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25744"
+			(at 238.76 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 238.76 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 213.36 83.82 270)
@@ -3004,7 +3094,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 213.36 83.82 0)
 			(hide yes)
@@ -3014,7 +3103,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF220JTCE"
 			(at 213.36 83.82 0)
 			(hide yes)
 			(effects
@@ -3022,7 +3111,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25092"
+			(at 213.36 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 213.36 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 213.36 86.36 270)
@@ -3082,7 +3190,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 213.36 86.36 0)
 			(hide yes)
@@ -3092,7 +3199,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF220JTCE"
 			(at 213.36 86.36 0)
 			(hide yes)
 			(effects
@@ -3100,7 +3207,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25092"
+			(at 213.36 86.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 213.36 86.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 91.44 43.18 0)
@@ -3162,7 +3288,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 91.44 43.18 0)
 			(hide yes)
@@ -3172,7 +3297,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 91.44 43.18 0)
 			(hide yes)
 			(effects
@@ -3180,7 +3305,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C45783"
+			(at 91.44 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 91.44 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 132.08 43.18 0)
@@ -3242,7 +3386,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 132.08 43.18 0)
 			(hide yes)
@@ -3252,7 +3395,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 132.08 43.18 0)
 			(hide yes)
 			(effects
@@ -3260,7 +3403,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C1525"
+			(at 132.08 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 132.08 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 40.64 80.01 0)
@@ -3322,7 +3484,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 40.64 80.01 0)
 			(hide yes)
@@ -3332,7 +3493,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "CL05A105KA5NQNC"
 			(at 40.64 80.01 0)
 			(hide yes)
 			(effects
@@ -3340,7 +3501,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C52923"
+			(at 40.64 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 40.64 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 63.5 73.66 0)
@@ -3401,7 +3581,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 63.5 73.66 0)
 			(hide yes)
@@ -3419,7 +3598,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 63.5 119.38 0)
@@ -3480,7 +3660,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 63.5 119.38 0)
 			(hide yes)
@@ -3498,7 +3677,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 30.48 152.4 0)
@@ -3559,7 +3739,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 30.48 152.4 0)
 			(hide yes)
@@ -3577,7 +3756,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 50.8 152.4 0)
@@ -3638,7 +3818,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 50.8 152.4 0)
 			(hide yes)
@@ -3656,7 +3835,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 203.2 60.96 0)
@@ -3717,7 +3897,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 203.2 60.96 0)
 			(hide yes)
@@ -3735,7 +3914,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 238.76 60.96 0)
@@ -3796,7 +3976,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 238.76 60.96 0)
 			(hide yes)
@@ -3814,7 +3993,8 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 101.6 147.32 0)
@@ -3874,7 +4054,6 @@
 				)
 			)
 		)
-	
 		(property "Contract" "docs/design/mcu_contract.json"
 			(at 101.6 147.32 0)
 			(hide yes)
@@ -3884,7 +4063,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: specification-level support part"
+		(property "MPN" "0402WGF1003TCE"
 			(at 101.6 147.32 0)
 			(hide yes)
 			(effects
@@ -3892,7 +4071,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "LCSC" "C25741"
+			(at 101.6 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 101.6 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 139.7 68.58 0)
@@ -4625,9 +4823,56 @@
 			)
 		)
 	)
-
-  (rectangle (start 83.82 29.21) (end 255.27 160.02) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "b0c0025e-2f7b-57c6-8d88-bab46d51c07b"))
-  (rectangle (start 22.86 54.61) (end 76.2 96.52) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "c48866e5-3992-5ed1-974c-4c4de2a0acae"))
-  (rectangle (start 22.86 102.87) (end 76.2 132.08) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "5d2b63a6-9a90-5f26-a5f5-18d4e102682b"))
-  (rectangle (start 20.32 143.51) (end 76.2 160.02) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "f087f59d-733f-5603-96a5-20fb668843f8"))
+	(rectangle
+		(start 83.82 29.21)
+		(end 255.27 160.02)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b0c0025e-2f7b-57c6-8d88-bab46d51c07b")
+	)
+	(rectangle
+		(start 22.86 54.61)
+		(end 76.2 96.52)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c48866e5-3992-5ed1-974c-4c4de2a0acae")
+	)
+	(rectangle
+		(start 22.86 102.87)
+		(end 76.2 132.08)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5d2b63a6-9a90-5f26-a5f5-18d4e102682b")
+	)
+	(rectangle
+		(start 20.32 143.51)
+		(end 76.2 160.02)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f087f59d-733f-5603-96a5-20fb668843f8")
+	)
 )

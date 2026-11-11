@@ -611,15 +611,15 @@
     },
     {
       "ref": "C507",
-      "value": "TUNE DNP C0G 50V",
+      "value": "27p C0G 50V",
       "kind": "C",
       "package": "0603",
-      "population": "DNP",
+      "population": "fitted",
       "pins": {
         "1": "NFC_LA",
         "2": "NFC_LB"
       },
-      "notes": "RF tuning after assembled loop measurement",
+      "notes": "Starting value for the 10-turn 18x13 mm coil (about 1.7 uH estimated); retune on the assembled badge",
       "selection_status": "value/package specified; final passive MPN to BOM completion"
     },
     {
@@ -640,13 +640,13 @@
       "value": "13.56MHz PCB loop, tune",
       "kind": "PCB_loop_antenna",
       "bom_id": "NFC-02",
-      "package": "PCB feature; geometry not released",
+      "package": "Tinkerbadge:NFC_Coil_Rear_18x13",
       "population": "PCB feature",
       "pins": {
         "1": "NFC_LA",
         "2": "NFC_LB"
       },
-      "notes": "Approx2.75uH with50pF before strayC is initial calculation only; final loaded tuning required."
+      "notes": "Rear 10-turn coil, 0.2/0.2 mm, estimated 1.7 uH. C507 27 pF start value; final loaded tuning required."
     },
     {
       "ref": "R501",
@@ -830,7 +830,7 @@
     },
     {
       "ref": "R508",
-      "value": "210k 1%",
+      "value": "200k 1%",
       "kind": "R",
       "package": "0603",
       "population": "fitted",
@@ -955,7 +955,7 @@
         "6": "SAO_GPIO2"
       },
       "pin_fact_file": "docs/components/SFH11-NBPC-D03-ST-BK.pins.json",
-      "notes": "Host top-view numbering, check key and mirrored male mating. No self-powered accessory."
+      "notes": "Front-mounted host socket between role LEDs D402/D403. Top row 3V3/SDA/GPIO1, bottom row GND/SCL/GPIO2."
     },
     {
       "ref": "R512",
@@ -994,14 +994,14 @@
         "2": "GND",
         "3": "GND",
         "4": "CHARGER_CHG_N",
-        "5": "CHARGER_PGOOD_N",
+        "5": null,
         "6": "ACC_EN",
         "7": "ACC_FAULT_N",
         "8": "GND",
-        "9": "EXP_UNUSED_P4",
-        "10": "EXP_UNUSED_P5",
-        "11": "EXP_UNUSED_P6",
-        "12": "EXP_UNUSED_P7",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
         "13": null,
         "14": "I2C_SCL",
         "15": "I2C_SDA",
@@ -1009,58 +1009,6 @@
       },
       "pin_fact_file": "docs/components/TCA9534PWR.pins.json",
       "notes": "Non-A address0x20; polled. Write latch0x00 BEFORE config0xFB. Charger status pullups on power sheet."
-    },
-    {
-      "ref": "R514",
-      "value": "100k 1%",
-      "kind": "R",
-      "package": "0603",
-      "population": "fitted",
-      "pins": {
-        "1": "EXP_UNUSED_P4",
-        "2": "GND"
-      },
-      "notes": "",
-      "selection_status": "value/package specified; final passive MPN to BOM completion"
-    },
-    {
-      "ref": "R515",
-      "value": "100k 1%",
-      "kind": "R",
-      "package": "0603",
-      "population": "fitted",
-      "pins": {
-        "1": "EXP_UNUSED_P5",
-        "2": "GND"
-      },
-      "notes": "",
-      "selection_status": "value/package specified; final passive MPN to BOM completion"
-    },
-    {
-      "ref": "R516",
-      "value": "100k 1%",
-      "kind": "R",
-      "package": "0603",
-      "population": "fitted",
-      "pins": {
-        "1": "EXP_UNUSED_P6",
-        "2": "GND"
-      },
-      "notes": "",
-      "selection_status": "value/package specified; final passive MPN to BOM completion"
-    },
-    {
-      "ref": "R517",
-      "value": "100k 1%",
-      "kind": "R",
-      "package": "0603",
-      "population": "fitted",
-      "pins": {
-        "1": "EXP_UNUSED_P7",
-        "2": "GND"
-      },
-      "notes": "",
-      "selection_status": "value/package specified; final passive MPN to BOM completion"
     },
     {
       "ref": "C514",

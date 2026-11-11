@@ -1,0 +1,131 @@
+{
+ "comment": "Hand-routed TPS63802 switch nodes and PGND vias (design review 2026-11-10). Applied before the maze router.",
+ "rip_nets": [
+  "EPD_BUSY"
+ ],
+ "rip_at": [
+  [
+   140.65,
+   147.0,
+   0.2
+  ],
+  [
+   140.75,
+   147.85,
+   0.2
+  ],
+  [
+   140.75,
+   147.4,
+   0.2
+  ],
+  [
+   140.1,
+   147.0,
+   0.3
+  ]
+ ],
+ "rip_at_net": "GND",
+ "tracks": [
+  {
+   "a": [
+    139.75,
+    146.5
+   ],
+   "b": [
+    140.4,
+    146.5
+   ],
+   "w": 0.25,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L1"
+  },
+  {
+   "a": [
+    140.4,
+    146.5
+   ],
+   "b": [
+    141.09,
+    145.81
+   ],
+   "w": 0.25,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L1"
+  },
+  {
+   "a": [
+    141.09,
+    145.81
+   ],
+   "b": [
+    144.5,
+    145.81
+   ],
+   "w": 0.8,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L1"
+  },
+  {
+   "a": [
+    139.75,
+    147.5
+   ],
+   "b": [
+    140.4,
+    147.5
+   ],
+   "w": 0.25,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L2"
+  },
+  {
+   "a": [
+    140.4,
+    147.5
+   ],
+   "b": [
+    141.09,
+    148.19
+   ],
+   "w": 0.25,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L2"
+  },
+  {
+   "a": [
+    141.09,
+    148.19
+   ],
+   "b": [
+    144.5,
+    148.19
+   ],
+   "w": 0.8,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/PRIMARY_L2"
+  },
+  {
+   "a": [
+    139.55,
+    147.0
+   ],
+   "b": [
+    141.3,
+    147.0
+   ],
+   "w": 0.25,
+   "layer": "F",
+   "net": "GND"
+  }
+ ],
+ "vias": [
+  {
+   "x": 141.3,
+   "y": 147.0,
+   "d": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  }
+ ]
+}

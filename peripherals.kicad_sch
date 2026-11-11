@@ -3351,16 +3351,6 @@
 		(uuid "5ba3d73b-8081-433d-a093-5d948daae1fd")
 	)
 	(junction
-		(at 142.24 207.01)
-		(diameter 0)
-		(uuid "a24b38a0-8443-4d96-95bd-3afa07384bda")
-	)
-	(junction
-		(at 121.92 207.01)
-		(diameter 0)
-		(uuid "8ecaabd0-059c-4b86-8b28-38301df4b412")
-	)
-	(junction
 		(at 251.46 146.05)
 		(diameter 0)
 		(uuid "5ee85a10-d860-4ca5-9d6d-54518da37098")
@@ -3469,16 +3459,6 @@
 		(at 60.96 180.34)
 		(diameter 0)
 		(uuid "b728b171-8fee-441f-a726-d55669c1c033")
-	)
-	(junction
-		(at 121.92 207.01)
-		(diameter 0)
-		(uuid "7ebf78d1-6dfe-482a-acdb-5ccbdc78fb2b")
-	)
-	(junction
-		(at 142.24 207.01)
-		(diameter 0)
-		(uuid "299120d1-ecef-4ba3-9ed2-3714184cf667")
 	)
 	(junction
 		(at 251.46 146.05)
@@ -3989,97 +3969,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 172.72)
-			(xy 162.56 172.72)
-		)
-		(uuid "0dbee4bf-7ca9-4129-ae8e-b1cddf1dddd3")
-	)
-	(wire
-		(pts
-			(xy 162.56 172.72)
-			(xy 162.56 194.31)
-		)
-		(uuid "dc8aeb4a-4477-493c-980c-8f1b65a857b5")
-	)
-	(wire
-		(pts
-			(xy 162.56 201.93)
-			(xy 162.56 207.01)
-		)
-		(uuid "245037f2-15bf-494c-a609-a3e1a93708a6")
-	)
-	(wire
-		(pts
-			(xy 86.36 175.26)
-			(xy 142.24 175.26)
-		)
-		(uuid "300200a6-4f60-41ae-adec-74c6d105cf2b")
-	)
-	(wire
-		(pts
-			(xy 142.24 175.26)
-			(xy 142.24 194.31)
-		)
-		(uuid "e44b816d-77d6-49d1-90df-262a1347957d")
-	)
-	(wire
-		(pts
-			(xy 142.24 201.93)
-			(xy 142.24 207.01)
-		)
-		(uuid "ed476ecc-1040-444a-9e21-6ea18058cc85")
-	)
-	(wire
-		(pts
-			(xy 86.36 177.8)
-			(xy 121.92 177.8)
-		)
-		(uuid "6ad0d738-8fcc-475f-b776-7e3bd5099444")
-	)
-	(wire
-		(pts
-			(xy 121.92 177.8)
-			(xy 121.92 194.31)
-		)
-		(uuid "20373818-b128-4f84-a685-a573e042f3f6")
-	)
-	(wire
-		(pts
-			(xy 121.92 201.93)
-			(xy 121.92 207.01)
-		)
-		(uuid "0a3b139f-e1c0-451a-aff4-6a80e74f50b8")
-	)
-	(wire
-		(pts
-			(xy 86.36 180.34)
-			(xy 101.6 180.34)
-		)
-		(uuid "27624c75-2679-4ded-9c94-375b1ebb1d87")
-	)
-	(wire
-		(pts
-			(xy 101.6 180.34)
-			(xy 101.6 194.31)
-		)
-		(uuid "a8518442-cd71-415a-bb54-da3c11688fe9")
-	)
-	(wire
-		(pts
-			(xy 101.6 201.93)
-			(xy 101.6 207.01)
-		)
-		(uuid "acb567d8-444d-43c8-9722-9b9152313431")
-	)
-	(wire
-		(pts
-			(xy 101.6 207.01)
-			(xy 162.56 207.01)
-		)
-		(uuid "a733179c-d26b-48bd-b347-d066ca536a25")
-	)
-	(wire
-		(pts
 			(xy 231.14 151.13)
 			(xy 231.14 146.05)
 		)
@@ -4254,26 +4143,26 @@
 		(uuid "267646cf-cfcb-4882-96a6-1ab94819fb03")
 	)
 	(wire
-  (pts
-    (xy 58.42 260.35)
-    (xy 58.42 274.32)
-  )
-  (uuid "455f99e2-2dfe-46f2-9b4a-f01184d2f7ee")
-)
+		(pts
+			(xy 58.42 260.35)
+			(xy 58.42 274.32)
+		)
+		(uuid "455f99e2-2dfe-46f2-9b4a-f01184d2f7ee")
+	)
 	(wire
-  (pts
-    (xy 58.42 274.32)
-    (xy 45.72 274.32)
-  )
-  (uuid "b0e4bfa2-1fd1-4cb7-857f-256fd6f3768e")
-)
+		(pts
+			(xy 58.42 274.32)
+			(xy 45.72 274.32)
+		)
+		(uuid "b0e4bfa2-1fd1-4cb7-857f-256fd6f3768e")
+	)
 	(wire
-  (pts
-    (xy 45.72 274.32)
-    (xy 45.72 273.05)
-  )
-  (uuid "36b7245c-f3e8-4ab2-a23a-dd415c740e45")
-)
+		(pts
+			(xy 45.72 274.32)
+			(xy 45.72 273.05)
+		)
+		(uuid "36b7245c-f3e8-4ab2-a23a-dd415c740e45")
+	)
 	(wire
 		(pts
 			(xy 125.73 228.6)
@@ -4500,13 +4389,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 165.1)
-			(xy 91.44 165.1)
-		)
-		(uuid "c2b6039c-813d-46b9-9ede-191f1b018943")
-	)
-	(wire
-		(pts
 			(xy 86.36 167.64)
 			(xy 91.44 167.64)
 		)
@@ -4611,47 +4493,46 @@
 		(uuid "b20721cf-bdcd-4232-931f-f1fad146796b")
 	)
 	(text "05  SENSORS + EXPANSION"
-  (at 17.78 20.32 0)
-  (effects
-    (font
-      (size 2.54 2.54)
-      (bold yes)
-    )
-    (justify left bottom)
-  )
-  (uuid "014f46ae-e794-4ff9-9b7f-58a6369b8846")
-)
-	
+		(at 17.78 20.32 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "014f46ae-e794-4ff9-9b7f-58a6369b8846")
+	)
 	(text "BH1730: 0x29; poll ambient light. INT unused."
-  (at 20.32 109.22 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "9ae21040-a0d8-4e2b-9cda-7278fc94f736")
-)
+		(at 20.32 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ae21040-a0d8-4e2b-9cda-7278fc94f736")
+	)
 	(text "LIS2DW12: 0x19; INT1 for motion event wake."
-  (at 133.35 109.22 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "e4c5a4fd-2354-401c-9d8c-1ca3bd0690f5")
-)
+		(at 133.35 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4c5a4fd-2354-401c-9d8c-1ca3bd0690f5")
+	)
 	(text "CS and SA0 high. Reserved pad 7 is grounded."
-  (at 133.35 114.3 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "a794716e-4e35-4156-96ba-797c1a3b6f57")
-)
+		(at 133.35 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a794716e-4e35-4156-96ba-797c1a3b6f57")
+	)
 	(text "NTAG: 0x55. Center metal is NOT soldered."
 		(at 243.84 109.22 0)
 		(effects
@@ -4673,95 +4554,95 @@
 		(uuid "7bf83a01-73ae-4f07-914c-3473cfd7e9de")
 	)
 	(text "ONBOARD I2C: 100 kHz initially. NTAG errata: STOP/START >= 50 us; guard RF edges; quiet bus for 1 ms at startup."
-  (at 17.78 119.38 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "2b56b905-4efe-4837-97d2-581da80d0e93")
-)
+		(at 17.78 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b56b905-4efe-4837-97d2-581da80d0e93")
+	)
 	(text "Status / Enable Expander"
-  (at 17.78 123.19 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "ad331fa3-40eb-403f-8ab6-9c3e06070cdf")
-)
+		(at 17.78 123.19 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad331fa3-40eb-403f-8ab6-9c3e06070cdf")
+	)
 	(text "Protected Accessory Rail + Qwiic / SAO"
-  (at 218.44 121.92 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "d01c32e8-030a-48ad-bfe4-6f736765869a")
-)
-	(text "50 mA normal total. 210k / 1% sets 109-152.3 mA current limit."
-  (at 220.98 128.27 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "7598719b-00a6-488c-9a25-655ac5568ce9")
-)
+		(at 218.44 121.92 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "d01c32e8-030a-48ad-bfe4-6f736765869a")
+	)
+	(text "50 mA normal total. 200k / 1% sets roughly 115-160 mA current limit."
+		(at 220.98 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7598719b-00a6-488c-9a25-655ac5568ce9")
+	)
 	(text "TCA9534 address: 0x20.\nWrite latch 0x00 before\ndirection register 0xFB."
-  (at 20.32 209.55 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "c0793dfc-d39e-4a14-8d2c-a1c4880ad859")
-)
+		(at 20.32 209.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0793dfc-d39e-4a14-8d2c-a1c4880ad859")
+	)
 	(text "Optional IR Transmitter"
-  (at 17.78 214.63 0)
-  (effects
-    (font
-      (size 1.52 1.52)
-    )
-    (justify left bottom)
-  )
-  (uuid "8c8d24a0-3663-438b-a72c-dc0cde76131c")
-)
+		(at 17.78 214.63 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c8d24a0-3663-438b-a72c-dc0cde76131c")
+	)
 	(text "100 ohm / 0.25 W\nlimits pulses."
-  (at 20.32 225.43 0)
-  (effects
-    (font
-      (size 1 1)
-    )
-    (justify left bottom)
-  )
-  (uuid "f7f1476c-82e4-4113-b0e5-4b3c505cd8a8")
-)
+		(at 20.32 225.43 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7f1476c-82e4-4113-b0e5-4b3c505cd8a8")
+	)
 	(text "Qwiic + SAO: 3.3 V only, 50 mA shared budget."
-  (at 220.98 133.35 0)
-  (effects
-    (font
-      (size 1.27 1.27)
-    )
-    (justify left bottom)
-  )
-  (uuid "039ac3e9-6dc3-41d0-80cf-762eab6f0207")
-)
+		(at 220.98 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "039ac3e9-6dc3-41d0-80cf-762eab6f0207")
+	)
 	(text "No hot-plug, external power or off-state GPIO drive."
-  (at 220.98 138.43 0)
-  (effects
-    (font
-      (size 1 1)
-    )
-    (justify left bottom)
-  )
-  (uuid "6f9fa042-5ccf-4ba4-94f1-fa813594cadf")
-)
+		(at 220.98 138.43 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f9fa042-5ccf-4ba4-94f1-fa813594cadf")
+	)
 	(text "IR RX shares ACC_EN. Quiesce I/O before disabling."
 		(at 101.6 278.13 0)
 		(effects
@@ -4791,46 +4672,6 @@
 			(justify left bottom)
 		)
 		(uuid "3520a0a3-d703-4933-be54-7876af86ddc3")
-	)
-	(label "EXP_UNUSED_P4"
-		(at 152.4 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c70243ff-7631-46f0-9c1e-d3217623638e")
-	)
-	(label "EXP_UNUSED_P5"
-		(at 132.08 175.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c25b2dc5-f3ea-4c03-a809-9934d292524b")
-	)
-	(label "EXP_UNUSED_P6"
-		(at 111.76 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a9467159-702a-4696-94da-3ee290100d86")
-	)
-	(label "EXP_UNUSED_P7"
-		(at 91.44 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "28347458-8eca-402d-af44-c108014daf56")
 	)
 	(label "ACC_EN"
 		(at 236.22 172.72 0)
@@ -5192,17 +5033,6 @@
 		)
 		(uuid "da0c5160-f824-4d5f-8561-8d8efe7d2e67")
 	)
-	(global_label "CHARGER_PGOOD_N"
-		(shape input)
-		(at 91.44 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "be51336e-adb2-4f23-b905-8530b56d57b0")
-	)
 	(global_label "I2C_SCL"
 		(shape input)
 		(at 60.96 162.56 180)
@@ -5351,112 +5181,148 @@
 				)
 			)
 		)
+		(property "LCSC" "C79616"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
-  (lib_id "Tinkerbadge_Peripherals:LIS2DW12TR")
-  (at 175.26 78.74 0)
-  (unit 1)
-  (in_bom yes)
-  (on_board yes)
-  (dnp no)
-  (uuid "06f7bd8b-d938-4173-b70e-812e22a195be")
-  (property "Reference" "U502"
-    (at 146.05 55.88 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Value" "LIS2DW12TR"
-    (at 146.05 58.42 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Footprint" "Package_LGA:LGA-12_2x2mm_P0.5mm"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Datasheet" "https://www.st.com/resource/en/datasheet/lis2dw12.pdf"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Description" ""
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Contract" "docs/design/peripherals_contract.json"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "MPN" "LIS2DW12TR"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Population" "fitted"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Rating" "LGA12 2x2mm"
-    (at 175.26 78.74 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (instances
-    (project "tinkerbadge"
-      (path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-        (reference "U502")
-        (unit 1)
-      )
-    )
-  )
-)
+		(lib_id "Tinkerbadge_Peripherals:LIS2DW12TR")
+		(at 175.26 78.74 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06f7bd8b-d938-4173-b70e-812e22a195be")
+		(property "Reference" "U502"
+			(at 146.05 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LIS2DW12TR"
+			(at 146.05 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_LGA:LGA-12_2x2mm_P0.5mm"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lis2dw12.pdf"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LIS2DW12TR"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "LGA12 2x2mm"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
+					(reference "U502")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C189624"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Tinkerbadge_Peripherals:NT3H2111W0FHKH")
 		(at 287.02 81.28 0)
@@ -5561,6 +5427,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C710403"
+			(at 287.02 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 287.02 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5633,7 +5517,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 88.9 49.53 0)
 			(hide yes)
 			(effects
@@ -5665,6 +5549,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C501")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 88.9 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 88.9 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5740,7 +5642,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 109.22 49.53 0)
 			(hide yes)
 			(effects
@@ -5772,6 +5674,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C502")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 109.22 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 109.22 49.53 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5847,7 +5767,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 190.5 43.18 0)
 			(hide yes)
 			(effects
@@ -5879,6 +5799,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C503")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 190.5 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 190.5 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5954,7 +5892,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 210.82 43.18 0)
 			(hide yes)
 			(effects
@@ -5986,6 +5924,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C504")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 210.82 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 210.82 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6061,7 +6017,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 307.34 48.26 0)
 			(hide yes)
 			(effects
@@ -6096,112 +6052,148 @@
 				)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 307.34 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 307.34 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
-  (lib_id "Device:C")
-  (at 231.14 43.18 0)
-  (unit 1)
-  (in_bom yes)
-  (on_board yes)
-  (dnp no)
-  (uuid "d2587360-6a30-4d30-a37b-41b99c2aed7a")
-  (property "Reference" "C505"
-    (at 223.52 35.56 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Value" "10u / 10V"
-    (at 223.52 38.1 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Datasheet" ""
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Description" "Unpolarized capacitor"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Contract" "docs/design/peripherals_contract.json"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "FootprintStatus" "Assigned standard; prototype validation required"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "MPN" "TBD: support part specification"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Population" "fitted"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Rating" "10uF 10V X7R"
-    (at 231.14 43.18 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (instances
-    (project "tinkerbadge"
-      (path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-        (reference "C505")
-        (unit 1)
-      )
-    )
-  )
-)
+		(lib_id "Device:C")
+		(at 231.14 43.18 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2587360-6a30-4d30-a37b-41b99c2aed7a")
+		(property "Reference" "C505"
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u / 10V"
+			(at 223.52 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A106KAYNNNE"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10uF 10V X7R"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
+					(reference "C505")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 231.14 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 340.36 88.9 0)
@@ -6219,7 +6211,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TUNE / DNP"
+		(property "Value" "27p C0G (tune)"
 			(at 344.17 90.17 0)
 			(effects
 				(font
@@ -6273,7 +6265,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603JRNPO9BN270"
 			(at 340.36 88.9 0)
 			(hide yes)
 			(effects
@@ -6282,7 +6274,7 @@
 				)
 			)
 		)
-		(property "Population" "DNP"
+		(property "Population" "fitted"
 			(at 340.36 88.9 0)
 			(hide yes)
 			(effects
@@ -6291,7 +6283,7 @@
 				)
 			)
 		)
-		(property "Rating" "TUNE DNP C0G 50V"
+		(property "Rating" "27p C0G 50V"
 			(at 340.36 88.9 0)
 			(hide yes)
 			(effects
@@ -6308,14 +6300,32 @@
 				)
 			)
 		)
+		(property "LCSC" "C107045"
+			(at 340.36 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 340.36 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
 		(at 365.76 88.9 0)
 		(unit 1)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5cf5d06d-45a6-40f7-9faa-75a2ab7c9896")
 		(property "Reference" "C508"
 			(at 369.57 87.63 0)
@@ -6420,7 +6430,7 @@
 		(lib_id "Device:Antenna_Loop")
 		(at 383.54 69.85 0)
 		(unit 1)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8de368be-a389-4808-8ee1-521c5216db66")
@@ -6432,7 +6442,7 @@
 				)
 			)
 		)
-		(property "Value" "PCB LOOP / TUNE"
+		(property "Value" "NFC PCB coil"
 			(at 383.54 58.42 0)
 			(effects
 				(font
@@ -6440,7 +6450,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Tinkerbadge:NFC_Coil_Rear_18x13"
 			(at 383.54 69.85 0)
 			(hide yes)
 			(effects
@@ -6485,7 +6495,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "PCB feature: no fitted component"
 			(at 383.54 69.85 0)
 			(hide yes)
 			(effects
@@ -6590,7 +6600,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF4701T5E"
 			(at 22.86 53.34 0)
 			(hide yes)
 			(effects
@@ -6622,6 +6632,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R501")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 22.86 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 22.86 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6695,7 +6723,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF4701T5E"
 			(at 38.1 53.34 0)
 			(hide yes)
 			(effects
@@ -6727,6 +6755,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R502")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 38.1 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 38.1 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6800,7 +6846,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1002T5E"
 			(at 243.84 71.12 0)
 			(hide yes)
 			(effects
@@ -6832,6 +6878,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R503")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 243.84 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 243.84 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6937,6 +7001,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "D501")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C60109"
+			(at 58.42 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 58.42 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7047,6 +7129,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 55.88 255.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 55.88 255.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Tinkerbadge_Peripherals:IRM-H638T_TR2")
@@ -7152,6 +7252,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C91447"
+			(at 162.56 251.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 162.56 251.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7222,7 +7340,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0805W8F1000T5E"
 			(at 58.42 224.79 0)
 			(hide yes)
 			(effects
@@ -7254,6 +7372,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R504")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C17408"
+			(at 58.42 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 58.42 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7327,7 +7463,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1000T5E"
 			(at 35.56 255.27 0)
 			(hide yes)
 			(effects
@@ -7359,6 +7495,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R505")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 35.56 255.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 35.56 255.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7432,7 +7586,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 45.72 269.24 0)
 			(hide yes)
 			(effects
@@ -7464,6 +7618,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R506")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 45.72 269.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 45.72 269.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7537,7 +7709,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1000T5E"
 			(at 121.92 228.6 0)
 			(hide yes)
 			(effects
@@ -7569,6 +7741,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R507")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 121.92 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 121.92 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7644,7 +7834,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 187.96 240.03 0)
 			(hide yes)
 			(effects
@@ -7679,112 +7869,148 @@
 				)
 			)
 		)
+		(property "LCSC" "C19666"
+			(at 187.96 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 187.96 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
-  (lib_id "Device:C")
-  (at 210.82 240.03 0)
-  (unit 1)
-  (in_bom yes)
-  (on_board yes)
-  (dnp no)
-  (uuid "696d536f-fa50-42b2-9b41-97c8bbefb38a")
-  (property "Reference" "C510"
-    (at 207.01 256.54 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Value" "100n / 10V"
-    (at 207.01 259.08 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Datasheet" ""
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Description" "Unpolarized capacitor"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Contract" "docs/design/peripherals_contract.json"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "FootprintStatus" "Assigned standard; prototype validation required"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "MPN" "TBD: support part specification"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Population" "fitted"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Rating" "100nF 10V X7R"
-    (at 210.82 240.03 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (instances
-    (project "tinkerbadge"
-      (path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-        (reference "C510")
-        (unit 1)
-      )
-    )
-  )
-)
+		(lib_id "Device:C")
+		(at 210.82 240.03 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "696d536f-fa50-42b2-9b41-97c8bbefb38a")
+		(property "Reference" "C510"
+			(at 207.01 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 207.01 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
+					(reference "C510")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 210.82 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Tinkerbadge_Peripherals:TPS2553DBVR")
 		(at 279.4 172.72 0)
@@ -7889,6 +8115,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C55266"
+			(at 279.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 279.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7906,7 +8150,7 @@
 				)
 			)
 		)
-		(property "Value" "210k"
+		(property "Value" "200k"
 			(at 257.81 199.39 0)
 			(effects
 				(font
@@ -7959,7 +8203,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF2003T5E"
 			(at 254 198.12 0)
 			(hide yes)
 			(effects
@@ -7977,7 +8221,7 @@
 				)
 			)
 		)
-		(property "Rating" "210k 1%"
+		(property "Rating" "200k 1%"
 			(at 254 198.12 0)
 			(hide yes)
 			(effects
@@ -7991,6 +8235,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R508")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25811"
+			(at 254 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 254 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8064,7 +8326,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 236.22 191.77 0)
 			(hide yes)
 			(effects
@@ -8096,6 +8358,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R509")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 236.22 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 236.22 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8169,7 +8449,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 368.3 184.15 0)
 			(hide yes)
 			(effects
@@ -8201,6 +8481,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R510")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 368.3 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 368.3 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8274,7 +8572,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF1003T5E"
 			(at 345.44 184.15 0)
 			(hide yes)
 			(effects
@@ -8306,6 +8604,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R511")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 345.44 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 345.44 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8381,7 +8697,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 231.14 154.94 0)
 			(hide yes)
 			(effects
@@ -8413,6 +8729,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C511")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 231.14 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 231.14 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8488,7 +8822,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 251.46 154.94 0)
 			(hide yes)
 			(effects
@@ -8520,6 +8854,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C512")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 251.46 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 251.46 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8595,7 +8947,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 322.58 184.15 0)
 			(hide yes)
 			(effects
@@ -8627,6 +8979,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C513")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 322.58 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 322.58 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8735,6 +9105,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C160404"
+			(at 279.4 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 279.4 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
@@ -8760,7 +9148,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Tinkerbadge:SAO_Socket_2x03_Front"
 			(at 365.76 240.03 0)
 			(hide yes)
 			(effects
@@ -8840,6 +9228,24 @@
 				)
 			)
 		)
+		(property "LCSC" "C3320727"
+			(at 365.76 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "hand-fit after SMT"
+			(at 365.76 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -8910,7 +9316,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF4701T5E"
 			(at 307.34 224.79 0)
 			(hide yes)
 			(effects
@@ -8942,6 +9348,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R512")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 307.34 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 307.34 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9015,7 +9439,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "0603WAF4701T5E"
 			(at 330.2 224.79 0)
 			(hide yes)
 			(effects
@@ -9047,6 +9471,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "R513")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 330.2 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 330.2 224.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9157,33 +9599,8 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 162.56 198.12 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "992f8006-0673-4732-a773-a64f2c3c19d1")
-		(property "Reference" "R514"
-			(at 166.37 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 166.37 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 162.56 198.12 0)
+		(property "LCSC" "C783615"
+			(at 76.2 172.72 0)
 			(hide yes)
 			(effects
 				(font
@@ -9191,389 +9608,12 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 162.56 198.12 0)
+		(property "Assembly" "JLCPCB SMT"
+			(at 76.2 172.72 0)
 			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Contract" "docs/design/peripherals_contract.json"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "FootprintStatus" "Assigned standard; prototype validation required"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD: support part specification"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Population" "fitted"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "100k 1%"
-			(at 162.56 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "tinkerbadge"
-				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-					(reference "R514")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 142.24 198.12 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54c25f28-05c6-4eda-b6b0-58e8fff9305a")
-		(property "Reference" "R515"
-			(at 146.05 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 146.05 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Contract" "docs/design/peripherals_contract.json"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "FootprintStatus" "Assigned standard; prototype validation required"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD: support part specification"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Population" "fitted"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "100k 1%"
-			(at 142.24 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "tinkerbadge"
-				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-					(reference "R515")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 121.92 198.12 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cda3e67e-487a-4904-b84c-90491d301ae1")
-		(property "Reference" "R516"
-			(at 125.73 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 125.73 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Contract" "docs/design/peripherals_contract.json"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "FootprintStatus" "Assigned standard; prototype validation required"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD: support part specification"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Population" "fitted"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "100k 1%"
-			(at 121.92 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "tinkerbadge"
-				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-					(reference "R516")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 101.6 198.12 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "012e4a7e-e1de-4489-a7c6-bba92bb9e34b")
-		(property "Reference" "R517"
-			(at 105.41 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 105.41 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Contract" "docs/design/peripherals_contract.json"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "FootprintStatus" "Assigned standard; prototype validation required"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD: support part specification"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Population" "fitted"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "100k 1%"
-			(at 101.6 198.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "tinkerbadge"
-				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-					(reference "R517")
-					(unit 1)
 				)
 			)
 		)
@@ -9649,7 +9689,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 101.6 144.78 0)
 			(hide yes)
 			(effects
@@ -9681,6 +9721,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C514")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 101.6 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 101.6 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9756,7 +9814,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD: support part specification"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(effects
@@ -9788,6 +9846,24 @@
 				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
 					(reference "C515")
 					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 124.46 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 124.46 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10952,67 +11028,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 162.56 207.01 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d05cb1df-c91f-4b65-9642-df9ec8e07062")
-		(property "Reference" "#PWR020"
-			(at 162.56 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 162.56 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 207.01 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 207.01 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 207.01 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "tinkerbadge"
-				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 231.14 146.05 0)
 		(unit 1)
@@ -11501,66 +11516,66 @@
 		)
 	)
 	(symbol
-  (lib_id "power:GND")
-  (at 58.42 274.32 0)
-  (unit 1)
-  (in_bom yes)
-  (on_board yes)
-  (dnp no)
-  (uuid "cd203b72-0c79-46ed-af43-1481b1ebcc62")
-  (property "Reference" "#PWR029"
-    (at 58.42 280.67 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Value" "GND"
-    (at 58.42 278.13 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Footprint" ""
-    (at 58.42 274.32 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Datasheet" ""
-    (at 58.42 274.32 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-    (at 58.42 274.32 0)
-    (hide yes)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-  )
-  (instances
-    (project "tinkerbadge"
-      (path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
-        (reference "#PWR029")
-        (unit 1)
-      )
-    )
-  )
-)
+		(lib_id "power:GND")
+		(at 58.42 274.32 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd203b72-0c79-46ed-af43-1481b1ebcc62")
+		(property "Reference" "#PWR029"
+			(at 58.42 280.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 274.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 274.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 274.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 187.96 248.92 0)
@@ -11805,16 +11820,155 @@
 			)
 		)
 	)
-
-  (rectangle (start 17.78 27.94) (end 127.0 116.84) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "fea3ba9f-33e2-54ae-a3b2-cb5f136a7143"))
-  (text "Ambient Light + I2C Pull-ups" (at 17.78 26.67 0) (effects (font (size 1.52 1.52)) (justify left bottom)) (uuid "d433edab-f363-5f4d-8245-0174c61a817f"))
-  (rectangle (start 130.81 27.94) (end 237.49 116.84) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "aa97bc01-63d5-5b32-ab87-0a1f188876cf"))
-  (text "Motion Sensor" (at 130.81 26.67 0) (effects (font (size 1.52 1.52)) (justify left bottom)) (uuid "72ca80c0-afd3-5b0b-8436-6f3a6f1d33ca"))
-  (rectangle (start 240.03 27.94) (end 400.05 116.84) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "b60b673c-c1dc-5f68-8ee0-5b4ec9d98b17"))
-  (text "Dynamic NFC Tag + Antenna" (at 240.03 26.67 0) (effects (font (size 1.52 1.52)) (justify left bottom)) (uuid "7077a3ce-22ba-590f-a1d7-81a53e0aa048"))
-  (rectangle (start 17.78 124.46) (end 182.88 212.09) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "33837df4-9867-56fd-a2a2-840c5299812f"))
-  (rectangle (start 218.44 123.19) (end 400.05 247.65) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "dad301c1-e022-51e8-9e0a-0a83eb8a5ef4"))
-  (rectangle (start 17.78 215.9) (end 93.98 280.0) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "bda4e079-ed5f-54ad-bcfe-52e72469f980"))
-  (rectangle (start 100.33 215.9) (end 217.17 280.0) (stroke (width 0.1778) (type dash) (color 230 0 255 1)) (fill (type none)) (uuid "6983a9d7-b295-548a-96ea-a22e6e9637e4"))
-  (text "Optional IR Receiver" (at 100.33 214.63 0) (effects (font (size 1.52 1.52)) (justify left bottom)) (uuid "e81847d4-2b53-541f-b3c7-93b7c486ba13"))
+	(rectangle
+		(start 17.78 27.94)
+		(end 127.0 116.84)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fea3ba9f-33e2-54ae-a3b2-cb5f136a7143")
+	)
+	(text "Ambient Light + I2C Pull-ups"
+		(at 17.78 26.67 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "d433edab-f363-5f4d-8245-0174c61a817f")
+	)
+	(rectangle
+		(start 130.81 27.94)
+		(end 237.49 116.84)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "aa97bc01-63d5-5b32-ab87-0a1f188876cf")
+	)
+	(text "Motion Sensor"
+		(at 130.81 26.67 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "72ca80c0-afd3-5b0b-8436-6f3a6f1d33ca")
+	)
+	(rectangle
+		(start 240.03 27.94)
+		(end 400.05 116.84)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b60b673c-c1dc-5f68-8ee0-5b4ec9d98b17")
+	)
+	(text "Dynamic NFC Tag + Antenna"
+		(at 240.03 26.67 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "7077a3ce-22ba-590f-a1d7-81a53e0aa048")
+	)
+	(rectangle
+		(start 17.78 124.46)
+		(end 182.88 212.09)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "33837df4-9867-56fd-a2a2-840c5299812f")
+	)
+	(rectangle
+		(start 218.44 123.19)
+		(end 400.05 247.65)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "dad301c1-e022-51e8-9e0a-0a83eb8a5ef4")
+	)
+	(rectangle
+		(start 17.78 215.9)
+		(end 93.98 280.0)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bda4e079-ed5f-54ad-bcfe-52e72469f980")
+	)
+	(rectangle
+		(start 100.33 215.9)
+		(end 217.17 280.0)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6983a9d7-b295-548a-96ea-a22e6e9637e4")
+	)
+	(text "Optional IR Receiver"
+		(at 100.33 214.63 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "e81847d4-2b53-541f-b3c7-93b7c486ba13")
+	)
+	(no_connect
+		(at 86.36 165.1)
+		(uuid "821f83e8-d887-4bc9-86e9-7c16d4d48f5e")
+	)
+	(no_connect
+		(at 86.36 172.72)
+		(uuid "ec8a23f6-9003-43b1-a728-367e094b4467")
+	)
+	(no_connect
+		(at 86.36 175.26)
+		(uuid "4467fc9d-d806-4d14-b375-201af26e3009")
+	)
+	(no_connect
+		(at 86.36 177.8)
+		(uuid "79e5665a-ce9e-4d29-8fdf-08efd74bbe6b")
+	)
+	(no_connect
+		(at 86.36 180.34)
+		(uuid "aab521b0-a2aa-4934-bd66-91c8bad821dd")
+	)
 )

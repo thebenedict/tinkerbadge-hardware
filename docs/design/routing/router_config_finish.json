@@ -1,0 +1,86 @@
+{
+ "comment": "Finishing pass: clear the neighbourhood of each walled-in pad, route the open nets first, then re-route what was cleared.",
+ "rips": [
+  {
+   "box": [
+    188.6,
+    161.8,
+    193.4,
+    165.4
+   ],
+   "keep": [
+    [
+     "+3V3",
+     "B"
+    ],
+    [
+     "/05  SENSORS + EXPANSION/ACC_3V3",
+     "B"
+    ],
+    [
+     "+3V3_EPD",
+     "B"
+    ]
+   ],
+   "why": "NFC tag U503"
+  },
+  {
+   "box": [
+    159.8,
+    131.2,
+    164.2,
+    135.0
+   ],
+   "keep": [
+    [
+     "+3V3",
+     "B"
+    ],
+    [
+     "/05  SENSORS + EXPANSION/ACC_3V3",
+     "B"
+    ],
+    [
+     "+3V3_EPD",
+     "B"
+    ]
+   ],
+   "why": "accelerometer U502"
+  },
+  {
+   "box": [
+    178.0,
+    124.5,
+    180.3,
+    126.7
+   ],
+   "keep": [],
+   "why": "charger CHG pad"
+  },
+  {
+   "box": [
+    180.0,
+    123.4,
+    182.6,
+    125.6
+   ],
+   "keep": [],
+   "why": "mux dock input"
+  }
+ ],
+ "pre_vias": [],
+ "priority": [
+  "CHARGER_CHG_N",
+  "NFC_LA",
+  "I2C_SDA",
+  "NFC_FD_N",
+  "EPD_SCK",
+  "EPD_MOSI",
+  "DOCK_5V",
+  "NFC_LB",
+  "I2C_SCL"
+ ],
+ "widths": {
+  "EPD_SW": 0.3
+ }
+}

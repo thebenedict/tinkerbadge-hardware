@@ -1,6 +1,6 @@
 {
   "block": "display",
-  "revision": 1,
+  "revision": "1 + design review 2026-11-10",
   "status": "source_extracted_pending_independent_review",
   "candidate": "Waveshare 3.7-inch raw 19-page Rev 1.0; ED037TC1 association",
   "ports": [
@@ -92,7 +92,7 @@
   "components": [
     {
       "ref": "J301",
-      "exact_mpn": "ED037TC1_FPC",
+      "exact_mpn": "FH12-24S-0.5SH(55)",
       "pins": [
         {
           "number": "1",
@@ -151,31 +151,31 @@
         {
           "number": "10",
           "name": "RES#",
-          "net": "EPD_RST_N_PANEL",
+          "net": "EPD_RST_N",
           "treatment": "connected"
         },
         {
           "number": "11",
           "name": "D/C#",
-          "net": "EPD_DC_PANEL",
+          "net": "EPD_DC",
           "treatment": "connected"
         },
         {
           "number": "12",
           "name": "CS#",
-          "net": "EPD_CS_N_PANEL",
+          "net": "EPD_CS_N",
           "treatment": "connected"
         },
         {
           "number": "13",
           "name": "SCL",
-          "net": "EPD_SCK_PANEL",
+          "net": "EPD_SCK",
           "treatment": "connected"
         },
         {
           "number": "14",
           "name": "SDA",
-          "net": "EPD_MOSI_PANEL",
+          "net": "EPD_MOSI",
           "treatment": "connected"
         },
         {
@@ -251,7 +251,7 @@
       ],
       "physical_connector_candidate": "AYF532435",
       "physical_facts": "../components/ED037TC1.pins.json",
-      "footprint": null,
+      "footprint": "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal",
       "footprint_status": "Blocked pending physical mating orientation/fold audit; schematic numbering is panel flex contact numbering."
     },
     {
@@ -361,139 +361,8 @@
       "physical_facts": "../components/MBR0530T1G.pins.json"
     },
     {
-      "ref": "U301",
-      "exact_mpn": "SN74LVC541APWR",
-      "pins": [
-        {
-          "number": "1",
-          "name": "OE1#",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "A1",
-          "net": "EPD_MOSI",
-          "treatment": "connected"
-        },
-        {
-          "number": "3",
-          "name": "A2",
-          "net": "EPD_SCK",
-          "treatment": "connected"
-        },
-        {
-          "number": "4",
-          "name": "A3",
-          "net": "EPD_CS_N",
-          "treatment": "connected"
-        },
-        {
-          "number": "5",
-          "name": "A4",
-          "net": "EPD_DC",
-          "treatment": "connected"
-        },
-        {
-          "number": "6",
-          "name": "A5",
-          "net": "EPD_RST_N",
-          "treatment": "connected"
-        },
-        {
-          "number": "7",
-          "name": "A6",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "8",
-          "name": "A7",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "9",
-          "name": "A8",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "10",
-          "name": "GND",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "11",
-          "name": "Y8",
-          "net": null,
-          "treatment": "no_connect"
-        },
-        {
-          "number": "12",
-          "name": "Y7",
-          "net": null,
-          "treatment": "no_connect"
-        },
-        {
-          "number": "13",
-          "name": "Y6",
-          "net": null,
-          "treatment": "no_connect"
-        },
-        {
-          "number": "14",
-          "name": "Y5",
-          "net": "EPD_RST_N_PANEL",
-          "treatment": "connected"
-        },
-        {
-          "number": "15",
-          "name": "Y4",
-          "net": "EPD_DC_PANEL",
-          "treatment": "connected"
-        },
-        {
-          "number": "16",
-          "name": "Y3",
-          "net": "EPD_CS_N_PANEL",
-          "treatment": "connected"
-        },
-        {
-          "number": "17",
-          "name": "Y2",
-          "net": "EPD_SCK_PANEL",
-          "treatment": "connected"
-        },
-        {
-          "number": "18",
-          "name": "Y1",
-          "net": "EPD_MOSI_PANEL",
-          "treatment": "connected"
-        },
-        {
-          "number": "19",
-          "name": "OE2#",
-          "net": "GND",
-          "treatment": "connected"
-        },
-        {
-          "number": "20",
-          "name": "VCC",
-          "net": "+3V3_EPD",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "buffer pp4,6,7,10,14"
-      ],
-      "physical_facts": "../components/SN74LVC541APWR.pins.json",
-      "bom_id": "DISP-06"
-    },
-    {
       "ref": "L301",
-      "exact_mpn": null,
+      "exact_mpn": "SRN4018-680M",
       "pins": [
         {
           "number": "1",
@@ -513,10 +382,11 @@
       ],
       "kind": "inductor",
       "value": "68uH",
-      "rating": "\u00b120%; shielded; target Isat>=1A and Irms>=0.5A; DCR<=1ohm; final rating must exceed measured peak current with margin",
+      "rating": "±20%; shielded; target Isat>=1A and Irms>=0.5A; DCR<=1ohm; final rating must exceed measured peak current with margin",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release",
-      "note": "HAT provides inductance only. Current/DCR limits are project selection criteria, not asserted Waveshare specifications. Peak-current qualification remains open."
+      "note": "HAT provides inductance only. Current/DCR limits are project selection criteria, not asserted Waveshare specifications. Peak-current qualification remains open.",
+      "footprint": "Inductor_SMD:L_Bourns-SRN4018"
     },
     {
       "ref": "R301",
@@ -592,7 +462,7 @@
       ],
       "kind": "capacitor",
       "value": "4.7uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -618,7 +488,7 @@
       ],
       "kind": "capacitor",
       "value": "4.7uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; verify effective capacitance under20V bias",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; verify effective capacitance under20V bias",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -644,7 +514,7 @@
       ],
       "kind": "capacitor",
       "value": "100nF",
-      "rating": "10V; X7R; \u00b110%",
+      "rating": "10V; X7R; ±10%",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -671,7 +541,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "10V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "10V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -698,7 +568,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "25V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "25V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -725,7 +595,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -752,7 +622,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -779,7 +649,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -806,7 +676,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -833,7 +703,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "50V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
+      "rating": "50V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },
@@ -860,173 +730,7 @@
       ],
       "kind": "capacitor",
       "value": "1uF",
-      "rating": "25V; X7R; \u00b110%; ceramic nonpolar; select DC-bias performance against actual rail",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "C312",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "+3V3_EPD",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "GND",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "buffer p14 section8.3"
-      ],
-      "kind": "capacitor",
-      "value": "100nF",
-      "rating": "10V; X7R; \u00b110%; place at U30120/10",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "R303",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "EPD_MOSI",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "GND",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "Project boot/off-state decision",
-        "buffer pp6,7,10",
-        "panel p8"
-      ],
-      "kind": "resistor",
-      "value": "100k",
-      "rating": "1%; >=0.1W",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "R304",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "EPD_SCK",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "GND",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "Project boot/off-state decision",
-        "buffer pp6,7,10",
-        "panel p8"
-      ],
-      "kind": "resistor",
-      "value": "100k",
-      "rating": "1%; >=0.1W",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "R305",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "EPD_CS_N",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "+3V3",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "Project boot/off-state decision",
-        "buffer pp6,7,10",
-        "panel p8"
-      ],
-      "kind": "resistor",
-      "value": "100k",
-      "rating": "1%; >=0.1W",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "R306",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "EPD_DC",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "GND",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "Project boot/off-state decision",
-        "buffer pp6,7,10",
-        "panel p8"
-      ],
-      "kind": "resistor",
-      "value": "100k",
-      "rating": "1%; >=0.1W",
-      "populated": true,
-      "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
-    },
-    {
-      "ref": "R307",
-      "exact_mpn": null,
-      "pins": [
-        {
-          "number": "1",
-          "name": "1",
-          "net": "EPD_RST_N",
-          "treatment": "connected"
-        },
-        {
-          "number": "2",
-          "name": "2",
-          "net": "GND",
-          "treatment": "connected"
-        }
-      ],
-      "source": [
-        "Project boot/off-state decision",
-        "buffer pp6,7,10",
-        "panel p8"
-      ],
-      "kind": "resistor",
-      "value": "100k",
-      "rating": "1%; >=0.1W",
+      "rating": "25V; X7R; ±10%; ceramic nonpolar; select DC-bias performance against actual rail",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
     },

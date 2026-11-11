@@ -1,0 +1,55 @@
+{
+ "comment": "Finishing pass: restore the display-connector lattice entries for pins 13 and 14 (pruned earlier while their nets were open).",
+ "rip_boxes": [
+  [
+   192.9,
+   143.9,
+   196.0,
+   145.1
+  ]
+ ],
+ "tracks": [
+  {
+   "a": [
+    196.65,
+    144.75
+   ],
+   "b": [
+    194.2,
+    144.75
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_SCK"
+  },
+  {
+   "a": [
+    196.65,
+    144.25
+   ],
+   "b": [
+    193.3,
+    144.25
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_MOSI"
+  }
+ ],
+ "vias": [
+  {
+   "x": 194.2,
+   "y": 144.75,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_SCK"
+  },
+  {
+   "x": 193.3,
+   "y": 144.25,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_MOSI"
+  }
+ ]
+}

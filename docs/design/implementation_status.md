@@ -1,12 +1,12 @@
 # Schematic implementation
 
-9 November 2026. Native KiCad 10 development schematic, with five circuit sheets and an overview. The project has 179 electrical components, including support passives and explicit unpopulated options. The source contracts contain 576 physical-pin assignments.
+10 November 2026. Native KiCad 10 development schematic, with five circuit sheets and an overview. After the [10 November design review](design_review_2026-11-10.md) the project has 155 schematic components and the contracts contain 499 physical-pin assignments. Every part has a footprint. The board is fully routed and DRC shows no clearance, short or parity errors; see the review's check results.
 
 ## Open the project
 
 Open `tinkerbadge.kicad_pro` in KiCad 10, then its root schematic. Double-click a sheet box to enter a block. Project-local symbol libraries use `${KIPRJMOD}` paths. KiCad standard libraries are also required.
 
-PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The selected NFC plan is a B.Cu coil with front/inner clearance and front-side tag/tuning components; no coil geometry exists yet. Placement review was followed by explicit routing authorization. The [first routing pass](first_routing_pass_review.md) now adds the approved R2 tip, local support corrections, power/analog wiring, digital paths and inner ground planes; it remains incomplete and awaits RF/flex/part and final board qualification. No board-release conclusion follows from schematic verification.
+PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The NFC coil is a 10-turn B.Cu spiral with front/inner clearance and front-side tag/tuning components. The [first routing pass](first_routing_pass_review.md) added the R2 tip, power/analog wiring, digital paths and inner ground planes. The design review then added the missing footprints, moved the SAO socket to the front and the battery connector to the rear, and completed the open connections (48 to 0); its results section lists the native check output. RF, flex, optical and assembled-board qualification remain. No board-release conclusion follows from schematic verification.
 
 ## Current build decisions
 
@@ -14,25 +14,28 @@ This section supersedes conflicting candidate choices in the earlier planning BO
 
 | Planning ID | Current reference | Decision |
 |---|---|---|
+| PWR-03 | U101 | TPS2121 with USB priority. Over-voltage supervisors unused (OV1/OV2 grounded); the charger's 28 V input rating and 10.5 V cut-off cover that case. Status output unused. |
 | PWR-04 | D101, D102 | SMF6.0A input TVS replaces the unresolved SMF12A candidate. Sustained fault-current and surge testing remain open. |
-| PWR-05 | U102, R120, J104 | BQ24074 power path retained. CE is held high by fitted R120, so onboard charging is disabled. J104 optional cell-contact thermistor connection is initially unpopulated. |
-| PWR-06 | U103 | TPS63802 set to nominal 3.3 V, shared by logic and all eight LEDs. Feedback is 56.0 kΩ / 10.0 kΩ, both 0.1%. |
+| PWR-05 | U102, RT101 | PGOOD is unused (R115 removed). BQ24074 with charging enabled: CE tied low, about 270 mA (R113 3.3 kΩ), USB500 input limit for both sources (EN1 high, EN2 low). RT101 is a 10 kΩ B3950 NTC in the cell footprint, giving a nominal 3–47 °C charge window. |
+| PWR-06 | U103, L101 | TPS63802 set to nominal 3.3 V, shared by logic and all eight LEDs. Feedback is 56 kΩ / 10 kΩ, 1%. L101 is Sunlord SWPA4020SR47NT. |
 | PWR-07 | U104 | One TPS22918 switches the e-paper rail. Additional separate LED/NFC switches are not fitted. |
-| PWR-08 / PWR-09 | J102 | Protected ordinary two-wire 1S, 4.2 V-charge LiPo pouch pack. Exact pack, connector, polarity, ratings and capacity pending. Former LP603450/three-pin Molex combination is reference evidence only. |
-| PWR-14 | Q101, Q102 | Independent USB/dock presence sensing uses AO3400A devices and resistor dividers. Q103 also inverts mux status for the charger input-current mode. |
+| PWR-08 / PWR-09 | J102 | Protected two-wire 1S, 4.2 V-charge LiPo pouch pack rated for at least 300 mA charge. J102 is a through-hole JST PH header on the rear, pin 1 positive. Exact pack and capacity pending; check polarity of every pack type. |
+| PWR-14 | Q101, Q102, J103 | Independent USB/dock presence sensing uses AO3400A devices and resistor dividers. J103 is two rear 4 × 6 mm dock pads at 8 mm pitch. |
 | PWR-15, retired | — | U106 TLV75733 and its dedicated C110/C111 are removed by the single-rail decision. Earlier analyses are retained only as design history. |
-| PWR-16 | U107 | Added TMUX1511PWR to isolate the protected battery ADC divider when MCU power is absent. Full loaded divider ratio is 3.2:1. |
+| PWR-16, retired | — | TMUX1511 ADC isolation removed. R127/R128 are a 1 MΩ / 1 MΩ divider with 100 nF (C116) straight to the ADC; ratio 2:1. |
 | MCU-01 / MCU-03 | U201, TP201–TP206 | Exact ESP32-S3-WROOM-1-N16R8, native USB, EN/BOOT/UART recovery pads. GPIO35–37 are unavailable. No everyday power switch. |
-| DISP-01 / DISP-02 | J301 | ED037TC1-associated raw-panel interface. AYF532435 remains a physical connector candidate only; J301 has no footprint until mating orientation is proven. |
+| DISP-01 / DISP-03 | J301, L301 | ED037TC1-associated raw-panel interface on a Hirose FH12-24S-0.5SH(55) footprint. Contact side and pin-1 end must be checked with a real panel. L301 is Bourns SRN4018-680M. |
 | DISP-04 | Q301 | SI1308EDL-T1-GE3 follows the manufacturer's replacement notice for the older BE3 suffix. |
-| DISP-06 | U301 | Added SN74LVC541APWR Ioff-rated buffer for five MCU-to-panel signals. Exact TSSOP20 mapping verified. |
+| DISP-06, retired | — | SN74LVC541 buffer and its bias resistors removed. The MCU drives the panel directly; firmware drives SPI/DC/RST low before EPD_EN goes low. |
 | UI-02 | D401–D408 | Eight exact WS2812C-2020-V6 share nominal +3V3 with direct MCU data. The user accepted a first-prototype supply-tolerance experiment, with the tests below required. |
 | PWR-13 / UI-03 | D409, SW401, SW402 | Independent red/green status LED and two Alps SKSCLBE010 side-actuated, 2.2 N buttons. Four physical switch terminals retain direct wake-capable MCU inputs. Footprint, enclosure and continuous-bias application qualification remain open. |
-| EXP-03 | U505 | One shared TPS2553DBVR accessory switch. Combined normal accessory allowance is provisionally 50 mA; fault-current budget 155 mA. |
+| EXP-02 | J502 | SAO socket on the front top edge between D402 and D403. |
+| EXP-06 | U506 | TCA9534 P1 and P4–P7 are unconnected (R514–R517 removed); firmware drives them low as outputs. |
+| EXP-03 | U505 | One shared TPS2553DBVR accessory switch. Combined normal accessory allowance is provisionally 50 mA; R508 200 kΩ sets roughly 115–160 mA. |
 | EXP-06 | U506 | Added TCA9534PWR status/control expander, address 0x20, to preserve the N16R8 GPIO budget. |
-| NFC-01 | U503, AE501 | NT3H2111W0FHKH remains on 3.3 V; PCB antenna and tuning require layout and RF validation. |
+| NFC-01 | U503, AE501, C507 | NT3H2111W0FHKH on 3.3 V. AE501 is a rear 18 × 13 mm, 10-turn coil, estimated 1.7 µH; C507 27 pF is the starting tuning value and C508 is the unpopulated trim. |
 
-The status of an electrical decision is separate from procurement and footprint approval. All newly selected exact active parts have archived source PDFs and component records. Routine passive values/packages are specified; exact MPNs, DC-bias capacitance, magnetic saturation and assembly availability are not complete.
+Every fitted part carries an LCSC number and manufacturer part in the schematic, checked against JLCPCB stock on 10 November 2026. The inductors, JST PH header and FH12 connector were chosen in the design review from manufacturer catalogue data and KiCad library footprints, without the archived-PDF step used for the earlier parts; add their source records before release.
 
 ## Single-rail prototype decision
 
@@ -44,11 +47,11 @@ Eight full-white pixels draw about **120 mA nominal**, before tolerance and cont
 
 Test at the LED supply pins and MCU supply during cold startup, battery voltage sweep, Wi-Fi transmit activity, display refresh, all-black/full-white steps and source changes. Include low battery, the operating temperature range, intended simultaneous loads, repeated cycles and more than one LED lot. Check flicker, wrong colors, chain resets, ESP32 brownouts and recovery as well as voltage. Record board/BOM/firmware versions and scope setup. Bench success supports the tested prototype conditions; production qualification still needs a guaranteed rail/part envelope or explicit manufacturer acceptance. Revisit the rail or LED choice if behavior is unreliable.
 
-## Initial battery and charging behavior
+## Battery and charging
 
-The optional sensor is not fitted, and a fixed resistor does not impersonate a cell-temperature sensor. A fitted 0 Ω link holds CE high. The badge can use the battery or external power path, but **cannot charge the battery onboard in this initial variant**.
+Charging is autonomous and enabled in hardware. RT101 sits inside the cell footprint on the front of the board, next to the charger, and feeds the BQ24074 TS input. With a 10 kΩ B3950 part the charger stops below about 3 °C and above about 47 °C, with roughly ±3 °C from threshold and bias tolerance. Charge current is about 270 mA and the safety timer about 6.3 hours. Use a protected pack rated for at least 300 mA charge.
 
-Adding a thermistor alone is insufficient. The chosen pack's temperature window must be enforced by qualified hardware, including tolerance, attachment, missing/shorted sensor and reset/failure cases. Charge current and input-current limits also require verification before removing the disable. A typical 0–45 °C pack is not automatically protected by the charger's wider native TS window.
+Measure on a prototype: cell-to-NTC temperature offset with the pack taped down, the actual trip points, termination with the system running, and behaviour with no battery fitted.
 
 ## Firmware contract
 
@@ -57,7 +60,8 @@ Adding a thermistor alone is insufficient. The chosen pack's temperature window 
 - The TCA9534 starts as inputs. Set the output latch low before changing P2 to output; direction mask 0xFB. MCU-only reset does not reset this expander.
 - Accessories are initially off. Make external I2C/GPIO pins high impedance and disable their internal pulls before switching accessory power off. This build does not support self-powered add-ons or live insertion.
 - Respect NFC errata and recovery timing. Its standby current remains in the storage budget. Reconfigure sensors and motion wake deliberately for storage.
-- Use calibrated ADC1 measurements with the 3.2:1 divider ratio and settling delay. Voltage alone is not battery state-of-charge. Control low-voltage sleep/restart above the chosen pack's endpoint.
+- Drive EPD SPI, DC and RST low before taking EPD_EN low; the panel has no isolation buffer.
+- Use calibrated ADC1 measurements with the 2:1 divider ratio. The divider is 500 kΩ source impedance behind 100 nF: sample slowly and average. Voltage alone is not battery state-of-charge. Control low-voltage sleep/restart above the chosen pack's endpoint.
 
 ## Verification and remaining gates
 
@@ -65,12 +69,12 @@ The independent source reviews are in `review_power.md`, `review_mcu.md`, `revie
 
 Before a PCB can be released:
 
-- Qualify pack, cable polarity, charging safety hardware and all source transitions, including battery-free USB startup limits.
+- Qualify pack, cable polarity, charge temperature window and all source transitions, including battery-free USB startup.
 - Qualify the selected Alps buttons for the permanent-pull-up wake circuit: manufacturer KSC-701 p5 D11 cautions against continuously applied voltage. Preserve this prototype application gate, capacitive-load qualification and mechanical actuation/locating-hole checks; see [the component record](../components/SKSCLBE010.md).
-- Finish exact footprint/pad/pin1 and connector mating acceptance. Power/peripheral footprints are deliberately blank where the physical checks are incomplete; selected MCU/display associations have separate acceptance records.
-- Select inductors and passive MPNs. Test regulator capacity/temperature, the shared dynamic rail, display boost overshoot/inrush, current scheduling and accessory faults.
+- Check the display flex against J301 with a real panel, and the library footprints for L101, L301, J102 and U105 against the exact part drawings.
+- Assign passive MPNs. Test regulator capacity/temperature, the shared dynamic rail, display boost overshoot/inrush, current scheduling and accessory faults.
 - Validate radio/NFC antenna layout, panel flex, glass/battery/enclosure fit, USB/ESD layout and test access.
 - Measure normal, idle and storage current, source sensing, wake, low-voltage behavior and unpowered leakage/backfeed.
-- Complete final routing/visual review, all remaining native connections and DRC issues, then prototype validation on one pinned revision. Initial placement review and first-pass routing authorization are complete.
+- Human visual review and tidy-up of the routing in KiCad, then prototype validation on one pinned revision. The [JLCPCB release note](jlcpcb_release.md) lists the order settings, part numbers and the three checks to make before ordering.
 
-Population fields need special care: the installed MCP cannot set KiCad's native DNP flag. Optional parts are identified in visible values, `Populate`/`Population` fields and source contracts. Do not export an assembly BOM without reconciling these fields and excluding unpopulated parts.
+C508 carries the native KiCad DNP flag. J103 and AE501 are PCB features and are excluded from the BOM.

@@ -1,5 +1,7 @@
 # Power circuit decisions
 
+> **Superseded in part by the [10 November design review](design_review_2026-11-10.md).** Charging is now enabled (CE low, RT101 10 kΩ B3950 NTC on TS, USB500 for both inputs). Q103/R110, the OV dividers R103–R106, R120, J104 and the TMUX1511 ADC switch (U107, C115, R129, R130) are removed. The battery ADC is a 1 MΩ / 1 MΩ divider (VBAT / 2). Several resistors moved to 1 % E24 values. Sections below that describe the removed circuits are kept as design history.
+
 Date: 9 November 2026. Author: power design worker. Status: reviewed electrical development design with charging disabled. Exact two-wire battery connector and PCB footprints remain release gates.
 
 The maintained electrical assignment source is [power_contract.json](power_contract.json). [power_pinouts.md](power_pinouts.md) is generated from it. Manufacturer facts are separate in [power_facts.json](../components/power_facts.json); the saved PDF revisions and hashes are in [power_inventory.json](../datasheets/power_inventory.json). Physical pin diagrams were inspected as images, not inferred from extracted text.

@@ -1,0 +1,195 @@
+{
+ "comment": "Finishing pass 2: open the pockets around four walled-in pads (charger CHG, accelerometer SDA, NFC tag SDA and LA). The charger OUT-to-C105 link is moved 0.4 mm outward so CHG can drop to a via; nets cleared here are re-routed by the router afterwards.",
+ "rip_nets": [
+  "NFC_FD_N",
+  "/01  POWER + CHARGING/CHARGER_ILIM",
+  "DOCK_5V",
+  "EPD_MOSI"
+ ],
+ "rip_spots": [
+  [
+   "/01  POWER + CHARGING/VSYS",
+   179.225,
+   125.0,
+   0.1
+  ],
+  [
+   "/01  POWER + CHARGING/VSYS",
+   178.8,
+   126.0,
+   0.1
+  ],
+  [
+   "/01  POWER + CHARGING/VSYS",
+   178.9,
+   124.25,
+   0.1
+  ],
+  [
+   "/05  SENSORS + EXPANSION/NFC_LB",
+   189.3,
+   163.05,
+   0.1
+  ],
+  [
+   "/05  SENSORS + EXPANSION/NFC_LB",
+   190.4,
+   162.55,
+   0.1
+  ]
+ ],
+ "tracks": [
+  {
+   "a": [
+    178.4625,
+    124.25
+   ],
+   "b": [
+    179.6,
+    124.25
+   ],
+   "w": 0.3,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/VSYS"
+  },
+  {
+   "a": [
+    179.6,
+    124.25
+   ],
+   "b": [
+    179.6,
+    125.9
+   ],
+   "w": 0.3,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/VSYS"
+  },
+  {
+   "a": [
+    179.6,
+    125.9
+   ],
+   "b": [
+    178.85,
+    126.65
+   ],
+   "w": 0.3,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/VSYS"
+  },
+  {
+   "a": [
+    178.85,
+    126.65
+   ],
+   "b": [
+    178.35,
+    127.15
+   ],
+   "w": 0.3,
+   "layer": "F",
+   "net": "/01  POWER + CHARGING/VSYS"
+  },
+  {
+   "a": [
+    178.4625,
+    124.75
+   ],
+   "b": [
+    179.05,
+    124.75
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "CHARGER_CHG_N"
+  },
+  {
+   "a": [
+    179.05,
+    124.75
+   ],
+   "b": [
+    179.05,
+    125.55
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "CHARGER_CHG_N"
+  },
+  {
+   "a": [
+    161.2375,
+    133.75
+   ],
+   "b": [
+    161.1,
+    133.8875
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "I2C_SDA"
+  },
+  {
+   "a": [
+    161.1,
+    133.8875
+   ],
+   "b": [
+    161.1,
+    134.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "I2C_SDA"
+  },
+  {
+   "a": [
+    191.6,
+    164.0
+   ],
+   "b": [
+    192.6,
+    164.0
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "I2C_SDA"
+  },
+  {
+   "a": [
+    190.4,
+    163.0
+   ],
+   "b": [
+    189.85,
+    162.45
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    189.85,
+    162.45
+   ],
+   "b": [
+    189.2,
+    162.45
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  }
+ ],
+ "vias": [
+  {
+   "x": 179.05,
+   "y": 125.55,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "CHARGER_CHG_N"
+  }
+ ]
+}
