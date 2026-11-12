@@ -2,6 +2,14 @@
 
 These scripts record the design and review workflow used for the current badge. Read the hardware specification and applicable review guides before running scripts that change native KiCad files. Some tools require a running KiCad editor and the optional Konnect MCP integration.
 
+## Current publication snapshot
+
+Run `python3 tools/refresh_publication.py --cad-python /path/to/cad-environment/bin/python` with KiCad 10.0.8 and the enclosure requirements installed. It runs ERC, DRC with in-memory zone refill and schematic parity, contract/property checks, manufacturing exports, mechanical interface extraction, CAD generation and native enclosure fit checks. The native KiCad inputs must remain unchanged. Evidence is written to `exports/publication/manifest.json`.
+
+`python3 tools/check_export_chain.py` checks that the electrical evidence, manufacturing package, enclosure and archived CAD still match. Warnings remain recorded; passing this consistency check does not close physical prototype gates.
+
+Commit the hardware snapshot, then run the web repository's badge exporter against that commit, regenerate feature/enclosure renders and run `npm run check`. Update its explicit source pins when selecting a new hardware revision. The web exporter rejects changed or uncommitted selected inputs and includes the publication evidence and manufacturing downloads.
+
 ## Konnect configuration
 
 `konnect_call.py` uses `KONNECT_BIN` and `KONNECT_CONFIG` when set. Otherwise it finds the existing KiCad 10 macOS plugin under the current user's home directory, then looks for `konnect` on `PATH`.

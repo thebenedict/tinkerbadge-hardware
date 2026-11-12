@@ -1,10 +1,10 @@
 {
-  "board_sha256": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
+  "board_sha256": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
   "kicad_version": "10.0.8",
   "checked_source_hashes": {
     "build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
     "parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
-    "interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
+    "interfaces.json": "fb3af2f23da89084d65f39ed1756ba9f8364fccea9ca220ab388402170025caf",
     "check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7"
   },
   "status": "pass",

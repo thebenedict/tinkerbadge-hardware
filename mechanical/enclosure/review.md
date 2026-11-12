@@ -46,3 +46,7 @@ No physical prototype, process tolerance study, full component-solid interferenc
 ## A2 LED-window revision
 
 11 November 2026: removed the seven separate LED inserts at the user’s request. The existing rounded windows remain open, with no colored material or light guides. The frame, clear-panel solids, support positions and optical barrier geometry are unchanged. The source hashes above describe the original A1 review; `exports/native-fit.json` records the rerun against the current A2 sources. LED visibility and sensor interference still need a powered physical prototype.
+
+## Revision 0.3 export alignment
+
+12 November 2026: regenerated interfaces, CAD, meshes, drawings and the archive against final PCB SHA-256 `2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757`. The 30 mechanical reference records are unchanged from A2; the enclosure remains revision A2. The fresh native-fit report passes. `tools/check_export_chain.py` checks the board binding, enclosure source/output hashes and archived file contents together with the electrical and manufacturing evidence.

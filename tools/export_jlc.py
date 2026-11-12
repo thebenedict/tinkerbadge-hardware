@@ -120,6 +120,10 @@ def main():
                 'bom_lines': len(groups), 'placements': len(seen), 'in_bom_not_in_cpl': missing, 'in_pos_not_in_bom': extra,
                 'sha256': {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                            for p in [PCB, SCH, ROOT / 'tinkerbadge.kicad_pro', ROOT / 'tinkerbadge.kicad_dru', *sorted(OUT.glob('*.csv')), *sorted(OUT.glob('*.pdf')), OUT / 'tinkerbadge-gerbers.zip']}}
+    # The manufacturing BOM depends on every sheet, not just the root sheet.
+    manifest['source_hashes'] = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
+                                for p in [PCB, ROOT / 'tinkerbadge.kicad_pro', ROOT / 'tinkerbadge.kicad_dru',
+                                          *sorted(ROOT.glob('*.kicad_sch'))]}
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=1) + '\n')
     print('bom lines', len(groups), 'placements', len(seen), 'hand-fit', [r['Reference'] for r in hand])
     print('in BOM but not placed:', missing, '| in pos file but not in BOM:', extra)
