@@ -1,0 +1,36 @@
+{
+ "window_mm": [
+  180.55,
+  165.2,
+  200.45,
+  180.0
+ ],
+ "layers": {
+  "F.Cu": {
+   "filled_samples_in_window": 0,
+   "samples": 7326,
+   "tracks_in_window": 4,
+   "tracks_not_feed": 0,
+   "pads_or_vias_in_window": 2,
+   "pads_or_vias_not_feed": 0
+  },
+  "In1.Cu": {
+   "filled_samples_in_window": 0,
+   "samples": 7326,
+   "tracks_in_window": 0,
+   "tracks_not_feed": 0,
+   "pads_or_vias_in_window": 2,
+   "pads_or_vias_not_feed": 0
+  },
+  "In2.Cu": {
+   "filled_samples_in_window": 0,
+   "samples": 7326,
+   "tracks_in_window": 0,
+   "tracks_not_feed": 0,
+   "pads_or_vias_in_window": 2,
+   "pads_or_vias_not_feed": 0
+  }
+ },
+ "issues": [],
+ "status": "PASS"
+}

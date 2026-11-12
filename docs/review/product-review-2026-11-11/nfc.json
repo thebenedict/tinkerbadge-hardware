@@ -1,0 +1,29 @@
+{
+ "board": "tinkerbadge.kicad_pcb",
+ "zone_copper_mm2": {
+  "In1.Cu GND": 0.0,
+  "In2.Cu GND": 0.0
+ },
+ "unrelated_items": [],
+ "feed_items": 6,
+ "window_mm": [
+  180.55,
+  165.2,
+  200.45,
+  180.0
+ ],
+ "layers": [
+  "F.Cu",
+  "B.Cu",
+  "In1.Cu",
+  "In2.Cu"
+ ],
+ "winding_mm": [
+  182.0,
+  166.0,
+  200.0,
+  179.0
+ ],
+ "issues": [],
+ "status": "PASS"
+}

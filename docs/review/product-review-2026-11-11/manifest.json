@@ -1,0 +1,39 @@
+{
+  "reviewed_at_utc": "2026-11-12T06:12:25.696484+00:00",
+  "kicad": "10.0.8",
+  "source_files": {
+    "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+    "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+    "tinkerbadge.kicad_dru": "b65ab288d07495b29b87afb433b9e441aa0cdd0afe1aaad18fec248ac9a576df",
+    "power.kicad_sch": "b585c00a56519e6ce4c0fc7480290a2a6b4606b2fe51669c582181fa9fbc68da",
+    "tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
+    "display.kicad_sch": "a0b39008478f4f613bf2c26ec933f116551dc3bf09f1c69b067d039380f32947",
+    "lighting.kicad_sch": "878b4815207a43d461e24e079f7b6445f2a8c25128ec9a6ffca681da8af88ada",
+    "peripherals.kicad_sch": "63f2c690969775734f57fa83623c4164a63afae1cce09395fe23f3a07d75e280",
+    "mcu.kicad_sch": "bfb9d97e5f0241bfffdee45c40be92d9f4693fdaea2b82bd5b7af27f2c7c69f8",
+    "docs/design/power_contract.json": "04bfea996d7fcd37414161ffb5b13580cc466ca1f46ad121469989ae579ed4fd",
+    "docs/design/display_contract.json": "28e5e3a1d4a6817a22b7f1d0ff36575d7b150556576feeb9983340813eacac1c",
+    "docs/design/peripherals_contract.json": "c70a5df829e45d9ae6a8c805a3bf5a283ec23016a872653ba5aea9c13680e045",
+    "docs/design/mcu_contract.json": "bf75aa714bdf92af64b218bed50173db266b1ff69369e4b578d5fc0a8024dfb9",
+    "mechanical/enclosure/build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
+    "mechanical/enclosure/parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
+    "mechanical/enclosure/interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
+    "mechanical/enclosure/check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
+    "production/jlcpcb/manifest.json": "b6cfceac86e83b56c7fefcf74c45e0dd9e96a1cd7535eb65cd94f7c554a0271a"
+  },
+  "evidence": {
+    "erc.json": "885f70f6aeeaa4981ae43f6e1e40c2b6199b463d44eed8314f8df51912a3944c",
+    "properties.json": "0c3cd5acb1dbdbdb41c6e6111c67b2a40e44e05204a8a9425e5c1e7c865179f0",
+    "nfc.json": "0fffdc38eafe7e5c6ba33a88b03a63939b9b4f3f4bebdeb4358aaf93c5f9ed98",
+    "drc.json": "1787f90383c43b8636389ff1ff7d660024589ef69c9643ecafc23c8eff898185",
+    "nfc-gerbers.json": "afe82489052b3f9b99b1dcb40f4747586e313da823e375468e324add7447c0ae",
+    "pcb-front.png": "95a4cd8876b70fe8ff011c1e97788da59054138ab80ccf9eac9d824393b20c3f",
+    "contracts.json": "c984d01d2722fc3a15e8b0d091aafb5b75d2922652457e5d399a8761b1fd5c63",
+    "native-fit.json": "b0aed4dac2ce00f94df6f83ef45990009c935ed2b1b8ce0a1acd90c4558edd6e"
+  },
+  "notes": [
+    "Enclosure native-fit check rerun on a scratch copy with mechanical interfaces extracted from the latest board. All 30 reference records equal the repository interface records.",
+    "Earlier 7b6ea0e6 PCB checks were superseded by the final 2ab108d4 board checks.",
+    "No source CAD or existing design records modified by this review."
+  ]
+}
