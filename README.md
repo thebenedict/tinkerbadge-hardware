@@ -9,6 +9,7 @@ Open **tinkerbadge.kicad_pro** in KiCad 10. The root schematic links to power, p
 - [JLCPCB release package and order settings](docs/design/jlcpcb_release.md); order files in `production/jlcpcb/`
 - [Reviewed physical-pin assignments](docs/pinouts.md)
 - [Verification results](docs/design/verification.md)
+- [Enclosure CAD, assembly and fit checks](mechanical/enclosure/README.md); STEP, STL and panel DXF files in `mechanical/enclosure/exports/`
 - [Planning BOM and source history](docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md)
 
 The first prototype uses a single nominal 3.3 V rail for logic and the eight RGB LEDs. Regulator tolerance can fall below the LED datasheet minimum, so startup, low-battery, radio and full-white load-step tests are required.
