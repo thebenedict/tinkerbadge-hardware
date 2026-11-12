@@ -92,7 +92,7 @@
   "components": [
     {
       "ref": "J301",
-      "exact_mpn": "FH12-24S-0.5SH(55)",
+      "exact_mpn": "FH34SRJ-24S-0.5SH(50)",
       "pins": [
         {
           "number": "1",
@@ -251,7 +251,7 @@
       ],
       "physical_connector_candidate": "AYF532435",
       "physical_facts": "../components/ED037TC1.pins.json",
-      "footprint": "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal",
+      "footprint": "Tinkerbadge:Hirose_FH34SRJ-24S-0.5SH_PanelOrder",
       "footprint_status": "Blocked pending physical mating orientation/fold audit; schematic numbering is panel flex contact numbering."
     },
     {
@@ -761,6 +761,21 @@
       "rating": "1%; >=0.1W",
       "populated": true,
       "selection_status": "Specification-level support part; exact vendor MPN/derating qualification pending before PCB release"
+    },
+    {
+      "ref": "TP301",
+      "exact_mpn": null,
+      "pins": [
+        {
+          "number": "1",
+          "name": "pad",
+          "net": "+3V3_EPD",
+          "treatment": "connected"
+        }
+      ],
+      "kind": "test point",
+      "populated": true,
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
     }
   ],
   "decisions": "display.md",

@@ -1,0 +1,669 @@
+{
+ "comment": "Display-connector fan-out, second pass: every pin keeps its own row. Front stub to a 0.48/0.25 mm via in one of three staggered columns, then a straight escape to x = 194.3 on the rear (even pins) or inner layer 2 (odd pins), so same-layer neighbours are 1.0 mm apart and no pin can be walled in. The display signal and bias nets and the accessory bus are ripped whole first, so they are routed fresh rather than patched onto leftovers.",
+ "rip_boxes": [
+  [
+   192.0,
+   130.9,
+   197.7,
+   144.0
+  ]
+ ],
+ "tracks": [
+  {
+   "a": [
+    198.15,
+    142.7
+   ],
+   "b": [
+    195.05,
+    142.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_GDR"
+  },
+  {
+   "a": [
+    195.05,
+    142.7
+   ],
+   "b": [
+    194.3,
+    142.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "/03  E-PAPER DISPLAY/EPD_GDR"
+  },
+  {
+   "a": [
+    198.15,
+    142.2
+   ],
+   "b": [
+    196.85,
+    142.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_RESE"
+  },
+  {
+   "a": [
+    196.85,
+    142.2
+   ],
+   "b": [
+    194.3,
+    142.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "/03  E-PAPER DISPLAY/EPD_RESE"
+  },
+  {
+   "a": [
+    198.15,
+    141.2
+   ],
+   "b": [
+    195.05,
+    141.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH2"
+  },
+  {
+   "a": [
+    195.05,
+    141.2
+   ],
+   "b": [
+    194.3,
+    141.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH2"
+  },
+  {
+   "a": [
+    198.15,
+    139.7
+   ],
+   "b": [
+    195.05,
+    139.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "GND"
+  },
+  {
+   "a": [
+    198.15,
+    139.2
+   ],
+   "b": [
+    196.85,
+    139.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_BUSY"
+  },
+  {
+   "a": [
+    196.85,
+    139.2
+   ],
+   "b": [
+    194.3,
+    139.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "EPD_BUSY"
+  },
+  {
+   "a": [
+    198.15,
+    138.7
+   ],
+   "b": [
+    195.95,
+    138.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_RST_N"
+  },
+  {
+   "a": [
+    195.95,
+    138.7
+   ],
+   "b": [
+    194.3,
+    138.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "EPD_RST_N"
+  },
+  {
+   "a": [
+    198.15,
+    138.2
+   ],
+   "b": [
+    195.05,
+    138.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_DC"
+  },
+  {
+   "a": [
+    195.05,
+    138.2
+   ],
+   "b": [
+    194.3,
+    138.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "EPD_DC"
+  },
+  {
+   "a": [
+    198.15,
+    137.7
+   ],
+   "b": [
+    196.85,
+    137.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_CS_N"
+  },
+  {
+   "a": [
+    196.85,
+    137.7
+   ],
+   "b": [
+    194.3,
+    137.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "EPD_CS_N"
+  },
+  {
+   "a": [
+    198.15,
+    137.2
+   ],
+   "b": [
+    195.95,
+    137.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_SCK"
+  },
+  {
+   "a": [
+    195.95,
+    137.2
+   ],
+   "b": [
+    194.3,
+    137.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "EPD_SCK"
+  },
+  {
+   "a": [
+    198.15,
+    136.7
+   ],
+   "b": [
+    195.05,
+    136.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "EPD_MOSI"
+  },
+  {
+   "a": [
+    195.05,
+    136.7
+   ],
+   "b": [
+    194.3,
+    136.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "EPD_MOSI"
+  },
+  {
+   "a": [
+    198.15,
+    136.2
+   ],
+   "b": [
+    196.85,
+    136.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "+3V3_EPD"
+  },
+  {
+   "a": [
+    196.85,
+    136.2
+   ],
+   "b": [
+    194.3,
+    136.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "+3V3_EPD"
+  },
+  {
+   "a": [
+    198.15,
+    135.7
+   ],
+   "b": [
+    195.95,
+    135.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "+3V3_EPD"
+  },
+  {
+   "a": [
+    195.95,
+    135.7
+   ],
+   "b": [
+    194.3,
+    135.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "+3V3_EPD"
+  },
+  {
+   "a": [
+    198.15,
+    135.2
+   ],
+   "b": [
+    195.05,
+    135.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "GND"
+  },
+  {
+   "a": [
+    198.15,
+    134.7
+   ],
+   "b": [
+    196.85,
+    134.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VDD_1V8"
+  },
+  {
+   "a": [
+    196.85,
+    134.7
+   ],
+   "b": [
+    194.3,
+    134.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "/03  E-PAPER DISPLAY/EPD_VDD_1V8"
+  },
+  {
+   "a": [
+    198.15,
+    134.2
+   ],
+   "b": [
+    195.95,
+    134.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VPP"
+  },
+  {
+   "a": [
+    195.95,
+    134.2
+   ],
+   "b": [
+    194.3,
+    134.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "/03  E-PAPER DISPLAY/EPD_VPP"
+  },
+  {
+   "a": [
+    198.15,
+    133.7
+   ],
+   "b": [
+    195.05,
+    133.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH1"
+  },
+  {
+   "a": [
+    195.05,
+    133.7
+   ],
+   "b": [
+    194.3,
+    133.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH1"
+  },
+  {
+   "a": [
+    198.15,
+    133.2
+   ],
+   "b": [
+    196.85,
+    133.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VGH"
+  },
+  {
+   "a": [
+    196.85,
+    133.2
+   ],
+   "b": [
+    194.3,
+    133.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "/03  E-PAPER DISPLAY/EPD_VGH"
+  },
+  {
+   "a": [
+    198.15,
+    132.7
+   ],
+   "b": [
+    195.95,
+    132.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSL"
+  },
+  {
+   "a": [
+    195.95,
+    132.7
+   ],
+   "b": [
+    194.3,
+    132.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "/03  E-PAPER DISPLAY/EPD_VSL"
+  },
+  {
+   "a": [
+    198.15,
+    132.2
+   ],
+   "b": [
+    195.05,
+    132.2
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VGL"
+  },
+  {
+   "a": [
+    195.05,
+    132.2
+   ],
+   "b": [
+    194.3,
+    132.2
+   ],
+   "w": 0.2,
+   "layer": "I",
+   "net": "/03  E-PAPER DISPLAY/EPD_VGL"
+  },
+  {
+   "a": [
+    198.15,
+    131.7
+   ],
+   "b": [
+    196.85,
+    131.7
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/03  E-PAPER DISPLAY/EPD_VCOM"
+  },
+  {
+   "a": [
+    196.85,
+    131.7
+   ],
+   "b": [
+    194.3,
+    131.7
+   ],
+   "w": 0.2,
+   "layer": "B",
+   "net": "/03  E-PAPER DISPLAY/EPD_VCOM"
+  }
+ ],
+ "vias": [
+  {
+   "x": 195.05,
+   "y": 142.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_GDR"
+  },
+  {
+   "x": 196.85,
+   "y": 142.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_RESE"
+  },
+  {
+   "x": 195.05,
+   "y": 141.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH2"
+  },
+  {
+   "x": 195.05,
+   "y": 139.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "GND"
+  },
+  {
+   "x": 196.85,
+   "y": 139.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_BUSY"
+  },
+  {
+   "x": 195.95,
+   "y": 138.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_RST_N"
+  },
+  {
+   "x": 195.05,
+   "y": 138.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_DC"
+  },
+  {
+   "x": 196.85,
+   "y": 137.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_CS_N"
+  },
+  {
+   "x": 195.95,
+   "y": 137.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_SCK"
+  },
+  {
+   "x": 195.05,
+   "y": 136.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "EPD_MOSI"
+  },
+  {
+   "x": 196.85,
+   "y": 136.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "+3V3_EPD"
+  },
+  {
+   "x": 195.95,
+   "y": 135.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "+3V3_EPD"
+  },
+  {
+   "x": 195.05,
+   "y": 135.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "GND"
+  },
+  {
+   "x": 196.85,
+   "y": 134.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VDD_1V8"
+  },
+  {
+   "x": 195.95,
+   "y": 134.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VPP"
+  },
+  {
+   "x": 195.05,
+   "y": 133.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VSH1"
+  },
+  {
+   "x": 196.85,
+   "y": 133.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VGH"
+  },
+  {
+   "x": 195.95,
+   "y": 132.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VSL"
+  },
+  {
+   "x": 195.05,
+   "y": 132.2,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VGL"
+  },
+  {
+   "x": 196.85,
+   "y": 131.7,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "/03  E-PAPER DISPLAY/EPD_VCOM"
+  }
+ ],
+ "rip_nets": [
+  "EPD_MOSI",
+  "EPD_SCK",
+  "EPD_CS_N",
+  "EPD_DC",
+  "EPD_RST_N",
+  "EPD_BUSY",
+  "EXT_SDA",
+  "EXT_SCL",
+  "/03  E-PAPER DISPLAY/EPD_GDR",
+  "/03  E-PAPER DISPLAY/EPD_RESE",
+  "/03  E-PAPER DISPLAY/EPD_VSH2",
+  "/03  E-PAPER DISPLAY/EPD_VDD_1V8",
+  "/03  E-PAPER DISPLAY/EPD_VPP",
+  "/03  E-PAPER DISPLAY/EPD_VSH1",
+  "/03  E-PAPER DISPLAY/EPD_VGH",
+  "/03  E-PAPER DISPLAY/EPD_VSL",
+  "/03  E-PAPER DISPLAY/EPD_VGL",
+  "/03  E-PAPER DISPLAY/EPD_VCOM"
+ ]
+}

@@ -14,7 +14,7 @@
         "1": "GND",
         "2": "+3V3",
         "3": "MCU_EN",
-        "4": "BTN_B_N",
+        "4": null,
         "5": "USB_PRESENT_N",
         "6": "DOCK_PRESENT_N",
         "7": "MOTION_INT1",
@@ -37,7 +37,7 @@
         "24": "SAO_GPIO2",
         "25": "NFC_FD_N",
         "26": "STRAP45",
-        "27": "BOOT_N",
+        "27": "BTN_B_N",
         "28": null,
         "29": null,
         "30": null,
@@ -71,7 +71,7 @@
       "value": "10k 1%",
       "pins": {
         "1": "+3V3",
-        "2": "BOOT_N"
+        "2": "BTN_B_N"
       },
       "footprint": "Resistor_SMD:R_0402_1005Metric"
     },
@@ -157,9 +157,9 @@
     {
       "ref": "TP202",
       "lib_id": "Connector:TestPoint",
-      "value": "BOOT_N",
+      "value": "BOOT / BTN_B",
       "pins": {
-        "1": "BOOT_N"
+        "1": "BTN_B_N"
       },
       "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
     },
@@ -209,12 +209,35 @@
       },
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "source": "TPS22918DBVR.pdf p3 ON must not float; independent source review amendment 2026-11-09"
+    },
+    {
+      "ref": "SW403",
+      "mpn": "SKSCLBE010",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "pins": {
+        "1": "MCU_EN_SW",
+        "2": "MCU_EN_SW",
+        "3": "GND",
+        "4": "GND"
+      },
+      "footprint": "Tinkerbadge:SKSCLBE010",
+      "note": "Recessed reset button. design review 2026-11-11"
+    },
+    {
+      "ref": "R415",
+      "lib_id": "Device:R",
+      "pins": {
+        "1": "MCU_EN_SW",
+        "2": "MCU_EN"
+      },
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "note": "330R limits the C203 discharge current through the switch contact; EN low level about 0.1 V."
     }
   ],
   "gpio": {
     "1": "BAT_ADC",
     "2": "BTN_A_N",
-    "4": "BTN_B_N",
+    "4": "NC",
     "5": "USB_PRESENT_N",
     "6": "DOCK_PRESENT_N",
     "7": "MOTION_INT1",
@@ -241,12 +264,13 @@
     "44": "UART_RX",
     "47": "SAO_GPIO2",
     "48": "NFC_FD_N",
-    "0": "BOOT_N",
+    "0": "BTN_B_N",
     "45": "STRAP45",
     "46": "STRAP46"
   },
   "unused_pins": {
     "U201": [
+      "4",
       "15",
       "28",
       "29",
@@ -257,8 +281,9 @@
     "No external32kHz crystal. Native USB GPIO19/20; UART recovery retained.",
     "Two user buttons owned bylighting contract; GPIO2 is required active-low deep-sleep wake input.",
     "GPIO40 EPD_EN may be driven high by USB-OTG download ROM; powering display in recovery is benign. Avoid assigning GPIO40 to switched accessory data.",
-    "Straps GPIO45/46 have10k pulldowns; GPIO0 BOOT10k pullup. GPIO3 unconnected.",
+    "Straps GPIO45/46 have10k pulldowns; GPIO0 is BOOT and button B with a 10k pullup (R202) and 100 nF (C412). GPIO3 unconnected.",
     "External I2C and SAO are separate from onboard bus; prohibit self-powered accessories until isolation is qualified.",
-    "R207 100k grounds EPD_EN during MCU high-impedance states; USB-OTG ROM can still intentionally drive GPIO40 high."
+    "R207 100k grounds EPD_EN during MCU high-impedance states; USB-OTG ROM can still intentionally drive GPIO40 high.",
+    "Button B is GPIO0: hold B through reset (SW403) for ROM download. GPIO4 is unused. EN RC is 10 ms, GPIO0 RC 1 ms, so the strap is high at release unless B is held. design review 2026-11-11"
   ]
 }

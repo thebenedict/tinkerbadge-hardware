@@ -441,19 +441,6 @@
       "selection_status": "value/package specified; final passive MPN to BOM completion"
     },
     {
-      "ref": "R414",
-      "value": "100k 1%",
-      "kind": "R",
-      "package": "0603",
-      "population": "fitted",
-      "pins": {
-        "1": "+3V3",
-        "2": "BTN_B_N"
-      },
-      "notes": "",
-      "selection_status": "value/package specified; final passive MPN to BOM completion"
-    },
-    {
       "ref": "C412",
       "value": "100nF 10V X7R",
       "kind": "C",
@@ -729,7 +716,7 @@
         "4": "IR_RX_3V3"
       },
       "pin_fact_file": "docs/components/IRM-H638T-TR2.pins.json",
-      "notes": "Receiver power shares accessory domain; MCU input no pulls whileoff.",
+      "notes": "Receiver supply comes from expander P1 through R507; independent of the accessory rail. MCU input no pulls while off.",
       "footprint": "Tinkerbadge:IRM-H638T_Reviewed",
       "footprint_status": "source-reviewed placement candidate; assembly, exact passive MPN and prototype gates remain open"
     },
@@ -779,7 +766,7 @@
       "package": "0603",
       "population": "fitted",
       "pins": {
-        "1": "ACC_3V3",
+        "1": "IR_RX_EN",
         "2": "IR_RX_3V3"
       },
       "notes": "",
@@ -994,7 +981,7 @@
         "2": "GND",
         "3": "GND",
         "4": "CHARGER_CHG_N",
-        "5": null,
+        "5": "IR_RX_EN",
         "6": "ACC_EN",
         "7": "ACC_FAULT_N",
         "8": "GND",
@@ -1008,7 +995,7 @@
         "16": "+3V3"
       },
       "pin_fact_file": "docs/components/TCA9534PWR.pins.json",
-      "notes": "Non-A address0x20; polled. Write latch0x00 BEFORE config0xFB. Charger status pullups on power sheet."
+      "notes": "Non-A address0x20; polled. Write output latch0x00 BEFORE direction0x09. P1 powers the IR receiver; P4-P7 unused, driven low."
     },
     {
       "ref": "C514",
@@ -1035,6 +1022,24 @@
       },
       "notes": "",
       "selection_status": "value/package specified; final passive MPN to BOM completion"
+    },
+    {
+      "ref": "TP501",
+      "lib_id": "Connector:TestPoint",
+      "value": "I2C_SDA",
+      "pins": {
+        "1": "I2C_SDA"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP502",
+      "lib_id": "Connector:TestPoint",
+      "value": "I2C_SCL",
+      "pins": {
+        "1": "I2C_SCL"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
     }
   ],
   "interfaces": {
@@ -1098,24 +1103,24 @@
       "SAO_GPIO2": "3.3V GPIO highZ/low whileoff"
     },
     "power_status_inputs": [
-      "CHARGER_CHG_N",
-      "CHARGER_PGOOD_N"
+      "CHARGER_CHG_N"
     ],
     "expander": {
       "address": "0x20",
       "port_bits": {
         "0": "CHARGER_CHG_N input",
-        "1": "CHARGER_PGOOD_N input",
+        "1": "IR_RX_EN output (high = receiver powered)",
         "2": "ACC_EN output",
         "3": "ACC_FAULT_N input",
-        "4": "unused pulldown input",
-        "5": "unused pulldown input",
-        "6": "unused pulldown input",
-        "7": "unused pulldown input"
+        "4": "unused, output low",
+        "5": "unused, output low",
+        "6": "unused, output low",
+        "7": "unused, output low"
       },
       "safe_output_latch": "0x00",
-      "direction_register": "0xFB",
-      "interrupt_pin": "NC, polled"
+      "direction_register": "0x09",
+      "interrupt_pin": "NC, polled",
+      "note": "Write the output latch 0x00 first, then direction 0x09 (inputs P0 and P3 only). An MCU reset does not reset the expander."
     }
   },
   "unresolved": [

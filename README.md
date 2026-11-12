@@ -5,6 +5,7 @@ Open **tinkerbadge.kicad_pro** in KiCad 10. The root schematic links to power, p
 - [Specification](docs/spec.md)
 - [Current schematic decisions and remaining gates](docs/design/implementation_status.md)
 - [Design review, 10 November 2026](docs/design/design_review_2026-11-10.md)
+- [Independent review, 11 November 2026](docs/review/design_review_2026-11-11.md) and [the response with the revision 0.3 fixes](docs/review/response_2026-11-11.md)
 - [JLCPCB release package and order settings](docs/design/jlcpcb_release.md); order files in `production/jlcpcb/`
 - [Reviewed physical-pin assignments](docs/pinouts.md)
 - [Verification results](docs/design/verification.md)
@@ -12,7 +13,7 @@ Open **tinkerbadge.kicad_pro** in KiCad 10. The root schematic links to power, p
 
 The first prototype uses a single nominal 3.3 V rail for logic and the eight RGB LEDs. Regulator tolerance can fall below the LED datasheet minimum, so startup, low-battery, radio and full-white load-step tests are required.
 
-This is a development design. The battery is a two-wire protected pouch cell on a rear JST PH header; charging is enabled at about 270 mA with an on-board thermistor. The [10 November design review](docs/design/design_review_2026-11-10.md) lists what changed and what still needs hardware in hand, starting with the display flex orientation.
+This is a development design. The battery is a two-wire protected pouch cell on a rear JST PH header; charging is enabled at about 270 mA with on-board thermistors. The [review response](docs/review/response_2026-11-11.md) lists what changed in board revision 0.3 and what still needs hardware in hand, starting with a dry-fit of the display flex.
 
 ## Repeat the electrical check
 

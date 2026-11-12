@@ -32,3 +32,14 @@ These need only `kicad-cli` and KiCad's bundled Python, not Konnect. See `docs/d
 - `rebuild_review.sh`, `export_design_review.sh`, `drc_summary.py`: replay, evidence export and a compact DRC summary.
 - `check_power_paths.py`: narrowest link on each main power path.
 - `assign_jlc_parts.py`, `apply_jlc_release.py`, `export_jlc.py`: LCSC part assignment, JLCPCB rule and silkscreen fixes, and the order package in `production/jlcpcb/`.
+
+## Review fixes, 11 November 2026
+
+See `docs/review/response_2026-11-11.md`.
+
+- `apply_review_2026_11_11_schematic.py`, `apply_review_2026_11_11_board.py`: one-shot schematic, contract and board edits. Do not rerun on the current files.
+- `check_nfc_window.py` (KiCad Python) and `check_nfc_gerbers.py`: fail when copper other than the coil and its feed is inside the NFC window, in the board file and in the exported Gerbers. `export_jlc.py` runs both.
+- `write_display_pinout.py`, `write_pcb_placement.py`: regenerate `docs/design/display_pinout.md` from the display contract and `docs/design/pcb_placement.json` from the board.
+- `renumber_power_symbols.py`: unique power-symbol references across sheets.
+- `pcb_strip_stubs.py`: removes dead-end track chains and duplicate segments, each verified by DRC.
+- `route_remaining.py` gained protected windows, a pocket test that names where a net is walled in, and a flood-guided search.

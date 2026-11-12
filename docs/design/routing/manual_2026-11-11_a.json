@@ -1,0 +1,9 @@
+{
+ "comment": "Clear accessory-bus routes that crossed the display fan-out so EPD_MOSI can leave; both are re-routed afterwards.",
+ "rip_nets": [
+  "EXT_SCL",
+  "EXT_SDA"
+ ],
+ "tracks": [],
+ "vias": []
+}

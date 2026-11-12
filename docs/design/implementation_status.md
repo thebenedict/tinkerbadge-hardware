@@ -1,12 +1,12 @@
 # Schematic implementation
 
-10 November 2026. Native KiCad 10 development schematic, with five circuit sheets and an overview. After the [10 November design review](design_review_2026-11-10.md) the project has 155 schematic components and the contracts contain 499 physical-pin assignments. Every part has a footprint. The board is fully routed and DRC shows no clearance, short or parity errors; see the review's check results.
+11 November 2026, board revision 0.3. Native KiCad 10 development schematic, with five circuit sheets and an overview. After the [10 November design review](design_review_2026-11-10.md) and the fixes answering [the 11 November review](../review/response_2026-11-11.md) the project has 162 schematic components, including ten probe pads. Every part has a footprint. The board is fully routed and DRC shows no clearance, short or parity errors; see the review's check results.
 
 ## Open the project
 
 Open `tinkerbadge.kicad_pro` in KiCad 10, then its root schematic. Double-click a sheet box to enter a block. Project-local symbol libraries use `${KIPRJMOD}` paths. KiCad standard libraries are also required.
 
-PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The NFC coil is a 10-turn B.Cu spiral with front/inner clearance and front-side tag/tuning components. The [first routing pass](first_routing_pass_review.md) added the R2 tip, power/analog wiring, digital paths and inner ground planes. The design review then added the missing footprints, moved the SAO socket to the front and the battery connector to the rear, and completed the open connections (48 to 0); its results section lists the native check output. RF, flex, optical and assembled-board qualification remain. No board-release conclusion follows from schematic verification.
+PCB placement is tracked separately in [the current placement review](pcb_placement_review.md). The active board is the experimental 110 × 80 mm front-SMT candidate, with a raised display, organized circuit groups, evenly spaced top LEDs, a shared passive ambient/IR-receiver cluster below the display with a separately isolated transmitter and a left-open antenna shoulder. The NFC coil is a 10-turn B.Cu spiral. A rule area named `NFC_WINDOW` keeps zone copper off all four layers over the winding and down to the bottom board edge, a custom design rule rejects unrelated tracks and vias there, and `tools/check_nfc_window.py` measures the saved copper. The 10 November board did not have this clearance: its inner planes covered the coil. The [first routing pass](first_routing_pass_review.md) added the R2 tip, power/analog wiring, digital paths and inner ground planes. The design review then added the missing footprints, moved the SAO socket to the front and the battery connector to the rear, and completed the open connections (48 to 0); its results section lists the native check output. RF, flex, optical and assembled-board qualification remain. No board-release conclusion follows from schematic verification.
 
 ## Current build decisions
 
@@ -16,7 +16,7 @@ This section supersedes conflicting candidate choices in the earlier planning BO
 |---|---|---|
 | PWR-03 | U101 | TPS2121 with USB priority. Over-voltage supervisors unused (OV1/OV2 grounded); the charger's 28 V input rating and 10.5 V cut-off cover that case. Status output unused. |
 | PWR-04 | D101, D102 | SMF6.0A input TVS replaces the unresolved SMF12A candidate. Sustained fault-current and surge testing remain open. |
-| PWR-05 | U102, RT101 | PGOOD is unused (R115 removed). BQ24074 with charging enabled: CE tied low, about 270 mA (R113 3.3 kΩ), USB500 input limit for both sources (EN1 high, EN2 low). RT101 is a 10 kΩ B3950 NTC in the cell footprint, giving a nominal 3–47 °C charge window. |
+| PWR-05 | U102, RT101, RT102 | PGOOD is unused (R115 removed). BQ24074 with charging enabled: CE tied low, about 270 mA (R113 3.3 kΩ), USB500 input limit for both sources (EN1 high, EN2 low). RT101 (10 kΩ) and RT102 (100 kΩ) are B3950 NTCs in parallel on the front of the board opposite the middle of the cell, 32 mm from the charger and 8–12 mm from the 3.3 V regulator and its inductor. Charge window 1.7–44.7 °C nominal, 0.0–48.4 °C over the charger's threshold and bias tolerance. |
 | PWR-06 | U103, L101 | TPS63802 set to nominal 3.3 V, shared by logic and all eight LEDs. Feedback is 56 kΩ / 10 kΩ, 1%. L101 is Sunlord SWPA4020SR47NT. |
 | PWR-07 | U104 | One TPS22918 switches the e-paper rail. Additional separate LED/NFC switches are not fitted. |
 | PWR-08 / PWR-09 | J102 | Protected two-wire 1S, 4.2 V-charge LiPo pouch pack rated for at least 300 mA charge. J102 is a through-hole JST PH header on the rear, pin 1 positive. Exact pack and capacity pending; check polarity of every pack type. |
@@ -24,18 +24,18 @@ This section supersedes conflicting candidate choices in the earlier planning BO
 | PWR-15, retired | — | U106 TLV75733 and its dedicated C110/C111 are removed by the single-rail decision. Earlier analyses are retained only as design history. |
 | PWR-16, retired | — | TMUX1511 ADC isolation removed. R127/R128 are a 1 MΩ / 1 MΩ divider with 100 nF (C116) straight to the ADC; ratio 2:1. |
 | MCU-01 / MCU-03 | U201, TP201–TP206 | Exact ESP32-S3-WROOM-1-N16R8, native USB, EN/BOOT/UART recovery pads. GPIO35–37 are unavailable. No everyday power switch. |
-| DISP-01 / DISP-03 | J301, L301 | ED037TC1-associated raw-panel interface on a Hirose FH12-24S-0.5SH(55) footprint. Contact side and pin-1 end must be checked with a real panel. L301 is Bourns SRN4018-680M. |
+| DISP-01 / DISP-03 | J301, L301 | ED037TC1-associated raw-panel interface on a Hirose FH34SRJ-24S-0.5SH(50), a top-and-bottom-contact equivalent of the panel's named Panasonic connector. It is centred on the glass at y = 137.45 and its pads are numbered in panel order for the folded flex; see [the component record](../components/FH34SRJ-24S-0.5SH.md). Dry-fit a real panel before ordering. L301 is Bourns SRN4018-680M. |
 | DISP-04 | Q301 | SI1308EDL-T1-GE3 follows the manufacturer's replacement notice for the older BE3 suffix. |
 | DISP-06, retired | — | SN74LVC541 buffer and its bias resistors removed. The MCU drives the panel directly; firmware drives SPI/DC/RST low before EPD_EN goes low. |
 | UI-02 | D401–D408 | Eight exact WS2812C-2020-V6 share nominal +3V3 with direct MCU data. The user accepted a first-prototype supply-tolerance experiment, with the tests below required. |
-| PWR-13 / UI-03 | D409, SW401, SW402 | Independent red/green status LED and two Alps SKSCLBE010 side-actuated, 2.2 N buttons. Four physical switch terminals retain direct wake-capable MCU inputs. Footprint, enclosure and continuous-bias application qualification remain open. |
-| EXP-02 | J502 | SAO socket on the front top edge between D402 and D403. |
-| EXP-06 | U506 | TCA9534 P1 and P4–P7 are unconnected (R514–R517 removed); firmware drives them low as outputs. |
+| PWR-13 / UI-03 | D409, SW401–SW403, R415 | Independent red/green status LED and three Alps SKSCLBE010 side-actuated, 2.2 N switches on the left edge: A (GPIO2), B (GPIO0, which is also BOOT) and a reset switch on EN through 330 Ω, meant to sit behind a pinhole. Hold B and tap reset for ROM download. Four physical switch terminals retain direct wake-capable MCU inputs. Footprint, enclosure and continuous-bias application qualification remain open. |
+| EXP-02 | J502 | SAO socket on the front top edge between D402 and D403. The footprint carries the socket's true 12.7 × 6.0 mm body, its 3.7 × 1.0 mm key on the top-row side, and an 8.5 mm-tall model. |
+| EXP-06 | U506 | TCA9534 P1 powers the IR receiver (IR_RX_EN). P4–P7 are unconnected (R514–R517 removed); firmware drives them low as outputs. Direction register 0x09. |
 | EXP-03 | U505 | One shared TPS2553DBVR accessory switch. Combined normal accessory allowance is provisionally 50 mA; R508 200 kΩ sets roughly 115–160 mA. |
 | EXP-06 | U506 | Added TCA9534PWR status/control expander, address 0x20, to preserve the N16R8 GPIO budget. |
-| NFC-01 | U503, AE501, C507 | NT3H2111W0FHKH on 3.3 V. AE501 is a rear 18 × 13 mm, 10-turn coil, estimated 1.7 µH; C507 27 pF is the starting tuning value and C508 is the unpopulated trim. |
+| NFC-01 | U503, AE501, C507 | NT3H2111W0FHKH on 3.3 V. AE501 is a rear 18 × 13 mm, 10-turn coil, estimated 1.7 µH in free space; C507 27 pF is the starting tuning value and C508 is the unpopulated trim. The coil's inner end is LA and its outer end LB. The rear face is the tap face and is marked. |
 
-Every fitted part carries an LCSC number and manufacturer part in the schematic, checked against JLCPCB stock on 10 November 2026. The inductors, JST PH header and FH12 connector were chosen in the design review from manufacturer catalogue data and KiCad library footprints, without the archived-PDF step used for the earlier parts; add their source records before release.
+Every fitted part carries an LCSC number and manufacturer part in the schematic, checked against JLCPCB stock on 10 November 2026 (new and changed lines on 11 November). The display connector now has an archived source record ([FH34SRJ-24S-0.5SH](../components/FH34SRJ-24S-0.5SH.md)). The inductors, JST PH header and the two NTCs were chosen from manufacturer catalogue data and KiCad library footprints without the archived-PDF step used for the earlier parts; add their source records before release.
 
 ## Single-rail prototype decision
 
@@ -49,7 +49,7 @@ Test at the LED supply pins and MCU supply during cold startup, battery voltage 
 
 ## Battery and charging
 
-Charging is autonomous and enabled in hardware. RT101 sits inside the cell footprint on the front of the board, next to the charger, and feeds the BQ24074 TS input. With a 10 kΩ B3950 part the charger stops below about 3 °C and above about 47 °C, with roughly ±3 °C from threshold and bias tolerance. Charge current is about 270 mA and the safety timer about 6.3 hours. Use a protected pack rated for at least 300 mA charge.
+Charging is autonomous and enabled in hardware. RT101 and RT102 sit on the front of the board opposite the middle of the cell and feed the BQ24074 TS input. In parallel they act as a 9.09 kΩ B3950 part: the charger stops below about 1.7 °C and above about 44.7 °C nominal, 0.0 °C and 48.4 °C at the charger's threshold and bias corners. The hot corner is above a typical cell's 45 °C charge limit; see the [review response](../review/response_2026-11-11.md). Charge current is about 270 mA and the safety timer about 6.3 hours. Use a protected pack rated for at least 300 mA charge.
 
 Measure on a prototype: cell-to-NTC temperature offset with the pack taped down, the actual trip points, termination with the system running, and behaviour with no battery fitted.
 
@@ -57,7 +57,9 @@ Measure on a prototype: cell-to-NTC temperature offset with the pack taped down,
 
 - Keep LEDs black during storage and initially during high-current radio/display work. Schedule load peaks and measure complete battery current; the present provisional target is at most 1 A, not a verified connector rating.
 - Hold panel reset low during rail enable, initialize after settling, then refresh. Stop SPI and send the panel's sleep command before removing its rail. GPIO40 may power the rail during ROM recovery; the panel remains reset by its local pulldown.
-- The TCA9534 starts as inputs. Set the output latch low before changing P2 to output; direction mask 0xFB. MCU-only reset does not reset this expander.
+- The TCA9534 starts as inputs. Write the output latch 0x00, then the direction register **0x09**: P0 (CHARGER_CHG_N) and P3 (ACC_FAULT_N) are inputs; P1 (IR_RX_EN), P2 (ACC_EN) and the unused P4–P7 are outputs driven low. An MCU-only reset does not reset this expander, so write both registers on every boot.
+- The IR receiver is powered from expander P1 through R507, not from the accessory rail. Drive P1 high to receive and low to save its 0.4–0.7 mA; leave GPIO18 without a pull while it is off.
+- Button B is GPIO0. It works as a normal active-low button and deep-sleep wake source after boot; held through a reset it selects ROM download mode. GPIO4 is unused.
 - Accessories are initially off. Make external I2C/GPIO pins high impedance and disable their internal pulls before switching accessory power off. This build does not support self-powered add-ons or live insertion.
 - Respect NFC errata and recovery timing. Its standby current remains in the storage budget. Reconfigure sensors and motion wake deliberately for storage.
 - Drive EPD SPI, DC and RST low before taking EPD_EN low; the panel has no isolation buffer.

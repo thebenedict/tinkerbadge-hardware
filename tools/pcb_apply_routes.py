@@ -13,6 +13,37 @@ def main(board_path, routes, prune=False):
     nets = b.GetNetsByName()
     if routes != '-':
         r = json.load(open(routes))
+        # optional placement changes recorded with the hand routing
+        for ref, x, y, rot in r.get('moves', []):
+            fp = b.FindFootprintByReference(ref)
+            fp.SetPosition(pcbnew.VECTOR2I(MM(x), MM(y)))
+            fp.SetOrientationDegrees(rot)
+        for ref, lib, name in r.get('refresh_footprints', []):
+            old = b.FindFootprintByReference(ref)
+            lib_dir = lib if lib.startswith('/') else str(__import__('pathlib').Path(board_path).resolve().parent / lib)
+            fp = pcbnew.FootprintLoad(lib_dir, name)
+            fp.SetFPID(old.GetFPID())
+            fp.SetReference(ref)
+            fp.SetValue(old.GetValue())
+            fp.SetPosition(old.GetPosition())
+            b.Add(fp)
+            fp.SetOrientationDegrees(old.GetOrientationDegrees())
+            by_num = {p.GetNumber(): p.GetNet() for p in old.Pads()}
+            for p in fp.Pads():
+                if p.GetNumber() in by_num:
+                    p.SetNet(by_num[p.GetNumber()])
+            for fld in old.GetFields():
+                if not fp.HasField(fld.GetName()):
+                    nf = pcbnew.PCB_FIELD(fp, pcbnew.FIELD_T_USER, fld.GetName())
+                    nf.SetVisible(False)
+                    nf.SetLayer(fld.GetLayer())
+                    nf.SetPosition(fp.GetPosition())
+                    fp.Add(nf)
+                fp.GetField(fld.GetName()).SetText(fld.GetText())
+            fp.Reference().SetLayer(old.Reference().GetLayer())
+            fp.SetExcludedFromBOM(old.IsExcludedFromBOM())
+            fp.SetExcludedFromPosFiles(old.IsExcludedFromPosFiles())
+            b.RemoveNative(old)
         # optional rip-up: whole nets, or items of one net touching given circles (x, y, radius in mm)
         rip_nets = set(r.get('rip_nets', []))
         spots = [(MM(x), MM(y), MM(rad)) for x, y, rad in r.get('rip_at', [])]

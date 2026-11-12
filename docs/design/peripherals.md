@@ -1,5 +1,7 @@
 # Peripheral design decisions
 
+> **Updated again on 11 November** in response to [the 11 November review](../review/design_review_2026-11-11.md): the SAO footprint has the socket's true 12.7 × 6.0 mm body and key, the NFC antenna window is enforced on all layers, the IR receiver is powered from expander P1, and button B is GPIO0/BOOT.
+>
 > **Updated by the [10 November design review](design_review_2026-11-10.md).** The SAO socket (J502) is on the front top edge. AE501 is a drawn 10-turn rear coil (about 1.7 µH estimated) with C507 fitted at 27 pF and C508 as trim. R508 is 200 kΩ.
 
 9 November 2026. PDFs and hashes: `docs/datasheets/peripheral_inventory.json`. Source pin maps are separate from `peripherals_contract.json`. Source facts and original assignments passed independent review. The later user-approved shared-3.3-V mapping delta was independently accepted before native capture. The earlier contract is preserved under `docs/design/revisions/`.
@@ -14,9 +16,9 @@ Measure the supply at the most distant LED and the MCU during startup, low batte
 
 Live onboardI2C uses4.7kΩ pulls and100kHz initial clock. BH1730=0x29; LIS SA0high=0x19; NTAG=0x55; TCA9534(non-A)=0x20. Ambient interrupt is NC/polled, motionINT1 and NFCFD direct to MCU. All share live3.3V to avoid unproved off-state I2C leakage paths.
 
-U506 P0/P1 read CHARGER_CHG_N/CHARGER_PGOOD_N; P2 drives ACC_EN; P3 reads ACC_FAULT_N. P4–7 have100kΩ pulldowns, INT NC/polled. Firmware writes output latch0 before direction0xFB. MCU-only reset does not reset the expander; restore safe state explicitly.
+U506: P0 reads CHARGER_CHG_N and P3 reads ACC_FAULT_N. P1 drives IR_RX_EN (IR receiver supply), P2 drives ACC_EN, and the unused P4–P7 are driven low; their pull-downs and the charger PGOOD input were removed. Firmware writes output latch 0x00 and then direction 0x09 on every boot, because an MCU-only reset does not reset the expander. INT is NC and polled.
 
-One TPS2553DBVR feeds Qwiic, SAO and IR RX.210kΩ1% ILIM gives calculated109.18–152.25mA bounds; reserve155mA upstream fault current. Publish50mA NORMAL COMBINED accessory budget, including IR receiver and pull-ups, until power testing allows more. Hardware current limit is not the normal allowance. This supersedes two proposed EXP-03 instances in draft BOM. A fault removes both ports and receiver.
+One TPS2553DBVR feeds Qwiic and SAO. The IR receiver is now powered from expander P1 through R507, so an accessory fault or accessory power-down no longer disables IR reception. R508 ILIM gives calculated109.18–152.25mA bounds; reserve155mA upstream fault current. Publish50mA NORMAL COMBINED accessory budget, including IR receiver and pull-ups, until power testing allows more. Hardware current limit is not the normal allowance. This supersedes two proposed EXP-03 instances in draft BOM. A fault removes both ports and receiver.
 
 Dedicated externalI2C has4.7kΩ pull-ups to switchedACC_3V3; SAO GPIO is3.3V only. Before disabling, stop bus, disable internal pulls, releaseI2C, setGPIO low/highZ and IR RX input/no pulls, then ACC_EN low. No independently powered add-ons and no live insertion.100kΩ output bleed with10µF gives1s nominal discharge constant, longer with accessories; measure discharge before promising a fixed delay. External ESD/hot-plug qualification remains open.
 
@@ -40,7 +42,7 @@ NTAG Rev4.1 errata is mandatory: STOP/START spacing≥50µs, both-edge FD captur
 
 IR67-21C/TR8 plus AO3400A low-side driver uses100Ω0.25W LED resistor for≈21mA typical, gate100Ω and100kΩ down. Use38kHz one-third duty and bounded packets. Do not use1A pulse rating for high-duty carrier. AO source citation corrected: p1 labels G/S/D with gate index dot; official separate PO-00001N supplies package geometry. Numeric1G/2S/3D is explicitly conventional SOT23 derivation requiring reviewer acceptance.
 
-IRM-H638T/TR2 pins1/2GND,3OUT,4VCC. Source-required filter100Ω fromACC_3V3 plus4.7µF/100nF local; no always-on output pull-up.0.4mA typical/0.7mA max idle. Minimum burst12cycles/gap16cycles. Validate AGC/protocol, startup false pulses, sunlight/collisions and optical range. It powers off with accessories.
+IRM-H638T/TR2 pins1/2GND,3OUT,4VCC. Source-required filter 100 Ω from IR_RX_EN (expander P1) plus 4.7 µF/100 nF local; no always-on output pull-up.0.4mA typical/0.7mA max idle. Minimum burst12cycles/gap16cycles. Validate AGC/protocol, startup false pulses, sunlight/collisions and optical range. It is switched by expander P1 (IR_RX_EN), independent of the accessory rail.
 
 ## Physical interface gates
 

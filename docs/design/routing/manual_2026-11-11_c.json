@@ -1,0 +1,296 @@
+{
+ "comment": "NFC tag area laid out by hand. The coil's inner end is now terminal 1 (LA) and the outer end terminal 2 (LB); C507/C508 stand side by side west of the tag so both capacitors sit across LA/LB without a crossing; each of the tag's other pins gets a fixed escape. C303 moves above the display fan-out. I2C_SCL is ripped because it ran along the module's bottom pad row and boxed in pads 20 and 21.",
+ "moves": [
+  [
+   "C507",
+   188.6,
+   163.0,
+   90
+  ],
+  [
+   "C508",
+   187.0,
+   163.0,
+   90
+  ],
+  [
+   "C303",
+   193.5,
+   130.5,
+   0
+  ]
+ ],
+ "refresh_footprints": [
+  [
+   "AE501",
+   "Tinkerbadge.pretty",
+   "NFC_Coil_Rear_18x13"
+  ]
+ ],
+ "rip_nets": [
+  "/05  SENSORS + EXPANSION/NFC_LA",
+  "/05  SENSORS + EXPANSION/NFC_LB",
+  "NFC_FD_N",
+  "I2C_SCL",
+  "I2C_SDA",
+  "EXT_SDA",
+  "EPD_SCK",
+  "EPD_DC",
+  "+3V3_EPD"
+ ],
+ "rip_boxes": [
+  [
+   186.0,
+   160.9,
+   193.3,
+   165.15
+  ]
+ ],
+ "tracks": [
+  {
+   "a": [
+    191.0,
+    162.9
+   ],
+   "b": [
+    191.0,
+    162.225
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LB"
+  },
+  {
+   "a": [
+    191.0,
+    162.225
+   ],
+   "b": [
+    187.0,
+    162.225
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LB"
+  },
+  {
+   "a": [
+    190.4,
+    163.0
+   ],
+   "b": [
+    189.45,
+    163.0
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    189.45,
+    163.0
+   ],
+   "b": [
+    188.675,
+    163.775
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    188.675,
+    163.775
+   ],
+   "b": [
+    188.6,
+    163.775
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    187.0,
+    163.775
+   ],
+   "b": [
+    188.6,
+    163.775
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    188.6,
+    163.775
+   ],
+   "b": [
+    188.6,
+    169.1
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    188.6,
+    169.1
+   ],
+   "b": [
+    186.8,
+    170.9
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "a": [
+    190.4,
+    163.5
+   ],
+   "b": [
+    190.0,
+    163.5
+   ],
+   "w": 0.15,
+   "layer": "F",
+   "net": "GND"
+  },
+  {
+   "a": [
+    190.0,
+    163.5
+   ],
+   "b": [
+    189.75,
+    163.75
+   ],
+   "w": 0.15,
+   "layer": "F",
+   "net": "GND"
+  },
+  {
+   "a": [
+    189.75,
+    163.75
+   ],
+   "b": [
+    189.75,
+    164.15
+   ],
+   "w": 0.15,
+   "layer": "F",
+   "net": "GND"
+  },
+  {
+   "a": [
+    190.4,
+    164.0
+   ],
+   "b": [
+    190.4,
+    164.6
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "I2C_SCL"
+  },
+  {
+   "a": [
+    191.0,
+    164.1
+   ],
+   "b": [
+    191.0,
+    164.5
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "NFC_FD_N"
+  },
+  {
+   "a": [
+    191.0,
+    164.5
+   ],
+   "b": [
+    191.1,
+    164.8
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "NFC_FD_N"
+  },
+  {
+   "a": [
+    191.6,
+    164.0
+   ],
+   "b": [
+    192.5,
+    164.0
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "I2C_SDA"
+  },
+  {
+   "a": [
+    191.6,
+    163.5
+   ],
+   "b": [
+    192.5,
+    163.5
+   ],
+   "w": 0.2,
+   "layer": "F",
+   "net": "+3V3"
+  }
+ ],
+ "vias": [
+  {
+   "x": 186.8,
+   "y": 170.9,
+   "d": 0.6,
+   "drill": 0.3,
+   "net": "/05  SENSORS + EXPANSION/NFC_LA"
+  },
+  {
+   "x": 181.0,
+   "y": 166.1,
+   "d": 0.6,
+   "drill": 0.3,
+   "net": "/05  SENSORS + EXPANSION/NFC_LB"
+  },
+  {
+   "x": 189.75,
+   "y": 164.15,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "GND"
+  },
+  {
+   "x": 190.4,
+   "y": 164.6,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "I2C_SCL"
+  },
+  {
+   "x": 191.1,
+   "y": 164.8,
+   "d": 0.48,
+   "drill": 0.25,
+   "net": "NFC_FD_N"
+  }
+ ]
+}

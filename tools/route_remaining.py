@@ -31,11 +31,17 @@ CLASS_W = {'Default': 0.2, 'EPD_HV': 0.2, 'NFC_HOLD': 0.2, 'Power_Trunk': 0.5, '
            'AnalogSense': 0.2, 'USB_HOLD': 0.2, 'Switching_HOLD': 0.4}
 # no new copper here: module antenna shoulder (both layers)
 KEEPOUTS = [(104.0, 99.0, 154.6, 108.0)]
-COIL = (181.75, 165.75, 200.25, 179.25)
+# NFC antenna window: no copper on any layer except the coil feed on the front
+# (rule area 180.55..200.45 x 165.2..180.0, grown by 0.4 mm so that track and via edges stay outside it)
+WINDOWS = [{'box': (180.15, 164.8, 200.85, 180.5),
+            'allow': {'/05  SENSORS + EXPANSION/NFC_LA': 'F', '/05  SENSORS + EXPANSION/NFC_LB': 'F'}}]
+# no front copper or vias under the display connector body (beyond its signal lands)
+NO_FRONT = [(198.7, 130.3, 201.4, 144.6)]
 NL = 3                        # routing layers: 0 F.Cu, 1 B.Cu, 2 In2.Cu (In1.Cu stays a solid ground plane)
 LID = {'F': 0, 'B': 1, 'I': 2}
 LNAME = 'FBI'
 HWEIGHT = 1.4                 # A* heuristic weight; raise for a faster, greedier search
+UNSEEN, WALL = 65535, 65534      # guide-flood markers
 INNER_COST = 13               # per-step cost on In2 (outer layers cost 10)
 
 
@@ -67,6 +73,8 @@ class Field:
         self.d1 = [array('f', [INF]) * n for _ in range(NL)]
         self.n1 = [array('i', [0]) * n for _ in range(NL)]
         self.d2 = [array('f', [INF]) * n for _ in range(NL)]
+        self.win = [bytearray(n) for _ in range(NL)]   # protected windows: no copper unless the net is allowed there
+        self.novia = bytearray(n)     # no via at all (protected windows, connector bodies)
         self.hole = bytearray(n)      # no via: too close to another hole
         self.smd = bytearray(n)       # no via: on or beside an SMD pad
         self.inside = bytearray(n)
@@ -133,6 +141,7 @@ class Board:
         self.f = Field()
         self.new_tracks = []
         self.new_vias = []
+        self.last_pocket = None
         t0 = time.time()
         self._inside()
         for p in data['pads']:
@@ -151,9 +160,19 @@ class Board:
         for x0, y0, x1, y1 in KEEPOUTS:
             for layer in range(NL):
                 self.f.rect(layer, -2, x0, y0, x1, y1)
-        self.f.rect(2, -2, *COIL)      # no inner copper under the NFC coil
-        # coil interior on the rear belongs to the coil's inner terminal only
-        self.f.rect(1, self.nid('/05  SENSORS + EXPANSION/NFC_LB'), COIL[0] + 4.3, COIL[1] + 4.3, COIL[2] - 4.3, COIL[3] - 4.3)
+        # protected windows (see tinkerbadge.kicad_dru): masks, not field shapes, so that
+        # the nets allowed inside can still route there
+        self.window_allow = {}
+        for w in WINDOWS:
+            for layer in range(NL):
+                self.f.mark_rect(self.f.win[layer], *w['box'])
+            if not w.get('vias'):
+                self.f.mark_rect(self.f.novia, *w['box'])
+            for name, layers in w.get('allow', {}).items():
+                self.window_allow[name] = {LID[x] for x in layers}
+        for x0, y0, x1, y1 in NO_FRONT:
+            self.f.mark_rect(self.f.win[0], x0, y0, x1, y1)
+            self.f.mark_rect(self.f.novia, x0, y0, x1, y1)
         print(f'field built in {time.time() - t0:.1f}s', file=sys.stderr)
 
     def nid(self, name):
@@ -391,6 +410,110 @@ class Board:
                     todo.append(c)
         return n >= limit
 
+    def pocket(self, src, dst, net, r_trk, r_via, allow, limit=60000):
+        """Return the bounding box (mm) of a walled-in source island, or None if it can get out."""
+        f = self.f
+        seen = set(src)
+        todo = list(src)
+        n = 0
+        lo = [1 << 30, 1 << 30]
+        hi = [-1, -1]
+        while todo:
+            l, i, j = todo.pop()
+            if (l, i, j) in dst:
+                return None
+            n += 1
+            if n > limit:
+                return None
+            lo = [min(lo[0], i), min(lo[1], j)]
+            hi = [max(hi[0], i), max(hi[1], j)]
+            for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                c = (l, i + dx, j + dy)
+                if c in seen or not (0 <= c[1] < W and 0 <= c[2] < H):
+                    continue
+                idx = c[2] * W + c[1]
+                if c in dst or (f.free(l, idx, net, r_trk) and (not f.win[l][idx] or l in allow)):
+                    seen.add(c)
+                    todo.append(c)
+            idx = j * W + i
+            if not f.hole[idx] and not f.smd[idx] and not f.novia[idx] and all(f.free(m, idx, net, r_via) for m in range(NL)):
+                for m in range(NL):
+                    c = (m, i, j)
+                    if c not in seen and (not f.win[m][idx] or m in allow):
+                        seen.add(c)
+                        todo.append(c)
+        return [round(X0 + lo[0] * G, 2), round(Y0 + lo[1] * G, 2), round(X0 + hi[0] * G, 2), round(Y0 + hi[1] * G, 2)]
+
+    def guide(self, src, dst, net, r_trk, r_via, allow, slack=80, via_steps=25):
+        """Flood outward from the targets (all layers, with vias) until the source is met.
+
+        Returns per-layer step counts to the nearest target, or None when the source cannot
+        be reached at all. The search uses them as its heuristic, so a long winding route
+        costs about as much as a short one instead of exhausting the budget.
+        """
+        f = self.f
+        n = W * H
+        inside, d1, n1, d2, win = f.inside, f.d1, f.n1, f.d2, f.win
+        hole, smd, novia = f.hole, f.smd, f.novia
+        dist = [array('H', [UNSEEN]) * n for _ in range(NL)]
+        srcset = {(l, j * W + i) for (l, i, j) in src}
+        levels = {0: []}
+        for (l, i, j) in dst:
+            idx = j * W + i
+            if dist[l][idx]:
+                dist[l][idx] = 0
+                levels[0].append((l, idx))
+        d = 0
+        stop = None
+        last = 0
+        while levels:
+            cur = levels.pop(d, None)
+            if cur is None:
+                d = min(levels)
+                continue
+            if stop is not None and d > stop:
+                break
+            nxt = levels.setdefault(d + 1, [])
+            for l, idx in cur:
+                dl = dist[l]
+                if dl[idx] != d:
+                    continue
+                if stop is None and (l, idx) in srcset:
+                    stop = d + slack
+                last = d
+                i = idx % W
+                for nidx in (idx + 1, idx - 1, idx + W, idx - W):
+                    if nidx < 0 or nidx >= n or dl[nidx] <= d + 1:
+                        continue
+                    if (nidx == idx + 1 and i == W - 1) or (nidx == idx - 1 and i == 0):
+                        continue
+                    if (l, nidx) not in srcset:
+                        if dl[nidx] == WALL:
+                            continue
+                        if not inside[nidx] or (d2[l][nidx] if n1[l][nidx] == net else d1[l][nidx]) < r_trk or \
+                                (win[l][nidx] and l not in allow):
+                            dl[nidx] = WALL
+                            continue
+                    dl[nidx] = d + 1
+                    nxt.append((l, nidx))
+                if hole[idx] or smd[idx] or novia[idx]:
+                    continue
+                for m in range(NL):
+                    if not inside[idx] or (d2[m][idx] if n1[m][idx] == net else d1[m][idx]) < r_via:
+                        break
+                else:
+                    for m in range(NL):
+                        if m != l and dist[m][idx] > d + via_steps and dist[m][idx] != WALL and \
+                                (not win[m][idx] or m in allow):
+                            dist[m][idx] = d + via_steps
+                            levels.setdefault(d + via_steps, []).append((m, idx))
+            if not nxt:
+                levels.pop(d + 1, None)
+            d += 1
+        if stop is None:
+            return None
+        return dist
+
     # ---- search ---------------------------------------------------------
     def route(self, name, src, dst, width, budget=600000, to_plane=False):
         net = self.nid(name)
@@ -400,10 +523,19 @@ class Board:
         f = self.f
         own = set(src) | set(dst)
         cache = {}
-        if not self.escapable(src, net, r_trk) and not to_plane:
-            # an island walled in on its own layer can still leave through a via
-            if not any(self.f.free(m, j * W + i, net, r_trk) for (l, i, j) in src for m in range(NL) if m != l):
+        allow = self.window_allow.get(name, set())
+        if not to_plane:
+            # cheap pocket test before the expensive search: flood from the source over all layers
+            # (with vias); if it runs out of cells well short of the board it is walled in
+            pocket = self.pocket(src, dst, net, r_trk, r_via, allow)
+            if pocket is not None:
+                self.last_pocket = pocket
                 return None
+            dist = self.guide(src, dst, net, r_trk, r_via, allow)
+            if dist is None:
+                return None                # no way through on any layer
+        else:
+            dist = None
 
         def ok(l, i, j):
             key = (l, i, j)
@@ -412,13 +544,17 @@ class Board:
                 if not (0 <= i < W and 0 <= j < H):
                     v = False
                 else:
-                    v = key in own or f.free(l, j * W + i, net, r_trk)
+                    idx = j * W + i
+                    if dist is not None:
+                        v = key in own or dist[l][idx] < WALL          # inside the flooded region
+                    else:
+                        v = key in own or (f.free(l, idx, net, r_trk) and (not f.win[l][idx] or l in allow))
                 cache[key] = v
             return v
 
         def via_ok(i, j):
             idx = j * W + i
-            return not f.hole[idx] and not f.smd[idx] and f.free(0, idx, net, r_via) and f.free(1, idx, net, r_via) and f.free(2, idx, net, r_via)
+            return not f.hole[idx] and not f.smd[idx] and not f.novia[idx] and f.free(0, idx, net, r_via) and f.free(1, idx, net, r_via) and f.free(2, idx, net, r_via)
 
         if dst:
             xs = [c[1] for c in dst]
@@ -426,12 +562,11 @@ class Board:
             bx0, bx1, by0, by1 = min(xs), max(xs), min(ys), max(ys)
         moves = [(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)]
 
-        def h(i, j):
+        def h(l, i, j):
             if to_plane:
                 return 0
-            dx = bx0 - i if i < bx0 else i - bx1 if i > bx1 else 0
-            dy = by0 - j if j < by0 else j - by1 if j > by1 else 0
-            return int(HWEIGHT * (10 * max(dx, dy) + 4 * min(dx, dy)))
+            v = dist[l][j * W + i]
+            return int(HWEIGHT * 7 * (v if v < WALL else 4000))
 
         heap = []
         best = {}
@@ -439,7 +574,7 @@ class Board:
         for (l, i, j) in src:
             s = (l, i, j, 8)
             best[s] = 0
-            heapq.heappush(heap, (h(i, j), 0, s))
+            heapq.heappush(heap, (h(l, i, j), 0, s))
         n = 0
         goal = None
         while heap:
@@ -476,7 +611,7 @@ class Board:
                 if ng < best.get(ns, 1 << 60):
                     best[ns] = ng
                     prev[ns] = s
-                    heapq.heappush(heap, (ng + h(ni, nj), ng, ns))
+                    heapq.heappush(heap, (ng + h(l, ni, nj), ng, ns))
             if not to_plane and via_ok(i, j):
                 for m in range(NL):
                     if m == l or not ok(m, i, j):
@@ -486,7 +621,7 @@ class Board:
                     if ng < best.get(ns, 1 << 60):
                         best[ns] = ng
                         prev[ns] = s
-                        heapq.heappush(heap, (ng + h(i, j), ng, ns))
+                        heapq.heappush(heap, (ng + h(m, i, j), ng, ns))
         if goal is None:
             return None
         path = [goal]
@@ -623,13 +758,20 @@ def main():
                 return ok
             order = sorted(range(len(isl)), key=lambda k: len(cells[k]))
             done = False
+            walled = set()                 # islands found to be boxed in during this pass
             for k in order:
                 dst = {}
                 for m, c in enumerate(cells):
-                    if m != k:
+                    if m != k and m not in walled:
                         dst.update(c)
+                if not dst:
+                    continue
                 t0 = time.time()
+                b.last_pocket = None
                 n = b.route(name, cells[k], dst, width, budget)
+                if n is None and b.last_pocket:
+                    walled.add(k)
+                    where = b.last_pocket
                 if n is None and width > 0.2:
                     n = b.route(name, cells[k], dst, 0.2 if width <= 0.3 else 0.3, budget)
                 if n is not None:
@@ -637,7 +779,9 @@ def main():
                     done = True
                     break
             if not done:
-                print(f'  {name.split("/")[-1]}: FAILED with {len(isl)} islands', file=sys.stderr, flush=True)
+                where = locals().get('where')
+                print(f'  {name.split("/")[-1]}: FAILED with {len(isl)} islands' + (f'; walled in near {where}' if where else ''), file=sys.stderr, flush=True)
+                b.last_pocket = None
                 return False
 
     def open_nets():

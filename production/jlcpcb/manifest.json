@@ -1,16 +1,21 @@
 {
+ "nfc_window_check": "PASS",
+ "nfc_gerber_check": "PASS",
  "kicad": "10.0.8",
- "bom_lines": 59,
- "placements": 145,
+ "bom_lines": 60,
+ "placements": 147,
  "in_bom_not_in_cpl": [],
  "in_pos_not_in_bom": [],
  "sha256": {
-  "tinkerbadge.kicad_pcb": "e810ede1361930f441fd6476230c689aeb4480719db890b1a41619168cab674d",
+  "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
   "tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
   "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+  "tinkerbadge.kicad_dru": "b65ab288d07495b29b87afb433b9e441aa0cdd0afe1aaad18fec248ac9a576df",
   "production/jlcpcb/bom-hand-fit.csv": "6742758352e3b2591f03a186673ce1746d8228ae7cd87a9b037cbdcbe201b63b",
-  "production/jlcpcb/bom-jlcpcb.csv": "88de4f345a7b34e1fb58dd6fd02ffd7079ce349383f922839b9bf0560c87f092",
-  "production/jlcpcb/cpl-jlcpcb.csv": "ae8ba833c876efd7c498841e9734012a7cbd61f0683954abc78f847ffcbbbc7c",
-  "production/jlcpcb/tinkerbadge-gerbers.zip": "c03376f778d0540624674e9275923323d429d3aca66efa1f75c96236da3cacb5"
+  "production/jlcpcb/bom-jlcpcb.csv": "57779ba0fe382fc17dc0feed632336935060b76b165daf1a3ed436282268e9dc",
+  "production/jlcpcb/cpl-jlcpcb.csv": "362ce62db0a1ab4b260e54e284d4d8c9c3b73817898ae28ca06112072dee5368",
+  "production/jlcpcb/assembly-front.pdf": "a6b8760bca2a040cf56ec173ddd64dd6a7575882bbaa1e894f4787ac12bdffc7",
+  "production/jlcpcb/assembly-rear.pdf": "a3ef4f8983b94cce408aa18a3381a0266af5fabd36d73ab82eb670917594c083",
+  "production/jlcpcb/tinkerbadge-gerbers.zip": "22125a93df5bf0203509b0dd3e4684fcbc085ec033a71d2b72cabeafb3854e24"
  }
 }

@@ -1,0 +1,17 @@
+{
+  "mpn": "FH34SRJ-24S-0.5SH(50)",
+  "documents": [
+    {
+      "mpn": "FH34SRJ-24S-0.5SH(50)",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/4fa13630ce538d3df6cea685e5f75b4e.pdf?productCode=C324726",
+      "revision": "Hirose FH34SRJ Series catalogue, Nov.1.2018, 12 pages",
+      "filename": "FH34SRJ-24S-0.5SH.pdf",
+      "sha256": "072e59cf39b16282d3ff9a909f4c69a3e254181c9a9b81510f83a969fb022df7",
+      "retrieved": "2026-11-11",
+      "status": "archived",
+      "component_record": "docs/components/FH34SRJ-24S-0.5SH.md"
+    }
+  ],
+  "supplier_page": "https://jlcpcb.com/partdetail/C324726",
+  "note": "Fetched through the supplier's datasheet link (LCSC C324726). The copy is Hirose's own catalogue; compare against hirose.com before a production order."
+}

@@ -1,5 +1,7 @@
 # Design review, 10 November 2026
 
+> **Superseded in part.** An independent review on 11 November found a layout defect in this pass (ground planes under the NFC coil) and several fit problems. Board revision 0.3 fixes them; see [the response to that review](../review/response_2026-11-11.md). Statements below describe revision 0.2 unless marked.
+
 Reviewer: Claude (agent), at the project owner's request, with authority to change the design, BOM and schematic. Baseline: commit `3c8a60e` (first routing pass, 179 schematic components, 48 unconnected board items, nine parts without footprints). After this pass: 155 components, no unconnected items, no missing footprints.
 
 This review covers usability, manufacturability, BOM and cost, placement, routing and appearance. Findings are ranked by how much they affect someone wearing, charging, building or hacking the badge. The second half records what was changed in this pass, what was checked, and what is still open.
@@ -133,7 +135,7 @@ The fixed anchors are sensible: buttons on the left edge, USB and Qwiic on the r
 - New footprints placed: `U105` at the USB connector, `L101` beside the regulator with switch nodes facing the IC, `L301` above the boost MOSFET, `J301` at the right edge with its opening toward the edge, `J102` on the rear beside the cell, dock pads at the rear bottom left, `RT101` in the cell footprint beside the charger, the SAO socket on the front top edge.
 - NFC coil drawn on the rear: 10 turns, 0.2 mm track and gap, 18 × 13 mm, estimated 1.7 µH (modified Wheeler). With the tag's 50 pF this needs about 30 pF more to resonate at 13.56 MHz; `C507` is fitted at 27 pF and `C508` is the trim position. The estimate is ±20 %, so tuning on an assembled badge is required.
 - The regulator switch nodes, the USB-C front end and the display-connector via lattice are hand-designed (`docs/design/routing/manual_*.json`).
-- Other open connections were routed with a grid router written for this board (`tools/route_remaining.py`): 45° geometry, through vias, no copper in the antenna shoulder or under the coil. Inner layer 2 now carries some long signal runs; inner layer 1 remains an unbroken ground plane. `C512` and `R102` moved a few millimetres to make room for the display fan-out and to sit beside the CC2 row.
+- Other open connections were routed with a grid router written for this board (`tools/route_remaining.py`): 45° geometry, through vias, no copper in the antenna shoulder. **Correction, 11 November:** this line originally also claimed no copper under the coil. That was wrong. The router kept its own tracks out of inner layer 2 there, but the board had lost the rule area that kept the ground planes out, so both inner planes covered the coil and a front LED trace crossed it. The [11 November review](../review/design_review_2026-11-11.md) found this; the fix and a regression check are in [the response](../review/response_2026-11-11.md). Inner layer 2 now carries some long signal runs; inner layer 1 remains an unbroken ground plane. `C512` and `R102` moved a few millimetres to make room for the display fan-out and to sit beside the CC2 row.
 
 Routing results and check output are in the next section.
 

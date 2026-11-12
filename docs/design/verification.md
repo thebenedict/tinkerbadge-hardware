@@ -1,6 +1,6 @@
 # Schematic verification
 
-> The snapshot below describes the 9 November schematic. The [10 November design review](design_review_2026-11-10.md) changed the schematic and board; its check results and exports (`exports/design-review-2026-11-10/`) are the current evidence. The pinned files under `exports/` root are kept as the earlier snapshot.
+> The snapshot below describes the 9 November schematic. The [10 November design review](design_review_2026-11-10.md) changed the schematic and board; and the [11 November review fixes](../review/response_2026-11-11.md) changed them again. The check results and exports in `exports/design-review-2026-11-11/` are the current evidence. The pinned files under `exports/` root are kept as the earlier snapshot.
 
 Pinned development review snapshot, 2026-11-09. Open `tinkerbadge.kicad_pro`; the complete six-page review PDF is [tinkerbadge-schematic.pdf](../../exports/tinkerbadge-schematic.pdf).
 

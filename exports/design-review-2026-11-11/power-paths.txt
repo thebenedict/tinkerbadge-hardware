@@ -1,0 +1,10 @@
+USB_VBUS         J101.A4   -> U101.7    narrowest 0.20 mm; path  25.4 mm, of which   2.4 mm is under 0.4 mm wide
+DOCK_5V          J103.1    -> U101.2    narrowest 0.20 mm; path 105.2 mm, of which   1.0 mm is under 0.4 mm wide
+VEXT_5V          U101.1    -> U102.13   narrowest 0.25 mm; path   6.3 mm, of which   2.9 mm is under 0.4 mm wide
+VBAT_PROTECTED   J102.1    -> U102.2    narrowest 0.20 mm; path  19.8 mm, of which   2.1 mm is under 0.4 mm wide
+VSYS             U102.10   -> U103.10   narrowest 0.30 mm; path  50.0 mm, of which   4.7 mm is under 0.4 mm wide
++3V3             U103.6    -> U201.2    narrowest 0.30 mm; path  87.3 mm, of which  27.5 mm is under 0.4 mm wide
++3V3             U103.6    -> D408.4    narrowest 0.20 mm; path  85.3 mm, of which   9.3 mm is under 0.4 mm wide
++3V3             U103.6    -> U104.1    narrowest 0.30 mm; path  14.7 mm, of which   3.0 mm is under 0.4 mm wide
++3V3_EPD         U104.6    -> J301.15   narrowest 0.20 mm; path  64.5 mm, of which   2.3 mm is under 0.4 mm wide
++3V3             U103.6    -> U505.1    narrowest 0.20 mm; path  73.5 mm, of which   9.1 mm is under 0.4 mm wide

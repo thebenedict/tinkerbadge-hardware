@@ -1,0 +1,3 @@
+{"comment": "Reload the SAO socket footprint after its silkscreen labels moved clear of D402 and the housing outline. No copper change.",
+ "refresh_footprints": [["J502", "Tinkerbadge.pretty", "SAO_Socket_2x03_Front"]],
+ "tracks": [], "vias": []}

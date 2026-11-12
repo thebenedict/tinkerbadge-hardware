@@ -14,6 +14,7 @@ import json
 import pathlib
 import shutil
 import subprocess
+import sys
 import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -93,10 +94,32 @@ def main():
     missing = sorted(placed - seen)
     extra = sorted({p['Ref'] for p in pos} - placed)
 
-    manifest = {'kicad': subprocess.run(['kicad-cli', 'version'], capture_output=True, text=True).stdout.strip(),
+    # assembly drawings: every reference is on the fabrication layers, including the parts under the display
+    run('pcb', 'export', 'pdf', str(PCB), '-o', str(OUT / 'assembly-front.pdf'), '--layers', 'F.Fab,F.Courtyard,Edge.Cuts',
+        '--mode-single', '--include-border-title')
+    run('pcb', 'export', 'pdf', str(PCB), '-o', str(OUT / 'assembly-rear.pdf'), '--layers', 'B.Fab,B.Silkscreen,B.Courtyard,Edge.Cuts',
+        '--mode-single', '--mirror', '--include-border-title')
+
+    # NFC antenna window regression check (must pass before the package is usable)
+    py = '/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3'
+    chk = subprocess.run([py, str(ROOT / 'tools/check_nfc_window.py'), str(PCB), '--output', str(OUT / 'nfc-window-check.json')],
+                         capture_output=True, text=True)
+    nfc = json.loads((OUT / 'nfc-window-check.json').read_text())['status']
+    if nfc != 'PASS':
+        raise SystemExit('NFC window check failed; see ' + str(OUT / 'nfc-window-check.json'))
+    # the same property on the files the fabricator receives
+    dump = ROOT / '.build/jlc_board_dump.json'
+    dump.parent.mkdir(exist_ok=True)
+    subprocess.run([py, str(ROOT / 'tools/pcb_dump.py'), str(PCB), str(dump)], capture_output=True, text=True)
+    gchk = subprocess.run([sys.executable, str(ROOT / 'tools/check_nfc_gerbers.py'), str(OUT / 'gerbers'), str(dump),
+                        '--output', str(OUT / 'nfc-gerber-check.json')], capture_output=True, text=True)
+    if gchk.returncode != 0:
+        raise SystemExit('NFC Gerber check failed; see ' + str(OUT / 'nfc-gerber-check.json'))
+
+    manifest = {'nfc_window_check': nfc, 'nfc_gerber_check': 'PASS', 'kicad': subprocess.run(['kicad-cli', 'version'], capture_output=True, text=True).stdout.strip(),
                 'bom_lines': len(groups), 'placements': len(seen), 'in_bom_not_in_cpl': missing, 'in_pos_not_in_bom': extra,
                 'sha256': {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
-                           for p in [PCB, SCH, ROOT / 'tinkerbadge.kicad_pro', *sorted(OUT.glob('*.csv')), OUT / 'tinkerbadge-gerbers.zip']}}
+                           for p in [PCB, SCH, ROOT / 'tinkerbadge.kicad_pro', ROOT / 'tinkerbadge.kicad_dru', *sorted(OUT.glob('*.csv')), *sorted(OUT.glob('*.pdf')), OUT / 'tinkerbadge-gerbers.zip']}}
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=1) + '\n')
     print('bom lines', len(groups), 'placements', len(seen), 'hand-fit', [r['Reference'] for r in hand])
     print('in BOM but not placed:', missing, '| in pos file but not in BOM:', extra)

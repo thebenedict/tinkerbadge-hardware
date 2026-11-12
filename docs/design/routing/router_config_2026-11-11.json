@@ -1,0 +1,39 @@
+{
+ "comment": "Router configuration for the 2026-11-11 review fixes: display connector first, then the NFC feed, then everything displaced.",
+ "rips": [],
+ "pre_vias": [],
+ "priority": [
+  "EPD_VCOM",
+  "EPD_VGL",
+  "EPD_VSL",
+  "EPD_VGH",
+  "EPD_VSH1",
+  "EPD_VPP",
+  "EPD_VDD_1V8",
+  "EPD_VSH2",
+  "EPD_RESE",
+  "EPD_GDR",
+  "+3V3_EPD",
+  "EPD_BUSY",
+  "EPD_RST_N",
+  "EPD_DC",
+  "EPD_CS_N",
+  "EPD_SCK",
+  "EPD_MOSI",
+  "NFC_LA",
+  "NFC_LB",
+  "RGB_LINK_7",
+  "RGB_LINK_6",
+  "BATT_NTC",
+  "MCU_EN",
+  "MCU_EN_SW",
+  "BTN_B_N",
+  "IR_RX_EN",
+  "USB_VBUS",
+  "USB_CC1",
+  "USB_CC2"
+ ],
+ "widths": {
+  "EPD_SW": 0.3
+ }
+}
