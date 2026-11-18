@@ -1,33 +1,30 @@
-name: Verify PCB 0.4 enclosure
+name: Prepare Mac CAD verification environment
 on:
   push:
     branches: [pcb-04-enclosure-build]
 permissions:
   contents: read
 jobs:
-  verify:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 25
+  dependencies:
+    runs-on: macos-15
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - name: Install the CAD environment
-        run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
-          sudo apt-get install --no-install-recommends -y kicad libgl1 libglu1-mesa libxrender1 python3-venv
-          python3 -m venv /tmp/tinkerbadge-cad
-          /tmp/tinkerbadge-cad/bin/python -m pip install -r mechanical/enclosure/requirements.txt
-      - name: Build A3 and verify it against the routed board
-        env:
-          KICAD_PYTHON: /usr/bin/python3
-        run: |
-          echo '44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4  tinkerbadge.kicad_pcb' | sha256sum --check -
-          kicad-cli version
-          /tmp/tinkerbadge-cad/bin/python mechanical/enclosure/build.py
-      - uses: actions/upload-artifact@v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
-          name: pcb-04-enclosure
-          path: mechanical/enclosure/exports/enclosure-cad.zip
-          if-no-files-found: error
-          retention-days: 3
+          python-version: '3.12'
+          architecture: arm64
+      - name: Resolve the pinned packages for the local KiCad fit check
+        run: |
+          python -m pip download --only-binary=:all: -r mechanical/enclosure/requirements.txt -d wheels
+          cd wheels
+          shasum -a 256 *.whl > SHA256SUMS
+          rm -f cadquery_ocp-7.8.1.1.post1-cp312-cp312-macosx_11_0_arm64.whl vtk-9.3.1-cp312-cp312-macosx_11_0_arm64.whl
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: mac-cad-wheels
+          path: wheels/
+          compression-level: 0
+          retention-days: 1
