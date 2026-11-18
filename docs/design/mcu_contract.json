@@ -14,7 +14,7 @@
         "1": "GND",
         "2": "+3V3",
         "3": "MCU_EN",
-        "4": null,
+        "4": "EXP_IO4",
         "5": "USB_PRESENT_N",
         "6": "DOCK_PRESENT_N",
         "7": "MOTION_INT1",
@@ -34,7 +34,7 @@
         "21": "EPD_DC",
         "22": "EPD_RST_N",
         "23": "RGB_DATA",
-        "24": "SAO_GPIO2",
+        "24": "EXP_IO47",
         "25": "NFC_FD_N",
         "26": "STRAP45",
         "27": "BTN_B_N",
@@ -45,7 +45,7 @@
         "32": "PWR_LED_R",
         "33": "EPD_EN",
         "34": "EXT_SCL",
-        "35": "SAO_GPIO1",
+        "35": "EXP_IO42",
         "36": "UART_RX",
         "37": "UART_TX",
         "38": "BTN_A_N",
@@ -237,7 +237,7 @@
   "gpio": {
     "1": "BAT_ADC",
     "2": "BTN_A_N",
-    "4": "NC",
+    "4": "EXP_IO4",
     "5": "USB_PRESENT_N",
     "6": "DOCK_PRESENT_N",
     "7": "MOTION_INT1",
@@ -259,10 +259,10 @@
     "39": "PWR_LED_R",
     "40": "EPD_EN",
     "41": "EXT_SCL",
-    "42": "SAO_GPIO1",
+    "42": "EXP_IO42",
     "43": "UART_TX",
     "44": "UART_RX",
-    "47": "SAO_GPIO2",
+    "47": "EXP_IO47",
     "48": "NFC_FD_N",
     "0": "BTN_B_N",
     "45": "STRAP45",
@@ -270,7 +270,6 @@
   },
   "unused_pins": {
     "U201": [
-      "4",
       "15",
       "28",
       "29",
@@ -282,8 +281,9 @@
     "Two user buttons owned bylighting contract; GPIO2 is required active-low deep-sleep wake input.",
     "GPIO40 EPD_EN may be driven high by USB-OTG download ROM; powering display in recovery is benign. Avoid assigning GPIO40 to switched accessory data.",
     "Straps GPIO45/46 have10k pulldowns; GPIO0 is BOOT and button B with a 10k pullup (R202) and 100 nF (C412). GPIO3 unconnected.",
-    "External I2C and SAO are separate from onboard bus; prohibit self-powered accessories until isolation is qualified.",
+    "External I2C (Qwiic and expansion header) is separate from the onboard bus; prohibit self-powered accessories until isolation is qualified.",
     "R207 100k grounds EPD_EN during MCU high-impedance states; USB-OTG ROM can still intentionally drive GPIO40 high.",
-    "Button B is GPIO0: hold B through reset (SW403) for ROM download. GPIO4 is unused. EN RC is 10 ms, GPIO0 RC 1 ms, so the strap is high at release unless B is held. design review 2026-11-11"
+    "Button B is GPIO0: hold B through reset (SW403) for ROM download. EN RC is 10 ms, GPIO0 RC 1 ms, so the strap is high at release unless B is held. design review 2026-11-11",
+    "GPIO4, GPIO42 and GPIO47 go to expansion header J503 through 330R (R522, R520, R521). UART0 TX/RX keep their direct probe pads TP205/TP206 and also reach J503 through R518/R519. GPIO4 pulses low for about 60 us at power-up; TX carries the ROM boot log. expansion header 2026-11-12"
   ]
 }

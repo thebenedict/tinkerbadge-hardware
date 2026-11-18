@@ -1,5 +1,7 @@
 # SFH11-NBPC-D03-ST-BK component facts
 
+**Retired 12 November 2026.** J502 was removed from the design; see the [expansion header record](../design/expansion_header.md). This record and its source entry are kept as evidence for revisions up to 0.3.
+
 ## Source and physical package
 
 [SFH11-NBPC-D03-ST-BK_official.pdf](https://drawings-pdf.s3.amazonaws.com/11160.pdf), Sullins drawing11160 RevJ,12 May2015. [Source](https://drawings-pdf.s3.amazonaws.com/11160.pdf). URL, retrieval route and SHA256 are in `SFH11-NBPC-D03-ST-BK.source.json` under datasheets.

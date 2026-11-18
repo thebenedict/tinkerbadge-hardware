@@ -1,5 +1,7 @@
 # PCB placement and first routing review
 
+> 12 November 2026: SAO socket J502 is replaced by expansion header J503 and R518–R522 at the same top-edge site. That placement is recorded in the [expansion header record](expansion_header.md) and was accepted for routing on 18 November. The routed board retains all footprint positions. Placement views are in `exports/pcb-review/expansion-header/`. The text below describes the 10 November placement.
+
 10 November 2026. **Experimental first routing pass. Human placement approval and routing authorization are recorded; final visual, electrical, RF and manufacturing review remain open.**
 
 The active board is 110 × 80 mm, SHA256 `dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70`. The previous 110 × 100 mm, two-sided placement and its libraries/models are preserved under `history/2026-11-09-100mm-two-sided-fallback/`. The first 80 mm placement is preserved under `history/2026-11-09-80mm-before-group-spacing/`; the intermediate group-spacing revision is under `history/2026-11-09-organized-before-top-row/`.

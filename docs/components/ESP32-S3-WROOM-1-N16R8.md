@@ -57,9 +57,10 @@ Generated from ESP32-S3-WROOM-1-N16R8.json. Package pin numbers are not GPIO num
 - GPIO0 BOOT10k pullup; GPIO45/46 each10k pulldown. Boot/download pads andEN are independent from the two user buttons. No eFuse changes are authorized or required.
 - NativeUSB19/20 each22Ω series, with connectorESD on power sheet. UART43/44 remain accessible. USB attach/detach uses independently sensedVBUS; device firmware must disable pullup withoutVBUS.
 - Guaranteed digital thresholds in table6-3 are VIH≥0.75VDD, VOH≥0.8VDD (high-impedance load), VIL≤0.25VDD andVOL≤0.1VDD. Current/temperature qualifications must not be extrapolated from typical values.
-- GPIO2 button is RTC_GPIO2, suitable for external RTC wake. Configure EXT0 low wake, wait for release/debounce before sleeping, and do not enable source-present low-level wake when it is already asserted. GPIO4 button andGPIO5/6 presence are alsoRTC-domain candidates. No insertion wake is promised until firmware-tested.
+- GPIO2 button is RTC_GPIO2, suitable for external RTC wake. Configure EXT0 low wake, wait for release/debounce before sleeping, and do not enable source-present low-level wake when it is already asserted. GPIO4 (expansion header, behind330Ω) andGPIO5/6 presence are alsoRTC-domain candidates. No insertion wake is promised until firmware-tested.
 - GPIO7 motion is RTC-capable but motion wake is disabled in storage. NFC field detect usesGPIO48 and is polled/interrupt during awake operation; no storage wake guarantee.
 - ROMUSB-OTG download may driveGPIO38/39 low andGPIO40 high (hardwareguidelines table12). StatusLEDs on38/39 staydark;40 is thereforeEPD powerenable, where high is benign. GPIO41/42 are inputs in that ROM path.
+- Expansion header J503 carriesGPIO4, GPIO42, GPIO47, UART0 (GPIO43/44) and the externalI2C pins GPIO16/41. GPIO4 andGPIO16 pulse low about60µs at power-up (chip datasheet table2-2); GPIO42/47 float after reset; GPIO41–44 are listed as use-with-caution pins (section2.3.5). See [the expansion header record](../design/expansion_header.md).
 - GPIO35–37 must remainNC for N16R8PSRAM. GPIO47/48 are3.3V forN16R8; do not substituteN16R16V whose47/48 domain is1.8V.
 - Preserve antenna keepout from module drawing and placement guide, including display/battery/enclosure metal. Footprint checked through Konnect; PCB placement and prototypeRF tests remain pending.
 

@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 board_path = ROOT / 'tinkerbadge.kicad_pcb'
 board = pcbnew.LoadBoard(str(board_path))
 refs = {'H1','H2','H3','H4','H5','H6','SW401','SW402','SW403',
-        'J101','J102','J103','J301','J501','J502','U501','U504','D501',
+        'J101','J102','J103','J301','J501','J503','U501','U504','D501',
         'MECH_PANEL','MECH_BATTERY','AE501',*[f'D40{i}' for i in range(1,10)]}
 records = {}
 for f in board.GetFootprints():

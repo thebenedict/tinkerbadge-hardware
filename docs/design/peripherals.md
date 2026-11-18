@@ -1,5 +1,7 @@
 # Peripheral design decisions
 
+> **Updated on 12 November:** the SAO socket J502 is removed and an unpopulated 2 × 5 expansion header J503 with series resistors R518–R522 takes its place. Pin order, source facts and placement are in the [expansion header record](expansion_header.md). SAO statements below are historical.
+>
 > **Updated again on 11 November** in response to [the 11 November review](../review/design_review_2026-11-11.md): the SAO footprint has the socket's true 12.7 × 6.0 mm body and key, the NFC antenna window is enforced on all layers, the IR receiver is powered from expander P1, and button B is GPIO0/BOOT.
 >
 > **Updated by the [10 November design review](design_review_2026-11-10.md).** The SAO socket (J502) is on the front top edge. AE501 is a drawn 10-turn rear coil (about 1.7 µH estimated) with C507 fitted at 27 pF and C508 as trim. R508 is 200 kΩ.
@@ -18,9 +20,9 @@ Live onboardI2C uses4.7kΩ pulls and100kHz initial clock. BH1730=0x29; LIS SA0hi
 
 U506: P0 reads CHARGER_CHG_N and P3 reads ACC_FAULT_N. P1 drives IR_RX_EN (IR receiver supply), P2 drives ACC_EN, and the unused P4–P7 are driven low; their pull-downs and the charger PGOOD input were removed. Firmware writes output latch 0x00 and then direction 0x09 on every boot, because an MCU-only reset does not reset the expander. INT is NC and polled.
 
-One TPS2553DBVR feeds Qwiic and SAO. The IR receiver is now powered from expander P1 through R507, so an accessory fault or accessory power-down no longer disables IR reception. R508 ILIM gives calculated109.18–152.25mA bounds; reserve155mA upstream fault current. Publish50mA NORMAL COMBINED accessory budget, including IR receiver and pull-ups, until power testing allows more. Hardware current limit is not the normal allowance. This supersedes two proposed EXP-03 instances in draft BOM. A fault removes both ports and receiver.
+One TPS2553DBVR feeds Qwiic and the expansion header (formerly SAO). The IR receiver is now powered from expander P1 through R507, so an accessory fault or accessory power-down no longer disables IR reception. R508 ILIM gave calculated109.18–152.25mA bounds at210kΩ; with the fitted200kΩ the bounds are114.7–159.4mA, above the155mA upstream reserve, which needs restating (see the expansion header record). Publish50mA NORMAL COMBINED accessory budget, including IR receiver and pull-ups, until power testing allows more. Hardware current limit is not the normal allowance. This supersedes two proposed EXP-03 instances in draft BOM. A fault removes both ports and receiver.
 
-Dedicated externalI2C has4.7kΩ pull-ups to switchedACC_3V3; SAO GPIO is3.3V only. Before disabling, stop bus, disable internal pulls, releaseI2C, setGPIO low/highZ and IR RX input/no pulls, then ACC_EN low. No independently powered add-ons and no live insertion.100kΩ output bleed with10µF gives1s nominal discharge constant, longer with accessories; measure discharge before promising a fixed delay. External ESD/hot-plug qualification remains open.
+Dedicated externalI2C has4.7kΩ pull-ups to switchedACC_3V3; header GPIO is3.3V only. Before disabling, stop bus, disable internal pulls, releaseI2C, setGPIO low/highZ and IR RX input/no pulls, then ACC_EN low. No independently powered add-ons and no live insertion.100kΩ output bleed with10µF gives1s nominal discharge constant, longer with accessories; measure discharge before promising a fixed delay. External ESD/hot-plug qualification remains open.
 
 ## Lighting and controls
 
@@ -48,7 +50,7 @@ IRM-H638T/TR2 pins1/2GND,3OUT,4VCC. Source-required filter 100 Ω from IR_RX_EN 
 
 JST SH side-entry uses manufacturer CircuitNo.1 and SparkFun reference schematic1GND/2VCC/3SDA/4SCL. Two solder tabs are mechanical. Cable drawing housing-view numbers must not be blindly transferred to PCB header; verify cable continuity against pin1 marker.
 
-SAO author host top view: odd1,3,5 upper row; even2,4,6 lower row. Factory Sullins drawing has no contact numbers, so project numbering explicitly follows this convention:1ACC_3V3/2GND/3SDA/4SCL/5GPIO1/6GPIO2. Independently verify female key and mirrored male mating before footprint release. Through-hole assembly/retention still needs manufacturing review.
+Historical, J502 removed: SAO author host top view: odd1,3,5 upper row; even2,4,6 lower row. Factory Sullins drawing has no contact numbers, so project numbering explicitly follows this convention:1ACC_3V3/2GND/3SDA/4SCL/5GPIO1/6GPIO2. Independently verify female key and mirrored male mating before footprint release. Through-hole assembly/retention still needs manufacturing review.
 
 ## Checks performed
 

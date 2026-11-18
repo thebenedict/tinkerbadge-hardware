@@ -2,6 +2,8 @@
 
 11 November 2026, board revision 0.3. Native KiCad 10 development schematic, with five circuit sheets and an overview. After the [10 November design review](design_review_2026-11-10.md) and the fixes answering [the 11 November review](../review/response_2026-11-11.md) the project has 162 schematic components, including ten probe pads. Every part has a footprint. The board is fully routed and DRC shows no clearance, short or parity errors; see the review's check results.
 
+**18 November 2026, revision 0.4.** The SAO socket is replaced by an unpopulated 2 × 5 expansion header, J503, with five series resistors; see the [expansion header record](expansion_header.md) and its [independent review](review_expansion_header.md). The schematic is complete for this change (167 components). All 14 connections are routed. KiCad 10.0.8 reports zero open connections, DRC errors or schematic-parity findings. The [verification record](verification.md) links the checks and current board hash.
+
 ## Open the project
 
 Open `tinkerbadge.kicad_pro` in KiCad 10, then its root schematic. Double-click a sheet box to enter a block. Project-local symbol libraries use `${KIPRJMOD}` paths. KiCad standard libraries are also required.
@@ -29,7 +31,8 @@ This section supersedes conflicting candidate choices in the earlier planning BO
 | DISP-06, retired | — | SN74LVC541 buffer and its bias resistors removed. The MCU drives the panel directly; firmware drives SPI/DC/RST low before EPD_EN goes low. |
 | UI-02 | D401–D408 | Eight exact WS2812C-2020-V6 share nominal +3V3 with direct MCU data. The user accepted a first-prototype supply-tolerance experiment, with the tests below required. |
 | PWR-13 / UI-03 | D409, SW401–SW403, R415 | Independent red/green status LED and three Alps SKSCLBE010 side-actuated, 2.2 N switches on the left edge: A (GPIO2), B (GPIO0, which is also BOOT) and a reset switch on EN through 330 Ω, meant to sit behind a pinhole. Hold B and tap reset for ROM download. Four physical switch terminals retain direct wake-capable MCU inputs. Footprint, enclosure and continuous-bias application qualification remain open. |
-| EXP-02 | J502 | SAO socket on the front top edge between D402 and D403. The footprint carries the socket's true 12.7 × 6.0 mm body, its 3.7 × 1.0 mm key on the top-row side, and an 8.5 mm-tall model. |
+| EXP-02, retired | — | SAO socket J502 removed on 12 November. Qwiic remains the plug-in port. |
+| EXP-05 | J503, R518–R522 | Unpopulated 2 × 5, 2.54 mm expansion header on the front top edge between D402 and D403, numbered as a standard header fitted on the front (pin 1 top right). Top row from the left: IO4, SCL, SDA, 3V3, GND; bottom row: GND, IO47, IO42, RX, TX. GPIO4, GPIO42, GPIO47 and the UART branch each pass through 330 Ω. Supply is the Qwiic accessory rail. |
 | EXP-06 | U506 | TCA9534 P1 powers the IR receiver (IR_RX_EN). P4–P7 are unconnected (R514–R517 removed); firmware drives them low as outputs. Direction register 0x09. |
 | EXP-03 | U505 | One shared TPS2553DBVR accessory switch. Combined normal accessory allowance is provisionally 50 mA; R508 200 kΩ sets roughly 115–160 mA. |
 | EXP-06 | U506 | Added TCA9534PWR status/control expander, address 0x20, to preserve the N16R8 GPIO budget. |
@@ -59,8 +62,9 @@ Measure on a prototype: cell-to-NTC temperature offset with the pack taped down,
 - Hold panel reset low during rail enable, initialize after settling, then refresh. Stop SPI and send the panel's sleep command before removing its rail. GPIO40 may power the rail during ROM recovery; the panel remains reset by its local pulldown.
 - The TCA9534 starts as inputs. Write the output latch 0x00, then the direction register **0x09**: P0 (CHARGER_CHG_N) and P3 (ACC_FAULT_N) are inputs; P1 (IR_RX_EN), P2 (ACC_EN) and the unused P4–P7 are outputs driven low. An MCU-only reset does not reset this expander, so write both registers on every boot.
 - The IR receiver is powered from expander P1 through R507, not from the accessory rail. Drive P1 high to receive and low to save its 0.4–0.7 mA; leave GPIO18 without a pull while it is off.
-- Button B is GPIO0. It works as a normal active-low button and deep-sleep wake source after boot; held through a reset it selects ROM download mode. GPIO4 is unused.
-- Accessories are initially off. Make external I2C/GPIO pins high impedance and disable their internal pulls before switching accessory power off. This build does not support self-powered add-ons or live insertion.
+- Button B is GPIO0. It works as a normal active-low button and deep-sleep wake source after boot; held through a reset it selects ROM download mode.
+- GPIO4, GPIO42 and GPIO47 are expansion-header pins behind 330 Ω. Leave them as inputs without pulls unless an accessory is declared. GPIO4 is the header's analog and deep-sleep wake pin. UART0 TX and RX also reach the header through 330 Ω; TX carries the ROM boot log after every reset.
+- Accessories are initially off. Make external I2C and header GPIO pins high impedance and disable their internal pulls before switching accessory power off, and stop driving UART0 TX if a header accessory uses it. This build does not support self-powered add-ons or live insertion.
 - Respect NFC errata and recovery timing. Its standby current remains in the storage budget. Reconfigure sensors and motion wake deliberately for storage.
 - Drive EPD SPI, DC and RST low before taking EPD_EN low; the panel has no isolation buffer.
 - Use calibrated ADC1 measurements with the 2:1 divider ratio. The divider is 500 kΩ source impedance behind 100 nF: sample slowly and average. Voltage alone is not battery state-of-charge. Control low-voltage sleep/restart above the chosen pack's endpoint.

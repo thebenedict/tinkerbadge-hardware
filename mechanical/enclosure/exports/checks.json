@@ -107,7 +107,7 @@
     "Exact glass support and adhesive zones",
     "Battery model selection, swelling and thermal coupling",
     "Full native component solid interference and tolerances",
-    "USB/Qwiic cable and SAO insertion sweeps",
+    "USB/Qwiic cable and header plug insertion sweeps",
     "RGB LED visibility, sensor field of view and IR/visible isolation",
     "RF/NFC through assembled case",
     "Dock pin stroke, guide and polarity design",

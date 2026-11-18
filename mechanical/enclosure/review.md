@@ -50,3 +50,7 @@ No physical prototype, process tolerance study, full component-solid interferenc
 ## Revision 0.3 export alignment
 
 12 November 2026: regenerated interfaces, CAD, meshes, drawings and the archive against final PCB SHA-256 `2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757`. The 30 mechanical reference records are unchanged from A2; the enclosure remains revision A2. The fresh native-fit report passes. `tools/check_export_chain.py` checks the board binding, enclosure source/output hashes and archived file contents together with the electrical and manufacturing evidence.
+
+## A3 expansion-header opening
+
+The front plate follows J503 on PCB 0.4. Its 13.60 × 6.48 mm rounded aperture gives 0.45 mm end clearance and 0.70 mm side clearance around a nominal 12.70 × 5.08 mm unshrouded header. The native fit check tests that envelope through the full plate thickness and measures both strips between the opening and the role-light windows. Verify plug housings, pin reach and manufacturing tolerances on a physical sample.

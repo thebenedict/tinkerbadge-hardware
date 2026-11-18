@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -62,7 +63,7 @@ def volume_overlap(a, b):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--kicad-python', default=KICAD_PYTHON)
+    parser.add_argument('--kicad-python', default=os.environ.get('KICAD_PYTHON', KICAD_PYTHON))
     args = parser.parse_args()
     board = ROOT / 'tinkerbadge.kicad_pcb'
     board_hash = sha(board)
@@ -127,8 +128,7 @@ def main():
         return box_at(x + dx, y + dy, z, w, h, height)
     bodies = {
         'display_glass': ref_box('MECH_PANEL', 93.3, 54.9, .92, 4.5),
-        'SAO_body': ref_box('J502', 12.7, 6, 8.5),
-        'SAO_key': ref_box('J502', 3.7, 1, 8.5, dy=3.5),
+        'unshrouded_header_insertion': ref_box('J503', 12.7, 5.08, cad.front_z + cad.thick + 1),
         'FPC_connector': ref_box('J301', 3.8, 14, 1, dx=-.12),
         'IR_receiver_max': ref_box('U504', 4.2, 5.2, 4.3),
         'Qwiic_body': ref_box('J501', 4.4, 6, 2.9, dx=.375),
@@ -170,10 +170,11 @@ def main():
 
     # Measure transparent webs as planar clearance between the true Boolean
     # openings, so a too-thin strip cannot disappear behind a render.
-    long_role = next(profile for key, _, profile in cad.light_profiles if key == 'role-left')
-    web = offset(long_role, amount=.15).distance_to(cad.sao)
-    checks.append({'check': 'role_to_sao_plate_web', 'minimum_design_mm': 1.0,
-                   'measured_mm': round(web, 4), 'passed': web >= 1.0})
+    for key, _, profile in cad.light_profiles:
+        if key.startswith('role-'):
+            web = offset(profile, amount=.15).distance_to(cad.header_opening)
+            checks.append({'check': key + '_to_header_plate_web', 'minimum_design_mm': 1.0,
+                           'measured_mm': round(web, 4), 'passed': web >= 1.0})
     rear_gap = cad.P['battery_top_z_mm'] - 7 - (cad.P['rear_z_mm'] + cad.P['panel_thickness_mm'])
     checks.append({'check': 'battery_rear_nominal_gap', 'measured_mm': round(rear_gap, 4),
                    'passed': rear_gap >= 1.0})

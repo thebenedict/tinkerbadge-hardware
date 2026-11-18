@@ -1,5 +1,5 @@
 {
-  "status": "derived from tinkerbadge.kicad_pcb, rev 0.3 (2026-11-11); the board file is authoritative",
+  "status": "derived from tinkerbadge.kicad_pcb, rev 0.4 2026-11-12; the board file is authoritative",
   "board_mm": [
     110,
     80
@@ -675,12 +675,12 @@
       "group": "accessories"
     },
     {
-      "reference": "J502",
-      "x": 190.75,
-      "y": 105.0,
+      "reference": "J503",
+      "x": 190.0,
+      "y": 106.4,
       "rotation": 0.0,
       "side": "F.Cu",
-      "group": "expansion"
+      "group": "expansion header"
     },
     {
       "reference": "L101",
@@ -1161,6 +1161,46 @@
       "rotation": 0.0,
       "side": "F.Cu",
       "group": "accessories"
+    },
+    {
+      "reference": "R518",
+      "x": 195.08,
+      "y": 110.75,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "expansion header"
+    },
+    {
+      "reference": "R519",
+      "x": 192.54,
+      "y": 110.75,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "expansion header"
+    },
+    {
+      "reference": "R520",
+      "x": 190.0,
+      "y": 110.75,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "expansion header"
+    },
+    {
+      "reference": "R521",
+      "x": 187.46,
+      "y": 110.75,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "expansion header"
+    },
+    {
+      "reference": "R522",
+      "x": 184.92,
+      "y": 110.75,
+      "rotation": 90.0,
+      "side": "F.Cu",
+      "group": "expansion header"
     },
     {
       "reference": "RT101",

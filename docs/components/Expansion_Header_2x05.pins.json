@@ -1,0 +1,50 @@
+{
+  "mpn": null,
+  "package": "Ten plated holes, 2 x 5 on a 2.54 mm grid, 1.0 mm drill; KiCad odd/even numbering",
+  "source": {
+    "footprint": "Tinkerbadge.pretty/Expansion_Header_2x05_P2.54mm.kicad_mod",
+    "pattern": "KiCad Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
+  },
+  "pins": [
+    {
+      "number": "1",
+      "name": "top row, hole 1 from the right (front view)"
+    },
+    {
+      "number": "2",
+      "name": "bottom row, hole 1 from the right (front view)"
+    },
+    {
+      "number": "3",
+      "name": "top row, hole 2 from the right (front view)"
+    },
+    {
+      "number": "4",
+      "name": "bottom row, hole 2 from the right (front view)"
+    },
+    {
+      "number": "5",
+      "name": "top row, hole 3 from the right (front view)"
+    },
+    {
+      "number": "6",
+      "name": "bottom row, hole 3 from the right (front view)"
+    },
+    {
+      "number": "7",
+      "name": "top row, hole 4 from the right (front view)"
+    },
+    {
+      "number": "8",
+      "name": "bottom row, hole 4 from the right (front view)"
+    },
+    {
+      "number": "9",
+      "name": "top row, hole 5 from the right (front view)"
+    },
+    {
+      "number": "10",
+      "name": "bottom row, hole 5 from the right (front view)"
+    }
+  ]
+}

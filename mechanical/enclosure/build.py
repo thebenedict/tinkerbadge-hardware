@@ -61,13 +61,13 @@ for refs,r in [(mounts,hole_r),(cords,2.1)]:
     front=cut_holes(front,refs,r,-15,30)
     rear=cut_holes(rear,refs,r,-15,30)
 
-# Front socket plus key and mating clearance. Separate receiver/emitter windows
+# Front access to the unpopulated expansion header. Separate receiver/emitter windows
 # break the clear cover's optical path rather than sharing one sheet.
-sx,sy=xy('J502')
-sao=rounded(sx,sy,14.1,7.4,.5)+rounded(sx,sy+3.5,5.1,2.4,.3)
+hx,hy=xy('J503')
+header_opening=rounded(hx,hy,13.6,6.48,.5)
 passive=rounded(-15,-29.7,13,9,.7)
 emitter=rounded(-5,-28.6,5.8,6.2,.6)
-for aperture in [sao,passive,emitter]: front=front-slab(aperture,front_z-.2,thick+.4)
+for aperture in [header_opening,passive,emitter]: front=front-slab(aperture,front_z-.2,thick+.4)
 
 # Dock opening is a recessed pin access well, not a complete dock design.
 dock=rounded(-31,-35.5,17,9,1)
@@ -107,7 +107,7 @@ for n,ref in enumerate(mounts):
         'Removable post and provisional support shelf; 0.4 mm compliant pad beneath the inactive glass border.')
 
 # Open windows expose the RGB LEDs directly. The upper opening is split
-# around the socket; no separate inserts or light guides are fitted.
+# around the expansion header; no separate inserts or light guides are fitted.
 light_profiles=[]
 for n,ref in enumerate(['D404','D405','D406','D407','D408']):
     x,y=xy(ref);light_profiles.append((f'affinity-{n+1}',f'Affinity LED window {n+1}',rounded(x,y,11,3.6,1.4)))
@@ -128,7 +128,7 @@ add('optical-baffle','Sensor light barrier',liner,'optics',[.10,.12,.13,1],[0,0,
 add('frame','Stepped perimeter frame',frame,'frame',[.16,.20,.21,1],[0,0,0],
     'Printed frame with rear PCB supports, left button access, recessed reset, right-side ports and flex relief.')
 add('front','Clear front plate',front,'front',[.76,.89,.91,.22],[0,0,35],
-    '1.5 mm clear plate with open RGB LED windows and separate sensor apertures; stepped outline follows the board shoulder.','Cut clear sheet')
+    '1.5 mm clear plate with open RGB LED windows, header access and separate sensor apertures; stepped outline follows the board shoulder.','Cut clear sheet')
 add('rear','Clear rear plate',rear,'rear',[.76,.89,.91,.25],[0,0,-28],
     '1.5 mm clear plate with aligned cord holes and recessed dock-pad access.','Cut clear sheet')
 
@@ -196,7 +196,7 @@ def build():
             common=a['shape'].intersect(b['shape'])
             volume=common.volume if common else 0
             if volume>1e-4:collisions.append({'parts':[a['id'],b['id']],'volume_mm3':round(volume,5)})
-    report={'checks':checks,'part_intersections':collisions,'pending':['Exact glass support and adhesive zones','Battery model selection, swelling and thermal coupling','Full native component solid interference and tolerances','USB/Qwiic cable and SAO insertion sweeps','RGB LED visibility, sensor field of view and IR/visible isolation','RF/NFC through assembled case','Dock pin stroke, guide and polarity design','Human visual review and physical fit prototype']}
+    report={'checks':checks,'part_intersections':collisions,'pending':['Exact glass support and adhesive zones','Battery model selection, swelling and thermal coupling','Full native component solid interference and tolerances','USB/Qwiic cable and header plug insertion sweeps','RGB LED visibility, sensor field of view and IR/visible isolation','RF/NFC through assembled case','Dock pin stroke, guide and polarity design','Human visual review and physical fit prototype']}
     (OUT/'checks.json').write_text(json.dumps(report,indent=2)+'\n')
     if collisions: raise RuntimeError('Enclosure parts intersect; see exports/checks.json')
     if (ROOT/I['board']).exists():

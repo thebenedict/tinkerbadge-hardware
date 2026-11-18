@@ -14,6 +14,8 @@ Open **tinkerbadge.kicad_pro** in KiCad 10. The root schematic links to power, p
 
 The first prototype uses a single nominal 3.3 V rail for logic and the eight RGB LEDs. Regulator tolerance can fall below the LED datasheet minimum, so startup, low-battery, radio and full-white load-step tests are required.
 
+PCB 0.4 retains Qwiic and exposes three GPIOs, serial, I²C and switched 3.3 V on [J503](docs/design/expansion_header.md). The board is fully routed. The A3 front plate provides access to the ten unpopulated holes.
+
 This is a development design. The battery is a two-wire protected pouch cell on a rear JST PH header; charging is enabled at about 270 mA with on-board thermistors. The [review response](docs/review/response_2026-11-11.md) lists what changed in board revision 0.3 and what still needs hardware in hand, starting with a dry-fit of the display flex.
 
 ## Repeat the electrical check

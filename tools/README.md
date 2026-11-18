@@ -51,3 +51,11 @@ See `docs/review/response_2026-11-11.md`.
 - `renumber_power_symbols.py`: unique power-symbol references across sheets.
 - `pcb_strip_stubs.py`: removes dead-end track chains and duplicate segments, each verified by DRC.
 - `route_remaining.py` gained protected windows, a pocket test that names where a net is walled in, and a flood-guided search.
+
+## Expansion header, 12 November 2026
+
+See `docs/design/expansion_header.md` and its independent review.
+
+- `create_expansion_header_footprint.py`: writes `Tinkerbadge.pretty/Expansion_Header_2x05_P2.54mm.kicad_mod`.
+- `apply_expansion_header_schematic.py`, `apply_expansion_header_board.py`: one-shot schematic, contract and board-placement edits from commit c008fbd. Run the board script through `zsh tools/run_pcb_native.sh`. Do not rerun on the current files. The board script stops at placement and routes nothing.
+- `render_placement_review.py` (KiCad Python): front and rear renders with one outline per functional group, written to `exports/pcb-review/expansion-header/`.

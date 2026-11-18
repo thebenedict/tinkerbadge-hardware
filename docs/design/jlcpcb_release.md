@@ -1,6 +1,6 @@
-# JLCPCB release package, 11 November 2026
+# JLCPCB prototype package, 18 November 2026
 
-Board revision 0.3, which answers the [11 November review](../review/response_2026-11-11.md). Order files are in [`production/jlcpcb/`](../../production/jlcpcb/), rebuilt with `python3 tools/export_jlc.py`. This note records what was checked against JLCPCB's published limits, the order settings, the part choices, and what still has to happen before money is spent.
+PCB 0.4 replaces the SAO socket with unpopulated [J503](expansion_header.md) and adds five 330 Ω series resistors. Order files are in [`production/jlcpcb/`](../../production/jlcpcb/), rebuilt with `python3 tools/export_jlc.py`. This note records what was checked against JLCPCB's published limits, the order settings, the part choices, and what still has to happen before money is spent.
 
 ## Before ordering
 
@@ -28,7 +28,7 @@ Order a small first batch (JLCPCB's minimum is 2 assembled, 5 bare) and bring up
 | Mark on PCB | Order number at a specified location, or remove | Their default placement may land on the visible rear. |
 | Assembly | Standard PCBA, top side only | The ESP32-S3 module and LIS2DW12 are Standard-only, which rules out Economic PCBA. |
 | Edge rails and fiducials | Added by JLCPCB | Required for Standard PCBA. The board also carries three 1 mm fiducials. |
-| Hand-soldered parts | None | `J102` (battery header) and `J502` (SAO socket) are through-hole and are left off the BOM to avoid the manual-solder charge. Fit them by hand; they are listed in `bom-hand-fit.csv`. |
+| Hand-soldered parts | None | J102, the rear battery header, is the only part in `bom-hand-fit.csv`. Leave J503 unpopulated. |
 
 Upload `tinkerbadge-gerbers.zip`, `bom-jlcpcb.csv` and `cpl-jlcpcb.csv`.
 
@@ -39,7 +39,7 @@ Limits read from JLCPCB's [PCB capabilities](https://jlcpcb.com/capabilities/pcb
 | Item | JLCPCB limit (multilayer, 1 oz) | Board |
 |---|---|---|
 | Track width / spacing | 0.09 / 0.09 mm | 0.15 / 0.15 mm minimum |
-| Via hole / diameter without surcharge | hole ≥ 0.3 mm, or 0.2–0.25 mm with diameter ≥ 0.45 mm | 0.3 / 0.6 (259), 0.25 / 0.48 (214), 0.4 / 0.8 (30) |
+| Via hole / diameter without surcharge | hole ≥ 0.3 mm, or 0.2–0.25 mm with diameter ≥ 0.45 mm | 0.3 / 0.6 (264), 0.25 / 0.48 (212), 0.4 / 0.8 (30) |
 | Via hole-to-hole | 0.2 mm | 0.25 mm rule |
 | Via hole to track | 0.2 mm | ≥ 0.265 mm (0.15 mm clearance plus ring) |
 | Inner-layer via hole to copper | 0.2 mm | ≥ 0.315 mm (0.2 mm zone clearance plus ring) |
@@ -63,7 +63,7 @@ Changes made to get there:
 
 ## DRC and ERC
 
-KiCad 10.0.8, with schematic parity. Output in `exports/design-review-2026-11-11/`.
+KiCad 10.0.8, with schematic parity. Current reports are in `exports/publication/`.
 
 | Result | Count | Disposition |
 |---|---|---|
@@ -79,7 +79,7 @@ KiCad 10.0.8, with schematic parity. Output in `exports/design-review-2026-11-11
 
 Every fitted part has an LCSC number in the schematic (`LCSC` field), read from JLCPCB's assembly parts search on 10 November 2026, with the new and changed lines read on 11 November. Stock and prices are in [jlcpcb_parts_check_2026-11-11.csv](jlcpcb_parts_check_2026-11-11.csv), which records the date of each reading.
 
-- 60 BOM lines, 147 placements: 31 Basic, 2 Preferred Extended, 27 Extended. Extended parts carry JLCPCB's per-line loading fee; the 27 are the ICs, connectors, LEDs, buttons, inductors, the two NTCs and three passives with no Basic equivalent. The second NTC is the one line revision 0.3 adds.
+- 60 BOM lines, 152 placements: 31 Basic, 2 Preferred Extended, 27 Extended. Extended parts carry JLCPCB's per-line loading fee; the 27 are the ICs, connectors, LEDs, buttons, inductors, the two NTCs and three passives with no Basic equivalent. The second NTC is the one line revision 0.3 adds.
 - Component cost is about **$19.2 per badge** at JLCPCB's single-unit prices, before the display, cell, PCB, assembly and loading fees. The module ($4.95) and charger ($2.12) are the largest lines.
 - Lowest stock: HSMF-C165 status LED (3,165), SWPA4020S inductor (3,475), BQ24074 (4,710), SRN4018 inductor (5,165). The FH34SRJ connector had 8,087 and the buttons 9,576 on 11 November. Recheck before a large order.
 
@@ -103,7 +103,7 @@ Not from JLCPCB: the display panel (Waveshare 3.7-inch raw panel), the cell (pro
 
 ## After the boards arrive
 
-1. Solder `J102` on the rear and `J502` on the front, key toward the top edge.
+1. Solder J102 on the rear. Leave J503 as plated holes for user expansion.
 2. Before fitting a cell: power from USB, check 3.3 V, flash over native USB. Hold B and tap RST to force the bootloader.
 3. Fit the display flex, then the cell, checking polarity at `J102` with a meter first.
 4. Firmware must drive the display signals low before switching its rail off. Start the TCA9534 with output latch `0x00`, then direction `0x09`; P1 high powers the IR receiver. Button B is GPIO0.

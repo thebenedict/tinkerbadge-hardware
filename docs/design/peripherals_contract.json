@@ -928,23 +928,6 @@
       "footprint_status": "source-reviewed placement candidate; assembly, exact passive MPN and prototype gates remain open"
     },
     {
-      "ref": "J502",
-      "mpn": "SFH11-NBPC-D03-ST-BK",
-      "bom_id": "EXP-02",
-      "package": "Keyed female2x3 P2.54mm THT",
-      "population": "fitted",
-      "pins": {
-        "1": "ACC_3V3",
-        "2": "GND",
-        "3": "EXT_SDA",
-        "4": "EXT_SCL",
-        "5": "SAO_GPIO1",
-        "6": "SAO_GPIO2"
-      },
-      "pin_fact_file": "docs/components/SFH11-NBPC-D03-ST-BK.pins.json",
-      "notes": "Front-mounted host socket between role LEDs D402/D403. Top row 3V3/SDA/GPIO1, bottom row GND/SCL/GPIO2."
-    },
-    {
       "ref": "R512",
       "value": "4.7k 1%",
       "kind": "R",
@@ -1040,6 +1023,95 @@
         "1": "I2C_SCL"
       },
       "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "J503",
+      "value": "2x05 2.54 mm, not fitted",
+      "bom_id": "EXP-05",
+      "package": "2x05 P2.54mm THT holes, 1.0 mm drill",
+      "population": "DNP",
+      "lib_id": "Connector_Generic:Conn_02x05_Odd_Even",
+      "pins": {
+        "1": "GND",
+        "2": "HDR_TX",
+        "3": "ACC_3V3",
+        "4": "HDR_RX",
+        "5": "EXT_SDA",
+        "6": "HDR_IO42",
+        "7": "EXT_SCL",
+        "8": "HDR_IO47",
+        "9": "HDR_IO4",
+        "10": "GND"
+      },
+      "pin_fact_file": "docs/components/Expansion_Header_2x05.pins.json",
+      "notes": "Unpopulated expansion header on the front top edge between role LEDs D402/D403. Standard header numbering for a part fitted on the front; pin 1 is top right. Front view, left to right, top row: IO4, SCL, SDA, 3V3, GND; bottom row: GND, IO47, IO42, RX, TX. 3.3 V signals only; supply shared with Qwiic. See design/expansion_header.md.",
+      "footprint": "Tinkerbadge:Expansion_Header_2x05_P2.54mm",
+      "footprint_status": "project footprint on the KiCad 2x05 2.54 mm hole pattern; placement review pending"
+    },
+    {
+      "ref": "R518",
+      "value": "330R 1%",
+      "kind": "R",
+      "package": "0603",
+      "population": "fitted",
+      "pins": {
+        "1": "UART_TX",
+        "2": "HDR_TX"
+      },
+      "notes": "Series protection at expansion header J503. Same part as R415 (0603WAF3300T5E, C23138).",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R519",
+      "value": "330R 1%",
+      "kind": "R",
+      "package": "0603",
+      "population": "fitted",
+      "pins": {
+        "1": "UART_RX",
+        "2": "HDR_RX"
+      },
+      "notes": "Series protection at expansion header J503. Same part as R415 (0603WAF3300T5E, C23138).",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R520",
+      "value": "330R 1%",
+      "kind": "R",
+      "package": "0603",
+      "population": "fitted",
+      "pins": {
+        "1": "EXP_IO42",
+        "2": "HDR_IO42"
+      },
+      "notes": "Series protection at expansion header J503. Same part as R415 (0603WAF3300T5E, C23138).",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R521",
+      "value": "330R 1%",
+      "kind": "R",
+      "package": "0603",
+      "population": "fitted",
+      "pins": {
+        "1": "EXP_IO47",
+        "2": "HDR_IO47"
+      },
+      "notes": "Series protection at expansion header J503. Same part as R415 (0603WAF3300T5E, C23138).",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R522",
+      "value": "330R 1%",
+      "kind": "R",
+      "package": "0603",
+      "population": "fitted",
+      "pins": {
+        "1": "EXP_IO4",
+        "2": "HDR_IO4"
+      },
+      "notes": "Series protection at expansion header J503. Same part as R415 (0603WAF3300T5E, C23138).",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
     }
   ],
   "interfaces": {
@@ -1087,7 +1159,7 @@
       ],
       "pullups": "R512/R5134.7k toACC_3V3",
       "initial_speed_Hz": 100000,
-      "notes": "Separate MCU bus. Inputs highZ/no pulls whileoff. Duplicate accessory addresses not resolved."
+      "notes": "Separate MCU bus shared by Qwiic J501 and expansion header J503. Inputs highZ/no pulls whileoff. Pull-ups are on ACC_3V3, so the bus is unusable while the accessory rail is off. Duplicate accessory addresses not resolved."
     },
     "mcu_required": {
       "RGB_DATA": "RMT output",
@@ -1099,8 +1171,11 @@
       "NFC_FD_N": "both-edge capture/wake input",
       "IR_TX": "RMT output resetlow",
       "IR_RX_N": "RMT input no internalpull",
-      "SAO_GPIO1": "3.3V GPIO highZ/low whileoff",
-      "SAO_GPIO2": "3.3V GPIO highZ/low whileoff"
+      "EXP_IO4": "3.3V GPIO/ADC1_CH3/RTC wake; highZ/low while accessory rail off",
+      "EXP_IO42": "3.3V GPIO highZ/low while accessory rail off",
+      "EXP_IO47": "3.3V GPIO highZ/low while accessory rail off",
+      "UART_TX": "UART0 TX; also on header through R518; stop driving before accessory rail off if a header accessory uses it",
+      "UART_RX": "UART0 RX; also on header through R519"
     },
     "power_status_inputs": [
       "CHARGER_CHG_N"
@@ -1121,25 +1196,56 @@
       "direction_register": "0x09",
       "interrupt_pin": "NC, polled",
       "note": "Write the output latch 0x00 first, then direction 0x09 (inputs P0 and P3 only). An MCU reset does not reset the expander."
+    },
+    "expansion_header": {
+      "ref": "J503",
+      "series_resistors": {
+        "R518": "TX",
+        "R519": "RX",
+        "R520": "IO42",
+        "R521": "IO47",
+        "R522": "IO4"
+      },
+      "series_value_ohm": 330,
+      "signal_level_V": 3.3,
+      "supply": "ACC_3V3, shared 50 mA normal budget with Qwiic",
+      "pin_order_front_view_left_to_right": {
+        "top_row_pins_9_7_5_3_1": [
+          "IO4",
+          "SCL",
+          "SDA",
+          "3V3",
+          "GND"
+        ],
+        "bottom_row_pins_10_8_6_4_2": [
+          "GND",
+          "IO47",
+          "IO42",
+          "RX",
+          "TX"
+        ]
+      },
+      "numbering": "KiCad PinHeader_2x05 odd/even pattern rotated, not mirrored: standard for a header fitted on the front",
+      "record": "docs/design/expansion_header.md"
     }
   },
   "unresolved": [
     "Independent source/endpoint review before CAD.",
     "Shared nominal3.3V power envelope/transient/thermal qualification required. Exact WS2812C-2020-V6 minimum remains3.3V; tolerance and transients below it are the user-approved prototype exception. Measure startup, low battery and combined Wi-Fi/display/full-white LED demand at load pins.",
-    "Qwiic cable and SAO keyed physical mating/footprint review before layout.",
+    "Qwiic cable physical mating review before layout. Expansion header J503 placement and enclosure access review.",
     "NFC PCB loop geometry and loaded tuning pending.",
     "IR optics/protocol tests pending.",
     "Passive exact MPN selection pending.",
     "NTAG195uA typical idle means storage runtime unproved.",
     "No hot-plug/self-powered accessories; port ESD qualification pending.",
     "AO3400A numbers1G/2S/3D are derived from datasheet indexed G terminal plus conventional SOT23 numbering; separate manufacturer package PDF supplies dimensions but is unnumbered. Independent reviewer acceptance required.",
-    "Alps SKSCLBE010: blank footprint pending four-pad/locating-hole/board-edge/case acceptance. KSC-701 p5 D11 continuous-applied-voltage warning and A2 capacitive-load qualification remain open for the always-pulled-up storagewake application. Prototype candidate only; no source-qualified biased-life claim."
+    "Alps SKSCLBE010: blank footprint pending four-pad/locating-hole/board-edge/case acceptance. KSC-701 p5 D11 continuous-applied-voltage warning and A2 capacitive-load qualification remain open for the always-pulled-up storagewake application. Prototype candidate only; no source-qualified biased-life claim.",
+    "Accessory fault figures in interfaces.rails and the U505 note were calculated for RILIM 210k. The fitted R508 is 200k 1%: 114.7 mA minimum, 135.3 mA nominal, 159.4 mA maximum (TPS2553 equations 1-3), above the 155 mA upstream reserve. Found by docs/design/review_expansion_header.md; power budget to be re-stated."
   ],
   "revision": {
-    "date": "2026-11-09",
-    "change": "Replace both function switches with user-selected Alps SKSCLBE010/C115361; four manufacturer-numbered terminals per switch, pairs1/2 signal and3/4ground. All other endpoints unchanged. Also replace the stale historical4.10V acceptance note with the approved shared3.3V prototype qualification gate.",
-    "previous_sha256": "97c79e1fdfab079aed4900ddf0f3fceebcc630a3a8663b13ed0e22de3d09a514",
-    "previous_file": "docs/design/revisions/peripherals_contract_2026-11-09_before_alps_buttons.json",
-    "review_status": "pending independent critical source review"
+    "date": "2026-11-12",
+    "change": "Remove SAO socket J502. Add unpopulated 2x5 expansion header J503 with 330R series resistors R518-R522; SAO_GPIO1/2 renamed EXP_IO42/EXP_IO47, GPIO4 added as EXP_IO4, UART0 branched to the header.",
+    "previous_commit": "c008fbd",
+    "review": "docs/design/review_expansion_header.md"
   }
 }

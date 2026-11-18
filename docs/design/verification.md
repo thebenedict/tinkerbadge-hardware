@@ -55,3 +55,37 @@ The [implementation status](implementation_status.md) owns current decisions and
 - DNP options use explicit values and `Populate`/`Population` metadata because native DNP control is unavailable in the installed MCP. Reconcile those fields before generating any assembly BOM.
 
 No board-placement, routing, manufacturing or production-qualification conclusion is included in this schematic review.
+
+## Expansion header change, 12 November 2026 (placement stage)
+
+Revision 0.4 in progress: SAO socket J502 replaced by the unpopulated expansion header J503 and R518–R522. Design input: [expansion header record](expansion_header.md) and its [independent review](review_expansion_header.md). The review's addendum checked the applied footprint, netlist, board and contracts against record SHA-256 `dab70c3f…e798` and netlist `2d5c2568…e26b` and passed them. Its four minor items were then applied: three wording corrections in the record (now SHA-256 `b3142a2b…4b75`) and the J503 symbol's position-file flag, which changes the exported netlist to SHA-256 `faf92b35…76ba` without changing any connection. The checks below were rerun after that. Tools: KiCad 10.0.8 (`kicad-cli` and bundled Python). Inputs: `tinkerbadge.kicad_pcb` SHA-256 `3d141235…5283`; footprint `Expansion_Header_2x05_P2.54mm` SHA-256 `a3adabfc…e345`.
+
+Passed:
+
+| Check | Result |
+|---|---|
+| ERC, all severities | 0 errors; 1 warning, the documented LIS2DW12 SDO/SA0 pin-type warning, unchanged from revision 0.3 |
+| Netlist against the four block contracts (`check_schematic_contracts.py`) | PASS: 167 components, 523 endpoints, 23 intentional no-connects |
+| Schematic properties (`check_schematic_properties.py`) | PASS |
+| Netlist difference from the revision 0.3 publication netlist | J502 removed; J503 and R518–R522 added; U201.4, .24, .35, .36, .37 and TP205/TP206 renamed to EXP_IO4, EXP_IO47, EXP_IO42, UART_RX, UART_TX; no other endpoint changed |
+| Expansion sheet content, compared without regard to item order | Only the J502 items removed and the header block, its labels, notes and one library symbol added |
+| DRC with schematic parity | 0 errors; schematic parity 0; 18 warnings, of which 12 are the revision 0.3 set and 6 are the ends of tracks cut back at the header area |
+| Footprint against KiCad `PinHeader_2x05_P2.54mm_Vertical` | Same pattern rotated a quarter turn, not mirrored; 1.0 mm drill, 1.7 mm pads, pin 1 square |
+| Board pad nets against the netlist | 538 pads, 0 mismatches |
+| Silkscreen label nearest each header pad | Matches the pin's signal: top row on the front, all ten on the rear |
+| Fresh exports inspected | Processor and expansion schematic pages; front and rear renders, header close-ups and the annotated group views in `exports/pcb-review/expansion-header/` |
+
+At the 12 November placement checkpoint there were 14 unrouted connections, all on the header group nets (ACC_3V3, EXT_SDA twice, EXT_SCL, EXP_IO4, EXP_IO42, EXP_IO47, UART_TX, UART_RX and the five HDR nets). The Qwiic SDA line ran through the old socket pad, so Qwiic SDA is among them.
+
+Failed, expected: `check_export_chain.py` reports `Stale or invalid export input: tinkerbadge.kicad_pcb`. The publication exports, manufacturing package, enclosure CAD and web viewer still describe revision 0.3 and are not regenerated until the board is routed.
+
+The routed revision below supersedes this placement checkpoint.
+
+
+## Routed PCB 0.4
+
+18 November 2026. Board SHA-256 `44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4`. The routing request approved the existing placement. The board adds 58 straight or 45° segments and six 0.60/0.30 mm through vias. No footprints moved. The accessory supply trace is 0.30 mm wide and the new signals are 0.20 mm wide.
+
+Independent KiCad 10.0.8 checks found zero ERC errors, DRC errors, unconnected items or schematic-parity findings. The one ERC warning and twelve DRC warnings match revision 0.3. All 167 schematic components, 523 contracted endpoints and 23 deliberate no-connects passed the contract check. The native connectivity graph confirmed all ten header pin groups, the five MCU-to-resistor paths, both UART probes and Qwiic SDA/SCL. The ground-plane fills and new copper clear the RF and NFC windows. Independent review of the front and rear copper and silkscreen plots confirmed the header labels are legible.
+
+Machine-readable reports are in [the publication snapshot](../../exports/publication/manifest.json). The [header bench tests](expansion_header.md#bench-tests) and assembled prototype checks remain open.

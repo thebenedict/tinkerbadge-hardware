@@ -23,7 +23,7 @@ JST rates1A with28AWG,50VAC/DC,−25…85°C including temperature rise. Four-ci
 
 Qwiic electrical pin assignment:1GND,2regulated3.3V,3SDA,4SCL, verified against SparkFun Qwiic Motor Driver schematic v10(26 August2019), J3/J4. J501 uses1GND,2ACC_3V3,3EXT_SDA,4EXT_SCL. https://www.sparkfun.com/qwiic defines cable blackGND, red3.3V, blueSDA, yellowSCL. The separately archived cable drawing's numbers are its housing view convention; do not transfer those numbers onto the PCB header blindly. Manufacturer CircuitNo.1 orientation plus actual cable continuity is the physical release check.
 
-Shared50mA normal budget with SAO/IR RX, nominal3.3V only. ExternalI2C is separate from onboard bus,100kHz initial speed,4.7kΩ host pulls to switchedACC_3V3. Qualify cable capacitance/rise time and remove excessive parallel accessory pull-ups. No live insertion or independently powered add-ons in baseline.
+Shared50mA normal budget with expansion header J503 (formerly SAO), nominal3.3V only. ExternalI2C is separate from onboard bus,100kHz initial speed,4.7kΩ host pulls to switchedACC_3V3. Qualify cable capacitance/rise time and remove excessive parallel accessory pull-ups. No live insertion or independently powered add-ons in baseline.
 
 ## Review state
 

@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/Users/michael/code/tinkerbadge-hardware/tinkerbadge.kicad_sch")
-		(date "2026-11-12T07:09:52")
+		(source "/Users/michael/code/tinkerbadge-hardware/.build/pcb04-release/tinkerbadge-hardware/tinkerbadge.kicad_sch")
+		(date "2026-11-18T13:29:36")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -12617,37 +12617,35 @@
 			)
 		)
 		(comp
-			(ref "J502")
-			(value "SFH11-NBPC-D03-ST-BK")
-			(footprint "Tinkerbadge:SAO_Socket_2x03_Front")
-			(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(ref "J503")
+			(value "2x05 2.54 mm, not fitted")
+			(footprint "Tinkerbadge:Expansion_Header_2x05_P2.54mm")
+			(description "Unpopulated expansion header: ten plated holes on a 2.54 mm grid, odd/even numbering")
 			(fields
 				(field
 					(name "Contract") "docs/design/peripherals_contract.json")
 				(field
-					(name "FootprintStatus") "UNASSIGNED: physical footprint/mating release gate")
+					(name "FootprintStatus") "Project footprint on the KiCad PinHeader_2x05_P2.54mm hole pattern; placement review pending")
 				(field
-					(name "MPN") "SFH11-NBPC-D03-ST-BK")
+					(name "MPN") "PCB holes only: no fitted component")
 				(field
-					(name "Population") "fitted")
+					(name "Population") "DNP")
 				(field
-					(name "Rating") "Keyed female2x3 P2.54mm THT")
+					(name "Rating") "2x05 P2.54mm THT holes, 1.0 mm drill")
 				(field
-					(name "LCSC") "C3320727")
+					(name "Note") "Pin numbers are those of a standard header fitted on the front. 3.3 V signals only.")
 				(field
-					(name "Assembly") "hand-fit after SMT")
-				(field
-					(name "Footprint") "Tinkerbadge:SAO_Socket_2x03_Front")
+					(name "Footprint") "Tinkerbadge:Expansion_Header_2x05_P2.54mm")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+					(name "Description") "Unpopulated expansion header: ten plated holes on a 2.54 mm grid, odd/even numbering")
 			)
 			(libsource
 				(lib "Connector_Generic")
-				(part "Conn_02x03_Odd_Even")
-				(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+				(part "Conn_02x05_Odd_Even")
+				(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(property
 				(name "Contract")
@@ -12655,27 +12653,23 @@
 			)
 			(property
 				(name "FootprintStatus")
-				(value "UNASSIGNED: physical footprint/mating release gate")
+				(value "Project footprint on the KiCad PinHeader_2x05_P2.54mm hole pattern; placement review pending")
 			)
 			(property
 				(name "MPN")
-				(value "SFH11-NBPC-D03-ST-BK")
+				(value "PCB holes only: no fitted component")
 			)
 			(property
 				(name "Population")
-				(value "fitted")
+				(value "DNP")
 			)
 			(property
 				(name "Rating")
-				(value "Keyed female2x3 P2.54mm THT")
+				(value "2x05 P2.54mm THT holes, 1.0 mm drill")
 			)
 			(property
-				(name "LCSC")
-				(value "C3320727")
-			)
-			(property
-				(name "Assembly")
-				(value "hand-fit after SMT")
+				(name "Note")
+				(value "Pin numbers are those of a standard header fitted on the front. 3.3 V signals only.")
 			)
 			(property
 				(name "Sheetname")
@@ -12684,6 +12678,15 @@
 			(property
 				(name "Sheetfile")
 				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -12697,7 +12700,7 @@
 				(names "/05  SENSORS + EXPANSION/")
 				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
 			)
-			(tstamps "ede7854f-58a0-46f0-b0ae-053d6d56f973")
+			(tstamps "b2422842-1d4a-45e9-a332-9b63bf4aa24d")
 			(units
 				(unit
 					(name "A")
@@ -12712,6 +12715,12 @@
 							(num "5")
 						)
 						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
 							(num "2")
 						)
 						(pin
@@ -12719,6 +12728,12 @@
 						)
 						(pin
 							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "10")
 						)
 					)
 				)
@@ -14072,6 +14087,486 @@
 			)
 		)
 		(comp
+			(ref "R518")
+			(value "330")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Contract") "docs/design/peripherals_contract.json")
+				(field
+					(name "FootprintStatus") "Assigned standard; prototype validation required")
+				(field
+					(name "MPN") "0603WAF3300T5E")
+				(field
+					(name "Population") "fitted")
+				(field
+					(name "Rating") "330R 1%")
+				(field
+					(name "LCSC") "C23138")
+				(field
+					(name "Assembly") "JLCPCB SMT")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Contract")
+				(value "docs/design/peripherals_contract.json")
+			)
+			(property
+				(name "FootprintStatus")
+				(value "Assigned standard; prototype validation required")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF3300T5E")
+			)
+			(property
+				(name "Population")
+				(value "fitted")
+			)
+			(property
+				(name "Rating")
+				(value "330R 1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23138")
+			)
+			(property
+				(name "Assembly")
+				(value "JLCPCB SMT")
+			)
+			(property
+				(name "Sheetname")
+				(value "05  SENSORS + EXPANSION")
+			)
+			(property
+				(name "Sheetfile")
+				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05  SENSORS + EXPANSION/")
+				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
+			)
+			(tstamps "16912c6a-b610-4445-8af9-bf27946532d6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R519")
+			(value "330")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Contract") "docs/design/peripherals_contract.json")
+				(field
+					(name "FootprintStatus") "Assigned standard; prototype validation required")
+				(field
+					(name "MPN") "0603WAF3300T5E")
+				(field
+					(name "Population") "fitted")
+				(field
+					(name "Rating") "330R 1%")
+				(field
+					(name "LCSC") "C23138")
+				(field
+					(name "Assembly") "JLCPCB SMT")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Contract")
+				(value "docs/design/peripherals_contract.json")
+			)
+			(property
+				(name "FootprintStatus")
+				(value "Assigned standard; prototype validation required")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF3300T5E")
+			)
+			(property
+				(name "Population")
+				(value "fitted")
+			)
+			(property
+				(name "Rating")
+				(value "330R 1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23138")
+			)
+			(property
+				(name "Assembly")
+				(value "JLCPCB SMT")
+			)
+			(property
+				(name "Sheetname")
+				(value "05  SENSORS + EXPANSION")
+			)
+			(property
+				(name "Sheetfile")
+				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05  SENSORS + EXPANSION/")
+				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
+			)
+			(tstamps "b42a7a0d-9b70-481f-b290-9fedd951fa34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R520")
+			(value "330")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Contract") "docs/design/peripherals_contract.json")
+				(field
+					(name "FootprintStatus") "Assigned standard; prototype validation required")
+				(field
+					(name "MPN") "0603WAF3300T5E")
+				(field
+					(name "Population") "fitted")
+				(field
+					(name "Rating") "330R 1%")
+				(field
+					(name "LCSC") "C23138")
+				(field
+					(name "Assembly") "JLCPCB SMT")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Contract")
+				(value "docs/design/peripherals_contract.json")
+			)
+			(property
+				(name "FootprintStatus")
+				(value "Assigned standard; prototype validation required")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF3300T5E")
+			)
+			(property
+				(name "Population")
+				(value "fitted")
+			)
+			(property
+				(name "Rating")
+				(value "330R 1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23138")
+			)
+			(property
+				(name "Assembly")
+				(value "JLCPCB SMT")
+			)
+			(property
+				(name "Sheetname")
+				(value "05  SENSORS + EXPANSION")
+			)
+			(property
+				(name "Sheetfile")
+				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05  SENSORS + EXPANSION/")
+				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
+			)
+			(tstamps "5fcbc627-5c08-4c5a-8922-ec36eeaaeb78")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R521")
+			(value "330")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Contract") "docs/design/peripherals_contract.json")
+				(field
+					(name "FootprintStatus") "Assigned standard; prototype validation required")
+				(field
+					(name "MPN") "0603WAF3300T5E")
+				(field
+					(name "Population") "fitted")
+				(field
+					(name "Rating") "330R 1%")
+				(field
+					(name "LCSC") "C23138")
+				(field
+					(name "Assembly") "JLCPCB SMT")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Contract")
+				(value "docs/design/peripherals_contract.json")
+			)
+			(property
+				(name "FootprintStatus")
+				(value "Assigned standard; prototype validation required")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF3300T5E")
+			)
+			(property
+				(name "Population")
+				(value "fitted")
+			)
+			(property
+				(name "Rating")
+				(value "330R 1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23138")
+			)
+			(property
+				(name "Assembly")
+				(value "JLCPCB SMT")
+			)
+			(property
+				(name "Sheetname")
+				(value "05  SENSORS + EXPANSION")
+			)
+			(property
+				(name "Sheetfile")
+				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05  SENSORS + EXPANSION/")
+				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
+			)
+			(tstamps "f4ffce28-b79f-4b38-b0cc-39df2896536e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R522")
+			(value "330")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Contract") "docs/design/peripherals_contract.json")
+				(field
+					(name "FootprintStatus") "Assigned standard; prototype validation required")
+				(field
+					(name "MPN") "0603WAF3300T5E")
+				(field
+					(name "Population") "fitted")
+				(field
+					(name "Rating") "330R 1%")
+				(field
+					(name "LCSC") "C23138")
+				(field
+					(name "Assembly") "JLCPCB SMT")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Contract")
+				(value "docs/design/peripherals_contract.json")
+			)
+			(property
+				(name "FootprintStatus")
+				(value "Assigned standard; prototype validation required")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF3300T5E")
+			)
+			(property
+				(name "Population")
+				(value "fitted")
+			)
+			(property
+				(name "Rating")
+				(value "330R 1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23138")
+			)
+			(property
+				(name "Assembly")
+				(value "JLCPCB SMT")
+			)
+			(property
+				(name "Sheetname")
+				(value "05  SENSORS + EXPANSION")
+			)
+			(property
+				(name "Sheetfile")
+				(value "peripherals.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05  SENSORS + EXPANSION/")
+				(tstamps "/0e7ec69b-1045-4cde-a66e-23960952ec99/")
+			)
+			(tstamps "1457e1d5-81c8-414e-b629-56b995a358ac")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "TP501")
 			(value "I2C_SDA")
 			(footprint "TestPoint:TestPoint_Pad_D1.0mm")
@@ -15184,8 +15679,8 @@
 		)
 		(libpart
 			(lib "Connector_Generic")
-			(part "Conn_02x03_Odd_Even")
-			(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(part "Conn_02x05_Odd_Even")
+			(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(footprints
 				(fp "Connector*:*_2x??_*")
 			)
@@ -15193,7 +15688,7 @@
 				(field
 					(name "Reference") "J")
 				(field
-					(name "Value") "Conn_02x03_Odd_Even")
+					(name "Value") "Conn_02x05_Odd_Even")
 				(field
 					(name "Footprint")
 				)
@@ -15201,7 +15696,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+					(name "Description") "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(pins
 				(pin
@@ -15232,6 +15727,26 @@
 				(pin
 					(num "6")
 					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "Pin_10")
 					(type "passive")
 				)
 			)
@@ -17677,40 +18192,6 @@
 		)
 		(net
 			(code "29")
-			(name "/02  PROCESSOR + RECOVERY/UART_RX")
-			(class "Default")
-			(node
-				(ref "TP206")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U201")
-				(pin "36")
-				(pinfunction "RXD0_36")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "30")
-			(name "/02  PROCESSOR + RECOVERY/UART_TX")
-			(class "Default")
-			(node
-				(ref "TP205")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U201")
-				(pin "37")
-				(pinfunction "TXD0_37")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "31")
 			(name "/03  E-PAPER DISPLAY/EPD_GDR")
 			(class "Default")
 			(node
@@ -17732,7 +18213,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "30")
 			(name "/03  E-PAPER DISPLAY/EPD_PUMP")
 			(class "EPD_HV")
 			(node
@@ -17754,7 +18235,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "31")
 			(name "/03  E-PAPER DISPLAY/EPD_RESE")
 			(class "AnalogSense")
 			(node
@@ -17776,7 +18257,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "32")
 			(name "/03  E-PAPER DISPLAY/EPD_SW")
 			(class "EPD_HV")
 			(node
@@ -17804,7 +18285,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "33")
 			(name "/03  E-PAPER DISPLAY/EPD_VCOM")
 			(class "EPD_HV")
 			(node
@@ -17820,7 +18301,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "34")
 			(name "/03  E-PAPER DISPLAY/EPD_VDD_1V8")
 			(class "Default")
 			(node
@@ -17836,7 +18317,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "35")
 			(name "/03  E-PAPER DISPLAY/EPD_VGH")
 			(class "EPD_HV")
 			(node
@@ -17858,7 +18339,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "36")
 			(name "/03  E-PAPER DISPLAY/EPD_VGL")
 			(class "EPD_HV")
 			(node
@@ -17880,7 +18361,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "37")
 			(name "/03  E-PAPER DISPLAY/EPD_VPP")
 			(class "EPD_HV")
 			(node
@@ -17896,7 +18377,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "38")
 			(name "/03  E-PAPER DISPLAY/EPD_VSH1")
 			(class "EPD_HV")
 			(node
@@ -17912,7 +18393,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "39")
 			(name "/03  E-PAPER DISPLAY/EPD_VSH2")
 			(class "EPD_HV")
 			(node
@@ -17928,7 +18409,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "40")
 			(name "/03  E-PAPER DISPLAY/EPD_VSL")
 			(class "EPD_HV")
 			(node
@@ -17944,7 +18425,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "41")
 			(name "/04  LIGHTING + BUTTONS/BTN_A_SW_N")
 			(class "Default")
 			(node
@@ -17964,7 +18445,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "42")
 			(name "/04  LIGHTING + BUTTONS/BTN_B_SW_N")
 			(class "Default")
 			(node
@@ -17984,7 +18465,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "43")
 			(name "/04  LIGHTING + BUTTONS/PWR_GREEN_A")
 			(class "Default")
 			(node
@@ -18000,7 +18481,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "44")
 			(name "/04  LIGHTING + BUTTONS/PWR_RED_A")
 			(class "Default")
 			(node
@@ -18016,7 +18497,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "45")
 			(name "/04  LIGHTING + BUTTONS/RGB_DIN")
 			(class "Default")
 			(node
@@ -18037,7 +18518,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "46")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_1")
 			(class "Default")
 			(node
@@ -18054,7 +18535,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "47")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_2")
 			(class "Default")
 			(node
@@ -18071,7 +18552,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "48")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_3")
 			(class "Default")
 			(node
@@ -18088,7 +18569,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "49")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_4")
 			(class "Default")
 			(node
@@ -18105,7 +18586,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "50")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_5")
 			(class "Default")
 			(node
@@ -18122,7 +18603,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "51")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_6")
 			(class "Default")
 			(node
@@ -18139,7 +18620,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "52")
 			(name "/04  LIGHTING + BUTTONS/RGB_LINK_7")
 			(class "Default")
 			(node
@@ -18156,7 +18637,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "53")
 			(name "/05  SENSORS + EXPANSION/ACC_3V3")
 			(class "PowerBranch")
 			(node
@@ -18171,9 +18652,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J502")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(ref "J503")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 			(node
@@ -18199,7 +18680,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "54")
 			(name "/05  SENSORS + EXPANSION/ACC_EN")
 			(class "Default")
 			(node
@@ -18221,7 +18702,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "55")
 			(name "/05  SENSORS + EXPANSION/ACC_FAULT_N")
 			(class "Default")
 			(node
@@ -18243,7 +18724,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "56")
 			(name "/05  SENSORS + EXPANSION/ACC_ILIM")
 			(class "AnalogSense")
 			(node
@@ -18259,7 +18740,87 @@
 			)
 		)
 		(net
+			(code "57")
+			(name "/05  SENSORS + EXPANSION/HDR_IO4")
+			(class "Default")
+			(node
+				(ref "J503")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R522")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "58")
+			(name "/05  SENSORS + EXPANSION/HDR_IO42")
+			(class "Default")
+			(node
+				(ref "J503")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "R520")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
 			(code "59")
+			(name "/05  SENSORS + EXPANSION/HDR_IO47")
+			(class "Default")
+			(node
+				(ref "J503")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R521")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "60")
+			(name "/05  SENSORS + EXPANSION/HDR_RX")
+			(class "Default")
+			(node
+				(ref "J503")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R519")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "61")
+			(name "/05  SENSORS + EXPANSION/HDR_TX")
+			(class "Default")
+			(node
+				(ref "J503")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R518")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "62")
 			(name "/05  SENSORS + EXPANSION/IR_GATE")
 			(class "Default")
 			(node
@@ -18280,7 +18841,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "63")
 			(name "/05  SENSORS + EXPANSION/IR_LED_A")
 			(class "PowerBranch")
 			(node
@@ -18296,7 +18857,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "64")
 			(name "/05  SENSORS + EXPANSION/IR_LED_K")
 			(class "PowerBranch")
 			(node
@@ -18313,7 +18874,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "65")
 			(name "/05  SENSORS + EXPANSION/IR_RX_3V3")
 			(class "PowerBranch")
 			(node
@@ -18339,7 +18900,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "66")
 			(name "/05  SENSORS + EXPANSION/IR_RX_EN")
 			(class "Default")
 			(node
@@ -18355,7 +18916,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "67")
 			(name "/05  SENSORS + EXPANSION/NFC_LA")
 			(class "NFC_HOLD")
 			(node
@@ -18381,7 +18942,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "68")
 			(name "/05  SENSORS + EXPANSION/NFC_LB")
 			(class "NFC_HOLD")
 			(node
@@ -18407,7 +18968,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "69")
 			(name "BAT_ADC")
 			(class "AnalogSense")
 			(node
@@ -18433,7 +18994,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "70")
 			(name "BTN_A_N")
 			(class "Default")
 			(node
@@ -18459,7 +19020,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "71")
 			(name "BTN_B_N")
 			(class "Default")
 			(node
@@ -18491,7 +19052,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "72")
 			(name "CHARGER_CHG_N")
 			(class "Default")
 			(node
@@ -18513,7 +19074,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "73")
 			(name "DOCK_5V")
 			(class "Power_Trunk")
 			(node
@@ -18546,7 +19107,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "74")
 			(name "DOCK_PRESENT_N")
 			(class "Default")
 			(node
@@ -18568,7 +19129,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "75")
 			(name "EPD_BUSY")
 			(class "Default")
 			(node
@@ -18590,7 +19151,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "76")
 			(name "EPD_CS_N")
 			(class "Default")
 			(node
@@ -18607,7 +19168,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "77")
 			(name "EPD_DC")
 			(class "Default")
 			(node
@@ -18624,7 +19185,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "78")
 			(name "EPD_EN")
 			(class "Default")
 			(node
@@ -18646,7 +19207,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "79")
 			(name "EPD_MOSI")
 			(class "Default")
 			(node
@@ -18663,7 +19224,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "80")
 			(name "EPD_RST_N")
 			(class "Default")
 			(node
@@ -18680,7 +19241,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "81")
 			(name "EPD_SCK")
 			(class "Default")
 			(node
@@ -18697,7 +19258,55 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "82")
+			(name "EXP_IO4")
+			(class "Default")
+			(node
+				(ref "R522")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "4")
+				(pinfunction "IO4_4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "83")
+			(name "EXP_IO42")
+			(class "Default")
+			(node
+				(ref "R520")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "35")
+				(pinfunction "IO42_35")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "84")
+			(name "EXP_IO47")
+			(class "Default")
+			(node
+				(ref "R521")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "24")
+				(pinfunction "IO47_24")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "85")
 			(name "EXT_SCL")
 			(class "Default")
 			(node
@@ -18707,9 +19316,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J502")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(ref "J503")
+				(pin "7")
+				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
 			(node
@@ -18725,7 +19334,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "86")
 			(name "EXT_SDA")
 			(class "Default")
 			(node
@@ -18735,9 +19344,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J502")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(ref "J503")
+				(pin "5")
+				(pinfunction "Pin_5_5")
 				(pintype "passive")
 			)
 			(node
@@ -18753,7 +19362,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "87")
 			(name "GND")
 			(class "Default")
 			(node
@@ -19145,9 +19754,15 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J502")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(ref "J503")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J503")
+				(pin "10")
+				(pinfunction "Pin_10_10")
 				(pintype "passive")
 			)
 			(node
@@ -19516,7 +20131,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "88")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -19562,7 +20177,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "89")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -19608,7 +20223,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "90")
 			(name "IR_RX_N")
 			(class "Default")
 			(node
@@ -19625,7 +20240,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "91")
 			(name "IR_TX")
 			(class "Default")
 			(node
@@ -19641,7 +20256,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "92")
 			(name "MOTION_INT1")
 			(class "Default")
 			(node
@@ -19658,7 +20273,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "93")
 			(name "NFC_FD_N")
 			(class "Default")
 			(node
@@ -19680,7 +20295,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "94")
 			(name "PWR_LED_G")
 			(class "Default")
 			(node
@@ -19701,7 +20316,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "95")
 			(name "PWR_LED_R")
 			(class "Default")
 			(node
@@ -19722,7 +20337,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "96")
 			(name "RGB_DATA")
 			(class "Default")
 			(node
@@ -19738,41 +20353,51 @@
 			)
 		)
 		(net
-			(code "91")
-			(name "SAO_GPIO1")
+			(code "97")
+			(name "UART_RX")
 			(class "Default")
 			(node
-				(ref "J502")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(ref "R519")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP206")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
 				(ref "U201")
-				(pin "35")
-				(pinfunction "IO42_35")
+				(pin "36")
+				(pinfunction "RXD0_36")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "92")
-			(name "SAO_GPIO2")
+			(code "98")
+			(name "UART_TX")
 			(class "Default")
 			(node
-				(ref "J502")
-				(pin "6")
-				(pinfunction "Pin_6_6")
+				(ref "R518")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP205")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
 				(ref "U201")
-				(pin "24")
-				(pinfunction "IO47_24")
+				(pin "37")
+				(pinfunction "TXD0_37")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "93")
+			(code "99")
 			(name "USB_DM")
 			(class "USB_HOLD")
 			(node
@@ -19806,7 +20431,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "100")
 			(name "USB_DP")
 			(class "USB_HOLD")
 			(node
@@ -19840,7 +20465,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "101")
 			(name "USB_PRESENT_N")
 			(class "Default")
 			(node
@@ -19862,7 +20487,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "102")
 			(name "USB_VBUS")
 			(class "Power_Trunk")
 			(node
@@ -19918,7 +20543,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "103")
 			(name "unconnected-(D408-DO-Pad1)")
 			(class "Default")
 			(node
@@ -19929,7 +20554,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "104")
 			(name "unconnected-(J101-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -19940,7 +20565,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "105")
 			(name "unconnected-(J101-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -19951,7 +20576,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "106")
 			(name "unconnected-(J301-NC-Pad1)")
 			(class "Default")
 			(node
@@ -19962,7 +20587,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "107")
 			(name "unconnected-(J301-NC-Pad4)")
 			(class "Default")
 			(node
@@ -19973,7 +20598,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "108")
 			(name "unconnected-(J301-TSCL-Pad6)")
 			(class "Default")
 			(node
@@ -19984,7 +20609,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "109")
 			(name "unconnected-(J301-TSDA-Pad7)")
 			(class "Default")
 			(node
@@ -19995,7 +20620,7 @@
 			)
 		)
 		(net
-			(code "104")
+			(code "110")
 			(name "unconnected-(U101-ST-Pad9)")
 			(class "Default")
 			(node
@@ -20006,7 +20631,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "111")
 			(name "unconnected-(U102-ITERM-Pad15)")
 			(class "Default")
 			(node
@@ -20017,7 +20642,7 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "112")
 			(name "unconnected-(U102-~{PGOOD}-Pad7)")
 			(class "Default")
 			(node
@@ -20028,7 +20653,7 @@
 			)
 		)
 		(net
-			(code "107")
+			(code "113")
 			(name "unconnected-(U103-PG-Pad5)")
 			(class "Default")
 			(node
@@ -20039,7 +20664,7 @@
 			)
 		)
 		(net
-			(code "108")
+			(code "114")
 			(name "unconnected-(U201-IO3-Pad15)")
 			(class "Default")
 			(node
@@ -20050,18 +20675,7 @@
 			)
 		)
 		(net
-			(code "109")
-			(name "unconnected-(U201-IO4-Pad4)")
-			(class "Default")
-			(node
-				(ref "U201")
-				(pin "4")
-				(pinfunction "IO4_4")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "110")
+			(code "115")
 			(name "unconnected-(U201-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -20072,7 +20686,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "116")
 			(name "unconnected-(U201-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -20083,7 +20697,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "117")
 			(name "unconnected-(U201-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -20094,7 +20708,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "118")
 			(name "unconnected-(U501-INT-Pad2)")
 			(class "Default")
 			(node
@@ -20105,7 +20719,7 @@
 			)
 		)
 		(net
-			(code "114")
+			(code "119")
 			(name "unconnected-(U502-INT2-Pad11)")
 			(class "Default")
 			(node
@@ -20116,7 +20730,7 @@
 			)
 		)
 		(net
-			(code "115")
+			(code "120")
 			(name "unconnected-(U503-VOUT-Pad7)")
 			(class "Default")
 			(node
@@ -20127,7 +20741,7 @@
 			)
 		)
 		(net
-			(code "116")
+			(code "121")
 			(name "unconnected-(U506-P4-Pad9)")
 			(class "Default")
 			(node
@@ -20138,7 +20752,7 @@
 			)
 		)
 		(net
-			(code "117")
+			(code "122")
 			(name "unconnected-(U506-P5-Pad10)")
 			(class "Default")
 			(node
@@ -20149,7 +20763,7 @@
 			)
 		)
 		(net
-			(code "118")
+			(code "123")
 			(name "unconnected-(U506-P6-Pad11)")
 			(class "Default")
 			(node
@@ -20160,7 +20774,7 @@
 			)
 		)
 		(net
-			(code "119")
+			(code "124")
 			(name "unconnected-(U506-P7-Pad12)")
 			(class "Default")
 			(node
@@ -20171,7 +20785,7 @@
 			)
 		)
 		(net
-			(code "120")
+			(code "125")
 			(name "unconnected-(U506-~{INT}-Pad13)")
 			(class "Default")
 			(node

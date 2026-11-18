@@ -15,7 +15,8 @@ import pcbnew
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PATH = ROOT / 'docs/design/pcb_placement.json'
 GROUPS = {'SW403': 'buttons', 'R415': 'buttons', 'RT101': 'charger / cell temperature', 'RT102': 'charger / cell temperature',
-          'J301': 'display interface', 'J502': 'expansion', 'J102': 'battery', 'J103': 'dock', 'AE501': 'NFC',
+          'J301': 'display interface', 'J503': 'expansion header', 'R518': 'expansion header', 'R519': 'expansion header',
+          'R520': 'expansion header', 'R521': 'expansion header', 'R522': 'expansion header', 'J102': 'battery', 'J103': 'dock', 'AE501': 'NFC',
           'TP101': 'recovery/test', 'TP301': 'recovery/test', 'TP501': 'recovery/test', 'TP502': 'recovery/test',
           'U105': 'USB connector and protection', 'L101': 'regulator', 'L301': 'display boost'}
 
@@ -25,7 +26,8 @@ def main(board):
     old = json.loads(PATH.read_text())
     groups = {p['reference']: p.get('group', '') for p in old.get('placements', [])}
     groups.update(GROUPS)
-    out = {'status': 'derived from tinkerbadge.kicad_pcb, rev 0.3 (2026-11-11); the board file is authoritative',
+    rev = next((d.GetText() for d in b.GetDrawings() if d.Type() == pcbnew.PCB_TEXT_T and d.GetText().startswith('rev ')), 'rev ?')
+    out = {'status': f'derived from tinkerbadge.kicad_pcb, {" ".join(rev.split())}; the board file is authoritative',
            'board_mm': old['board_mm'], 'origin_mm': old['origin_mm'], 'copper_layers': b.GetCopperLayerCount(), 'placements': []}
     for f in sorted(b.GetFootprints(), key=lambda f: f.GetReference()):
         ref = f.GetReference()

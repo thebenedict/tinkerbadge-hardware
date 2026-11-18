@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "revision": "enclosure-a2",
+  "revision": "enclosure-a3",
   "name": "Layered clear enclosure",
   "status": "Fit prototype",
-  "board_sha256": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+  "board_sha256": "44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4",
   "datum": "millimetres; x=pcb_x-155; y=140-pcb_y; z=0 front PCB surface; +z toward display",
   "size_mm": [
     116,
@@ -230,7 +230,7 @@
         0,
         35
       ],
-      "description": "1.5 mm clear plate with open RGB LED windows and separate sensor apertures; stepped outline follows the board shoulder.",
+      "description": "1.5 mm clear plate with open RGB LED windows, header access and separate sensor apertures; stepped outline follows the board shoulder.",
       "process": "Cut clear sheet",
       "bounds_mm": [
         [
@@ -244,7 +244,7 @@
           7.9
         ]
       ],
-      "volume_mm3": 13456.5941,
+      "volume_mm3": 13488.50416,
       "solids": 1,
       "step": "front.step",
       "stl": "front.stl"
@@ -455,7 +455,7 @@
     }
   ],
   "parameters": {
-    "revision": "enclosure-a2",
+    "revision": "enclosure-a3",
     "name": "Layered clear enclosure",
     "outer_outline_mm": [
       [
@@ -526,46 +526,46 @@
     "trimesh": "5.2.0"
   },
   "source_hashes": {
-    "build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
-    "parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
-    "interfaces.json": "fb3af2f23da89084d65f39ed1756ba9f8364fccea9ca220ab388402170025caf",
-    "extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
-    "check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
-    "README.md": "eccc31ce9738295a52d31b8ff7b583bf94eb789ab2737bc40a786411c08fd42a",
-    "review.md": "763178106ef18af8096cb25af069048f599ec07f5ffe6f8b0622e85ca55cc17a"
+    "build.py": "01f43d036c6831b8464e634982d5083d5593d848ce97668ab59ec47644597f6b",
+    "parameters.json": "62df08e906219e9776b952af025cd571522816bb03433d5eb1f7fa77b41c0685",
+    "interfaces.json": "948b9853efb0eb80448dbb954d7135774bdc8965d6de086c257a27d74ea21b1d",
+    "extract_interfaces.py": "aeb90737d9d3f9db599525187e4ce971dc9abc872ad423c2da4cb6746a9b53de",
+    "check_native_fit.py": "90b7873064143573963b9ace5c4270e057ece58035f7fee777cbc12de275bdfe",
+    "README.md": "7cdeebbd766302d3d57ce1a4ffd91858031570f5283bb7d172c111283e02f247",
+    "review.md": "018ad8f23fa2fb351b03068e9153f9ba49d8cd98be1c4e7436227e18c3e90c38"
   },
   "output_hashes": {
-    "battery-guide.step": "66ea3dffabb3c8f454e29dfd2853ddaefcd9538bcbf15708684f5087162c5c16",
+    "battery-guide.step": "78201e6235c9c0e5a4763de1460b750ef40b172e7857a91308e6734330c56c56",
     "battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
-    "checks.json": "61d729ccf6dc82b3d65726771672befdf222ed2aea73fde8f5d485ee17252db0",
-    "enclosure.glb": "3d4220c977a6dd2878d6fada0114b4fe1c6c467241fac50ceb3455d16eeeb34b",
-    "enclosure.step": "d7ef54d24ed87cc73b0af2e9a92867d3a820f4b7fce74702979edac77e7e683c",
-    "frame.step": "78ec8ad6b62c2f4b83abd828eb4c57c4e145293dc7fb2bf953037e873cd35fbc",
+    "checks.json": "eb79353c0c49bfe15d990b0ab40b056b6264d1b6795e3a00e87e4fcb4eb42045",
+    "enclosure.glb": "2845fdec3b94a0e1fda4d4c8e4daa1ebbc352885fb5a636f448f32c817f4b2e3",
+    "enclosure.step": "a896943d06eaf914cd0e72abcc53664289991769b24f4336eeea4a18b20b610f",
+    "frame.step": "4d8deeae76805047906feb5ed71ae9441022a93041b92d29022aa63c27242eca",
     "frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
-    "front.dxf": "73a4a9ee55adb6858191ac0dfbe83d8e3ded9ba46dd4e45a5577fa09ddfe086d",
-    "front.step": "4506869292c1fdc0b09cc95813ac30a07a33a30658245ac12af6ea891be66691",
-    "front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
-    "native-fit.json": "b0aed4dac2ce00f94df6f83ef45990009c935ed2b1b8ce0a1acd90c4558edd6e",
-    "optical-baffle.step": "5c84437cc482e640965ac73108dfdddd2465fa3e79354f3253198a097dc495b1",
+    "front.dxf": "da4a7c9ad2dd2678225cf5bd95b69f68ca0e050929fe6e094b36666db3d9257d",
+    "front.step": "4a3568904dd3365cb7aef2b46f0098ee8b3c6259fa5472eb69369282b6d72ba6",
+    "front.stl": "d7cef4a890cac25f8b52993b4ec5342b53a1f897bf5b3df2636284a9b4fa5e8b",
+    "native-fit.json": "ad5fa0105914b9e73fbecef473c090ff43d00d01e1d2d29bfbbcd37daac5ff2f",
+    "optical-baffle.step": "a3d7fd3b6377b8b47bdc582ee5b412ced4368de817960270b685f6b7b01027f0",
     "optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
-    "rear.dxf": "4443d68d4b5ffdee0834be01cf24d55d430df8612fca91059a25df76f2820e07",
-    "rear.step": "aad901a31399a979a96553af80dc4d549a951d0afe945a44095ae41d44757837",
+    "rear.dxf": "a17408fb87201bc115ec5b53f6055dd5498f8c9b7c226199f28324d7de580c1e",
+    "rear.step": "012d53fcb3fff11f429b71c12332fdcfd27e344e7bea6416168b7c774637c304",
     "rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
-    "screw-H1.step": "a387b42452c5ddcfe24b7649d42540d195b0c0274c0cae5e4c7eebab8ccff042",
+    "screw-H1.step": "d95ceb773139b9d8094f286331849eadff7efe4ead853b048908594cd4ffad33",
     "screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
-    "screw-H2.step": "a825f2e0b942c023b0f7c2c2f7d50e9f72722cdfd9479d0fb4e5f73da4a68e3e",
+    "screw-H2.step": "0155625d0655e60b553345d84408c7b15de8f9a4684ba515501de002770e0dd0",
     "screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
-    "screw-H3.step": "3bce99b156a07581b7d91f3f49f451b25393de709f638e820569046cfa9ae234",
+    "screw-H3.step": "4ea15b5a6a406ddf12ce8f3f13a49032fd4fc154559c4a6299f92d7ea6a886ff",
     "screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
-    "screw-H4.step": "7abf6b7e9476739e7ba960fe33adcc73fe6148e7a401f39328885f034537a01c",
+    "screw-H4.step": "7e82ceb6c7a1898cfaa9beca449e30503a2f697ef0696b4a656acb05a1db2149",
     "screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
-    "support-H1.step": "65fe0222018d8f7ddc2e81becc3d963bcf7d212ab3be2b3b08b045bb78fa64c4",
+    "support-H1.step": "c05499abaffac91158c362dd55a4e9df0c28c2e3017d0876d5e8f40dbb1c364f",
     "support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
-    "support-H2.step": "c710721fb4b4a62001786b4037fb4f7ae983c99f2e615556dc81c51a34970fae",
+    "support-H2.step": "c40386e02f2fb4fed7ddcebfaa858b82b97b5da7ab89513890cbf6e793580411",
     "support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
-    "support-H3.step": "f3069ec2d29c4ea0c0b56a908f55f7e6b18ed9abd48a05dc7bb2ae17b400084b",
+    "support-H3.step": "aa2c34560cb34052c3cda66ca4183e4a7453967d2db6adb41f2336341c78e177",
     "support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
-    "support-H4.step": "9beb37f3ea6d7489d650aeefe211062a1f982edc675ef987f9f2f5a9f2f49fc9",
+    "support-H4.step": "db3b80bdeda2657490d56cf4bbd35eb347719dd108c13d9c2dc7b0e2fcd92b08",
     "support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544"
   }
 }
