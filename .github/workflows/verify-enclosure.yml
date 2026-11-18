@@ -1,0 +1,33 @@
+name: Verify PCB 0.4 enclosure
+on:
+  push:
+    branches: [pcb-04-enclosure-build]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Install the CAD environment
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get install --no-install-recommends -y kicad libgl1 libglu1-mesa libxrender1 python3-venv
+          python3 -m venv /tmp/tinkerbadge-cad
+          /tmp/tinkerbadge-cad/bin/python -m pip install -r mechanical/enclosure/requirements.txt
+      - name: Build A3 and verify it against the routed board
+        env:
+          KICAD_PYTHON: /usr/bin/python3
+        run: |
+          echo '44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4  tinkerbadge.kicad_pcb' | sha256sum --check -
+          kicad-cli version
+          /tmp/tinkerbadge-cad/bin/python mechanical/enclosure/build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pcb-04-enclosure
+          path: mechanical/enclosure/exports/enclosure-cad.zip
+          if-no-files-found: error
+          retention-days: 3
